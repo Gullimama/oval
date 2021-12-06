@@ -1,0 +1,54 @@
+
+/*>>>>>>>> Offer Section styling <<<<<<<<<*/
+.omga-06__book-offer-wrapper{
+  padding-right:50px ;
+  }
+  .omga-06__book-widget{
+    display: flex;
+    flex-wrap: wrap;
+    .widget-text{
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-left: 50px;
+    }
+    .w-title{
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.75px;
+      padding-bottom: 15px;
+    }
+    p{
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: -0.56px;
+      line-height: 28px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .widget-btn{
+      margin-left: 45px;
+      margin-top: 30px;
+      @include desktops{
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+  }
+  
+  /*>>>>>>>> Fact Section styling <<<<<<<<<*/
+  .omga-06__book-offer-section {
+    background: #f2f2f3;;
+  }
+  .omga-06__book-offer-wrapper{
+    box-shadow: 0 52px 54px rgba($theme-ash-color, 0.3);
+    border-radius: 10px;
+    background-color: $theme-ash-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+  }
+  

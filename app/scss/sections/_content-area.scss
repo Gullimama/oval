@@ -1,0 +1,1184 @@
+/*>>>>>>>> Content area Common styling <<<<<<<<<*/
+
+
+
+/*~~~~Content Area styling 1 (landing-1)~~~~~*/ 
+
+ .omga-01_{
+  &_content-text {
+    .title {
+      margin-bottom: 25px;
+    }
+    .content-btn {
+      margin-top: 35px;
+    }
+  }
+ 
+  &_content-section2 {
+    background-color: #f7f7fb;
+    position: relative;
+    .shape-1 {
+      position: absolute;
+      top: 0;
+      left: -100px;
+    }
+  }
+
+  &_content-img-group{ 
+    img{
+      max-width: none;
+      width: 100%;
+    }  
+    &-1{
+      position: relative;
+      margin-bottom: 30px;
+      @include brk-point(400px){
+        margin-left: 50px;
+      }
+      @include tablet{
+        margin-bottom: 0px;
+        margin-left: 50px;
+      }
+      .img-1 {
+        @include brk-point(1450px){
+          margin-left: 30px;
+        }
+      } 
+      .abs-img{
+        position: absolute;
+        
+        &.img-2{
+          position: absolute;
+          top: 52%;
+          // left: 0;
+          left: -30px;
+          @include brk-point(400px){
+            left: -50px;
+          }
+          .omga-01__image-card-2{
+            transform: scale(.8);
+            @include brk-point(400px){
+              transform: scale(1);
+            }
+          }
+          @include mobile-lg{
+          }
+          @include tablet{
+            left: -14%;
+          }
+          z-index: 2;
+          @include brk-point(1450px){
+            left: -3%;
+          }
+        }
+        &.img-3{
+          position: absolute;
+          top: 7%;
+          right: -8%;
+          @include desktops{
+            max-width: 80%;
+            right: 3%;
+          }
+          @include large-desktops{
+            right: 15%;
+          }
+          @include brk-point(1450px){
+            max-width: 100%;
+            right: 3%;
+          }
+        }
+      }
+    }
+    &-2{
+      position: relative;
+      margin-bottom: 30px;
+      @include brk-point(400px){
+        margin-left: 50px;
+      }
+      @include tablet{
+        margin-bottom: 0px;
+        margin-left: 50px;
+      }
+      .img-1 {
+        @include brk-point(1450px){
+          margin-left: -48px;
+        }
+      } 
+      .abs-img{
+        position: absolute;
+        &.img-2{
+          position: absolute;
+          top: 20%;
+          left: -14%;
+          z-index: 2;
+          @include brk-point(1450px){
+            left: -33%;
+          }
+          .omga-01__image-card-2{
+            transform: scale(.8);
+            @include brk-point(400px){
+              transform: scale(1);
+            }
+          }
+        }
+        &.img-3{
+          position: absolute;
+          top: 10%;
+          left: -8%;
+          @include tablet{
+            top: 6%;
+            left: -2%;
+          }
+          @include desktops{
+            max-width: 80%;
+            left: 0%;
+          }
+          @include large-desktops{
+            
+          }
+          @include brk-point(1450px){
+            max-width: 100%;
+            left: -13%;
+            top: 3%;
+          }
+        }
+      }
+    }
+  }
+ }
+ .content-widget--1 {
+  border-radius: 10px;
+  border: 1px solid #eae9f2;
+  background-color: #ffffff;
+  padding: 20px;
+  // width: max-content;
+  min-width: 100%;
+  width: 100%;
+  display: inline-flex;
+  @include tablet {
+    width: 360px;
+    min-width: 360px;
+  }
+  .widget-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    &.red {
+      color: $l1-primary-color;
+      background-color: rgba(240, 64, 55, 0.1);
+    }
+    &.yellow {
+      background-color: rgba(254, 220, 90, 0.1);
+      color: $theme-yellow-color;
+    }
+    &.blue {
+      background-color: rgba(84, 84, 212, 0.1);
+      color: $l1-secondary-color;
+    }
+    &.ash {
+      background-color: rgba(65, 62, 101, 0.1);
+      color: $theme-ash-color;
+    }
+    
+  }
+  .widget-text {
+    .title {
+      color: $l1-primary-heading;
+      font-family: $l1-primary-font;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.66px;
+      margin-bottom: 0;
+    }
+    .sub-title {
+      color: $l1-primary-text;
+      font-family: $l1-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+    }
+  }
+  }
+
+/*~~~~Content Area styling 2 (landing-2)~~~~~*/
+
+  .omga-02_ {
+    &_content-section1{
+      .omga-02__content-text {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        @include tablet{
+          padding-top: 80px;
+          padding-bottom: 50px;
+        }
+        @include desktops{
+          padding-top: 190px;
+          padding-bottom: 180px;
+        }
+      }
+    }
+    &_content-text {
+      .title {
+        margin-bottom: 25px;
+      }
+      .content-btn {
+        margin-top: 35px;
+      }
+    }
+  
+    &_content-section1 {
+      position: relative;
+      .omga-02__content1-img-group {
+        position: absolute;
+        // top: -120px;
+        right: -260px;
+        z-index: -1;
+        @include desktops{
+          height: 100%;
+          right: -400px;
+        }
+        @include large-desktops {
+          right: -200px;
+        }
+        @include large-desktops-mid {
+          right: -145px;
+        }
+        @include extra-large-desktops {
+          right: 0px;
+        }
+      }
+      .img-half{
+        @include desktops{
+          height: 100%;
+        }
+        img{
+          @include brk-point(375px){
+            max-width: 80%;
+          }
+          @include mobile{
+            max-width: 70%;
+          }
+          @include mobile-lg{
+            max-width: 100%;
+          }
+          @include desktops{
+            height: 100%;
+          }
+        }
+      }
+      .abs-img.round-img {
+          position: absolute;
+          left: 20px;
+          bottom: 10%;
+          @include mobile{
+            bottom: 15%;
+          }
+          @include desktops{
+            top: 55%;
+            left: -95px;
+            bottom: auto;
+          }
+          img{
+            box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+            border-radius: 500px;
+            border: 10px solid #ffffff;
+            background-color: #ffffff;
+            max-width: 50%;
+            @include mobile-lg{
+              max-width: 70%;
+            }
+            @include tablet{
+              max-width: 80%;
+            }
+            @include desktops{
+              max-width: 100%;
+            }
+          }
+      }
+    }  
+  
+    &_content-img-group{   
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .round-img{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+      }
+  
+      &-1{
+        position: relative;
+        .img-1 {
+          img{
+            box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+            border-radius: 10px;
+          }
+          @include brk-point(1450px){
+            margin-left: 69px;
+          }
+        } 
+        .abs-img{
+          position: absolute;
+          &.img-2{
+            position: absolute;
+            top: 52%;
+            left: -3%;
+            z-index: 2;
+            box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+            border: 10px solid #ffffff;
+            background-color: #ffffff;
+            border-radius: 500px;
+            max-width: 50%;
+            @include tablet{
+              max-width: 100%;
+              
+            }
+            @include desktops{
+              left: 6%;
+  
+            }
+            @include brk-point(1450px){
+             left: 8%;
+            }
+          }
+  
+        }
+      }
+  
+      &-2{
+        position: relative;
+        .img-1 {
+          img{
+            border-radius: 10px;
+          }
+        }
+        .abs-img{
+          position: absolute;
+          
+          &.img-2{
+            right: 0%;
+            
+            position: absolute;
+            top: 21%;
+            
+            z-index: 2;
+            box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+            border: 10px solid #ffffff;
+            background-color: #ffffff;
+            border-radius: 500px;
+            max-width: 50%;
+            @include tablet{
+              max-width: 100%;
+              right: 15%;
+            }
+          }
+  
+        }
+      }
+  
+    }
+
+    
+    &_content-section2 {
+      background: #f7f7fb;
+    }    
+  }
+  .content-widget--2 {
+    border-radius: 10px;
+    border: 1px solid #EAE9F2;
+    background-color: #FFFFFF;
+    padding: 20px;
+    // width: max-content;
+    min-width: 100%;
+    width: 100%;
+    display: inline-flex;
+    transition: .4s;
+    @include large-desktops {
+      width: 360px;
+      min-width: 360px;
+    }
+    .widget-icon {
+      min-width: 55px;
+      max-width: 55px;
+      min-height: 55px;
+      max-height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      font-size: 26px;
+      &.red {
+        color: $l2-primary-color;
+        background-color: rgba(240, 64, 55, 0.1);
+      }
+      &.yellow {
+        background-color: rgba(254, 220, 90, 0.1);
+        color: $theme-yellow-color;
+      }
+      &.blue {
+        background-color: rgba(84, 84, 212, 0.1);
+        color: $l2-secondary-color;
+      }
+      &.ash {
+        background-color: rgba(65, 62, 101, 0.1);
+        color: $theme-ash-color;
+      }
+      &.green {
+        background-color: rgba(119, 191, 65, 0.1);
+        color: $theme-green-color;
+      }
+      
+    }
+    .widget-text {
+      .title {
+        color: $theme-primary-heading;
+        font-family: $theme-primary-font;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.66px;
+        margin-bottom: 0;
+      }
+      .sub-title {
+        color: $theme-primary-text;
+        font-family: $theme-primary-font;
+        font-size: 21px;
+        font-weight: 300;
+        letter-spacing: -0.66px;
+      }
+    }
+    &:hover {
+      box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+    }
+  }
+
+
+  /*>>>>>>>> Content area styling 3 (landing-3)<<<<<<<<<*/
+  .omga-03__content3-section {
+    border-bottom: 1px solid #242427;
+  }
+  .omga-03__content1-section{
+    border-top:1px solid #242427
+  }
+  /* content section 1 */ 
+  .omga-03__content-text {
+    .title {
+      margin-bottom: 33px;
+    }
+    .content-btn {
+      margin-top: 40px;
+    }
+    @include large-desktops {
+      padding-right: 20px;
+    }
+  }
+
+  .omga-03__content-badge {
+    height: 32px;
+    border-radius: 5px;
+    background-color: $theme-blue-color;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -0.41px;
+    margin-bottom: 30px;
+  }  
+
+  .omga-03__content-img-group{   
+    .abs-img{
+      position: absolute;
+    }
+    .img-2{
+      position: absolute;
+      top: -70px;
+      left: -20px;
+      z-index: 2;
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  
+  .omga-03__content2-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include tablet{
+      padding-top: 110px;
+      padding-bottom: 150px;
+    }
+    background: $theme-black-color-2;
+    .section-title{
+      p{
+        padding-top: 20px;
+      }
+    }
+    .content-img{
+      max-height: 515px;
+      img{
+        box-shadow: 0 42px 54px rgba(0, 0, 0, 0.31);
+        border-radius: 10px;
+      }
+
+    }
+  }
+
+/*>>>>>>>> Content area styling 4 (landing-4)<<<<<<<<<*/
+
+.omga-04__content-section1{
+  .content-img{
+    img {
+     @include desktops{
+      max-width: 118%;
+      position: relative;
+      left: -18%;
+     }
+    }
+  }
+  
+}
+.omga-04__content-section2{
+  background: $theme-ash-color;
+}
+.omga-04__content-section3{
+  padding-top: 50px;
+    padding-bottom: 70px;
+    @include desktops{
+      padding-top: 105px;
+      padding-bottom: 170px;
+    }
+  .content-img{
+    &.img-big{
+      img{
+        border-radius: 10px;
+        box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+      }
+    }
+  }
+}
+.omga-04__content-section4{
+  background:$l4-secondary-color;
+  position: relative;
+  overflow: hidden;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  @include desktops{
+    padding-top: 73px;
+    padding-bottom: 73px;
+  }
+  @include large-desktops{
+    padding-top: 135px;
+    padding-bottom: 145px;
+  }
+  .c4-shape-image{
+    position: absolute;
+    top: 0;
+    right: -5%;
+    @include brk-point(1920px){
+      right: 0;
+    }
+  }
+  .omga-04__content-text{
+    
+    .title{
+      color: #fff;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+.omga-04__content-text {
+  .title {
+    margin-bottom: 20px;
+  }
+  .content-btn {
+    margin-top: 40px;
+  }
+  @include large-desktops {
+    padding-right: 20px;
+  }
+  .widgets-wrapper {
+    max-width: 360px;
+    @include large-desktops {
+      width: 360px;
+    }
+  }
+}
+  
+.omga-04__content-widget {
+  border-radius: 10px;
+  border: 1px solid #eae9f2;
+  background-color: #ffffff;
+  padding: 20px;
+  // width: max-content;
+  min-width: 100%;
+  width: 100%;
+  display: inline-flex;
+  .widget-icon {
+    min-width: 55px;
+    max-width: 55px;
+    min-height: 55px;
+    max-height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 25px;
+    &.red {
+      color: $l1-primary-color;
+      background-color: rgba(240, 64, 55, 0.1);
+    }
+    &.yellow {
+      background-color: rgba(254, 220, 90, 0.1);
+      color: $l4-primary-color;
+    }
+    &.blue {
+      background-color: rgba(84, 84, 212, 0.1);
+      color: $l1-secondary-color;
+    }
+    &.green {
+      background-color: rgba(119, 191, 65, 0.1);
+      color: $theme-green-color;
+    }
+    &.ash {
+      background-color: rgba(65, 62, 101, 0.1);
+      color: $theme-ash-color;
+    }
+    
+  }
+  .widget-text {
+    .title {
+      color: $l1-primary-heading;
+      font-family: $l1-primary-font;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.66px;
+      margin-bottom: 0;
+    }
+    .sub-title {
+      color: $l1-primary-text;
+      font-family: $l1-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+    }
+  }
+}
+
+
+
+/*>>>>>>>> Content area styling 6 (landing-6)<<<<<<<<<*/
+
+.omga-05_ {
+  &_content-section {
+    background-color: #F7F7FB;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include tablet{
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+   @include desktops{
+    padding-top: 130px;
+    padding-bottom: 130px;
+   }
+   @include large-desktops{
+    padding-top: 230px;
+    padding-bottom: 230px;
+   }
+  } 
+  &_content-text{
+    .title{
+      color: $l5-primary-heading;
+      font-weight: 700;
+      letter-spacing: -1.88px;
+      padding-bottom: 20px;
+      font-size: 40px;
+      line-height: 50px;
+      @include mobile-lg{
+        font-size: 60px;
+        line-height: 70px;
+      }
+    }
+    p{
+      color: $l5-primary-text;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+    .content-widget-wrapper{
+      padding-top: 15px;
+      .content-widget{
+        margin-top: 15px;
+      }
+    }
+  }
+  &_content-list{
+    padding-top: 15px;
+    @include mobile-lg{
+      padding-top: 35px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include desktops{
+      justify-content: space-between;
+    }
+    li{
+      color: $l5-primary-heading;
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.66px;
+      line-height: 50px;
+      display: flex;
+      margin-bottom: 5px;
+      &:nth-child(odd){
+        @include mobile-lg{
+          padding-right: 50px;
+        }
+        @include desktops{
+          padding-right: 50px;
+        }
+      }
+      &:before{
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(84, 84, 212, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 500px;
+        color: $l5-secondary-color;
+        position: relative;
+        top: 9px;
+        margin-right: 13px;
+      }
+    }
+  }
+  &_content-image {
+    margin-top: 50px;
+    img{
+      box-shadow: 0 12px 84px rgba(29, 41, 63, 0.12);
+      border-radius: 10px;
+    }
+    @include desktops {
+      margin-top: 0px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(55%,-50%);
+    }
+    @include large-desktops {
+      transform: translate(41%,-50%);
+    }
+    @include brk-point(1500px){
+        transform: translate(35%,-50%);
+    }
+    @include extra-large-desktops {
+      transform: translate(30%,-50%);
+    }
+    @include brk-point(1900px) {
+        transform: translate(15%, -50%);;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &_content-section-2{
+    background: #fff;
+    padding-top:50px;
+    padding-bottom: 50px;
+    @include tablet{
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+  &_content-image-2{
+    padding-left: 50px;
+    img{
+      transform: rotate(10deg);
+      box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+      border-radius: 10px;
+      max-width: 70%;
+      @include brk-point(400px){
+        max-width: 50%;
+      }
+      @include mobile-lg{
+        max-width: 40%;
+      }
+      @include tablet{
+        max-width: 33%;
+      }
+      @include desktops{
+        margin-left: 20px;
+        max-width: 100%;
+      }
+      @include large-desktops{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+.content-widget--5 {
+  display: flex;
+  max-width: 415px;
+  .widget-icon{
+    min-width: 55px;
+    max-width: 55px;
+    margin-top: 5px;
+    margin-right: 13px;
+  }
+  .widget-text{
+    .widget-title{
+      color: $l5-primary-heading;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.66px;
+      margin-bottom: 13px;
+    }
+    p{
+      color: $l5-primary-text;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      line-height: 28px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/*>>>>>>>> Content area styling 6 (landing-6)<<<<<<<<<*/
+
+.omga-06__content-section2{
+  background-color: #f2f2f3;
+  padding-top: 43px;
+  padding-bottom: 23px;
+  @include desktops{
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+.omga-06__content-text {
+  .title {
+    margin-bottom: 20px;
+  }
+  .content-btn {
+    margin-top: 40px;
+  }
+  @include large-desktops {
+    padding-right: 20px;
+  }
+}
+
+.omga-06__content-widget {
+  border-radius: 10px;
+  border: 1px solid #eae9f2;
+  background-color: #ffffff;
+  padding: 20px;
+  // width: max-content;
+  min-width: 100%;
+  width: 100%;
+  min-height:89px;
+  display:flex;
+  align-items: center;
+  @include large-desktops {
+    width: 360px;
+    min-width: 360px;
+  }
+  .widget-icon {
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: #fff;
+    background-color: $l6-secondary-color;
+    
+  }
+  .widget-text {
+    .title {
+      color: $l6-primary-heading;
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.66px;
+      margin-bottom: 0;
+    }
+    .sub-title {
+      color: $l6-primary-heading;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+    }
+  }
+}
+
+
+
+
+/*>>>>>>>> Content area styling 7 (landing-7)<<<<<<<<<*/
+.omga-07__content-section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include tablet{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @include desktops{
+    padding-bottom: 60px;
+  }
+}
+.omga-07__content-section-2{
+  padding-bottom: 60px;
+  @include tablet{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @include desktops{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    // padding-left: 160px;
+  }
+}
+.omga-07__content-section-3{
+  padding-bottom: 60px;
+  @include tablet{
+    padding-bottom: 120px;
+  }
+}
+.omga-07__content-text{
+  .title{
+    color: $l7-primary-heading;
+    font-weight: 700;
+    letter-spacing: -1.88px;
+    padding-bottom: 20px;
+    font-size: $h3;
+    line-height: 50px;
+    @include mobile-lg{
+      font-size: $h3;
+      line-height: 50px;
+    }
+  }
+  p{
+    color: $l7-primary-text;
+    font-size: $p;
+    font-weight: 300;
+    letter-spacing: -0.66px;
+    line-height: 29px;
+  }
+ .content-widget{
+  counter-reset: widget-counter;
+   .single-widget{
+     padding-left: 70px;
+     position: relative;
+     max-width:411px;
+     margin-top: 50px;
+     &:before{
+        counter-increment: widget-counter;
+       content: counter(widget-counter);
+       position: absolute;
+       left: 0;
+       width: 49px;
+      height: 49px;
+      background-color: #5454d4;
+      border-radius: 500px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: $h6;
+      font-weight: 700;
+      letter-spacing: -0.75px;
+     }
+     .w-title{
+      color: $l7-primary-heading;
+      font-size: $h7;
+      font-weight: 700;
+      letter-spacing: -0.66px;
+      margin-bottom: 15px;
+     }
+     p{
+      color: $l7-primary-text;
+      font-size: $p;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      line-height: 18px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+     }
+   }
+ }
+}
+.omga-07__content-btn{
+  .btn--primary{
+    width: 200px;
+  }
+}
+.omga-07__content-image{
+  
+  @include desktops{
+    text-align: left;
+  }
+  img{
+    transform: rotate(3deg);
+    border-radius: 10px;
+    max-width: 70%;
+    @include brk-point(400px){
+      max-width: 80%;
+    }
+    @include mobile-lg{
+      max-width: 40%;
+    }
+    @include tablet{
+      max-width: 90%;
+    }
+    @include desktops{
+      margin-left: 20px;
+      max-width: 98%;
+      padding-left: 50px;
+    }
+   
+  }
+}
+.omga-07__content-image-group{
+  display: flex;
+  margin-right: -15px;
+  .single-image{
+    display: flex;
+    flex-direction: column;
+    img{
+      border-radius: 8px;
+    }
+    &:nth-child(2){
+      padding-top: 43px;
+    }
+    img{
+      padding-bottom:15px;
+      padding-right:15px;
+    }
+  }
+}
+.omga-07__content-image-3{
+  
+  @include desktops{
+    text-align: left;
+  }
+  @include large-desktops{
+    padding-left: 50px;
+  }
+  img{
+    transform: rotate(-3deg);
+    border-radius: 10px;
+    max-width: 70%;
+    @include brk-point(400px){
+      max-width: 50%;
+    }
+    @include mobile-lg{
+      max-width: 40%;
+    }
+    @include tablet{
+      max-width: 33%;
+    }
+    @include desktops{
+      margin-left: 20px;
+      max-width: 100%;
+    }
+   
+  }
+}
+
+
+/*>>>>>>>> Content area styling 8 (about-page)<<<<<<<<<*/
+
+.omga-08__content-area{
+  padding-top: 40px;
+  padding-bottom: 40px;
+ @include tablet{
+  padding-top: 120px;
+  padding-bottom: 110px;
+ }
+  .section-title{
+   
+    margin-bottom: 65px;
+    @include desktops{
+      display: flex;
+      justify-content: space-between;
+    }
+    .title{
+      color: #19191b;
+      font-weight: 700;
+      letter-spacing: -2.5px;
+      font-size: $h4;
+      line-height: 46px;
+      @include tablet{
+        font-size: $h1;
+        line-height: 74px;
+      }
+      @include desktops{
+        margin-right: 40px;
+      max-width: 46%;
+
+      }
+    }
+    p{
+      color: #696871;
+      font-size: $h7;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+      @include desktops{
+        margin-top: 0;
+      }
+    }
+    .right-side{
+      @include desktops{
+        max-width: 40%;
+        display: flex;
+        align-items: flex-end;
+      }
+      p{
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  
+}
+.omga-08__content-img{
+  max-height: 515px;
+  // box-shadow: 0 42px 54px rgba(0, 0, 0, 0.31);
+  img{
+    border-radius: 10px;
+  }
+}

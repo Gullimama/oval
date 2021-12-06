@@ -1,0 +1,142 @@
+// Primary-colors
+// $primary-color:  #22b0fc; //color for: Page = 1
+// $primary-color-p3:  #0f53fa; //color for: Page = 3
+// $primary-color-p4:  #5473E8; //color for: Page = 4
+// $primary-color-p5:  #10d396; //color for: Page = 5
+
+// Secondary-colors
+// $secondary-color: #f77321; 
+// $secondary-color-p3: #ffd166; //color for: Page = 3
+// $secondary-color-p4: #36c0cd; //color for: Page = 4
+
+
+// Global variables
+
+$theme-base-font:'CircularStd',
+sans-serif;
+
+// Landing1 Fonts and colors
+$l1-primary-font: $theme-base-font;
+$l1-primary-heading: #19191b;
+$l1-primary-text: #696871;
+$l1-primary-color: #f04037;
+$l1-secondary-color: #5454d4;
+$l1-btn-border: #c31a12;
+// $l1-btn-hover: #F9544B;
+$l1-btn-tertiary-color: #C4C4C4;
+
+
+// Landing2 Fonts and colors
+$l2-primary-font: $theme-base-font;
+$l2-primary-heading: #19191b;
+$l2-primary-text: #696871;
+$l2-primary-color: #f04037;
+$l2-btn-border: #c31a12;
+// $l2-btn-hover: #F9544B;
+$l2-secondary-color: #413e65;
+
+// Landing3 Fonts and colors
+$l3-primary-font: $theme-base-font;
+$l3-primary-heading: #19191b;
+$l3-primary-text: #696871;
+$l3-primary-color: #f04037;
+$l3-btn-border: #c31a12;
+$l3-btn-hover: #F9544B;
+$l3-secondary-color: #413e65;
+$l3-body-bg: #19191b;
+
+// Landing4 Fonts and colors
+$l4-primary-font: $theme-base-font;
+$l4-primary-heading: #19191b;
+$l4-primary-text: #696871;
+$l4-primary-color: #fedc5a;
+$l4-btn-border: #f0c931;
+$l4-btn-hover: #F9544B;
+$l4-secondary-color: #5454d4;
+
+
+// Landing5 Fonts and colors
+$l5-primary-font: $theme-base-font;
+$l5-primary-heading: #19191b;
+$l5-primary-text: #696871;
+$l5-primary-color: #f04037;
+$l5-btn-border: #c31a12;
+$l5-btn-hover: #F9544B;
+$l5-secondary-color: #5454d4;
+
+
+// Landing6 Fonts and colors
+$l6-primary-font: $theme-base-font;
+$l6-primary-heading: #19191b;
+$l6-primary-text: #696871;
+$l6-primary-color: #f0544c;
+$l6-btn-border: #f04037;
+$l6-secondary-color: #5454d4;
+
+// Landing7 Fonts and colors
+$l7-primary-font: $theme-base-font;
+$l7-primary-heading: #19191b;
+$l7-primary-text: #696871;
+$l7-primary-color: #f04037;
+$l7-btn-border: #c31a12;
+$l7-secondary-color: #5454d4;
+$l7-body-bg: #fcfdfe;
+
+// Landing8 Fonts and colors
+$l8-primary-font: $theme-base-font;
+$l8-primary-heading: #19191b;
+$l8-primary-text: #696871;
+$l8-primary-color: #f04037;
+$l8-secondary-color: #5454d4;
+$l8-body-bg: #19191b;
+// $l1-border: #f04037;
+
+$theme-primary-font: $theme-base-font;
+$theme-primary-heading: #19191b;
+$theme-primary-text: #696871;
+$theme-primary-color: #f04037;
+$theme-secondary-color: #5454d4;
+$theme-tertiary-color: #C4C4C4;
+
+$theme-red-color: #f04037;
+$theme-red-hover: #F9544B;
+$theme-red-color-2: #c31a12;
+$theme-blue-color: #5454d4;
+$theme-blue-color-2: #6565e9;
+$theme-blue-color-3: #3d3dad;
+$theme-purple-color: #a665fb;
+$theme-green-color: #77bf41;
+$theme-yellow-color: #fedc5a;
+$theme-ash-color: #413e65;
+$theme-ash-color-2: #666666;
+$theme-black-color: #19191b;
+$theme-black-color-2: #1e1e20;
+$theme-black-color-3: #1F1F1F;
+
+
+
+// Screen Width
+$screen-xxs: 320px;
+$screen-xs: 480px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1366px;
+$screen-xxxl: 1600px;
+
+// different size of fonts
+$h1:57.33px;
+$h2:47.78px;
+$h3:39.81px;
+$h4:33.18px;
+$h5:27.65px;
+$h6:23.04px;
+$h7:19.20px;
+$p: 16px;
+$font-size:13.33px;
+
+
+.bg-whisper {
+  background: #F7F7FB;
+}

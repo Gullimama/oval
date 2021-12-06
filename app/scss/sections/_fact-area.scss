@@ -1,0 +1,97 @@
+  /*>>>>>>>> Fact area Common styling <<<<<<<<<*/
+
+
+
+  /*~~~~Fact Area styling 1~~~~~*/ 
+
+  .omga-05_{
+    &_fact-section{
+      background-color: #f7f7fb;
+      border-bottom:1px solid #ededf4;
+      padding-bottom: 30px;
+      @include tablet{
+        padding-bottom: 70px;
+      }
+    }
+  }
+  .single-fact--5 {
+    text-align: center;
+    .title{
+      color: $l5-secondary-color;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: -1.88px;
+      line-height: 70px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    p{
+        color: $l5-primary-text;
+        font-size: 21px;
+        font-weight: 300;
+        letter-spacing: -0.66px;
+        line-height: 35px;
+    }
+  }
+
+
+
+  /*>>>>>>>> Fact Section styling 6 (landing-6) <<<<<<<<<*/
+.omga-06__fact-section{
+  border-bottom:1px solid #ededf4;
+  background: #f2f2f3;;
+  @include tablet{
+    padding-bottom: 70px;
+  }
+}
+.omga-06__single-fact{
+  text-align: center;
+  .title{
+    color: $l6-secondary-color;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1.88px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  p{
+      color: $l6-primary-text;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 35px;
+  }
+}
+
+  /*>>>>>>>> Fact Section styling 6 (landing-6) <<<<<<<<<*/
+
+.omga-08__fact-section{
+  border-bottom:1px solid #2d2d30;
+  @include tablet{
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+}
+.omga-08__single-fact{
+  text-align: left;
+  @include large-desktops{
+    padding-right: 45px;
+  }
+  .title{
+    color: $l8-secondary-color;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1.88px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  p{
+      color: $l8-primary-text;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 35px;
+  }
+}

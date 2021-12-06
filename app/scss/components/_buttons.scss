@@ -1,0 +1,109 @@
+.btn {
+  &-height--45{
+    height: 35px!important;
+  }
+  &-width--141{
+    min-width: 130px!important;
+  }
+  &-header{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 13px!important;
+    min-width: 110px!important;  
+    height: 37px!important;
+  }
+  &--primary{
+    // width: 252px;
+    padding-left: 25px;
+    padding-right: 25px;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid $theme-primary-color;
+    background: $theme-primary-color;
+    color: #fff;
+    font-size: $p;
+    font-weight: 500;
+    letter-spacing: -0.66px;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &:hover {
+      color: #fff;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(#fff,.1);
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+      -webkit-transition-property: transform;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &:hover:before, &:focus:before,&:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+  }
+
+
+  &--red {
+    @extend .btn--primary;
+    border: 1px solid $theme-red-color;
+    background: $theme-red-color;
+
+  }
+  &--secondary, &--outline  {
+    @extend .btn--primary;
+    border: 1px solid #eae9f2;
+    background: transparent;
+    color: #fff;
+    &:hover {
+      color: $theme-black-color;
+    }
+    &:before{
+      background: rgba(#fff, 1);
+    }
+  }
+  &--yellow {
+    @extend .btn--primary;
+    border: 1px solid $theme-yellow-color;
+    background-color: $theme-yellow-color;
+    color: $theme-black-color;
+    &::before {
+      background: rgba(#000, .1);
+    }
+    &:hover {
+      color: $theme-black-color;
+    }
+
+  }
+}
+.btn--tertiary{
+      border: 1px solid $theme-tertiary-color !important;
+      background: $theme-tertiary-color !important;
+      color: #070D59 !important;
+      &:hover {
+          color: #070D59 !important;
+      }
+  }

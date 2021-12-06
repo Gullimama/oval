@@ -1,0 +1,51 @@
+
+.omga-terms-contents{
+  .title-main{
+    color: #19191b;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    font-size: 34px;
+    line-height: 46px;
+    @include tablet{
+      font-size: 80px;
+    line-height: 84px;
+    }
+  }
+  .title-block{
+    color: #19191b;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.66px;
+    line-height: 28px;
+  }
+  p{
+    color: #696871;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+  }
+  .term-list{
+    li{
+      color: #696871;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      line-height: 24px;
+      display: flex;
+      margin-bottom: 25px;
+      &:before{
+        content: "";
+        min-width: 9px;
+        max-width: 9px;
+        min-height: 9px;
+        max-height: 9px;
+        background-color: #19191b;
+        border-radius: 500px;
+        display: inline-block;
+        margin-right: 13px;
+        margin-top: 9px;
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+/*>>>>>>>> Review area styling 6 (landing-6)<<<<<<<<<*/
+  
+
+.omga-06__review-section{
+  border-bottom: 1px solid #EAE9F2;
+  padding: 45px 0;
+  background: #f6f6f8;
+  @include tablet{
+    padding: 95px 0;
+  }
+  .more-review-link{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-decoration: underline;
+    text-align: center;
+    a{
+      color: $l6-secondary-color;
+      &:hover{
+        color: $l6-secondary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.omga-06__review-card {
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  min-height: 403px;
+  border-radius: 5px;
+  background-color: #FFF;
+  padding: 35px 30px 30px 35px;
+  transition: .4s;
+  position: relative;
+  flex-direction: column;
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    content: "";
+    transition: .4s;
+  }
+  .review-star {
+    margin-bottom: 25px;
+  }
+  .card-content {
+    // margin-bottom: 34px;
+    p {
+      font-style: italic;
+      color: $l6-primary-heading;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+  }
+  .card-id {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    .id-img {
+      width: 45px;
+      height: 45px;
+      border-radius: 500px;
+      overflow: hidden;
+      text-align: center;
+    }   
+    .id-content {
+        margin-left: 22px;
+        h6 {
+            color: $theme-black-color-3;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.34px;
+            line-height: 28px;
+            margin-bottom: -5px;
+        }  
+        span {
+            color: $theme-ash-color-2;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+            line-height: 28px;
+        }
+    }
+  }
+  &:hover {
+    &:before{
+      box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+  }
+  &.review-box-shadow{
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.04);
+  }
+  &.border{
+    border: 1px solid #eae9f2;
+  }
+}
+
+
+/*>>>>>>>> Review area styling 7 (landing-7)<<<<<<<<<*/
+
+.omga-07__review-area{
+  background-color: #5454d4;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  @include desktops{
+    padding-top: 115px;
+    padding-bottom: 90px;
+  }
+}
+.omga-07__single-review{
+  
+  .review-star{
+    margin-bottom: 17px;
+    i{
+      font-size: $h7;
+      color: #fedc5a;
+    }
+  }
+  p{
+    color: #fff;
+    font-size: $h7;
+    font-weight: 300;
+    letter-spacing: -0.66px;
+    line-height: 39px;
+    font-style: italic;
+  }
+  .user-name{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: $p;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+  }
+}
+
+
+
+/*>>>>>>>> Review area (Review Page)<<<<<<<<<*/
+
+.omga-08__review-section{
+  padding-bottom: 20px;
+  @include tablet{
+    padding-bottom: 90px;
+  }
+}
+
+
+// .review-card- {
+//   margin-bottom: 30px;
+//   display: flex;
+//   width: 100%;
+//   min-height: 403px;
+//   border-radius: 5px;
+//   background-color: #FFFFFF;
+//   padding: 35px 30px 30px 35px;
+//   transition: .4s;
+//   position: relative;
+//   flex-direction: column;
+//   border: 1px solid #eae9f2;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+//   &:before{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+//     content: "";
+//     transition: .4s;
+//   }
+//   .review-star {
+//     margin-bottom: 25px;
+//   }
+//   .card-content {
+//     // margin-bottom: 34px;
+//     p {
+//       font-style: italic;
+//       color: #19191B;
+//       font-size: 21px;
+//       font-weight: 300;
+//       letter-spacing: -0.66px;
+//       line-height: 39px;
+//     }
+//   }
+//   .card-id {
+//     display: flex;
+//     margin-top: auto;
+//     align-items: center;
+//     .id-img {
+//       width: 45px;
+//       height: 45px;
+//       border-radius: 500px;
+//       overflow: hidden;
+//       text-align: center;
+//     }   
+//     .id-content {
+//         margin-left: 22px;
+//         h6 {
+//             color: #1F1F1F;
+//             font-size: 18px;
+//             font-weight: 600;
+//             letter-spacing: -0.34px;
+//             line-height: 28px;
+//             margin-bottom: -5px;
+//         }  
+//         span {
+//             color: #666666;
+//             font-size: 14px;
+//             font-weight: 400;
+//             letter-spacing: -0.3px;
+//             line-height: 28px;
+//         }
+//     }
+//   }
+//   &:hover {
+//     &:before{
+//       box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04);
+//   }
+// }
+// }

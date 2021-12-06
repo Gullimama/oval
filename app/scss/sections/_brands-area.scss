@@ -1,0 +1,102 @@
+  /*>>>>>>>> Hero area Common styling <<<<<<<<<*/
+
+
+
+  /*~~~~Brand Area styling 1~~~~~*/
+
+
+  .omga-01__brand-title-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+
+    &:after {
+      content: "";
+      height: 1px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 42%;
+      background: #EAE9F2;
+      ;
+      margin-top: 0.5px;
+      display: none;
+
+      @include mobile {
+        display: block;
+        
+      }
+
+      @include mobile-lg {
+        width: 32%;
+      }
+
+      @include tablet {
+        width: 42%;
+      }
+
+      @include desktops {
+        width: 56%
+      }
+
+      @include large-desktops {
+        width: 62%
+      }
+
+      @include brk-point(1480px) {
+        width: 59%
+      }
+
+      @include brk-point(1800px) {
+        width: 56%
+      }
+    }
+
+    .brand-title {
+      color: $l1-primary-text;
+      font-family: $l1-primary-font;
+      font-size: $h7;
+      font-weight: 300;
+      letter-spacing: -0.56px;
+      line-height: 28px;
+      @include tablet {
+        width: 590px;
+        padding-left: 60px;
+      }
+      @include desktops {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .brand-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @include desktops {
+      justify-content: space-between;
+    }
+
+    .single-brand {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-right: 30px;
+      margin-left: 30px;
+      opacity: .7;
+      transition: .4s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  /*~~~~Brand Area styling 5~~~~~*/
+
+  .omga-05__brand-section {
+    background: #fff;
+  }

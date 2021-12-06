@@ -1,0 +1,1410 @@
+  /*>>>>>>>> Hero area styling Common<<<<<<<<<*/
+  .omga-01__image-card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 32px 34px rgba(28, 27, 32, 0.2);
+    border-radius: 8px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    max-width: 305px;
+    min-width: 305px;
+
+    .card-icon {
+      min-width: 31px;
+      max-width: 31px;
+      min-height: 31px;
+      max-height: 31px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 500px;
+
+      margin-right: 15px;
+
+      i {
+        font-size: $p;
+        color: #fff;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: $p;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      margin-bottom: 0;
+      text-align: left;
+      line-height: 20px;
+    }
+
+    &.card-blue {
+      background-color: $l1-secondary-color;
+
+      .card-icon {
+        background-color: $theme-yellow-color;
+      }
+    }
+
+    &.card-yellow {
+      background-color: $theme-yellow-color;
+
+      .card-icon {
+        background-color: $l1-secondary-color;
+      }
+
+      p {
+        color: $l1-primary-heading;
+      }
+    }
+  }
+
+  .omga-01__image-card-2 {
+    display: flex;
+    box-shadow: 0 32px 34px rgba(28, 27, 32, 0.2);
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    max-width: 305px;
+    min-width: 305px;
+
+    .card-icon {
+      background-color: $l1-secondary-color;
+      min-width: 31px;
+      max-width: 31px;
+      min-height: 31px;
+      max-height: 31px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 500px;
+      margin-right: 15px;
+      margin-top: 8px;
+
+      i {
+        font-size: $p;
+        color: #fff;
+      }
+    }
+
+    .card-text {
+      padding-right: 40px;
+
+      .date {
+        opacity: 0.48;
+        color: $l1-primary-heading;
+        font-size: $font-size;
+        font-weight: 300;
+        letter-spacing: -0.44px;
+      }
+
+      p {
+        color: $l1-primary-heading;
+        font-size: $p;
+        font-weight: 300;
+        letter-spacing: -0.66px;
+        margin-bottom: 0;
+      }
+    }
+
+    &.card-yellow {
+      background-color: $theme-yellow-color;
+
+    }
+
+    &.card-red {
+
+      background-color: $l1-primary-color;
+
+      .date {
+        color: #fff;
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+  }
+
+  [class*="_hero-content"] {
+    .title {
+      color: $l1-primary-heading;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: $h2;
+      line-height: 56px;
+      margin-bottom: 30px;
+
+      @include mobile-lg {
+        font-size: 66px;
+        line-height: 70px;
+      }
+
+      @include desktops {
+        font-size: 76px;
+        line-height: 84px;
+      }
+
+      @include large-desktops {
+        font-size: 80px;
+        line-height: 84px;
+      }
+    }
+
+    p {
+      color: $l1-primary-text;
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 39px;
+    }
+  }
+
+
+  /*~~~~Hero Area styling 1~~~~~*/
+  .omga-01__hero-area {
+    padding-top: 120px;
+
+    @include tablet {
+      padding-top: 150px;
+    }
+
+    .hero-shape {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-50%, -50%);
+    }
+
+
+  }
+
+  .omga-01__hero-img-group {
+    position: relative;
+    text-align: right;
+
+    .img-main {
+      text-align: center;
+
+      @include desktops {
+        text-align: right;
+      }
+      @include mobile-lg{
+        width: 590px;
+      }
+
+      img {
+        max-width: 100%;
+
+        @include brk-point(400px) {
+          max-width: 100%;
+        }
+
+        @include mobile-lg {
+          max-width: 100%;
+        }
+
+        @include desktops {
+          max-width: 73%;
+        }
+      }
+    }
+
+    .abs-img {
+      position: absolute;
+
+      &.img-1 {
+        top: 14%;
+        left: 0;
+
+        @include tablet {
+          left: -13%;
+        }
+
+        @include desktops {
+          left: 2%;
+        }
+
+      }
+
+      &.img-2 {
+        bottom: 12%;
+        right: 0;
+
+        @include mobile-lg {
+          right: -13%;
+        }
+
+        @include brk-point(1100px) {
+          right: -23%;
+        }
+
+        @include large-desktops {
+          right: -13%;
+        }
+
+        @include large-desktops-mid {
+          right: -28%;
+        }
+
+        @include brk-point(1500px) {
+          right: -43%;
+        }
+      }
+    }
+  }
+
+  .omga-01__hero-content {
+    padding-right: 60px;
+
+    @include mobile {
+      padding-left: 60px;
+    }
+
+    @include large-desktops {
+      padding-left: 0;
+    }
+
+
+
+    .title {
+      color: $l1-primary-heading;
+      font-family: $l1-primary-font;
+      font-weight: 500;
+      letter-spacing: -.30px;
+      font-size: $h3;
+      line-height: 56px;
+      margin-bottom: 30px;
+
+      @include mobile-lg {
+        font-size: $h2;
+        line-height: 70px;
+      }
+
+      @include desktops {
+        font-size: $h1;
+        line-height: 84px;
+      }
+
+      @include large-desktops {
+        font-size: $h2;
+        line-height: 62px;
+        width: 420px;
+      }
+    }
+
+    p {
+      color: $l1-primary-text;
+      font-family: $l1-primary-font;
+      font-size: $p;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 29px;
+    }
+
+    .hero-btn {
+      margin-top: 34px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .video-link {
+      color: $l1-secondary-color;
+      font-family: $l1-primary-font;
+      font-size: $font-size;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .divider-line {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #eae9f2;
+      top: 50%;
+      left: 0;
+    }
+  }
+
+
+  /*~~~~Hero Area styling 2~~~~~*/
+
+  .omga-02_ {
+    &_hero-area {
+      background: url(../image/jpeg/l2-hero-bg.jpg) no-repeat;
+      background-size: cover;
+      background-position: bottom left;
+
+      @include desktops {
+        background-position: center;
+      }
+    }
+
+    &_hero-content {
+      .title {
+        color: $theme-primary-heading;
+        font-family: $theme-primary-font;
+        font-weight: 700;
+        letter-spacing: -2.81px;
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 28px;
+
+        @include mobile-lg {
+          font-size: 66px;
+          line-height: 70px;
+        }
+
+        @include desktops {
+          font-size: 76px;
+          line-height: 84px;
+        }
+
+        @include large-desktops {
+          font-size: 80px;
+          line-height: 84px;
+        }
+      }
+
+      p {
+        color: $theme-primary-text;
+        font-family: $theme-primary-font;
+        font-size: 21px;
+        font-weight: 300;
+        letter-spacing: -0.66px;
+        line-height: 39px;
+      }
+
+      .hero-btn {
+        margin-top: 38px;
+      }
+
+      .video-link {
+        color: $l2-secondary-color;
+        font-family: $theme-primary-font;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        margin-top: 12px;
+        display: inline-flex;
+        align-items: center;
+
+        i {
+          margin-right: 6px;
+        }
+      }
+
+      @include large-desktops {
+        padding-right: 20px;
+      }
+    }
+
+    &_hero-img-group {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      .abs-img {
+        position: absolute;
+
+        &.img-1 {
+          top: -11%;
+          left: -13%;
+
+          @include desktops {
+            left: 2%;
+          }
+
+          img {
+            box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
+            border: 10px solid #FFFFFF;
+            background-color: #FFFFFF;
+            border-radius: 500px;
+          }
+
+        }
+
+        &.img-2 {
+          right: -13%;
+          top: 54%;
+
+          @include brk-point(1100px) {
+            right: -23%;
+          }
+
+          @include large-desktops {
+            right: -13%;
+          }
+
+          @include large-desktops-mid {
+            right: -28%;
+          }
+
+          @include brk-point(1500px) {
+            right: -43%;
+          }
+        }
+      }
+    }
+
+    &_hero-form {
+      position: relative;
+      max-width: 539px;
+
+      .input-group {
+        height: 71px;
+        border-radius: 10px;
+        border: 1px solid #EAE9F2;
+        background-color: #FFFFFF;
+        position: relative;
+
+        i {
+          position: absolute;
+          top: 27px;
+          left: 27px;
+          font-size: 19px;
+          color: #cdccd9;
+          margin-top: -2px;
+
+        }
+
+        input {
+          padding-left: 63px;
+          padding-right: 15px;
+          width: 100%;
+          border: 0;
+          border-radius: 10px;
+
+          @include brk-point(500px) {
+            padding-right: 200px;
+          }
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+
+          &::placeholder {
+            color: $l2-primary-text;
+            font-weight: 400;
+          }
+        }
+      }
+
+      button {
+        margin-top: 15px;
+
+        @include brk-point(500px) {
+          position: absolute;
+          margin-top: 5px;
+          top: 0px;
+          right: 0px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
+
+  /*~~~~Hero Area styling 3~~~~~*/
+
+  .omga-03__hero-content {
+    .title {
+      color: $theme-primary-heading;
+      font-family: $theme-primary-font;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: 50px;
+      line-height: 56px;
+      margin-bottom: 28px;
+
+      @include mobile-lg {
+        font-size: 66px;
+        line-height: 70px;
+      }
+
+      @include desktops {
+        font-size: 76px;
+        line-height: 84px;
+      }
+
+      @include large-desktops {
+        font-size: 80px;
+        line-height: 84px;
+      }
+    }
+
+    p {
+      color: $theme-primary-text;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+
+    @include desktops {
+      padding-right: 60px;
+    }
+
+    @include large-desktops {
+      padding-right: 80px;
+    }
+  }
+
+  .omga-03__hero-section-shape {
+    position: absolute;
+    left: 0;
+    transform: translateX(-63%) translateY(50%);
+    bottom: 0;
+  }
+
+  .omga-03__hero-img-group {
+    .abs-img {
+      position: absolute;
+      z-index: -1;
+
+      &.img-1 {
+        top: 0;
+        left: -10%;
+
+
+      }
+
+      &.img-2 {
+        bottom: 0%;
+        right: 0%;
+
+      }
+    }
+  }
+
+  .omga-03__form-shape-holder {
+    position: relative;
+    z-index: 1;
+  }
+
+  .omga-03__form-shape {
+    position: absolute;
+    bottom: -58px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: -1;
+
+    @include tablet {
+      left: 13%;
+    }
+
+    @include desktops {
+      position: absolute;
+      bottom: 17px;
+      transform: scale(1.5);
+      z-index: -1;
+      left: 0;
+    }
+
+    @include large-desktops {
+      position: absolute;
+      bottom: -58px;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index: -1;
+    }
+  }
+
+  .omga-03__hero-form {
+    padding: 30px;
+    box-shadow: 0 42px 54px rgba(0, 0, 0, 0.79);
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    .form-group {
+      margin-bottom: 20px;
+      height: 70px;
+    }
+
+    .form-group.from-group--with-label {
+      position: relative;
+
+      // margin-bottom: 18px;
+      .form-label {
+        color: $l3-primary-text;
+        font-size: 18px;
+        font-weight: 300;
+        background: #fff;
+        top: 50%;
+        padding: 0 10px;
+        // top: -18px;
+        left: 15px;
+        margin-bottom: 0;
+        transform: translateY(-50%);
+        //@extend
+        position: absolute;
+        transition: .4s;
+        pointer-events: none;
+      }
+
+      input {
+        &:focus {
+          ~label {
+            top: 0px;
+            left: 15px;
+          }
+        }
+      }
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 16px;
+      border-radius: 10px;
+      border: 1px solid #eae9f2;
+      background-color: #ffffff;
+      color: $l3-primary-heading;
+      font-size: 21px;
+      font-weight: 300;
+
+      &::placeholder {
+        color: $l3-primary-text;
+      }
+    }
+
+    .nice-select {
+      &:after {
+        position: relative;
+        content: "\ea05";
+        font-family: 'Grayic';
+        font-size: 35px;
+        top: 0;
+        transform: rotate(0);
+        border: none;
+        width: auto;
+        height: auto;
+        transform-origin: center;
+      }
+
+      &.open {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    /* For IE10 */
+    select::-ms-expand {
+      display: none;
+    }
+
+    .nice-select {
+      height: 100%;
+      border-radius: 10px;
+      border: 1px solid #eae9f2;
+      background-color: #ffffff;
+      width: 100%;
+      float: none;
+      display: flex;
+      align-items: center;
+      background: none !important;
+
+      span {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: -0.56px;
+        color: $l3-primary-text;
+        display: block;
+        width: 100%;
+      }
+
+      &:focus {
+        box-shadow: none;
+        outline: $theme-blue-color;
+      }
+
+      .list {
+        width: 100%;
+        margin-top: 0;
+
+        li {
+          line-height: 45px;
+          list-style: none;
+          min-height: 45px;
+        }
+      }
+    }
+
+    .hero-btn {
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    }
+  }
+
+
+
+  /*>>>>>>>> Hero area styling 4<<<<<<<<<*/
+  .omga-04__hero-area {
+    background: $l4-secondary-color;
+  }
+
+  .omga-04__hero-image {
+    max-width: 60%;
+
+    @include mobile-lg {
+      max-width: 50%;
+    }
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  .omga-04.hero-product-widget-block {
+    max-width: 322px;
+    min-width: 322px;
+
+    .price-box {
+      border-radius: 10px;
+      background-color: $theme-blue-color-2;
+      padding-left: 25px;
+      padding-right: 20px;
+      padding-top: 13px;
+      padding-bottom: 10px;
+
+      .product-price-n-offer {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 4px;
+      }
+
+      .price {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        line-height: 1;
+      }
+
+      .offer-badge {
+        min-height: 38px;
+        border-radius: 5px;
+        background-color: $theme-green-color;
+        padding-left: 7px;
+        padding-right: 7px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -5px;
+        margin-left: 15px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: -0.93px;
+        margin-bottom: 0;
+      }
+    }
+
+    .pro-qty {
+      display: flex;
+      margin-top: 20px;
+
+      .count-input-block {
+        min-width: 90px;
+        max-width: 90px;
+        height: 60px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-right: 20px;
+
+        input {
+          height: 100%;
+          width: 100%;
+          padding-right: 27px;
+        }
+
+        .count-input-btns {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          right: 0;
+
+          .count-btn {
+            min-width: 27px;
+            max-width: 27px;
+            min-height: 29.5px;
+            max-height: 29.5px;
+            background: #f7f7fb;
+            border-bottom: 1px solid #fff;
+
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .omga-04__hero-content {
+    .title {
+      color: #fff;
+      font-family: $theme-primary-font;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: 50px;
+      line-height: 56px;
+      margin-bottom: 23px;
+
+      @include mobile-lg {
+        font-size: 66px;
+        line-height: 70px;
+      }
+
+      @include desktops {
+        font-size: 60px;
+        line-height: 70px;
+
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+
+    @include desktops {
+      padding-right: 60px;
+    }
+
+    @include large-desktops {
+      padding-right: 80px;
+    }
+  }
+
+
+
+
+
+  /*>>>>>>>> Hero area styling 5 (landing-5)<<<<<<<<<*/
+
+  .omga-05_ {
+    &_hero-area {
+      background-image: radial-gradient(circle 961px at 49.94% 0%, #504A93 0%, #413E65 100%);
+      padding-top: 120px;
+      padding-bottom: 80px;
+
+      @include tablet {
+        padding-top: 120px;
+        padding-bottom: 150px;
+      }
+
+      @include desktops {
+        padding-top: 150px;
+        padding-bottom: 235px;
+      }
+    }
+
+    &_hero-content {
+      @include tablet {
+        padding-top: 40px;
+      }
+
+      @include desktops {
+        padding-top: 118px;
+        padding-right: 60px;
+      }
+
+      @include large-desktops {
+        padding-right: 80px;
+      }
+
+      .title {
+        color: #fff;
+        font-family: $theme-primary-font;
+        font-weight: 700;
+        letter-spacing: -2.81px;
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 23px;
+
+        @include mobile-lg {
+          font-size: 66px;
+          line-height: 70px;
+        }
+
+        @include desktops {
+          font-size: 76px;
+          line-height: 84px;
+        }
+
+        @include large-desktops {
+          margin-bottom: 33px;
+          font-size: 80px;
+          line-height: 84px;
+        }
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: $theme-primary-font;
+        font-size: 21px;
+        font-weight: 300;
+        letter-spacing: -0.66px;
+        line-height: 39px;
+      }
+    }
+
+    &_hero-image {
+      @include tablet {
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        min-width: 100%;
+        right: 0;
+        transform: translateX(25%);
+      }
+    }
+
+    &_hero-btn {
+      padding-top: 25px;
+
+      .button-bottom-text {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.44px;
+        margin-top: 15px;
+        display: block;
+      }
+    }
+  }
+
+  /*>>>>>>>> Hero area styling 6 (landing-6)<<<<<<<<<*/
+  .omga-06__hero-area {
+    background: #f6f6f8;
+    padding-top: 120px;
+    padding-bottom: 30px;
+
+    @include tablet {
+      padding-top: 120px;
+      padding-bottom: 30px;
+    }
+
+    @include desktops {
+      padding-top: 180px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .omga-06__hero-content {
+    color: $l6-primary-heading;
+
+    @include desktops {
+      padding-left: 60px;
+    }
+
+    @include large-desktops {
+      padding-left: 70px;
+    }
+
+    .title {
+      color: inherit;
+      font-family: $theme-primary-font;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: 50px;
+      line-height: 56px;
+      margin-bottom: 23px;
+
+      @include mobile-lg {
+        font-size: 55px;
+        line-height: 63px;
+      }
+
+      @include desktops {
+        font-size: 60px;
+        line-height: 70px;
+      }
+    }
+
+    p {
+      color: inherit;
+      font-family: $theme-primary-font;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+    }
+
+  }
+
+  .omga-06__hero-image {
+    margin-left: -55px;
+    margin-bottom: 30px;
+
+    @include brk-point(400px) {
+      max-width: 80%;
+      margin-left: -35px;
+    }
+
+    @include mobile-lg {
+      max-width: unset;
+      margin-left: -35px;
+      position: relative;
+      left: -35px;
+    }
+
+    @include tablet {
+      margin-left: -85px;
+      position: relative;
+      left: -35px;
+
+    }
+
+    @include desktops {
+      margin-bottom: 0px;
+      left: 0;
+      margin-left: -156px;
+    }
+
+    @include large-desktops {
+      margin-left: -90px;
+    }
+  }
+
+  .omga-06__hero-list {
+    padding-top: 10px;
+
+    li {
+      position: relative;
+      color: $l6-primary-heading;
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.66px;
+      display: flex;
+      margin-bottom: 13px;
+
+      &:before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 11px;
+        min-width: 24px;
+        max-width: 24px;
+        min-height: 24px;
+        max-height: 24px;
+        background-color: rgba(84, 84, 212, 0.1);
+        display: -webkit-box;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        border-radius: 500px;
+        color: $l6-secondary-color;
+        position: relative;
+        top: 3px;
+        margin-right: 13px;
+      }
+    }
+  }
+
+  .omga-06__hero-btn {
+    padding-top: 25px;
+
+    .btn {
+      min-width: 325px;
+      width: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: inline-flex;
+    }
+
+    .button-bottom-text {
+      color: $theme-ash-color;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.44px;
+      margin-top: 15px;
+      display: block;
+
+      .link {
+        color: $l6-secondary-color;
+
+      }
+
+    }
+  }
+
+
+  /*>>>>>>>> Hero area styling 7 (landing-7)<<<<<<<<<*/
+
+
+
+
+  .omga-07__hero-area {
+    padding-top: 110px;
+    padding-bottom: 50px;
+
+    @include tablet {
+      padding-top: 140px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .omga-07__hero-image {
+    img {
+      max-width: 80%;
+      margin-left: 35px;
+      
+      @include brk-point(400px) {
+        max-width: 80%;
+      }
+
+      @include mobile-lg {
+        max-width: 80%;
+      }
+    }
+  }
+
+  .omga-07__hero-content {
+
+    .title {
+      color: $theme-primary-heading;
+      font-family: $theme-primary-font;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: $h2;
+      line-height: 56px;
+      margin-bottom: 28px;
+
+      @include tablet {
+        font-size: $h3;
+        line-height: 50px;
+      }
+    }
+
+    p {
+      color: $l7-primary-heading;
+      font-size: $p;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 29px;
+    }
+
+    .hero-btn {
+      margin-top: 38px;
+    }
+
+    .video-link {
+      color: $l2-secondary-color;
+      font-family: $theme-primary-font;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        margin-right: 6px;
+      }
+    }
+
+    @include large-desktops {
+      padding-right: 20px;
+    }
+  }
+
+  .omga-07__hero-form {
+    position: relative;
+    max-width: 480px;
+
+    .input-group {
+      width: 100%;
+      height: 71px;
+      border-radius: 10px;
+      border: 1px solid #EAE9F2;
+      background-color: #FFFFFF;
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        font-size: $p;
+        color: #cdccd9;
+        margin-top: -2px;
+
+      }
+
+      input {
+        padding-left: 63px;
+        padding-right: 15px;
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+
+        @include brk-point(500px) {
+          padding-right: 140px;
+        }
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        &::placeholder {
+          color: $l7-primary-text;
+          font-weight: 400;
+        }
+      }
+    }
+
+    button {
+      margin-top: 15px;
+      width: 200px;
+
+      @include tablet {
+        max-width: 140px;
+        font-size: $p;
+      }
+
+      @include desktops {
+        max-width: 140px;
+        font-size: $p;
+      }
+
+      @include brk-point(500px) {
+        position: absolute;
+        margin-top: 0px;
+        top: 16px;
+        right: 6px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+
+
+  /*>>>>>>>> Hero area styling 8 (landing-8)<<<<<<<<<*/
+
+  .omga-08__hero-area {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @include tablet {
+      padding-top: 200px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .omga-08__hero-image {
+    img {
+      max-width: 80%;
+
+      @include brk-point(400px) {
+        max-width: 50%;
+      }
+
+      @include mobile-lg {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .omga-08__hero-content {
+    .title {
+      color: #fff;
+      font-family: $theme-primary-font;
+      font-weight: 700;
+      letter-spacing: -2.81px;
+      font-size: 50px;
+      line-height: 56px;
+      margin-bottom: 33px;
+
+      @include tablet {
+        font-size: 60px;
+        line-height: 70px;
+      }
+
+      @include desktops {
+        font-size: 70px;
+        line-height: 80px;
+      }
+
+      @include large-desktops {
+        font-size: 80px;
+        letter-spacing: -2.5px;
+        line-height: 84px;
+      }
+    }
+
+    .title-top {
+      color: #fff;
+      font-size: 21px;
+      font-weight: 300;
+      letter-spacing: -0.66px;
+      line-height: 39px;
+      margin-bottom: 25px;
+    }
+
+    .hero-btn {
+      margin-top: 38px;
+    }
+
+    .video-link {
+      color: $l2-secondary-color;
+      font-family: $theme-primary-font;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        margin-right: 6px;
+      }
+    }
+
+    @include large-desktops {
+      padding-right: 20px;
+    }
+  }

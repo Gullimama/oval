@@ -1,0 +1,35 @@
+.dark-theme{
+  .cta-section{
+    background: $theme-black-color-2;
+  }
+
+  .navbar-toggler.btn-close-off-canvas{
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+.dark-theme{
+  background:$l3-body-bg;
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: $l3-primary-color!important;
+  }
+  .section-title h2, .section-title .title,.title{
+    color: #ffffff!important;
+  }
+  .main-menu > li > .nav-link{
+    @include desktops{
+      color: #ffffff!important;
+    }
+  }
+  p,.footer-list a {
+    color: rgba(255, 255, 255, 0.7)!important;
+  }
+  .footer-list {
+    &.white {
+      a {
+        color: rgba(255, 255, 255, 1)!important;
+      }
+    }
+  }
+}

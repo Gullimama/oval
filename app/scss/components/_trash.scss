@@ -1,0 +1,68 @@
+/*>>>>>>>> Footer area styling (l5) <<<<<<<<<*/
+
+.footer-section {
+  background: #fff;
+   p{
+     color: $l5-primary-text;
+     font-size: 16px;
+     font-weight: 300;
+     letter-spacing: -0.5px;
+     line-height: 28px;
+   }
+ }
+ .footer-title {  
+   color: $l5-primary-heading;
+   font-family: $theme-primary-font;
+   font-size: 16px;
+   font-weight: 700;
+   letter-spacing: -0.5px;
+   margin-bottom: 25px;
+ }
+ .footer-list {
+   a {
+     color: $l5-primary-heading;
+     font-family: $theme-primary-font;
+     font-size: 16px;
+     font-weight: 300;
+     letter-spacing: -0.5px;
+     line-height: 38px;
+     @include tablet {
+       &:hover {
+         color: $theme-blue-color;
+       }
+     }
+   }
+   &.contact-list{
+     a{
+       color: $l5-secondary-color;
+     }
+   }
+   
+ }
+ .social-icons{
+   display: inline-flex;
+   margin-left: -5px;
+   margin-right: -5px;
+   padding-top: 6px;
+   li{
+     a{
+       color: #FFFFFF;
+       background:$l5-primary-text;
+       width: 30px;
+       height: 30px;
+       font-size: 16px;
+       transition: .4s;
+       padding: 0 3px;
+       margin: 0 5px;
+       display:inline-flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 500px;
+       @include tablet {
+         &:hover{
+           background: $l2-primary-color;
+         }
+       }
+     }
+   }
+ }

@@ -1,0 +1,49 @@
+<!-- start of navigation -->
+<div class="adjust-navigation-height"></div>
+
+<header class="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light px-0 py-3 py-lg-4">
+          <!-- navbar logo -->
+          <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
+            <!-- <img src="assets/images/Chaitra Rao.svg" alt="Abildon"> -->
+            oval
+          </a>
+
+
+          <!-- sidenav-overlay -->
+          <div class="sidenav-overlay"></div>
+
+          <!-- navbar links -->
+          <div class="navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav ml-lg-auto mr--10">
+
+              {% include "_menu.njk" %}
+              <!-- navbar actions -->
+              <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu"
+                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="icon icon-simple-remove"></i>
+              </button>
+              <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu"
+                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="icon icon-e-remove"></i>
+              </button>
+            </div>
+            <div class="navbar-actions">
+              <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow"
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
+              </a>
+              <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow"
+                onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Try for
+                  free</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end of navigation -->

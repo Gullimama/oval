@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Oval </title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+
+  {% block plugincss %}
+    
+  {% endblock %}
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+{# {% include  '_preloader.njk' %} #}
+  <div class="site-wrapper overflow-hidden {{page_class}}">
+      {% block main %}
+    
+      {% endblock %}
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+
+  {% block pluginjs %}
+    
+  {% endblock %}
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+</html>
+

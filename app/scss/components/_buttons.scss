@@ -20,7 +20,7 @@
     height: 40px;
     border-radius: 5px;
     border: 1px solid $theme-primary-color;
-    background: $theme-primary-color;
+    // background: $theme-primary-color;
     color: #fff;
     font-size: $p;
     font-weight: 500;
@@ -69,8 +69,9 @@
 
   &--red {
     @extend .btn--primary;
-    border: 1px solid $theme-red-color;
-    background: $theme-red-color;
+    border: 1px solid $theme-red-color !important;
+    background: $theme-red-color !important;
+    color: #fff !important;
 
   }
   &--secondary, &--outline  {
@@ -107,3 +108,4 @@
           color: #070D59 !important;
       }
   }
+

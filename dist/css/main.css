@@ -21669,9 +21669,79 @@
   }
 }
 
-@media (min-width: 480px) {
+.hero__section {
+  margin-top: 136px;
+}
+
+.hero__section .hero__section-header-title h2 {
+  font-weight: 400;
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 320px) {
+  .hero__section .hero__section-header-title h2 {
+    font-size: 33.18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__section .hero__section-header-title h2 {
+    font-size: 57.33px;
+  }
+}
+
+.hero__section-header-img img,
+.build__section-img img,
+.role__section-img img {
+  width: 100%;
+  height: auto;
+}
+
+.build__section-banner {
+  display: flex;
+}
+
+@media (min-width: 320px) {
   .build__section-banner {
-    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .build__section-banner {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .build__section-banner .build__section-img {
+    align-self: flex-end;
+  }
+  .build__section-banner .build__section-body-list {
+    position: relative;
+    top: -500px;
+  }
+}
+
+.build__section-banner .build__section-body-list {
+  display: flex;
+  order: 2;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .build__section-banner .build__section-body-list {
+    flex-direction: column;
+  }
+}
+
+.build__section-banner .build__section-title,
+.build__section-banner .build__section-body-text {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .build__section-banner .build__section-title,
+  .build__section-banner .build__section-body-text {
+    text-align: left;
   }
 }
 
@@ -21821,7 +21891,6 @@
   height: 40px;
   border-radius: 5px;
   border: 1px solid #f04037;
-  background: #f04037;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -21861,8 +21930,9 @@
 }
 
 .btn--red {
-  border: 1px solid #f04037;
-  background: #f04037;
+  border: 1px solid #f04037 !important;
+  background: #f04037 !important;
+  color: #fff !important;
 }
 
 .btn--secondary, .btn--outline {

@@ -38,7 +38,6 @@ const path = {
     html: './app/*.+(html|njk)',
     _partialFiles: './app/partials/**/*.+(htm|njk)',
     _partial: './app/partials/',
-    php: './app/php/**/*.php',
     fonts: './app/fonts/**/*.*',
     js: './app/js/*.*',
     scss: './app/scss/**/*.scss',
@@ -64,7 +63,6 @@ const dest = {
     scss : destination + 'scss/',
     js : destination + 'js/',
     fonts : destination + 'fonts/',
-    php : destination + 'php/',
     img : destination + 'image/',
     plugins : destination + 'plugins/',
     temp : destination + 'temp/',
@@ -266,13 +264,6 @@ function plugins() {
 }
 
 
-/* =====================================================
-    php
-===================================================== */
-function php() {
-    return gulp.src(path.php)
-    .pipe(gulp.dest(destination + 'php/'));
-}
 
 /* =====================================================
     Purge Css
@@ -311,7 +302,7 @@ function watchFiles() {
 
 
 
-const copyAssets = gulp.parallel(fonts,php, javascript, sassCopy, plugins,imgmin);
+const copyAssets = gulp.parallel(fonts, javascript, sassCopy, plugins,imgmin);
 const build = gulp.series(clean, html, gulp.parallel(scss, copyAssets));
 const buildWatch = gulp.series(build,browserReload, gulp.parallel(watchFiles));
 

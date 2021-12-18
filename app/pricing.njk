@@ -1,13 +1,325 @@
 {% extends "template.njk" %}
 
 {% block main %}
-<div class="pricing-page">
+{% include "_header.njk" %}
 
-  {% include "_header.njk" %}
-  
-  
-  <!-- Footer section -->
- {% include "_footer.njk" %}
 
+<!-- hero section -->
+<div class="hero__section">
+  <div class="content__sub-heading"></div>
+  <div class="content__title"></div>
+  <div class="content__body"></div>
 </div>
+
+
+<!-- price section -->
+{% include "_pricingSection.njk" %}
+
+
+<!-- leading brands section -->
+<div class="leading__sections text-center">
+  <div class="content-title">
+    <h3>Landing brands trust oval
+      for Teamwork software</h3>
+  </div>
+  {% include "_brandingMenu.njk"%}
+</div>
+
+<!-- table plan section -->
+<div class="table__plan-section text-center">
+  <div class="plan-title">
+    <h4>Full Plan Comparision</h4>
+  </div>
+  <!-- table-1 -->
+
+  <div class="table__structure">
+    <table class="table table-responsive-sm thead-light">
+      <thead>
+        <tr>
+          <th scope="col">Usage</th>
+          <th scope="col">Starter</th>
+          <th scope="col">Growth</th>
+          <th scope="col">Midsize</th>
+          <th scope="col">Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Pages and blocks</th>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th scope="row">Members</th>
+          <td>Just You</td>
+          <td>Just You</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th scope="row">Guest</th>
+          <td>5 persons</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th scope="row">File uploads</th>
+          <td>10 MB</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <th scope="row">Version History</th>
+          <td>_</td>
+          <td>14 Days</td>
+          <td>30 Days</td>
+          <td>Forever</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- table 2 -->
+
+  <div class="table__structure">
+    <table class="table table-responsive-sm thead-light">
+      <thead>
+        <tr>
+          <th scope="col">Collaboration</th>
+          <th scope="col">Starter</th>
+          <th scope="col">Growth</th>
+          <th scope="col">Midsize</th>
+          <th scope="col">Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Real-time collaboration</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Link sharing</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Collaboraive workspace</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- table 3 -->
+
+  <div class="table__structure">
+    <table class="table table-responsive-sm thead-light">
+      <thead>
+        <tr>
+          <th scope="col">Features</th>
+          <th scope="col">Starter</th>
+          <th scope="col">Growth</th>
+          <th scope="col">Midsize</th>
+          <th scope="col">Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Web ,desktop & mobile apps</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">40+ block content types</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">50+ starter templates</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Wikis, docs & notes</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Database with rich property types</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Table,list,calender,kanban board, & gallary board </th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- table-4 -->
+
+  <div class="table__structure">
+    <table class="table table-responsive-sm thead-light">
+      <thead>
+        <tr>
+          <th scope="col">Admin & Security</th>
+          <th scope="col">Starter</th>
+          <th scope="col">Growth</th>
+          <th scope="col">Midsize</th>
+          <th scope="col">Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Buik export</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Admin tools</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Permission groups</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Advanced permission</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Advanced security controls</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">SAML + Single Sign-On(SSO)</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Bulk PDF export</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- table-4 -->
+
+  <div class="table__structure">
+    <table class="table table-responsive-sm thead-light">
+      <thead>
+        <tr>
+          <th scope="col">Support</th>
+          <th scope="col">Starter</th>
+          <th scope="col">Growth</th>
+          <th scope="col">Midsize</th>
+          <th scope="col">Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Priority support</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Dedicated manager</th>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Custom contract & invoicing</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Access new features early</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Advanced security controls</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">SAML + Single Sign-On(SSO)</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+        <tr>
+          <th scope="row">Bulk PDF export</th>
+          <td>_</td>
+          <td>_</td>
+          <td>Red tick</td>
+          <td>Red tick</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- faq section -->
+{% include "_single-faqs.njk" %}
+
+<!-- Footer section -->
+{% include "_footer.njk" %}
 {% endblock %}

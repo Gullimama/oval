@@ -10,9 +10,9 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
   <link rel="stylesheet" href="plugins/aos/aos.min.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
@@ -83,35 +83,38 @@
     </header>
     <!-- end of navigation -->
     <!-- hero section -->
-    <div class="hero__section col-lg-12 col-md-10 col-sm-8 col-10 justify-content-center">
+    <div class="hero__section col-lg-12  col-12 justify-content-md-center text-center">
       <div class="hero__section-header-title">
-        <h2>Make your project & tasks
-          well planned</h2>
+        <h2>Make your project & tasks <br>
+      well planned</h2>
       </div>
       <div class="hero__section-body-text">
-        <p>Plan, track, and do all your work in one place.
-          Steer the ship together with your team.</p>
+        <p>Plan, track, and do all your work in one place. <br>
+      Steer the ship together with your team.</p>
       </div>
       <div class="hero__section-search-bar">
         <div class="hero__section-input">
           <input type="text" placeholder="Enter your work email..">
         </div>
         <div class="hero__section-button">
-          <button>Try for free</button>
+          <button class="btn btn--red">Try for free</button>
         </div>
       </div>
       <div class="hero__section-header-img">
         <div class="header-img-tab"></div>
         <div class="header-img-mobile"></div>
       </div>
-      <div class="hero__section-card">
-        <div class="card-1st">
+      <div class="hero__section-card row">
+        <div class="card card-1st col-lg-4">
           <div class="card-body">
-            <p>“I received great customer service from the specialists who helped me. I would recommend to anyone who wants great dashboard that has great quality”</p>
+            <p>“I received great customer service from the specialists who helped me. I would recommend to anyone who wants
+              great dashboard that has great quality”</p>
           </div>
-          <div class="card-cus-intro">
-            <div class="card-cus-intro-img"></div>
-            <div class="card-cus-intro-text">
+          <div class="card-cus-intro row">
+            <div class="card-cus-intro-img col-3">
+              <img src="image/png/home/cus-1.png" alt="Harold Tyler">
+            </div>
+            <div class="card-cus-intro-text col-9">
               <div class="card-cus-name">
                 Harold Tyler
               </div>
@@ -121,29 +124,16 @@
             </div>
           </div>
         </div>
-        <div class="card-3rd">
+        <div class="card card-2nd col-lg-4 ">
           <div class="card-body">
-            <p>“Really excited to see the progress that Fibery team are making on the product. There's a lot of potential with this one!”</p>
+            <p>“It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of
+              mutuality, tied into a single garment of destiny”</p>
           </div>
-          <div class="card-cus-intro">
-            <div class="card-cus-intro-img"></div>
-            <div class="card-cus-intro-text">
-              <div class="card-cus-name">
-                Rosalie Morgan
-              </div>
-              <div class="card-cus-position">
-                Co-founder of Square Space
-              </div>
+          <div class="card-cus-intro row ">
+            <div class="card-cus-intro-img col-3">
+              <img src="image/png/home/cus-2.png" alt=" Julia Armstrong">
             </div>
-          </div>
-        </div>
-        <div class="card-2nd">
-          <div class="card-body">
-            <p>“It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of mutuality, tied into a single garment of destiny”</p>
-          </div>
-          <div class="card-cus-intro">
-            <div class="card-cus-intro-img"></div>
-            <div class="card-cus-intro-text">
+            <div class="card-cus-intro-text col-9">
               <div class="card-cus-name">
                 Julia Armstrong
               </div>
@@ -153,10 +143,29 @@
             </div>
           </div>
         </div>
+        <div class="card card-3rd col-lg-4">
+          <div class="card-body">
+            <p>“Really excited to see the progress that Fibery team are making on the product. There's a lot of potential
+              with this one!”</p>
+          </div>
+          <div class="card-cus-intro row">
+            <div class="card-cus-intro-img col-3">
+              <img src="image/png/home/cus-3.png" alt=" Rosalie Morgan">
+            </div>
+            <div class="card-cus-intro-text col-9">
+              <div class="card-cus-name">
+                Rosalie Morgan
+              </div>
+              <div class="card-cus-position">
+                Co-founder of Square Space
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- work section  -->
-    <div class="work__section">
+    <div class="work__section text-center">
       <div class="work__section-header-title">
         <h2>Keep your work
           bundled together.</h2>
@@ -166,8 +175,8 @@
           Keep all related work in one spot.</p>
       </div>
       <div class="work__section-header-img"></div>
-      <div class="work__section-banner">
-        <div class="banner-left">
+      <div class="work__section-banner row">
+        <div class="banner-left col-lg-6 col-md-6 col-sm-12">
           <div class="banner-left-img"></div>
           <div class="banner-left-content-title">
             <h5>Real-time collaboration</h5>
@@ -176,7 +185,7 @@
             <p>Work on the same page at the same time with as many teammates as you want.</p>
           </div>
         </div>
-        <div class="banner-right">
+        <div class="banner-right col-lg-6 col-md-6 col-sm-12">
           <div class="banner-right-img"></div>
           <div class="banner-right-content-title">
             <h5>Track your task</h5>
@@ -188,20 +197,20 @@
       </div>
     </div>
     <!-- plan section -->
-    <div class="plan__section">
-      <div class="plan__section-header">
-        <div class="header-left">
+    <div class="plan__section text-center">
+      <div class="plan__section-header row">
+        <div class="header-left col-lg-6 col-md-6 col-sm-12">
           <h2>A Plan to
             succeed at scale</h2>
         </div>
-        <div class="header-right">
+        <div class="header-right col-lg-6 col-md-6 col-sm-12">
           <p>Oval can help your team collaborate easily.
             So you will have more control and more support
             to run your company to work with your team.</p>
         </div>
       </div>
-      <div class="plan__section-body">
-        <div class="body-left_first-row">
+      <div class="plan__section-body row">
+        <div class="body-left_first-row col-lg-6 col-md-6 col-sm-12">
           <div class="body-icon"></div>
           <div class="body-title">
             <h5>Dedicated success manager</h5>
@@ -210,16 +219,17 @@
             <p>Your own customer success manager to help onboard large teams and create custom workflows.</p>
           </div>
         </div>
-        <div class="body-right_first-row">
+        <div class="body-right_first-row col-lg-6 col-md-6 col-sm-12">
           <div class="body-icon"></div>
           <div class="body-title">
             <h5>Advanced permissions</h5>
           </div>
           <div class="body-content-text">
-            <p>Extra permission controls to prevent certain employees from sharing pages externally, disable guests and etc.</p>
+            <p>Extra permission controls to prevent certain employees from sharing pages externally, disable guests and etc.
+            </p>
           </div>
         </div>
-        <div class="body-left_2nd-row">
+        <div class="body-left_2nd-row col-lg-6 col-md-6 col-sm-12">
           <div class="body-icon"></div>
           <div class="body-title">
             <h5>Custom contracting</h5>
@@ -228,7 +238,7 @@
             <p>We’ll work with you to create a custom contract and payment via PO/invoice.</p>
           </div>
         </div>
-        <div class="body-right_2nd-row">
+        <div class="body-right_2nd-row col-lg-6 col-md-6 col-sm-12">
           <div class="body-icon"></div>
           <div class="body-title">
             <h5>Unlimited version history</h5>
@@ -237,7 +247,7 @@
             <p>Access version history of any page indefinitely, not just only 30 days like other products.</p>
           </div>
         </div>
-        <div class="body-left_3rd-row">
+        <div class="body-left_3rd-row col-lg-6 col-md-6 col-sm-12">
           <div class="body-icon"></div>
           <div class="body-title">
             <h5>Early access</h5>
@@ -247,7 +257,7 @@
               You’ll also influence our future product roadmap.</p>
           </div>
         </div>
-        <div class="body-right_3rd-row">
+        <div class="body-right_3rd-row col-lg-6 col-md-6 col-sm-12">
           <div class="body-icon"></div>
           <div class="body-title">
             <h5>Bulk PDF export</h5>
@@ -256,6 +266,33 @@
             <p>Export all of your content at once as PDFs. Handy for legal
               or compliance backups.</p>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- informative section -->
+    <div class="informative__section text-center">
+      <div class="user__saved-time">
+        <div class="user__saved-time-header">
+          <h2>98%</h2>
+        </div>
+        <div class="user__saved-time-body">
+          <p>of users saved time</p>
+        </div>
+      </div>
+      <div class="user__rec-email">
+        <div class="user__rec-email-header">
+          <h2>26%</h2>
+        </div>
+        <div class="user__rec-email-body">
+          <p>less emails sent and received</p>
+        </div>
+      </div>
+      <div class="projects__cmplt">
+        <div class="projects__cmplt-header">
+          <h2>32%</h2>
+        </div>
+        <div class="projects__cmplt-body">
+          <p>faster project completion</p>
         </div>
       </div>
     </div>

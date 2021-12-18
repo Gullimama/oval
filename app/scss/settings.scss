@@ -11,7 +11,7 @@ body {
   font-family: $theme-base-font;
   font-size: $font-size;
   line-height: 1.5;
-  color: #19191b;
+  color: #000;
   background: #FFF;
 }
 
@@ -89,7 +89,13 @@ img {
 }
 
 p {
-  font-size: 16px;
+  font-family: $body-base-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.10000000149011612px;
+  color: #64626A;
 }
 
 // span{

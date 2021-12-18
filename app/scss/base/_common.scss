@@ -25,32 +25,88 @@
   }
 }
 
+// home page
 .hero__section {
   margin-top: 136px;
+  margin-bottom: 48px;
 
   .hero__section-header-title {
     h2 {
+      font-family: $theme-base-font;
       font-weight: 400;
       letter-spacing: 0.56px;
+      font-size: $h3;
+      line-height: 46px;
 
-      @include mobile-xs {
-        font-size: $h4;
-      }
-
-      @include tablet {
+      @include desktops {
         font-size: $h1;
+        line-height: 74.4px;
       }
+
+      @include mobile-lg-only {
+        font-size: $h2;
+        line-height: 59.52px;
+      }
+
+    }
+
+
+  }
+}
+
+.hero__section-body-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  p {
+    font-family: $body-base-font;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.10000000149011612px;
+    color: #64626A;
+
+    @include mobile-lg-only {
+      font-size: $h7;
+      line-height: 28px;
+    }
+
+    @include desktops {
+      font-size: $h6;
+      line-height: 30px;
     }
   }
 }
 
+.hero__section-header-sub-title {
+  margin-top: 71px;
 
-.hero__section-header-img,
-.build__section-img,
-.role__section-img {
+  h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0.3px;
+  }
+}
+
+#light__org {
+  background: #FFDEA7;
+}
+
+#light__blue {
+  background: #C2EED8;
+}
+
+.header-img {
   img {
     width: 100%;
     height: auto;
+  }
+
+  @include desktops {
+    margin-left: 25px;
+    width: 90%;
   }
 }
 
@@ -61,15 +117,24 @@
     flex-direction: column;
   }
 
+  @include tablet {
+    .build__section-body-list {
+      position: relative;
+    }
+  }
+
   @include desktops {
     flex-direction: column;
     flex-wrap: wrap;
-    .build__section-img{
+
+    .build__section-img {
       align-self: flex-end;
     }
-    .build__section-body-list{
+
+    .build__section-body-list {
       position: relative;
-      top: -500px;
+      top: -300px;
+      left: 85px;
     }
   }
 
@@ -78,10 +143,130 @@
     display: flex;
     order: 2;
     flex-direction: row;
-    @include tablet{
+    text-align: left;
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+      border-left-width: 10px;
+
+      @include tablet {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @include desktops {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .list-item {
+        cursor: pointer;
+        margin-top: 12px;
+        height: 80px;
+        width: 500px;
+        border-bottom: 1px solid #D1D0D6;
+
+        @include tablet {
+          width: 250px;
+          height: 110px;
+          margin: 5px;
+          border-bottom: none;
+        }
+
+        @include desktops {
+          width: 430px;
+          height: 80px;
+          border-bottom: 1px solid #D1D0D6;
+        }
+
+        &:hover {
+          height: 100px;
+          width: 500px;
+          border-bottom: 2px solid #FA6402;
+
+          @include tablet {
+            width: 250px;
+            height: 110px;
+          }
+
+          @include desktops {
+            width: 430px;
+            height: 80px;
+          }
+        }
+
+        .list-item-title {
+          h6 {
+            font-family: $body-base-font;
+            font-size: $h7;
+            color: #000;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+        }
+
+        .list-item-body {
+          p {
+            font-family: $body-base-font;
+            font-size: $font-size;
+            color: #64626A;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+
+            @include tablet {
+              font-size: $p;
+            }
+          }
+        }
+      }
+    }
+
+    @include tablet {
       flex-direction: column;
     }
   }
+
+  .build__section-head-content {
+    @include desktops {
+      text-align: left;
+      height: 50px;
+      width: 600px;
+      border-top-width: 50px;
+      padding-top: 100px;
+      padding-left: 100px;
+
+    }
+  }
+
+  .build__section-title {
+    h2 {
+      font-family: Libre Baskerville;
+      font-size: $h4;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+
+      @include mobile-lg-only {
+        font-size: $h2;
+        line-height: 59.52px;
+      }
+
+      @include desktops {
+        font-size: $h1;
+        line-height: 74.4px;
+      }
+    }
+
+  }
+
 
   .build__section-title,
   .build__section-body-text {
@@ -89,6 +274,707 @@
 
     @include desktops {
       text-align: left;
+    }
+  }
+}
+
+.role__section-body-list {
+  list-style: none;
+  padding-left: 10px;
+  border-left-width: 10px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .role__section-list-item {
+    cursor: pointer;
+    margin-top: 12px;
+    height: 80px;
+    width: 450px;
+    border-top: 1px solid #D1D0D6;
+    padding-top: 20px;
+    padding-left: 30px;
+
+    @include tablet {
+      height: 110px;
+      margin: 5px;
+      border-top: 1px solid #D1D0D6;
+    }
+
+
+    &:hover {
+      height: 110px;
+      width: 450px;
+      border-top: 2px solid #FA6402;
+
+      @include tablet {
+        height: 110px;
+      }
+
+
+    }
+
+    .list-item-title {
+      h6 {
+        font-family: $body-base-font;
+        font-size: $h7;
+        color: #000;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+
+    .list-item-body {
+      p {
+        font-family: $body-base-font;
+        font-size: $font-size;
+        color: #64626A;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+
+        @include tablet {
+          font-size: $p;
+        }
+      }
+    }
+  }
+}
+
+
+.role__section-banner {
+  display: flex;
+  flex-direction: column;
+
+  .role__section-title,
+  .role__section-body-text {
+    text-align: center;
+  }
+}
+
+.testimonial__section-title {
+  text-align: center;
+}
+
+
+
+.testimonial__section {
+  margin-top: 20px;
+
+  .testimonial__section-title {
+    margin-bottom: 100px;
+
+    h2 {
+      font-family: $theme-base-font;
+      font-size: $h4;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+
+      @include tablet {
+        font-size: $h2;
+        text-align: left;
+        line-height: 59.52px;
+        padding-left: 10px;
+      }
+
+      @include desktops {
+        position: relative;
+        font-size: $h1;
+        line-height: 74.4px;
+        left: 550px;
+      }
+
+      span {
+        position: relative;
+        top: 80px;
+        left: -140px;
+        width: 30px;
+        color: #FA6402;
+        font-size: 150px;
+
+        @include tablet {
+          left: 5px;
+        }
+
+        @include desktops {
+          left: -80px;
+          top: 154px;
+        }
+      }
+    }
+
+  }
+
+  .testimonial__section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    @include desktops {
+      gap: 40px;
+    }
+  }
+
+}
+
+.card {
+  border: none !important;
+  border-right: 1px solid #D1D0D6 !important;
+
+  .card-body {
+
+    p {
+      font-family: $body-base-font;
+      font-size: $p;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.20000000298023224px;
+      text-align: left;
+      color: #3B3A40;
+
+      @include tablet {
+        font-size: $h7;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-style: none;
+    background: transparent;
+
+    @include tablet {
+      .card-cus-intro-img {
+        img {
+          width: 36px;
+          height: 36px;
+
+          @include desktops {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+
+    .card-cus-intro-text {
+      align-self: center;
+      padding-left: 30px;
+
+      .card-cus-name {
+        font-family: $theme-base-font;
+        font-size: $font-size;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding: 10px;
+      }
+
+      .card-cus-position {
+        font-family: $body-base-font;
+        font-size: $font-size;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0.10000000149011612px;
+        text-align: left;
+
+      }
+    }
+  }
+}
+
+.stats__section-banner {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin-left: 64px;
+    margin-right: 64px;
+
+    .brands {
+      align-self: center !important;
+      margin-left: 132px;
+    }
+  }
+
+  @include desktops {
+    margin-left: 249px;
+    margin-right: 225px;
+
+    .brands {
+      align-self: flex-end !important;
+      margin-left: 0px;
+      margin-right: 216px;
+    }
+  }
+
+  .flex-center-sm {
+    @include mobile-xs {
+      text-align: center;
+      align-self: center;
+    }
+
+    @include desktops {
+      text-align: left;
+      align-self: flex-end;
+    }
+  }
+
+  @include tablet {
+    .flex-end-lg {
+      text-align: left;
+      align-self: flex-end;
+    }
+
+    .flex-start-lg {
+      text-align: left;
+      align-self: flex-start;
+    }
+  }
+
+  @include desktops {
+    .flex-end-lg {
+      text-align: left;
+      align-self: flex-end;
+    }
+
+    .flex-start-lg {
+      text-align: left;
+      align-self: flex-start;
+    }
+  }
+}
+
+.stats__section-counting-intro-text {
+  width: 280px;
+  height: 84px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 76px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-top: 120px;
+    margin-bottom: 78px;
+    width: 500px;
+    height: 64px;
+  }
+
+  @include desktops {
+    width: 334px;
+    height: 126px;
+    margin-left: 0;
+  }
+
+}
+
+.title {
+  font-family: $body-base-font;
+  font-size: $h7;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #8E8C95;
+
+  @include tablet {
+    font-size: $h6;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  @include desktops {
+    font-size: $h6;
+    line-height: 42px;
+  }
+}
+
+.stats__section-counting-title {
+  h1 {
+    font-family: $theme-base-font;
+    font-size: 64px !important;
+    font-style: italic;
+    font-weight: 400 !important;
+    line-height: 79px !important;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000;
+
+    @include tablet {
+      font-size: 72px !important;
+      line-height: 89.28px !important;
+    }
+
+    @include desktops {
+      font-size: 100px !important;
+      line-height: 124px !important;
+    }
+  }
+
+}
+
+// price section
+.pricing__section {
+  margin-top: 72px;
+
+  @include tablet {
+    margin-top: 120px;
+  }
+
+  .pricing__section-title {
+    text-align: center;
+    height: 92px;
+
+    @include tablet {
+      height: 60px;
+    }
+
+    h2 {
+      font-family: $theme-base-font;
+      font-size: $h4;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      color: #000;
+
+      @include tablet {
+        font-size: $h2;
+        line-height: 59.52px;
+      }
+    }
+  }
+
+  .pricing__section-body-text {
+    margin: 0 auto;
+    height: 44px;
+    margin-top: 11px;
+    width: 280px;
+
+    @include tablet {
+      width: 450px;
+      height: 26px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-family: $body-base-font;
+      font-size: $font-size;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.20000000298023224px;
+      color: #3B3A40;
+
+      @include tablet {
+        font-size: $p;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .custom-control {
+    margin-top: 40px;
+
+    .custom-control-input:checked~.custom-control-label::before {
+      background: #FF6846;
+      border: 1px solid #FF6846;
+      color: #fff;
+    }
+
+    .custom-control-label::before {
+      left: -3.25rem;
+      background: #FF6846;
+      border: 1px solid #FF6846;
+      color: #fff;
+      width: 58px;
+      height: 28px;
+      border-radius: 28.5px;
+    }
+
+    .custom-control-label::after {
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #fff;
+      border-radius: 28.5px;
+      top: calc(0.3rem + 3px);
+      left: calc(-3rem + 1px);
+    }
+
+    &::before {
+      content: 'Annually Plans';
+      position: relative;
+      left: -60px;
+      top: 5px;
+      font-family: $body-base-font;
+      font-size: $font-size;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &::after {
+      content: 'Monthly Plans';
+      position: relative;
+      left: 12px;
+      top: 5px;
+      font-family: $body-base-font;
+      font-size: $font-size;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+
+  .pricing__section-card {
+    margin-top: 30px;
+
+    @include tablet {
+      margin-top: 58px;
+    }
+
+    .price_card {
+      width: 280px;
+      border: 1px solid #D1D0D6;
+      border-radius: 6px 6px 0px 0px;
+      margin: 0 auto;
+
+      @include tablet {
+        width: 305px;
+        height: 395px;
+        border: 1px solid #D1D0D6;
+        border-radius: 12px 0px 0px 0px;
+        margin-left: 59px;
+        margin-right: 59px;
+      }
+
+      .card-heading-content {
+        .card-title {
+          h6 {
+            margin-top: 30px;
+            font-family: $body-base-font;
+            font-size: $h7;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+          }
+        }
+
+        .card-sub-text {
+          p {
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #64626A;
+          }
+        }
+      }
+
+      .card-body {
+        .card-amount {
+          margin-top: 8px;
+
+          h4 {
+            font-family: Libre Baskerville;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 45px;
+            letter-spacing: 0.6000000238418579px;
+            color: #3B3A40;
+          }
+        }
+
+        .amount-per {
+          margin: 0 auto;
+          width: 154px;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0px;
+          margin-top: 8px;
+          margin-bottom: 28px;
+          color: #64626A;
+        }
+
+        .contact-quote {
+          text-decoration: underline;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 17px;
+          color: #3B3A40;
+        }
+      }
+
+      .card-footer {
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+}
+
+.price__footer {
+  width: 280px;
+  height: 174px;
+  background: #F5F6F9;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  .enterprise__section {
+    padding: 24px;
+
+    .enterprise-title {
+      h3 {
+        font-family: $body-base-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: $h6;
+        letter-spacing: 0px;
+        color: #3B3A40;
+      }
+    }
+
+    .enterprise-body-text {
+      p {
+        font-family: $body-base-font;
+        font-size: $font-size;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #64626A;
+        width: 162px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+      }
+    }
+
+    .enterprise-button {
+      .btn--red {
+        height: 36px;
+        width: 124px;
+        border-radius: 4px;
+        margin: 0 auto;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0.17499999701976776px;
+        text-align: center;
+      }
+    }
+  }
+
+  .compare__price-section {
+    margin-top: 32px;
+
+    p {
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #64626A;
+      width: 280px;
+    }
+
+    h4 {
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0.17499999701976776px;
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
+}
+
+// product page
+.hero__section-search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.informative__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  .user__saved-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      align-items: flex-end;
+    }
+  }
+
+  .user__rec-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__cmplt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      align-items: flex-start;
     }
   }
 }

@@ -68,22 +68,47 @@
 
 
   &--red {
-    @extend .btn--primary;
     border: 1px solid $theme-red-color !important;
     background: $theme-red-color !important;
     color: #fff !important;
+    border-radius: 8px !important;
+    margin-bottom: 60px !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    letter-spacing: 0.19px;
+    width: 127px;
+    height: 44px;
+    @include mobile-lg-only {
+      width: 180px;
+      height: 52px;
+      font-size: 16px !important;
+      line-height: 19.36px !important;
+      letter-spacing: 0.2px;
+    }
+    @include desktops{
+      width: 200px;
+      height: 60px;
+    }
 
   }
   &--secondary, &--outline  {
     @extend .btn--primary;
-    border: 1px solid #eae9f2;
+    border: 1px solid #8E8C95 !important;
+    border-radius: 8px !important;
+    margin-right: 24px !important;
     background: transparent;
     color: #fff;
-    &:hover {
-      color: $theme-black-color;
+    margin-bottom: 60px;
+    width: 44px;
+    height: 44px;
+    @include mobile-lg-only{
+      width: 52px;
+      height: 52px;
     }
-    &:before{
-      background: rgba(#fff, 1);
+    @include desktops{
+      width: 60px;
+      height: 60px;
     }
   }
   &--yellow {

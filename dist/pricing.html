@@ -10,9 +10,9 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
   <link rel="stylesheet" href="plugins/aos/aos.min.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
@@ -26,131 +26,642 @@
 
 <body>
   <div class="site-wrapper overflow-hidden ">
-    <div class="pricing-page">
-      <!-- start of navigation -->
-      <div class="adjust-navigation-height"></div>
-      <header class="navigation">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav class="navbar navbar-expand-lg navbar-light px-0 py-3 py-lg-4">
-                <!-- navbar logo -->
-                <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
-                  <!-- <img src="assets/images/Chaitra Rao.svg" alt="Abildon"> -->
-                  oval
-                </a>
-                <!-- sidenav-overlay -->
-                <div class="sidenav-overlay"></div>
-                <!-- navbar links -->
-                <div class="navbar-collapse" id="mobile-menu">
-                  <div class="navbar-nav ml-lg-auto mr--10">
-                    <ul class="navbar-nav mx-auto">
-                      <li class="nav-item ">
-                        <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-                      </li>
-                      <li class="nav-item ">
-                        <a class="nav-link" href="products.html" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="pricing.html" role="button" aria-haspopup="true" aria-expanded="false">Pricing</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="download.html">Download</a>
-                      </li>
-                    </ul>
-                    <!-- navbar actions -->
-                    <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                      <i class="icon icon-simple-remove"></i>
-                    </button>
-                    <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                      <i class="icon icon-e-remove"></i>
-                    </button>
-                  </div>
-                  <div class="navbar-actions">
-                    <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
-                    </a>
-                    <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Try for
+    <!-- start of navigation -->
+    <div class="adjust-navigation-height"></div>
+    <header class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light px-0 py-3 py-lg-4">
+              <!-- navbar logo -->
+              <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
+                <!-- <img src="assets/images/Chaitra Rao.svg" alt="Abildon"> -->
+                oval
+              </a>
+              <!-- sidenav-overlay -->
+              <div class="sidenav-overlay"></div>
+              <!-- navbar links -->
+              <div class="navbar-collapse" id="mobile-menu">
+                <div class="navbar-nav ml-lg-auto mr--10">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="products.html" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pricing.html" role="button" aria-haspopup="true" aria-expanded="false">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="download.html">Download</a>
+                    </li>
+                  </ul>
+                  <!-- navbar actions -->
+                  <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                    <i class="icon icon-simple-remove"></i>
+                  </button>
+                  <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                    <i class="icon icon-e-remove"></i>
+                  </button>
+                </div>
+                <div class="navbar-actions">
+                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
+                  </a>
+                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Try for
                   free</span>
-                    </a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- end of navigation -->
-      <!-- Footer section -->
-      <!-- Footer Section -->
-      <div class="footer-section footer ">
-        <div class="container">
-          <div class="footer-top">
-            <div class="row justify-content-center">
-              <div class="col-lg-3 col-xl-3 col-md-4 mb--40 mb-md--0">
-                <div class="footer-newsletter text-center">
-                  <h3 class="newsletter-title">Oval</h3>
-                  <div class="col-sm-6 text-sm-right text-center">
-                    <ul class="social-icons">
-                      <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                      <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                      <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
-                      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer-contact-block text-center">
-                  <span class="label">@ 2021 oval</span>
+                  </a>
                 </div>
               </div>
-              <div class="col-xl-7 col-lg-8 col-md-8 offset-xl-2 offset-lg-1">
-                <div class="row">
-                  <div class="col-3 col-sm-3">
-                    <div class="single-footer mb--50 mb-lg--30">
-                      <h5 class="footer-title">Products</h5>
-                      <ul class="footer-list white">
-                        <li><a href="service.html">Landing Page</a></li>
-                        <li><a href="products.html">Features</a></li>
-                        <li><a href="404.html">Documentation</a></li>
-                        <li><a href="404.html">Referral Program</a></li>
-                        <li><a href="404.html">pricing</a></li>
-                      </ul>
-                    </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of navigation -->
+    <!-- hero section -->
+    <div class="hero__section">
+      <div class="content__sub-heading"></div>
+      <div class="content__title"></div>
+      <div class="content__body"></div>
+    </div>
+    <!-- price section -->
+    <div class="pricing__section text-center">
+      <div class="pricing__section-title">
+        <h2>Oval Plans and Pricing</h2>
+      </div>
+      <div class="pricing__section-body-text">
+        <p>30-day free trial, cancel any time. No credit card required.</p>
+      </div>
+      <div class="custom-control custom-switch text-center">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1"></label>
+      </div>
+      <div class="pricing__section-card text-center row">
+        <div class="card-1 price_card col-lg-3 col-md-4">
+          <div class="card-heading-content">
+            <div class="card-title">
+              <h6>Starter</h6>
+            </div>
+            <div class="card-sub-text">
+              <p>Up to 20 people</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-amount">
+              <h4>$199</h4>
+            </div>
+            <div class="amount-per">
+              Per month, billed annually in USD
+            </div>
+            <div class="contact-quote">
+              Contact us for a Quote
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn--red">Buy Now</button>
+          </div>
+        </div>
+        <div class="card-2 price_card col-lg-3 col-md-4">
+          <div class="card-heading-content">
+            <div class="card-title">
+              <h6>Growth</h6>
+            </div>
+            <div class="card-sub-text">
+              <p>Up to 60 people</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-amount">
+              <h4>$499</h4>
+            </div>
+            <div class="amount-per">
+              Per month, billed annually in USD
+            </div>
+            <div class="contact-quote">
+              Contact us for a Quote
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn--red">Buy Now</button>
+          </div>
+        </div>
+        <div class="card-3 price_card col-lg-3 col-md-4">
+          <div class="card-heading-content">
+            <div class="card-title">
+              <h6>Midsize</h6>
+            </div>
+            <div class="card-sub-text">
+              <p>Up to 100 people</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-amount">
+              <h4>$899</h4>
+            </div>
+            <div class="amount-per">
+              Per month, billed annually in USD
+            </div>
+            <div class="contact-quote">
+              Contact us for a Quote
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn--red">Buy Now</button>
+          </div>
+        </div>
+        <div class="card-4 price_card col-lg-3 col-md-4">
+          <div class="card-heading-content">
+            <div class="card-title">
+              <h6>Large</h6>
+            </div>
+            <div class="card-sub-text">
+              <p>Up to 300 people</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-amount">
+              <h4>$1,999</h4>
+            </div>
+            <div class="amount-per">
+              Per month, billed annually in USD
+            </div>
+            <div class="contact-quote">
+              Contact us for a Quote
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn--red">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price__footer text-center">
+      <div class="enterprise__section row text-center">
+        <div class="enterprise-title col-lg-4 col-md-4 col-sm-12">
+          <h3>Enterprise</h3>
+        </div>
+        <div class="enterprise-body-text col-lg-4 col-md-4 col-sm-12">
+          <p>For companies with over 1,000+ people</p>
+        </div>
+        <div class="enterprise-button col-lg-4 col-md-4 col-sm-12">
+          <button class="btn btn--red">Contact Us</button>
+        </div>
+      </div>
+      <div class="compare__price-section text-center">
+        <p>See how an all-in-one Oval plan stacks up against
+          the competition and saves you money</p>
+        <h4>Compare Prices</h4>
+      </div>
+    </div>
+    <!-- leading brands section -->
+    <div class="leading__sections text-center">
+      <div class="content-title">
+        <h3>Landing brands trust oval
+          for Teamwork software</h3>
+      </div>
+      <div class="branding__logo row">
+        <div class="logo__1 col-lg-2 col-md-4 col-sm-6">
+          <img src="" alt="logo__1">
+        </div>
+        <div class="logo__2 col-lg-2 col-md-4 col-sm-6">
+          <img src="" alt="logo__2">
+        </div>
+        <div class="logo__3 col-lg-2 col-md-4 col-sm-6">
+          <img src="" alt="logo__3">
+        </div>
+        <div class="logo__4 col-lg-2 col-md-4 col-sm-6">
+          <img src="" alt="logo__4">
+        </div>
+        <div class="logo__5 col-lg-2 col-md-4 col-sm-6">
+          <img src="" alt="logo__5">
+        </div>
+        <div class="logo__6 col-lg-2 col-md-4 col-sm-6">
+          <img src="" alt="logo__6">
+        </div>
+      </div>
+    </div>
+    <!-- table plan section -->
+    <div class="table__plan-section text-center">
+      <div class="plan-title">
+        <h4>Full Plan Comparision</h4>
+      </div>
+      <!-- table-1 -->
+      <div class="table__structure">
+        <table class="table table-responsive-sm thead-light">
+          <thead>
+            <tr>
+              <th scope="col">Usage</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Growth</th>
+              <th scope="col">Midsize</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Pages and blocks</th>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">Members</th>
+              <td>Just You</td>
+              <td>Just You</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">Guest</th>
+              <td>5 persons</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">File uploads</th>
+              <td>10 MB</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">Version History</th>
+              <td>_</td>
+              <td>14 Days</td>
+              <td>30 Days</td>
+              <td>Forever</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- table 2 -->
+      <div class="table__structure">
+        <table class="table table-responsive-sm thead-light">
+          <thead>
+            <tr>
+              <th scope="col">Collaboration</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Growth</th>
+              <th scope="col">Midsize</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Real-time collaboration</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Link sharing</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Collaboraive workspace</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- table 3 -->
+      <div class="table__structure">
+        <table class="table table-responsive-sm thead-light">
+          <thead>
+            <tr>
+              <th scope="col">Features</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Growth</th>
+              <th scope="col">Midsize</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Web ,desktop & mobile apps</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">40+ block content types</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">50+ starter templates</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Wikis, docs & notes</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Database with rich property types</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Table,list,calender,kanban board, & gallary board </th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- table-4 -->
+      <div class="table__structure">
+        <table class="table table-responsive-sm thead-light">
+          <thead>
+            <tr>
+              <th scope="col">Admin & Security</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Growth</th>
+              <th scope="col">Midsize</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Buik export</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Admin tools</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Permission groups</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced permission</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced security controls</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">SAML + Single Sign-On(SSO)</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Bulk PDF export</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- table-4 -->
+      <div class="table__structure">
+        <table class="table table-responsive-sm thead-light">
+          <thead>
+            <tr>
+              <th scope="col">Support</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Growth</th>
+              <th scope="col">Midsize</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Priority support</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Dedicated manager</th>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Custom contract & invoicing</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Access new features early</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced security controls</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">SAML + Single Sign-On(SSO)</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+            <tr>
+              <th scope="row">Bulk PDF export</th>
+              <td>_</td>
+              <td>_</td>
+              <td>Red tick</td>
+              <td>Red tick</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- faq section -->
+    <div class="faq__section row text-center">
+      <div class="col-lg-6 col-md-12 col-sm-12 content-section">
+        <div class="content-title">
+          <h2>Frequently Ask Question's</h2>
+        </div>
+        <div class="content-body">
+          <p>Haven't found what you're looking for? <br>
+        Try the oval Resourse center or contact us</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 question__section">
+        <div class="question">
+          <div class="question-1">
+            <h4>How is the free Personal Plan different from the Personal Pro and Team plan?</h4>
+          </div>
+          <div class="answer_sec">
+            <p>Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-2">
+            <h4>What happens when I go over the guest limit on my personal Plan?</h4>
+          </div>
+          <div class="answer_sec">
+            <p>Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-3">
+            <h4>How do I try out the Team Plan for free?</h4>
+          </div>
+          <div class="answer_sec">
+            <p>Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-4">
+            <h4>Can I use Notion for free ?</h4>
+          </div>
+          <div class="answer_sec">
+            <p>Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-5">
+            <h4>Do you offer student discounts ?</h4>
+          </div>
+          <div class="answer_sec">
+            <p>Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <!-- Footer Section -->
+    <div class="footer-section footer ">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-xl-3 col-md-4 mb--40 mb-md--0">
+              <div class="footer-newsletter text-center">
+                <h3 class="newsletter-title">Oval</h3>
+                <div class="col-sm-6 text-sm-right text-center">
+                  <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-contact-block text-center">
+                <span class="label">@ 2021 oval</span>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-8 col-md-8 offset-xl-2 offset-lg-1">
+              <div class="row">
+                <div class="col-3 col-sm-3">
+                  <div class="single-footer mb--50 mb-lg--30">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-list white">
+                      <li><a href="service.html">Landing Page</a></li>
+                      <li><a href="products.html">Features</a></li>
+                      <li><a href="404.html">Documentation</a></li>
+                      <li><a href="404.html">Referral Program</a></li>
+                      <li><a href="404.html">pricing</a></li>
+                    </ul>
                   </div>
-                  <div class="col-3 col-sm-3">
-                    <div class="single-footer mb--50 mb-lg--30">
-                      <h5 class="footer-title">Services</h5>
-                      <ul class="footer-list white">
-                        <li><a href="about.html">Documentation</a></li>
-                        <li><a href="faq.html">Design</a></li>
-                        <li><a href="career-page.html">Themes</a></li>
-                        <li><a href="career-page.html">Illustration</a></li>
-                        <li><a href="career-page.html">UI Kit</a></li>
-                      </ul>
-                    </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="single-footer mb--50 mb-lg--30">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-list white">
+                      <li><a href="about.html">Documentation</a></li>
+                      <li><a href="faq.html">Design</a></li>
+                      <li><a href="career-page.html">Themes</a></li>
+                      <li><a href="career-page.html">Illustration</a></li>
+                      <li><a href="career-page.html">UI Kit</a></li>
+                    </ul>
                   </div>
-                  <div class="col-3 col-sm-3">
-                    <div class="single-footer mb--50 mb-lg--30">
-                      <h5 class="footer-title">Company</h5>
-                      <ul class="footer-list white">
-                        <li><a href="case-study.html">About</a></li>
-                        <li><a href="blog-regular.html">Terms</a></li>
-                        <li><a href="contact-2.html">Privacy Policy</a></li>
-                        <li><a href="contact-2.html">Careers</a></li>
-                      </ul>
-                    </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="single-footer mb--50 mb-lg--30">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-list white">
+                      <li><a href="case-study.html">About</a></li>
+                      <li><a href="blog-regular.html">Terms</a></li>
+                      <li><a href="contact-2.html">Privacy Policy</a></li>
+                      <li><a href="contact-2.html">Careers</a></li>
+                    </ul>
                   </div>
-                  <div class="col-3 col-sm-3">
-                    <div class="single-footer mb--50 mb-lg--30">
-                      <h5 class="footer-title">More</h5>
-                      <ul class="footer-list white">
-                        <li><a href="case-study.html">Documentation</a></li>
-                        <li><a href="blog-regular.html">License</a></li>
-                        <li><a href="contact-2.html">Changelog</a></li>
-                      </ul>
-                    </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="single-footer mb--50 mb-lg--30">
+                    <h5 class="footer-title">More</h5>
+                    <ul class="footer-list white">
+                      <li><a href="case-study.html">Documentation</a></li>
+                      <li><a href="blog-regular.html">License</a></li>
+                      <li><a href="contact-2.html">Changelog</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>

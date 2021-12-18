@@ -21671,30 +21671,89 @@
 
 .hero__section {
   margin-top: 136px;
+  margin-bottom: 48px;
 }
 
 .hero__section .hero__section-header-title h2 {
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   letter-spacing: 0.56px;
+  font-size: 39.81px;
+  line-height: 46px;
 }
 
-@media (min-width: 320px) {
-  .hero__section .hero__section-header-title h2 {
-    font-size: 33.18px;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .hero__section .hero__section-header-title h2 {
     font-size: 57.33px;
+    line-height: 74.4px;
   }
 }
 
-.hero__section-header-img img,
-.build__section-img img,
-.role__section-img img {
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero__section .hero__section-header-title h2 {
+    font-size: 47.78px;
+    line-height: 59.52px;
+  }
+}
+
+.hero__section-body-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hero__section-body-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.10000000149011612px;
+  color: #64626A;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero__section-body-text p {
+    font-size: 19.2px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__section-body-text p {
+    font-size: 23.04px;
+    line-height: 30px;
+  }
+}
+
+.hero__section-header-sub-title {
+  margin-top: 71px;
+}
+
+.hero__section-header-sub-title h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.05px;
+  letter-spacing: 0.3px;
+}
+
+#light__org {
+  background: #FFDEA7;
+}
+
+#light__blue {
+  background: #C2EED8;
+}
+
+.header-img img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 992px) {
+  .header-img {
+    margin-left: 25px;
+    width: 90%;
+  }
 }
 
 .build__section-banner {
@@ -21704,6 +21763,12 @@
 @media (min-width: 320px) {
   .build__section-banner {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .build__section-banner .build__section-body-list {
+    position: relative;
   }
 }
 
@@ -21717,7 +21782,8 @@
   }
   .build__section-banner .build__section-body-list {
     position: relative;
-    top: -500px;
+    top: -300px;
+    left: 85px;
   }
 }
 
@@ -21725,11 +21791,139 @@
   display: flex;
   order: 2;
   flex-direction: row;
+  text-align: left;
+}
+
+.build__section-banner .build__section-body-list ul {
+  list-style: none;
+  padding-left: 10px;
+  border-left-width: 10px;
+}
+
+@media (min-width: 768px) {
+  .build__section-banner .build__section-body-list ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .build__section-banner .build__section-body-list ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.build__section-banner .build__section-body-list ul .list-item {
+  cursor: pointer;
+  margin-top: 12px;
+  height: 80px;
+  width: 500px;
+  border-bottom: 1px solid #D1D0D6;
+}
+
+@media (min-width: 768px) {
+  .build__section-banner .build__section-body-list ul .list-item {
+    width: 250px;
+    height: 110px;
+    margin: 5px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .build__section-banner .build__section-body-list ul .list-item {
+    width: 430px;
+    height: 80px;
+    border-bottom: 1px solid #D1D0D6;
+  }
+}
+
+.build__section-banner .build__section-body-list ul .list-item:hover {
+  height: 100px;
+  width: 500px;
+  border-bottom: 2px solid #FA6402;
+}
+
+@media (min-width: 768px) {
+  .build__section-banner .build__section-body-list ul .list-item:hover {
+    width: 250px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .build__section-banner .build__section-body-list ul .list-item:hover {
+    width: 430px;
+    height: 80px;
+  }
+}
+
+.build__section-banner .build__section-body-list ul .list-item .list-item-title h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 19.2px;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.build__section-banner .build__section-body-list ul .list-item .list-item-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  color: #64626A;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .build__section-banner .build__section-body-list ul .list-item .list-item-body p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
   .build__section-banner .build__section-body-list {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .build__section-banner .build__section-head-content {
+    text-align: left;
+    height: 50px;
+    width: 600px;
+    border-top-width: 50px;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+}
+
+.build__section-banner .build__section-title h2 {
+  font-family: Libre Baskerville;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0.591304361820221px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .build__section-banner .build__section-title h2 {
+    font-size: 47.78px;
+    line-height: 59.52px;
+  }
+}
+
+@media (min-width: 992px) {
+  .build__section-banner .build__section-title h2 {
+    font-size: 57.33px;
+    line-height: 74.4px;
   }
 }
 
@@ -21742,6 +21936,726 @@
   .build__section-banner .build__section-title,
   .build__section-banner .build__section-body-text {
     text-align: left;
+  }
+}
+
+.role__section-body-list {
+  list-style: none;
+  padding-left: 10px;
+  border-left-width: 10px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .role__section-body-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.role__section-body-list .role__section-list-item {
+  cursor: pointer;
+  margin-top: 12px;
+  height: 80px;
+  width: 450px;
+  border-top: 1px solid #D1D0D6;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .role__section-body-list .role__section-list-item {
+    height: 110px;
+    margin: 5px;
+    border-top: 1px solid #D1D0D6;
+  }
+}
+
+.role__section-body-list .role__section-list-item:hover {
+  height: 110px;
+  width: 450px;
+  border-top: 2px solid #FA6402;
+}
+
+@media (min-width: 768px) {
+  .role__section-body-list .role__section-list-item:hover {
+    height: 110px;
+  }
+}
+
+.role__section-body-list .role__section-list-item .list-item-title h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 19.2px;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.role__section-body-list .role__section-list-item .list-item-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  color: #64626A;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .role__section-body-list .role__section-list-item .list-item-body p {
+    font-size: 16px;
+  }
+}
+
+.role__section-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.role__section-banner .role__section-title,
+.role__section-banner .role__section-body-text {
+  text-align: center;
+}
+
+.testimonial__section-title {
+  text-align: center;
+}
+
+.testimonial__section {
+  margin-top: 20px;
+}
+
+.testimonial__section .testimonial__section-title {
+  margin-bottom: 100px;
+}
+
+.testimonial__section .testimonial__section-title h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+@media (min-width: 768px) {
+  .testimonial__section .testimonial__section-title h2 {
+    font-size: 47.78px;
+    text-align: left;
+    line-height: 59.52px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial__section .testimonial__section-title h2 {
+    position: relative;
+    font-size: 57.33px;
+    line-height: 74.4px;
+    left: 550px;
+  }
+}
+
+.testimonial__section .testimonial__section-title h2 span {
+  position: relative;
+  top: 80px;
+  left: -140px;
+  width: 30px;
+  color: #FA6402;
+  font-size: 150px;
+}
+
+@media (min-width: 768px) {
+  .testimonial__section .testimonial__section-title h2 span {
+    left: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial__section .testimonial__section-title h2 span {
+    left: -80px;
+    top: 154px;
+  }
+}
+
+.testimonial__section .testimonial__section-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .testimonial__section .testimonial__section-card {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial__section .testimonial__section-card {
+    gap: 40px;
+  }
+}
+
+.card {
+  border: none !important;
+  border-right: 1px solid #D1D0D6 !important;
+}
+
+.card .card-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #3B3A40;
+}
+
+@media (min-width: 768px) {
+  .card .card-body p {
+    font-size: 19.2px;
+    line-height: 30px;
+  }
+}
+
+.card .card-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  border-style: none;
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .card .card-footer .card-cus-intro-img img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .card .card-footer .card-cus-intro-img img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card .card-footer .card-cus-intro-text {
+  align-self: center;
+  padding-left: 30px;
+}
+
+.card .card-footer .card-cus-intro-text .card-cus-name {
+  font-family: "Libre Baskerville", serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 10px;
+}
+
+.card .card-footer .card-cus-intro-text .card-cus-position {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+}
+
+.stats__section-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .stats__section-banner {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  .stats__section-banner .brands {
+    align-self: center !important;
+    margin-left: 132px;
+  }
+}
+
+@media (min-width: 992px) {
+  .stats__section-banner {
+    margin-left: 249px;
+    margin-right: 225px;
+  }
+  .stats__section-banner .brands {
+    align-self: flex-end !important;
+    margin-left: 0px;
+    margin-right: 216px;
+  }
+}
+
+@media (min-width: 320px) {
+  .stats__section-banner .flex-center-sm {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .stats__section-banner .flex-center-sm {
+    text-align: left;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .stats__section-banner .flex-end-lg {
+    text-align: left;
+    align-self: flex-end;
+  }
+  .stats__section-banner .flex-start-lg {
+    text-align: left;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .stats__section-banner .flex-end-lg {
+    text-align: left;
+    align-self: flex-end;
+  }
+  .stats__section-banner .flex-start-lg {
+    text-align: left;
+    align-self: flex-start;
+  }
+}
+
+.stats__section-counting-intro-text {
+  width: 280px;
+  height: 84px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 76px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .stats__section-counting-intro-text {
+    margin-top: 120px;
+    margin-bottom: 78px;
+    width: 500px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .stats__section-counting-intro-text {
+    width: 334px;
+    height: 126px;
+    margin-left: 0;
+  }
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #8E8C95;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 23.04px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 23.04px;
+    line-height: 42px;
+  }
+}
+
+.stats__section-counting-title h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 64px !important;
+  font-style: italic;
+  font-weight: 400 !important;
+  line-height: 79px !important;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .stats__section-counting-title h1 {
+    font-size: 72px !important;
+    line-height: 89.28px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .stats__section-counting-title h1 {
+    font-size: 100px !important;
+    line-height: 124px !important;
+  }
+}
+
+.pricing__section {
+  margin-top: 72px;
+}
+
+@media (min-width: 768px) {
+  .pricing__section {
+    margin-top: 120px;
+  }
+}
+
+.pricing__section .pricing__section-title {
+  text-align: center;
+  height: 92px;
+}
+
+@media (min-width: 768px) {
+  .pricing__section .pricing__section-title {
+    height: 60px;
+  }
+}
+
+.pricing__section .pricing__section-title h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0.591304361820221px;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .pricing__section .pricing__section-title h2 {
+    font-size: 47.78px;
+    line-height: 59.52px;
+  }
+}
+
+.pricing__section .pricing__section-body-text {
+  margin: 0 auto;
+  height: 44px;
+  margin-top: 11px;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .pricing__section .pricing__section-body-text {
+    width: 450px;
+    height: 26px;
+    margin-top: 20px;
+  }
+}
+
+.pricing__section .pricing__section-body-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  color: #3B3A40;
+}
+
+@media (min-width: 768px) {
+  .pricing__section .pricing__section-body-text p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.pricing__section .custom-control {
+  margin-top: 40px;
+}
+
+.pricing__section .custom-control .custom-control-input:checked ~ .custom-control-label::before {
+  background: #FF6846;
+  border: 1px solid #FF6846;
+  color: #fff;
+}
+
+.pricing__section .custom-control .custom-control-label::before {
+  left: -3.25rem;
+  background: #FF6846;
+  border: 1px solid #FF6846;
+  color: #fff;
+  width: 58px;
+  height: 28px;
+  border-radius: 28.5px;
+}
+
+.pricing__section .custom-control .custom-control-label::after {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 28.5px;
+  top: calc(0.3rem + 3px);
+  left: calc(-3rem + 1px);
+}
+
+.pricing__section .custom-control::before {
+  content: 'Annually Plans';
+  position: relative;
+  left: -60px;
+  top: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.pricing__section .custom-control::after {
+  content: 'Monthly Plans';
+  position: relative;
+  left: 12px;
+  top: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.pricing__section .pricing__section-card {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .pricing__section .pricing__section-card {
+    margin-top: 58px;
+  }
+}
+
+.pricing__section .pricing__section-card .price_card {
+  width: 280px;
+  border: 1px solid #D1D0D6;
+  border-radius: 6px 6px 0px 0px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pricing__section .pricing__section-card .price_card {
+    width: 305px;
+    height: 395px;
+    border: 1px solid #D1D0D6;
+    border-radius: 12px 0px 0px 0px;
+    margin-left: 59px;
+    margin-right: 59px;
+  }
+}
+
+.pricing__section .pricing__section-card .price_card .card-heading-content .card-title h6 {
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.pricing__section .pricing__section-card .price_card .card-heading-content .card-sub-text p {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #64626A;
+}
+
+.pricing__section .pricing__section-card .price_card .card-body .card-amount {
+  margin-top: 8px;
+}
+
+.pricing__section .pricing__section-card .price_card .card-body .card-amount h4 {
+  font-family: Libre Baskerville;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.6000000238418579px;
+  color: #3B3A40;
+}
+
+.pricing__section .pricing__section-card .price_card .card-body .amount-per {
+  margin: 0 auto;
+  width: 154px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-top: 8px;
+  margin-bottom: 28px;
+  color: #64626A;
+}
+
+.pricing__section .pricing__section-card .price_card .card-body .contact-quote {
+  text-decoration: underline;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  color: #3B3A40;
+}
+
+.pricing__section .pricing__section-card .price_card .card-footer {
+  background: transparent;
+  border: none;
+}
+
+.price__footer {
+  width: 280px;
+  height: 174px;
+  background: #F5F6F9;
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.price__footer .enterprise__section {
+  padding: 24px;
+}
+
+.price__footer .enterprise__section .enterprise-title h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23.04px;
+  letter-spacing: 0px;
+  color: #3B3A40;
+}
+
+.price__footer .enterprise__section .enterprise-body-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #64626A;
+  width: 162px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.price__footer .enterprise__section .enterprise-button .btn--red {
+  height: 36px;
+  width: 124px;
+  border-radius: 4px;
+  margin: 0 auto;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.17499999701976776px;
+  text-align: center;
+}
+
+.price__footer .compare__price-section {
+  margin-top: 32px;
+}
+
+.price__footer .compare__price-section p {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #64626A;
+  width: 280px;
+}
+
+.price__footer .compare__price-section h4 {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.17499999701976776px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hero__section-search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero__section-search-bar {
+    flex-direction: row;
+  }
+}
+
+.informative__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informative__section .user__saved-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .informative__section .user__saved-time {
+    align-items: flex-end;
+  }
+}
+
+.informative__section .user__rec-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informative__section .projects__cmplt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .informative__section .projects__cmplt {
+    align-items: flex-start;
   }
 }
 
@@ -21884,7 +22798,7 @@
   height: 37px !important;
 }
 
-.btn--primary, .btn--red, .btn--secondary, .btn--outline, .btn--yellow {
+.btn--primary, .btn--secondary, .btn--outline, .btn--yellow {
   padding-left: 25px;
   padding-right: 25px;
   min-width: 100px;
@@ -21904,11 +22818,11 @@
   overflow: hidden;
 }
 
-.btn--primary:hover, .btn--red:hover, .btn--secondary:hover, .btn--outline:hover, .btn--yellow:hover {
+.btn--primary:hover, .btn--secondary:hover, .btn--outline:hover, .btn--yellow:hover {
   color: #fff;
 }
 
-.btn--primary:before, .btn--red:before, .btn--secondary:before, .btn--outline:before, .btn--yellow:before {
+.btn--primary:before, .btn--secondary:before, .btn--outline:before, .btn--yellow:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -21924,29 +22838,65 @@
   transition-timing-function: ease-out;
 }
 
-.btn--primary:hover:before, .btn--red:hover:before, .btn--secondary:hover:before, .btn--outline:hover:before, .btn--yellow:hover:before, .btn--primary:focus:before, .btn--red:focus:before, .btn--secondary:focus:before, .btn--outline:focus:before, .btn--yellow:focus:before, .btn--primary:active:before, .btn--red:active:before, .btn--secondary:active:before, .btn--outline:active:before, .btn--yellow:active:before {
+.btn--primary:hover:before, .btn--secondary:hover:before, .btn--outline:hover:before, .btn--yellow:hover:before, .btn--primary:focus:before, .btn--secondary:focus:before, .btn--outline:focus:before, .btn--yellow:focus:before, .btn--primary:active:before, .btn--secondary:active:before, .btn--outline:active:before, .btn--yellow:active:before {
   transform: scaleX(1);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
 .btn--red {
-  border: 1px solid #f04037 !important;
-  background: #f04037 !important;
+  border: 1px solid #FF6846 !important;
+  background: #FF6846 !important;
   color: #fff !important;
+  border-radius: 8px !important;
+  margin-bottom: 60px !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.19px;
+  width: 127px;
+  height: 44px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .btn--red {
+    width: 180px;
+    height: 52px;
+    font-size: 16px !important;
+    line-height: 19.36px !important;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn--red {
+    width: 200px;
+    height: 60px;
+  }
 }
 
 .btn--secondary, .btn--outline {
-  border: 1px solid #eae9f2;
+  border: 1px solid #8E8C95 !important;
+  border-radius: 8px !important;
+  margin-right: 24px !important;
   background: transparent;
   color: #fff;
+  margin-bottom: 60px;
+  width: 44px;
+  height: 44px;
 }
 
-.btn--secondary:hover, .btn--outline:hover {
-  color: #19191b;
+@media (min-width: 576px) and (max-width: 768px) {
+  .btn--secondary, .btn--outline {
+    width: 52px;
+    height: 52px;
+  }
 }
 
-.btn--secondary:before, .btn--outline:before {
-  background: white;
+@media (min-width: 992px) {
+  .btn--secondary, .btn--outline {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .btn--yellow {
@@ -22172,7 +23122,7 @@
 
 .footer-4 .footer-list a {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -22201,7 +23151,7 @@
 
 .footer-title {
   color: #19191B;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -22210,7 +23160,7 @@
 
 .footer-list a {
   color: #19191B;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -22712,7 +23662,7 @@
     font-weight: 300;
   }
   .header-5 .main-menu > li > .nav-link:hover {
-    color: #f04037 !important;
+    color: #FF6846 !important;
   }
 }
 
@@ -23682,7 +24632,7 @@
 
 .Oval-form .form-title .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: -1.03px;
@@ -23692,7 +24642,7 @@
 
 .Oval-form .form-title p {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -23703,7 +24653,7 @@
   padding-left: 28px;
   margin-bottom: 17px;
   color: #9c9aaa;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: -0.56px;
@@ -23758,7 +24708,7 @@
   transform: translateY(-50%);
   right: 15px;
   color: #5454d4;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -23803,7 +24753,7 @@
 
 .Oval-form .form-check-label label p {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1;
@@ -23824,7 +24774,7 @@
   background-color: #f04037;
   width: 100%;
   color: #ffffff;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 500;
   letter-spacing: -0.66px;
@@ -23832,7 +24782,7 @@
 
 .Oval-form .button-block .sign-up-text {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -24714,7 +25664,7 @@
 
 .omga-01__hero-content .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 500;
   letter-spacing: -.30px;
   font-size: 39.81px;
@@ -24746,7 +25696,7 @@
 
 .omga-01__hero-content p {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -24762,7 +25712,7 @@
 
 .omga-01__hero-content .video-link {
   color: #5454d4;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 13.33px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -24806,7 +25756,7 @@
 
 .omga-02__hero-content .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 50px;
@@ -24837,7 +25787,7 @@
 
 .omga-02__hero-content p {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -24850,7 +25800,7 @@
 
 .omga-02__hero-content .video-link {
   color: #413e65;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -24999,7 +25949,7 @@
 /*~~~~Hero Area styling 3~~~~~*/
 .omga-03__hero-content .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 50px;
@@ -25030,7 +25980,7 @@
 
 .omga-03__hero-content p {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -25357,7 +26307,7 @@
 
 .omga-04__hero-content .title {
   color: #fff;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 50px;
@@ -25381,7 +26331,7 @@
 
 .omga-04__hero-content p {
   color: rgba(255, 255, 255, 0.7);
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -25442,7 +26392,7 @@
 
 .omga-05__hero-content .title {
   color: #fff;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 50px;
@@ -25474,7 +26424,7 @@
 
 .omga-05__hero-content p {
   color: rgba(255, 255, 255, 0.7);
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -25544,7 +26494,7 @@
 
 .omga-06__hero-content .title {
   color: inherit;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 50px;
@@ -25568,7 +26518,7 @@
 
 .omga-06__hero-content p {
   color: inherit;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -25709,7 +26659,7 @@
 
 .omga-07__hero-content .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 47.78px;
@@ -25738,7 +26688,7 @@
 
 .omga-07__hero-content .video-link {
   color: #413e65;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -25874,7 +26824,7 @@
 
 .omga-08__hero-content .title {
   color: #fff;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   letter-spacing: -2.81px;
   font-size: 50px;
@@ -25919,7 +26869,7 @@
 
 .omga-08__hero-content .video-link {
   color: #413e65;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -26003,7 +26953,7 @@
 
 .omga-01__brand-title-wrapper .brand-title {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 19.2px;
   font-weight: 300;
   letter-spacing: -0.56px;
@@ -26164,7 +27114,7 @@
 
 .feature-card--01 .card-text .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 23.04px;
   font-weight: 500;
   letter-spacing: -0.75px;
@@ -26173,7 +27123,7 @@
 
 .feature-card--01 .card-text p {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -26261,7 +27211,7 @@
 
 .feature-widget--2 .widget-text .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 33.18px;
   font-weight: 700;
   letter-spacing: -0.75px;
@@ -26270,7 +27220,7 @@
 
 .feature-widget--2 .widget-text .sub-title {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -26757,7 +27707,7 @@
 
 .content-widget--1 .widget-text .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.66px;
@@ -26766,7 +27716,7 @@
 
 .content-widget--1 .widget-text .sub-title {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -27065,7 +28015,7 @@
 
 .content-widget--2 .widget-text .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.66px;
@@ -27074,7 +28024,7 @@
 
 .content-widget--2 .widget-text .sub-title {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -27311,7 +28261,7 @@
 
 .omga-04__content-widget .widget-text .title {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.66px;
@@ -27320,7 +28270,7 @@
 
 .omga-04__content-widget .widget-text .sub-title {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -27771,7 +28721,7 @@
   margin-bottom: 0;
 }
 
-.omga-07__content-btn .btn--primary, .omga-07__content-btn .btn--red, .omga-07__content-btn .btn--secondary, .omga-07__content-btn .btn--outline, .omga-07__content-btn .btn--yellow {
+.omga-07__content-btn .btn--primary, .omga-07__content-btn .btn--secondary, .omga-07__content-btn .btn--outline, .omga-07__content-btn .btn--yellow {
   width: 200px;
 }
 
@@ -27996,7 +28946,7 @@
 
 .testimonial-card--1 .card-top-area .customer-identity .name {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.66px;
@@ -28005,7 +28955,7 @@
 
 .testimonial-card--1 .card-top-area .customer-identity .company {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 13.33px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -28024,7 +28974,7 @@
 
 .testimonial-card--1 .review-text {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -28033,7 +28983,7 @@
 
 .testimonial-card--1 .review-text .secondary-text {
   color: #5454d4;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -28042,7 +28992,7 @@
 
 .testimonial-link {
   color: #5454d4;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -28122,7 +29072,7 @@
 
 .testimonial-card--2 .card-footer .customer-identity .name {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.66px;
@@ -28131,7 +29081,7 @@
 
 .testimonial-card--2 .card-footer .customer-identity .company {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -28144,7 +29094,7 @@
 
 .testimonial-card--2 .review-text {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -28239,7 +29189,7 @@
 
 .testimonial-card--2 .card-footer .customer-identity .name {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.66px;
@@ -28248,7 +29198,7 @@
 
 .testimonial-card--2 .card-footer .customer-identity .company {
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -28261,7 +29211,7 @@
 
 .testimonial-card--2 .review-text {
   color: #19191b;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: -0.66px;
@@ -28786,7 +29736,7 @@
   height: 71px;
   margin-bottom: 15px;
   color: #696871;
-  font-family: "CircularStd", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.56px;
@@ -28985,7 +29935,7 @@
   height: 60px;
   border-radius: 10px;
   border: 1px solid #c31a12;
-  background-color: #f04037;
+  background-color: #FF6846;
   color: #fff;
   font-size: 21px;
   font-weight: 500;
@@ -29038,12 +29988,12 @@
   }
 }
 
-.omga-06__cta-section .cta-btn .btn--primary, .omga-06__cta-section .cta-btn .btn--red, .omga-06__cta-section .cta-btn .btn--secondary, .omga-06__cta-section .cta-btn .btn--outline, .omga-06__cta-section .cta-btn .btn--yellow {
+.omga-06__cta-section .cta-btn .btn--primary, .omga-06__cta-section .cta-btn .btn--secondary, .omga-06__cta-section .cta-btn .btn--outline, .omga-06__cta-section .cta-btn .btn--yellow {
   width: 100%;
 }
 
 @media (min-width: 992px) {
-  .omga-06__cta-section .cta-btn .btn--primary, .omga-06__cta-section .cta-btn .btn--red, .omga-06__cta-section .cta-btn .btn--secondary, .omga-06__cta-section .cta-btn .btn--outline, .omga-06__cta-section .cta-btn .btn--yellow {
+  .omga-06__cta-section .cta-btn .btn--primary, .omga-06__cta-section .cta-btn .btn--secondary, .omga-06__cta-section .cta-btn .btn--outline, .omga-06__cta-section .cta-btn .btn--yellow {
     width: 220px;
   }
 }
@@ -29484,7 +30434,7 @@
   font-weight: 700;
   letter-spacing: -0.41px;
   border-radius: 5px;
-  background-color: #f04037;
+  background-color: #FF6846;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -10,7 +10,6 @@
 // Section Spcaing
 
 @media (min-width: 992px) {
-
   .mb-lg-0,
   .my-lg-0 {
     margin-bottom: 0 !important;
@@ -47,10 +46,7 @@
         font-size: $h2;
         line-height: 59.52px;
       }
-
     }
-
-
   }
 }
 
@@ -65,7 +61,7 @@
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.10000000149011612px;
-    color: #64626A;
+    color: #64626a;
 
     @include mobile-lg-only {
       font-size: $h7;
@@ -91,11 +87,11 @@
 }
 
 #light__org {
-  background: #FFDEA7;
+  background: #ffdea7;
 }
 
 #light__blue {
-  background: #C2EED8;
+  background: #c2eed8;
 }
 
 .header-img {
@@ -138,7 +134,6 @@
     }
   }
 
-
   .build__section-body-list {
     display: flex;
     order: 2;
@@ -165,7 +160,7 @@
         margin-top: 12px;
         height: 80px;
         width: 500px;
-        border-bottom: 1px solid #D1D0D6;
+        border-bottom: 1px solid #d1d0d6;
 
         @include tablet {
           width: 250px;
@@ -177,13 +172,13 @@
         @include desktops {
           width: 430px;
           height: 80px;
-          border-bottom: 1px solid #D1D0D6;
+          border-bottom: 1px solid #d1d0d6;
         }
 
         &:hover {
           height: 100px;
           width: 500px;
-          border-bottom: 2px solid #FA6402;
+          border-bottom: 2px solid #fa6402;
 
           @include tablet {
             width: 250px;
@@ -213,7 +208,7 @@
           p {
             font-family: $body-base-font;
             font-size: $font-size;
-            color: #64626A;
+            color: #64626a;
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
@@ -241,13 +236,12 @@
       border-top-width: 50px;
       padding-top: 100px;
       padding-left: 100px;
-
     }
   }
 
   .build__section-title {
     h2 {
-      font-family: Libre Baskerville;
+      font-family: $theme-base-font;
       font-size: $h4;
       font-style: normal;
       font-weight: 400;
@@ -264,9 +258,7 @@
         line-height: 74.4px;
       }
     }
-
   }
-
 
   .build__section-title,
   .build__section-body-text {
@@ -295,27 +287,24 @@
     margin-top: 12px;
     height: 80px;
     width: 450px;
-    border-top: 1px solid #D1D0D6;
+    border-top: 1px solid #d1d0d6;
     padding-top: 20px;
     padding-left: 30px;
 
     @include tablet {
       height: 110px;
       margin: 5px;
-      border-top: 1px solid #D1D0D6;
+      border-top: 1px solid #d1d0d6;
     }
-
 
     &:hover {
       height: 110px;
       width: 450px;
-      border-top: 2px solid #FA6402;
+      border-top: 2px solid #fa6402;
 
       @include tablet {
         height: 110px;
       }
-
-
     }
 
     .list-item-title {
@@ -335,7 +324,7 @@
       p {
         font-family: $body-base-font;
         font-size: $font-size;
-        color: #64626A;
+        color: #64626a;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -350,7 +339,6 @@
   }
 }
 
-
 .role__section-banner {
   display: flex;
   flex-direction: column;
@@ -364,8 +352,6 @@
 .testimonial__section-title {
   text-align: center;
 }
-
-
 
 .testimonial__section {
   margin-top: 20px;
@@ -399,7 +385,7 @@
         top: 80px;
         left: -140px;
         width: 30px;
-        color: #FA6402;
+        color: #fa6402;
         font-size: 150px;
 
         @include tablet {
@@ -412,7 +398,6 @@
         }
       }
     }
-
   }
 
   .testimonial__section-card {
@@ -428,15 +413,13 @@
       gap: 40px;
     }
   }
-
 }
 
 .card {
   border: none !important;
-  border-right: 1px solid #D1D0D6 !important;
+  border-right: 1px solid #d1d0d6 !important;
 
   .card-body {
-
     p {
       font-family: $body-base-font;
       font-size: $p;
@@ -445,7 +428,7 @@
       line-height: 28px;
       letter-spacing: -0.20000000298023224px;
       text-align: left;
-      color: #3B3A40;
+      color: #3b3a40;
 
       @include tablet {
         font-size: $h7;
@@ -498,7 +481,6 @@
         line-height: 17px;
         letter-spacing: 0.10000000149011612px;
         text-align: left;
-
       }
     }
   }
@@ -586,7 +568,6 @@
     height: 126px;
     margin-left: 0;
   }
-
 }
 
 .title {
@@ -596,7 +577,7 @@
   font-weight: 400;
   line-height: 28px;
   text-align: center;
-  color: #8E8C95;
+  color: #8e8c95;
 
   @include tablet {
     font-size: $h6;
@@ -631,7 +612,6 @@
       line-height: 124px !important;
     }
   }
-
 }
 
 // price section
@@ -663,6 +643,10 @@
         font-size: $h2;
         line-height: 59.52px;
       }
+      @include desktops {
+        font-size: $h1;
+        line-height: 74.4px;
+      }
     }
   }
 
@@ -677,6 +661,10 @@
       height: 26px;
       margin-top: 20px;
     }
+    @include desktops {
+      width: 505px;
+      height: 28px;
+    }
 
     p {
       font-family: $body-base-font;
@@ -685,11 +673,15 @@
       font-weight: 400;
       line-height: 22px;
       letter-spacing: 0.20000000298023224px;
-      color: #3B3A40;
+      color: #3b3a40;
 
       @include tablet {
         font-size: $p;
         line-height: 26px;
+      }
+      @include desktops {
+        font-size: 18px;
+        line-height: 28px;
       }
     }
   }
@@ -697,16 +689,16 @@
   .custom-control {
     margin-top: 40px;
 
-    .custom-control-input:checked~.custom-control-label::before {
-      background: #FF6846;
-      border: 1px solid #FF6846;
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background: #ff6846;
+      border: 1px solid #ff6846;
       color: #fff;
     }
 
     .custom-control-label::before {
       left: -3.25rem;
-      background: #FF6846;
-      border: 1px solid #FF6846;
+      background: #ff6846;
+      border: 1px solid #ff6846;
       color: #fff;
       width: 58px;
       height: 28px;
@@ -724,7 +716,7 @@
     }
 
     &::before {
-      content: 'Annually Plans';
+      content: "Annually Plans";
       position: relative;
       left: -60px;
       top: 5px;
@@ -738,7 +730,7 @@
     }
 
     &::after {
-      content: 'Monthly Plans';
+      content: "Monthly Plans";
       position: relative;
       left: 12px;
       top: 5px;
@@ -759,19 +751,66 @@
       margin-top: 58px;
     }
 
+    .card-1 {
+      @include tablet {
+        border-radius: 12px 0px 0px 0px !important;
+        margin-left: 59px !important;
+        margin-right: 0 !important;
+      }
+      @include desktops {
+        margin-left: 150px !important;
+        border-radius: 12px 0px 0px 12px !important;
+      }
+    }
+    .card-3 {
+      @include tablet {
+        border-radius: 0px 0px 0px 12px !important;
+        margin-left: 59px !important;
+        margin-right: 0 !important;
+      }
+      @include desktops {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 0px 0px 0px 0px !important;
+      }
+    }
+    .card-2 {
+      @include tablet {
+        border-radius: 0px 12px 0px 0px !important;
+        margin-right: 59px !important;
+        margin-left: 0px !important;
+      }
+      @include desktops {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 0px 0px 0px 0px !important;
+      }
+    }
+    .card-4 {
+      @include tablet {
+        border-radius: 0px 0px 12px 0px !important;
+        margin-left: 0 !important;
+        margin-right: 59px !important;
+      }
+      @include desktops {
+        margin-left: 0 !important;
+        border-radius: 0px 12px 12px 0px !important;
+      }
+    }
     .price_card {
       width: 280px;
-      border: 1px solid #D1D0D6;
+      border: 1px solid #d1d0d6;
       border-radius: 6px 6px 0px 0px;
       margin: 0 auto;
 
       @include tablet {
         width: 305px;
         height: 395px;
-        border: 1px solid #D1D0D6;
-        border-radius: 12px 0px 0px 0px;
-        margin-left: 59px;
-        margin-right: 59px;
+        border: 1px solid #d1d0d6;
+      }
+      @include desktops {
+       max-width: 19.7% !important;
+        height: 473px;
       }
 
       .card-heading-content {
@@ -785,19 +824,23 @@
             line-height: 24px;
             letter-spacing: 0px;
             text-align: center;
+            @include tablet {
+              font-size: $h6;
+              line-height: 29.05px;
+            }
           }
         }
 
         .card-sub-text {
           p {
-            font-family: Inter;
-            font-size: 14px;
+            font-family: $body-base-font;
+            font-size: $font-size;
             font-style: normal;
             font-weight: 400;
             line-height: 20px;
             letter-spacing: 0px;
             text-align: center;
-            color: #64626A;
+            color: #64626a;
           }
         }
       }
@@ -807,38 +850,38 @@
           margin-top: 8px;
 
           h4 {
-            font-family: Libre Baskerville;
+            font-family: $theme-base-font;
             font-size: 36px;
             font-style: normal;
             font-weight: 700;
             line-height: 45px;
             letter-spacing: 0.6000000238418579px;
-            color: #3B3A40;
+            color: #3b3a40;
           }
         }
 
         .amount-per {
           margin: 0 auto;
           width: 154px;
-          font-family: Inter;
-          font-size: 14px;
+          font-family: $body-base-font;
+          font-size: $font-size;
           font-style: normal;
           font-weight: 400;
           line-height: 20px;
           letter-spacing: 0px;
           margin-top: 8px;
           margin-bottom: 28px;
-          color: #64626A;
+          color: #64626a;
         }
 
         .contact-quote {
           text-decoration: underline;
-          font-family: Inter;
-          font-size: 14px;
+          font-family: $body-base-font;
+          font-size: $font-size;
           font-style: normal;
           font-weight: 400;
           line-height: 17px;
-          color: #3B3A40;
+          color: #3b3a40;
         }
       }
 
@@ -853,14 +896,27 @@
 .price__footer {
   width: 280px;
   height: 174px;
-  background: #F5F6F9;
+  background: #f5f6f9;
   border-radius: 12px;
   margin: 0 auto;
   margin-top: 32px;
-
+  @include tablet {
+    margin-top: 48px;
+    width: 668px;
+    height: 96px;
+  }
+  @include desktops{
+    width: 1275px;
+    height: 112px;
+    margin-left: 134px;
+  }
   .enterprise__section {
     padding: 24px;
-
+    @include tablet {
+      padding-top: 35px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     .enterprise-title {
       h3 {
         font-family: $body-base-font;
@@ -869,7 +925,11 @@
         font-weight: 600;
         line-height: $h6;
         letter-spacing: 0px;
-        color: #3B3A40;
+        color: #3b3a40;
+        @include tablet {
+          font-size: $h6;
+          line-height: 26.22px;
+        }
       }
     }
 
@@ -882,10 +942,15 @@
         line-height: 20px;
         letter-spacing: 0px;
         text-align: center;
-        color: #64626A;
+        color: #64626a;
         width: 162px;
         margin: 0 auto;
         margin-bottom: 16px;
+        @include tablet {
+          width: 260px;
+          padding-top: 5px;
+          margin-left: 0;
+        }
       }
     }
 
@@ -896,7 +961,7 @@
         border-radius: 4px;
         margin: 0 auto;
         font-family: Inter;
-        font-size: 14px;
+        font-size: $font-size;
         font-style: normal;
         font-weight: 700;
         line-height: 17px;
@@ -911,19 +976,19 @@
 
     p {
       font-family: Inter;
-      font-size: 14px;
+      font-size: $font-size;
       font-style: normal;
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0px;
       text-align: center;
-      color: #64626A;
+      color: #64626a;
       width: 280px;
     }
 
     h4 {
       font-family: Inter;
-      font-size: 14px;
+      font-size: $font-size;
       font-style: normal;
       font-weight: 600;
       line-height: 17px;
@@ -950,7 +1015,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 
   .user__saved-time {
     display: flex;

@@ -2,6 +2,7 @@
 
 .hero__section {
   .hero__content {
+    margin-bottom: 40px;
     @include desktops {
       margin-bottom: 100px;
       margin: auto;
@@ -18,6 +19,7 @@
         width: 280px;
         height: 92px;
         margin: auto;
+        color: #000;
         @include tablet {
           font-size: $h2;
           line-height: 59.52px;
@@ -80,7 +82,8 @@
   }
   .hero__quotes {
     .hero__quotes-title {
-      margin-top: 18px;
+      margin-top: 30px;
+      color: #000;
       @include tablet {
         margin-top: 25px;
       }
@@ -105,7 +108,7 @@
       width: 270px;
       height: 110px;
       margin: auto;
-      margin-top: 16px;
+      margin-top: 25px;
       @include tablet {
         width: 657px;
         margin-top: 10px;
@@ -180,6 +183,7 @@
       width: 280px;
       margin: auto;
       margin-top: 36px;
+      color: #000;
       @include tablet {
         margin-top: 56px;
         width: 282px;
@@ -237,35 +241,6 @@
         }
       }
     }
-    .content-red-title {
-      width: 185px;
-      margin: auto;
-      margin-top: 20px;
-      color: #ff6846;
-      @include tablet {
-        width: 200px;
-        margin-top: 28px;
-        margin-left: 48px;
-      }
-      @include desktops {
-        margin-top: 32px;
-        margin-left: 60px;
-      }
-      h6 {
-        font-family: $body-base-font;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: 0px;
-        text-align: center;
-        @include tablet {
-          text-align: left;
-          font-size: $p;
-          line-height: 19.36px;
-        }
-      }
-    }
   }
   .neighbors__section-img-2 {
     order: 2;
@@ -301,6 +276,472 @@
       height: 423px;
       left: 208px;
       top: -95px;
+    }
+  }
+}
+
+// leading section
+.leading__sections {
+  margin-top: 80px;
+  @include tablet {
+    margin-top: 114px;
+  }
+  .content-title {
+    width: 280px;
+    height: 168px;
+    margin: auto;
+    @include tablet {
+      width: 434px;
+      height: 108px;
+    }
+    @include desktops {
+      width: 645px;
+      height: 140px;
+    }
+    h3 {
+      font-family: $theme-base-font;
+      font-size: $h5;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 42px;
+      letter-spacing: 0.52173912525177px;
+      text-align: center;
+      @include tablet {
+        font-size: 32px;
+        line-height: 54px;
+      }
+      @include desktops {
+        font-size: 48px;
+        line-height: 70px;
+      }
+    }
+  }
+  .content-red-title {
+    @include tablet {
+      font-size: $p;
+      margin: auto;
+      margin-top: 24px;
+      margin-bottom: 65px;
+    }
+  }
+}
+
+// common section
+
+.content-red-title {
+  width: 185px;
+  margin: auto;
+  margin-top: 20px;
+  color: #ff6846;
+  @include tablet {
+    width: 200px;
+    margin-top: 28px;
+    margin-left: 48px;
+  }
+  @include desktops {
+    margin-top: 32px;
+    margin-left: 60px;
+  }
+  h6 {
+    font-family: $body-base-font;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+      font-size: $p;
+      line-height: 19.36px;
+    }
+  }
+}
+
+// team section
+
+.team__section {
+  margin-top: 95px;
+  @include desktops {
+    margin-top: 150px;
+  }
+  .content-title {
+    width: 280px;
+    height: 92px;
+    margin: auto;
+    @include tablet {
+      width: 380px;
+      height: 54px;
+    }
+    @include desktops {
+      width: 486px;
+      height: 64px;
+    }
+    h3 {
+      font-family: $theme-base-font;
+      font-size: $h4;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      text-align: center;
+      @include tablet {
+        font-size: $h3;
+        line-height: 54px;
+      }
+      @include desktops {
+        font-size: 52px;
+        line-height: 64.48px;
+      }
+    }
+  }
+  .content-body {
+    width: 280px;
+    height: 46px;
+    margin: auto;
+    margin-top: 12px;
+    @include tablet {
+      width: 432px;
+      height: 52px;
+    }
+    @include desktops {
+      margin-top: 24px;
+      width: 588px;
+      height: 60px;
+    }
+    p {
+      font-family: $body-base-font;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #64626a;
+      @include tablet {
+        font-size: $p;
+        line-height: 26px;
+      }
+      @include desktops {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .team__section-members {
+    margin-top: 48px;
+    @include tablet {
+      margin-top: 67.26px;
+    }
+    @include desktops {
+      margin-top: 86.61px;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+    .mem {
+      .mem-img {
+        img {
+          width: 76.03px;
+          height: 76.03px;
+          @include tablet {
+            width: 94.22px;
+            height: 94.22px;
+          }
+          @include desktops {
+            width: 144px;
+            height: 144px;
+          }
+        }
+      }
+      .mem-name {
+        margin-top: 17.31px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0.26249998807907104px;
+        text-align: center;
+        @include tablet {
+          margin-top: 25.17px;
+          font-size: 14px;
+          line-height: 16.94px;
+        }
+        @include desktops {
+          margin-top: 40px;
+          font-size: 20px;
+          line-height: 24.2px;
+        }
+      }
+      .mem-post {
+        margin-top: 6;
+        margin-bottom: 49.66px;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #8e8c95;
+        @include tablet {
+          margin-top: 6.56px;
+          font-size: 12px;
+        }
+        @include desktops {
+          margin-top: 12px;
+          font-size: 18px;
+          line-height: 21.78px;
+        }
+      }
+    }
+  }
+}
+
+// values section
+
+.values__section {
+  margin-top: 82px;
+  .values__section-left {
+    @include tablet {
+      margin-left: 28px;
+    }
+    .content-title {
+      width: 280px;
+      height: 46px;
+      margin: auto;
+      @include tablet {
+        width: 278px;
+        height: 54px;
+      }
+      @include desktops {
+        width: 390px;
+        height: 68px;
+      }
+      h3 {
+        font-family: Libre Baskerville;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0.591304361820221px;
+        text-align: center;
+        @include tablet {
+          font-size: 36px;
+          line-height: 14.52px;
+        }
+        @include desktops {
+          font-size: 48px;
+          line-height: 68px;
+        }
+      }
+    }
+    .content-body {
+      margin-top: 12px;
+      width: 280px;
+      height: 69px;
+      margin: auto;
+      @include desktops {
+        margin-top: 24px;
+        width: 390px;
+        height: 92px;
+      }
+      p {
+        font-family: Inter;
+        font-size: $font-size;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #64626a;
+        @include tablet {
+          font-size: $p;
+          line-height: 26px;
+          text-align: left;
+        }
+        @include desktops {
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+  .valuse__section-right {
+    margin-top: 28px;
+    @include tablet {
+      margin-top: 0;
+      margin-right: 25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include desktops {
+      justify-content: flex-start;
+    }
+    .value_box {
+      margin: auto;
+      width: 260px;
+      height: 48px;
+      background: #f5f6f9;
+      border-radius: 42.5px;
+      margin-bottom: 15px;
+      @include tablet {
+        width: auto;
+      }
+      .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+        @include tablet {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        @include desktops {
+          margin-right: 30px;
+        }
+        img {
+          width: 18px;
+          height: 18px;
+          @include tablet {
+            width: 22px;
+            height: 22px;
+            margin-left: 10px;
+          }
+          @include desktops {
+            width: 26px;
+            height: 26px;
+            margin-left: 15px;
+          }
+        }
+        p {
+          padding-top: 8px;
+          padding-left: 8px;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: 0px;
+          text-align: left;
+          @include tablet {
+            font-size: 14px;
+            line-height: 16.94px;
+            padding-right: 10px;
+          }
+          @include desktops {
+            font-size: 20px;
+            line-height: 24.2px;
+            margin-right: 20px;
+            padding-top: 5px;
+          }
+        }
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  border: 1px dashed #e2e2e2;
+}
+// news section
+
+.news__sections {
+  margin-top: 48px;
+  @include mobile-lg {
+    margin-top: 80px;
+  }
+  @include desktops {
+    margin-top: 150px;
+  }
+  .content-title {
+    width: 280px;
+    height: 92px;
+    margin: auto;
+    @include mobile-lg {
+      width: 329px;
+      height: 54px;
+    }
+    @include desktops {
+      width: 465px;
+      height: 64px;
+    }
+    h2 {
+      font-family: Libre Baskerville;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      text-align: center;
+      @include mobile-lg {
+        font-size: 36px;
+        line-height: 54px;
+      }
+      @include desktops {
+        font-size: 52px;
+        line-height: 64.48px;
+      }
+    }
+  }
+  .content-body {
+    width: 280px;
+    height: 46px;
+    margin: auto;
+    color: #64626a;
+    @include mobile-lg {
+      width: 515px;
+      height: 26px;
+      margin-bottom: 42px;
+    }
+    @include desktops {
+      width: 676px;
+      height: 30px;
+      margin-top: 44px;
+    }
+    p {
+      font-family: Inter;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0px;
+      text-align: center;
+      @include mobile-lg {
+        font-size: $p;
+        line-height: 26px;
+      }
+      @include desktops {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .press__partners {
+    margin-top: 27px;
+    .press {
+      margin: auto;
+      padding-left: 18px;
+      padding-bottom: 18px;
+      @include mobile-lg {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      img {
+        width: 130.44px;
+        height: 74.54px;
+        @include mobile-lg {
+          width: 212.43px;
+          height: 121.39px;
+        }
+        @include desktops {
+          width: 350px;
+          height: 200px;
+        }
+      }
     }
   }
 }

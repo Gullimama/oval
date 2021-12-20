@@ -26,7 +26,7 @@
 
 // home page
 .hero__section {
-  margin-top: 136px;
+  margin-top: 40px;
   margin-bottom: 48px;
 
   .hero__section-header-title {
@@ -809,7 +809,7 @@
         border: 1px solid #d1d0d6;
       }
       @include desktops {
-       max-width: 19.7% !important;
+        max-width: 19.7% !important;
         height: 473px;
       }
 
@@ -905,7 +905,7 @@
     width: 668px;
     height: 96px;
   }
-  @include desktops{
+  @include desktops {
     width: 1275px;
     height: 112px;
     margin-left: 134px;

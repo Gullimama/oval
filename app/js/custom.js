@@ -167,6 +167,10 @@ $(document).ready(function() {
   });
 
 
+// use fancyApps for carousel
 
+const myCarousel = new Carousel(document.querySelector(".carousel"), {
+      // Options
+    });
 
   

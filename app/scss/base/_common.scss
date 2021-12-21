@@ -36,12 +36,11 @@
       letter-spacing: 0.56px;
       font-size: $h3;
       line-height: 46px;
-
+      color: #000;
       @include desktops {
         font-size: $h1;
         line-height: 74.4px;
       }
-
       @include mobile-lg-only {
         font-size: $h2;
         line-height: 59.52px;
@@ -51,9 +50,14 @@
 }
 
 .hero__section-body-text {
-  margin-top: 40px;
-  margin-bottom: 40px;
-
+  margin-top: 18px;
+  width: 280px;
+  margin: auto;
+  @include tablet {
+    margin-top: 24px;
+    width: 507px;
+    height: 56px;
+  }
   p {
     font-family: $body-base-font;
     font-size: $font-size;

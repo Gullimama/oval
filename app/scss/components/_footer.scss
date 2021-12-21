@@ -2,7 +2,7 @@ ul {
   li {
     list-style: none;
     a {
-      font-family: Inter;
+      font-family: $body-base-font;
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
@@ -10,7 +10,11 @@ ul {
       letter-spacing: 0px;
       text-align: left;
       color: #8e8c95;
-      &:hover{
+      @include mobile-lg {
+        font-size: 14px;
+        line-height: 34px;
+      }
+      &:hover {
         text-decoration: none;
         color: #fff;
       }
@@ -24,18 +28,46 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include mobile-lg {
+    margin-top: 35%;
+    flex-direction: row;
+  }
+  @include tablet {
+    margin-top: 25%;
+    gap: 120px;
+  }
+  @include desktops {
+    margin-top: 25%;
+    gap: 262px;
+  }
   .connect__section {
     order: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    gap: 160px;
+    gap: 130px;
+    @include mobile-lg {
+      order: 0;
+      flex-direction: column;
+      gap: 40px;
+    }
+    @include tablet {
+      gap: 100px;
+    }
     .company__name {
       margin-left: 40px;
       order: 1;
-      img{
+      @include mobile-lg {
+        margin-top: 30px;
+        margin-left: 0px;
+      }
+      img {
         width: 49px;
         height: 14px;
+        @include mobile-lg {
+          width: 81px;
+          height: 24px;
+        }
       }
     }
     .social__section {
@@ -51,6 +83,15 @@ ul {
     }
     .copyright__section {
       order: 2;
+      P {
+        font-family: $body-base-font;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #64626a;
+      }
     }
   }
   .page__details-sections {
@@ -60,9 +101,26 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @include mobile-lg {
+      order: 1;
+      gap: 30px;
+    }
     .page__details-items {
       h4 {
         display: none;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #fff;
+        @include tablet {
+          display: block;
+          margin-left: 41px;
+          margin-bottom: 20px;
+        }
       }
     }
   }

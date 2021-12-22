@@ -1,0 +1,80 @@
+// leading brands section
+.leading__sections-pricing {
+  margin-top: 84px;
+  .leading-title {
+    width: 280px;
+    height: 52px;
+    margin: auto;
+    margin-bottom: 35px;
+    h3 {
+      font-family: $body-base-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0.18000000715255737px;
+      text-align: center;
+      color: #3b3a40;
+    }
+  }
+}
+
+// table section
+.table__plan-section {
+  .plan-title {
+    width: 280px;
+    height: 92px;
+    margin: auto;
+    margin-top: 56px;
+    margin-bottom: 32px;
+    h4 {
+      font-family: $theme-base-font;
+      font-size: $h4;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      text-align: center;
+    }
+  }
+}
+
+.red-tick {
+  color: #ff6846;
+  font-weight: bold;
+}
+.table__structure {
+  .table {
+    margin-bottom: 32px;
+    thead {
+      background: #f5f6f9;
+      border-top: none !important;
+      tr {
+        th {
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #8e8c95;
+        }
+      }
+    }
+    tbody {
+      tr {
+        th {
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #000;
+        }
+      }
+    }
+  }
+}

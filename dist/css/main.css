@@ -22480,6 +22480,10 @@
   }
 }
 
+.pricing__section .pricing__section-card .card-1 {
+  border-radius: 6px 6px 0px 0px !important;
+}
+
 @media (min-width: 768px) {
   .pricing__section .pricing__section-card .card-1 {
     border-radius: 12px 0px 0px 0px !important;
@@ -22493,6 +22497,10 @@
     margin-left: 150px !important;
     border-radius: 12px 0px 0px 12px !important;
   }
+}
+
+.pricing__section .pricing__section-card .card-3 {
+  border-radius: 0 !important;
 }
 
 @media (min-width: 768px) {
@@ -22511,6 +22519,10 @@
   }
 }
 
+.pricing__section .pricing__section-card .card-2 {
+  border-radius: 0 !important;
+}
+
 @media (min-width: 768px) {
   .pricing__section .pricing__section-card .card-2 {
     border-radius: 0px 12px 0px 0px !important;
@@ -22525,6 +22537,10 @@
     margin-right: 0 !important;
     border-radius: 0px 0px 0px 0px !important;
   }
+}
+
+.pricing__section .pricing__section-card .card-4 {
+  border-radius: 0px 0px 12px 12px !important;
 }
 
 @media (min-width: 768px) {
@@ -22636,17 +22652,18 @@
   border: none;
 }
 
-.price__footer {
+.price__footer .enterprise__section {
+  margin: auto;
   width: 280px;
   height: 174px;
   background: #f5f6f9;
   border-radius: 12px;
-  margin: 0 auto;
   margin-top: 32px;
+  padding: 24px;
 }
 
 @media (min-width: 768px) {
-  .price__footer {
+  .price__footer .enterprise__section {
     margin-top: 48px;
     width: 668px;
     height: 96px;
@@ -22654,15 +22671,11 @@
 }
 
 @media (min-width: 992px) {
-  .price__footer {
+  .price__footer .enterprise__section {
     width: 1275px;
     height: 112px;
     margin-left: 134px;
   }
-}
-
-.price__footer .enterprise__section {
-  padding: 24px;
 }
 
 @media (min-width: 768px) {
@@ -22727,7 +22740,10 @@
 }
 
 .price__footer .compare__price-section {
+  margin: auto;
   margin-top: 32px;
+  width: 280px;
+  height: 72px;
 }
 
 .price__footer .compare__price-section p {
@@ -22739,7 +22755,6 @@
   letter-spacing: 0px;
   text-align: center;
   color: #64626a;
-  width: 280px;
 }
 
 .price__footer .compare__price-section h4 {
@@ -22751,6 +22766,7 @@
   letter-spacing: 0.17499999701976776px;
   text-align: center;
   text-decoration: underline;
+  margin-top: 20px;
 }
 
 .hero__section-search-bar {
@@ -24216,6 +24232,7 @@ ul li a:hover {
 
 .neighbors__section .neighbors__section-content .content-title {
   width: 280px;
+  height: 92px;
   margin: auto;
   margin-top: 36px;
   color: #000;
@@ -25622,6 +25639,102 @@ hr {
 }
 
 /*==== Contact -------*/
+.deco {
+  text-decoration: underline;
+  color: #ff6846;
+}
+
+.faq__section .content-section {
+  margin-top: 72px;
+}
+
+.faq__section .content-section .content-title {
+  width: 280px;
+  height: 92px;
+  margin: auto;
+}
+
+.faq__section .content-section .content-title h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0.591304361820221px;
+  text-align: center;
+}
+
+.faq__section .content-section .content-body {
+  width: 298px;
+  height: 44px;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.faq__section .content-section .content-body p {
+  text-align: center;
+}
+
+.faq__section .question__section {
+  margin-top: 20px;
+}
+
+.faq__section .question__section .question-item .question .collapsible {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  background: #ffffff;
+  box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
+  width: 280px;
+  height: 124px;
+  border: none;
+  color: #3b3a40;
+}
+
+.faq__section .question__section .question-item .question .active,
+.faq__section .question__section .question-item .question .collapsible:hover {
+  background: #ffffff;
+  box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
+  width: 280px;
+  height: 124px;
+  border: none;
+  color: #ff6846;
+}
+
+.faq__section .question__section .question-item .question .collapsible:after {
+  content: "\002B";
+  position: relative;
+  left: 19px;
+  top: -24px;
+  color: #3b3a40;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq__section .question__section .question-item .question .active:after {
+  content: "\2212";
+  color: #ff6846;
+}
+
+.faq__section .question__section .question-item .question .content {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #64626a;
+  background: #ffffff;
+  width: 280px;
+  height: 144px;
+  margin: auto;
+  text-align: left;
+}
+
 .nav.faq-tab {
   flex-direction: column;
   border-radius: 10px;
@@ -25654,8 +25767,9 @@ hr {
   border-color: transparent;
 }
 
-.single-faq .title, .single-faq .faq-title {
-  color: #FFF;
+.single-faq .title,
+.single-faq .faq-title {
+  color: #fff;
   font-size: 23.04px;
   font-weight: 900;
   letter-spacing: -0.75px;
@@ -25721,7 +25835,8 @@ hr {
   text-decoration: underline;
 }
 
-.faq-black .faq-title, .faq-black .title {
+.faq-black .faq-title,
+.faq-black .title {
   color: #19191b;
 }
 
@@ -25770,6 +25885,82 @@ hr {
 }
 
 /*==== Thank_You -------*/
+.leading__sections-pricing {
+  margin-top: 84px;
+}
+
+.leading__sections-pricing .leading-title {
+  width: 280px;
+  height: 52px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.leading__sections-pricing .leading-title h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.18000000715255737px;
+  text-align: center;
+  color: #3b3a40;
+}
+
+.table__plan-section .plan-title {
+  width: 280px;
+  height: 92px;
+  margin: auto;
+  margin-top: 56px;
+  margin-bottom: 32px;
+}
+
+.table__plan-section .plan-title h4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0.591304361820221px;
+  text-align: center;
+}
+
+.red-tick {
+  color: #ff6846;
+  font-weight: bold;
+}
+
+.table__structure .table {
+  margin-bottom: 32px;
+}
+
+.table__structure .table thead {
+  background: #f5f6f9;
+  border-top: none !important;
+}
+
+.table__structure .table thead tr th {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8e8c95;
+}
+
+.table__structure .table tbody tr th {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000;
+}
+
 /*==== Terms_page -------*/
 .hero__section-search-bar {
   margin-top: 42px;

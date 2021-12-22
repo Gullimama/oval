@@ -87,7 +87,7 @@
     <div class="contact-page ">
       <div class="header__section">
         <div class="sub_header-title">
-          <p>CONTACT US</p>
+          <h6>CONTACT US</h6>
         </div>
         <div class="header-title">
           <h5>Let’s talk.</h5>
@@ -96,30 +96,34 @@
           <p>If you have any questions about the subscription or are not sure which plan is right for you, contact our team
             and let’s schedule a call.</p>
         </div>
-        <div class="header-botton">
-          <button> call us <br> (669) 984-9439</button>
-          <button>Email us <br> help@oval.com</button>
+        <div class="header-button">
+          <button class="btn_light-orange"><span class="bold">Call us</span> <br> (669) 984-9439</button>
+          <button class="btn_light-orange"><span class="bold">Email us</span> <br> help@oval.com</button>
         </div>
       </div>
       <!-- contact form -->
       <div class="contact-form_sec">
-        <div class="form_sec-title"></div>
-        <div class="form_sec-body"></div>
+        <div class="form_sec-title">
+          <h6>Contact Us</h6>
+        </div>
+        <div class="form_sec-body">
+          <p>If you have any question or issue’s to use our product. Fill the form below. We’ll help you.</p>
+        </div>
         <form>
           <div class="form-group">
             <label for="name">Your name</label>
             <input type="text" class="form-control" id="name" placeholder="Enter your name">
             <label for="exampleInputEmail1">Your email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
-            <select class="custom-select">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <label for="inputState">Choose topic</label>
+            <br>
+            <select id="inputState" class="form-control">
+              <option selected>select one topic</option>
+              <option>...</option>
             </select>
             <label for="exampleFormControlTextarea1">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <button type="submit" class="btn btn-primary">Contact Us</button>
+            <button type="submit" class="btn-sumbit">Contact Us</button>
           </div>
         </form>
       </div>
@@ -223,23 +227,29 @@
     </div>
     <!-- office address -->
     <div class="office__section">
-      <div class="office__section-title"></div>
-      <div class="office__section-body"></div>
+      <div class="office__section-title">
+        <h3>Our offices</h3>
+      </div>
+      <div class="office__section-body">
+        <p>Amazing cities, totally tricked out offices. Explore the world of Oval.</p>
+      </div>
       <div class="card-items">
         <div class="card mb-3">
           <img src="image/png/contact/office__team.png" class="card-img-top" alt="office-team">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Vancouver Office</h5>
+            <p class="card-text">1085 Homer St. Vancouver BC,
+              CanadaV6B 2X5</p>
+            <span class="orange-highlight">Open in Maps</span>
           </div>
         </div>
         <div class="card mb-3">
           <img src="image/png/contact/office__address.png" class="card-img-top" alt="address-map">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">San Fransisco</h5>
+            <p class="card-text">1085 Homer St. Vancouver BC,
+              CanadaV6B 2X5</p>
+            <span class="orange-highlight">Open in Maps</span>
           </div>
         </div>
       </div>

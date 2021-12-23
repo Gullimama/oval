@@ -39,12 +39,16 @@
               <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
                 <img src="image/svg/navigation/Oval.svg" alt="Oval">
               </a>
+              <!-- hamburger menu -->
+              <a class="hamburger-menu icon-burger" href="">
+                <img src="image/svg/header/hamburger.svg" alt="">
+              </a>
               <!-- sidenav-overlay -->
               <div class="sidenav-overlay"></div>
               <!-- navbar links -->
               <div class="navbar-collapse" id="mobile-menu">
                 <div class="navbar-nav ml-lg-auto mr--10">
-                  <ul class="navbar-nav mx-auto">
+                  <ul class="navbar-nav mx-auto" id="mobile-menu">
                     <li class="nav-item ">
                       <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
                     </li>
@@ -65,9 +69,10 @@
                   <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
                     <i class="icon icon-simple-remove"></i>
                   </button>
-                  <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="icon icon-e-remove"></i>
-                  </button>
+                  <!-- <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu"
+                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="icon icon-e-remove"></i>
+              </button> -->
                 </div>
                 <div class="navbar-actions">
                   <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
@@ -86,7 +91,7 @@
     <!-- hero section -->
     <div class="hero__section col-lg-12 col-md-12 col-sm-12 col-12 justify-content-md-center text-center">
       <div class="hero__section-header-title text-center">
-        <h2>Simpler tool that <span id="light__org"> freedom </span> your work way.</h2>
+        <h2>Simpler tool that <span class="light__org"></span> your work way.</h2>
       </div>
       <div class="hero__section-body-text">
         <p>Build your own workspace to replace isolated tools and bring everyone together.</p>

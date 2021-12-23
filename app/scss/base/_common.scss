@@ -30,11 +30,14 @@
   margin-bottom: 48px;
 
   .hero__section-header-title {
+    width: 280px;
+    height: 138px;
+    margin: auto;
     h2 {
       font-family: $theme-base-font;
       font-weight: 400;
       letter-spacing: 0.56px;
-      font-size: $h3;
+      font-size: 34px;
       line-height: 46px;
       color: #000;
       @include desktops {
@@ -50,9 +53,10 @@
 }
 
 .hero__section-body-text {
-  margin-top: 18px;
   width: 280px;
+  height: 46px;
   margin: auto;
+  margin-top: 18px;
   @include tablet {
     margin-top: 24px;
     width: 507px;
@@ -90,10 +94,16 @@
   }
 }
 
-#light__org {
-  background: #ffdea7;
+.light__org {
+  position: relative;
 }
-
+.light__org::before{
+  content: 'freedom';
+  z-index: 1;
+  width: 158px;
+  height: 24px;
+  background: #FFDEA7;
+}
 #light__blue {
   background: #c2eed8;
 }
@@ -161,9 +171,10 @@
 
       .list-item {
         cursor: pointer;
+        margin: auto;
         margin-top: 12px;
         height: 80px;
-        width: 500px;
+        width: 280px;
         border-bottom: 1px solid #d1d0d6;
 
         @include tablet {
@@ -181,7 +192,7 @@
 
         &:hover {
           height: 100px;
-          width: 500px;
+          width: 280px;
           border-bottom: 2px solid #fa6402;
 
           @include tablet {

@@ -1,5 +1,10 @@
 
 'use strict'
+// $( document ).ready(function() {
+//       $(".navbar-toggler").click();
+//       $(".navbar-toggler").click();
+
+//   });
 $(document).ready(function() {
       $('select').niceSelect();
 

@@ -1,5 +1,12 @@
 .contact-page {
+  display: flex;
+  flex-direction: column;
   margin-top: 57px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 87px;
+  }
   .header__section {
     .sub_header-title {
       h6 {
@@ -11,11 +18,30 @@
         letter-spacing: 1.3333333730697632px;
         text-align: center;
         color: #b3b1b7;
+        @include tablet {
+          font-size: 12px;
+          line-height: 14.52px;
+          text-align: left;
+          margin-left: 35px;
+        }
+        @include desktops{
+          font-size: 18px;
+          line-height: 21.78px;
+          margin-left: 150px;
+        }
       }
     }
     .header-title {
       margin-top: 22px;
       height: 46px;
+      @include tablet {
+        width: 250px;
+        height: 60px;
+      }
+      @include desktops{
+        width: 308px;
+        margin-left: 150px;
+      }
       h5 {
         font-family: $theme-base-font;
         font-size: 34px;
@@ -24,10 +50,31 @@
         line-height: 46px;
         letter-spacing: 0.591304361820221px;
         text-align: center;
+        @include tablet {
+          text-align: left;
+          font-size: 48px;
+          line-height: 59.52px;
+        }
+        @include desktops{
+          font-size: 60px;
+          line-height: 74.4px;
+        }
       }
     }
     .header-body {
       margin-top: 16px;
+      margin-bottom: 24px;
+      @include tablet{
+        width: 301px;
+        height: 96px;
+        margin-left: 35px;
+      }
+      @include desktops{
+        margin-left: 140px;
+        margin-top: 20px;
+        margin-bottom: 48px;
+        width: 480px;
+      }
       p {
         font-family: $body-base-font;
         font-size: 13px;
@@ -37,6 +84,14 @@
         letter-spacing: 0px;
         text-align: center;
         color: #64626a;
+        @include tablet {
+          text-align: left;
+          font-size: 14px;
+        }
+        @include desktops{
+          font-size: 20px;
+          line-height: 30px
+        }
       }
     }
     .header-button {
@@ -45,6 +100,10 @@
       justify-content: center;
       margin-top: 22px;
       gap: 14px;
+      @include desktops{
+        margin-left: 80px;
+        gap: 30px;
+      }
       .btn_light-orange {
         width: 140px;
         height: 58px;
@@ -52,6 +111,10 @@
         background: #fff;
         border-radius: 10px;
         color: #ff6846;
+        @include desktops{
+          width: 180px;
+          height: 74px;
+        }
         .bold {
           font-family: Inter;
           font-size: 12px;
@@ -79,6 +142,12 @@
     margin: auto;
     padding: 16px;
     margin-top: 40px;
+    @include tablet{
+      width: 347px;
+    }
+    @include desktops{
+      width: 487px;
+    }
     .form_sec-title {
       h6 {
         font-family: $body-base-font;
@@ -86,11 +155,27 @@
         font-size: 18px;
         line-height: 21.78px;
         color: #000;
+        @include tablet{
+          font-size: 22px;
+          line-height: 26.62px;
+        }
+        @include desktops{
+          font-size: 28px;
+          line-height: 33.89px;
+        }
       }
     }
     .form_sec-body {
       width: 233px;
       height: 60px;
+      @include tablet{
+        width: 299px;
+        height: 42px;
+      }
+      @include desktops{
+        width: 400px;
+        height: 60px;
+      }
       p {
         font-family: $body-base-font;
         font-size: 12px;
@@ -100,11 +185,21 @@
         letter-spacing: 0.20000000298023224px;
         text-align: left;
         color: #64626a;
+        @include desktops{
+          font-size: 18px;
+          line-height: 30px;
+        }
       }
     }
     form {
       .form-group {
         margin-top: 28px;
+        @include tablet{
+          margin-top: 26px;
+        }
+        @include desktops{
+          margin-top: 40px;
+        }
         label {
           font-family: $body-base-font;
           font-size: 12px;
@@ -114,6 +209,10 @@
           letter-spacing: 0.10000000149011612px;
           text-align: left;
           color: #000;
+          @include desktops{
+            font-size: 16px;
+            line-height: 19.36px;
+          }
         }
         input {
           background: #ffffff;
@@ -162,6 +261,13 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      @include tablet{
+        position: relative;
+        top: -350px;
+      }
+      @include desktops{
+        left: 150px;
+      }
       .brand {
         img {
           width: 85px;
@@ -177,6 +283,13 @@
     height: 92px;
     margin: auto;
     margin-top: 65px;
+    @include tablet {
+      width: 480px;
+      height: 60px;
+    }
+    @include desktops{
+      width: 587px;
+    }
     h4 {
       font-family: $theme-base-font;
       font-size: 34px;
@@ -185,10 +298,27 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
+      @include tablet {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
+      @include desktops{
+        font-size: 60px;
+        line-height: 74.4px;
+      }
     }
   }
   .topic-items {
     margin-top: 28px;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    @include desktops{
+      gap: 45px;
+    }
     .item {
       width: 280px;
       height: 50px;
@@ -202,10 +332,23 @@
       display: flex;
       gap: 18px;
       justify-content: flex-start;
+      @include tablet{
+        width: 320px;
+      }
+      @include desktops{
+        padding-top: 28px;
+        padding-left: 30px;
+        width: 350px;
+        height: 80px;
+      }
       .icon {
         img {
           width: 24px;
           height: 24px;
+          @include desktops{
+            width: 26px;
+            height: 26px;
+          }
         }
       }
       .icon-title {
@@ -217,6 +360,9 @@
           line-height: 19px;
           letter-spacing: 0px;
           text-align: left;
+          @include tablet{
+            font-size: 18px;
+          }
         }
       }
       &:hover {
@@ -237,10 +383,21 @@
 // office address
 .office__section {
   margin-top: 64px;
+  @include desktops{
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .office__section-title {
     width: 280px;
     height: 46px;
     margin: auto;
+    @include tablet {
+      width: 300px;
+    }
+    @include desktops{
+      width: 353px;
+    }
     h3 {
       font-family: $theme-base-font;
       font-size: 34px;
@@ -249,6 +406,14 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
+      @include tablet {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
+      @include desktops{
+        font-size: 60px;
+        line-height: 74.4px;
+      }
     }
   }
   .office__section-body {
@@ -256,6 +421,12 @@
     height: 46px;
     margin: auto;
     margin-top: 16px;
+    @include tablet {
+      width: 500px;
+    }
+    @include desktops{
+      width: 420px;
+    }
     p {
       font-family: $body-base-font;
       font-size: 13px;
@@ -265,16 +436,38 @@
       letter-spacing: 0px;
       text-align: center;
       color: #64626a;
+      @include tablet {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      @include desktops{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+      }
     }
   }
   .card-items {
     margin-top: 28px;
+    @include desktops{
+      margin: auto;
+      margin-top: 80px;
+      display:  flex;
+      flex-direction: row;
+      gap: 60px;
+    }
     .card {
       width: 280px;
       border: 1px solid #64626a !important;
       border-radius: 20px;
       margin: auto;
       margin-bottom: 32px;
+      @include tablet {
+        width: 680px;
+      }
+      @include desktops{
+        width: 500px;
+      }
       .card-body {
         .card-title {
           font-family: Inter;
@@ -285,6 +478,10 @@
           letter-spacing: 0px;
           text-align: left;
           color: #3b3a40;
+          @include tablet {
+            font-size: 22px;
+            line-height: 26.22px;
+          }
         }
         .card-text {
           font-family: Inter;
@@ -295,6 +492,10 @@
           letter-spacing: 0px;
           text-align: left;
           color: #64626a;
+          @include tablet {
+            font-size: 18px;
+            line-height: 28px;
+          }
         }
         .orange-highlight {
           font-family: Inter;
@@ -305,7 +506,7 @@
           letter-spacing: 0px;
           text-align: left;
           color: #ff6846;
-          &::after{
+          &::after {
             content: ">";
             position: relative;
             font-weight: bold;

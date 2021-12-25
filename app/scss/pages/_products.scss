@@ -9,6 +9,10 @@
       opacity: 0.48;
       border: 1px solid #8e8c95;
       border-radius: 8px;
+      @include desktops {
+        width: 332px;
+        height: 60px;
+      }
     }
     @include tablet {
       display: block;
@@ -30,6 +34,15 @@
     height: 44px;
     margin: auto;
     margin-top: 12px;
+    @include tablet {
+      width: 507px;
+      height: 56px;
+    }
+    @include desktops {
+      width: 450px;
+      height: 60px;
+      margin-bottom: 56px;
+    }
     p {
       font-family: Inter;
       font-size: 14px;
@@ -39,29 +52,95 @@
       letter-spacing: 0.07777778059244156px;
       text-align: center;
       color: #64626a;
+      @include tablet {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      @include desktops {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
   .work__section-header-img {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 16px;
+    @include desktops {
+      margin: auto;
+    }
+  }
+
+  .work__section-banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
+    @include desktops {
+      flex-direction: row;
+    }
+    .banner-left {
+      @include desktops {
+        width: 540px;
+        margin: auto;
+      }
+    }
+    .banner-right {
+      @include desktops {
+        width: 540px;
+        margin: auto;
+      }
+    }
   }
 }
 
 // plan section
 
 .plan__section {
+  @include desktops {
+    margin-top: 180px;
+  }
   .plan__section-header {
+    display: flex;
+    flex-direction: column;
+    @include desktops {
+      flex-direction: row;
+    }
     .header-left {
       width: 312px;
       height: 92px;
       margin: auto;
       margin-top: 72px;
+      @include tablet {
+        width: 672px;
+        height: 60px;
+      }
+      @include desktops {
+        width: 550px;
+        height: 148px;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+        @include tablet {
+          text-align: left;
+        }
+      }
     }
     .header-right {
       width: 288px;
       margin: auto;
       margin-top: 12px;
+      @include tablet {
+        width: 560px;
+        height: 84px;
+      }
+      @include desktops {
+        width: 458px;
+        height: 90px;
+      }
       p {
         font-family: Inter;
         font-size: 14px;
@@ -71,16 +150,45 @@
         letter-spacing: 0.07777778059244156px;
         text-align: center;
         color: #64626a;
+        @include tablet {
+          font-size: 18px;
+          line-height: 28px;
+        }
+        @include desktops {
+          text-align: left;
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
     }
   }
   .plan__section-body {
     margin-top: 36px;
+    @include desktops {
+      margin-top: 103px;
+    }
     .plan-section-item {
       .body-icon {
         margin-bottom: 16px;
+        @include desktops {
+          margin-left: 70px;
+          text-align: left;
+        }
+        img {
+          @include desktops {
+            width: 43px;
+            height: 43px;
+          }
+        }
       }
       .body-title {
+        @include desktops {
+          width: 302px;
+          height: 27px;
+          margin: auto;
+          margin-left: 70px;
+          margin-bottom: 11px;
+        }
         h5 {
           font-family: $body-base-font;
           font-size: 18px;
@@ -89,12 +197,22 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: center;
+          @include desktops {
+            text-align: left;
+            font-size: 22px;
+            line-height: 26.62px;
+          }
         }
       }
       .body-content-text {
+        margin: auto;
         width: 280px;
         margin: auto;
         margin-bottom: 30px;
+        @include desktops {
+          width: 477px;
+          height: 52px;
+        }
         p {
           font-family: $body-base-font;
           font-size: 14px;
@@ -104,6 +222,11 @@
           letter-spacing: 0px;
           text-align: center;
           color: #64626a;
+          @include desktops {
+            text-align: left;
+            font-size: 16px;
+            line-height: 26px;
+          }
         }
       }
     }
@@ -114,7 +237,21 @@
 .informative__section {
   margin-top: 72px;
   .info-item {
+    @include tablet{
+      width: 600px;
+      height: 40px;
+      margin: auto;
+    }
+    @include desktops {
+      width: 870px;
+      height: 50px;
+      margin: auto;
+    }
     .info-title {
+      @include desktops {
+        width: 196px;
+        height: 124px;
+      }
       h2 {
         font-family: Libre Baskerville;
         font-size: 64px;
@@ -123,10 +260,18 @@
         line-height: 79px;
         letter-spacing: 0px;
         text-align: center;
+        @include desktops {
+          font-size: 100px;
+          line-height: 124px;
+        }
       }
     }
     .info-body {
       width: 122px;
+      @include desktops {
+        width: 153px;
+        height: 50px;
+      }
       p {
         font-family: Inter;
         font-size: 16px;
@@ -136,6 +281,10 @@
         letter-spacing: 0px;
         text-align: center;
         color: #8e8c95;
+        @include desktops {
+          font-size: 20px;
+          line-height: 24.2px;
+        }
       }
     }
   }
@@ -146,6 +295,15 @@
   width: 288px;
   height: 138px;
   margin: auto;
+  @include tablet {
+    width: 609px;
+    height: 120px;
+  }
+  @include desktops {
+    width: 566px;
+    height: 148px;
+    margin-top: 180px;
+  }
   h2 {
     font-family: $theme-base-font;
     font-size: 34px;
@@ -155,6 +313,14 @@
     letter-spacing: 0.591304361820221px;
     text-align: center;
     color: #000;
+    @include tablet {
+      font-size: 48px;
+      line-height: 59.52px;
+    }
+    @include desktops {
+      font-size: 60px;
+      line-height: 74.4px;
+    }
   }
 }
 .content-title {
@@ -162,6 +328,12 @@
   margin-top: 16.9px;
   width: 181px;
   height: 19px;
+  @include tablet {
+    width: 275px;
+  }
+  @include desktops {
+    width: 271px;
+  }
   h5 {
     font-family: $body-base-font;
     font-size: $p;
@@ -171,12 +343,28 @@
     letter-spacing: 0px;
     text-align: left;
     color: #000;
+    @include tablet {
+      font-size: 18px;
+      line-height: 21.78px;
+    }
+    @include desktops {
+      font-size: 24px;
+      line-height: 29.05px;
+    }
   }
 }
 .content-body {
   margin-left: 20px;
   margin-top: 11px;
   width: 280px;
+  @include tablet {
+    width: 300px;
+  }
+  @include desktops {
+    width: 497px;
+    height: 52px;
+    margin-top: 12px;
+  }
   p {
     font-family: Inter;
     font-size: 14px;
@@ -186,6 +374,14 @@
     letter-spacing: 0px;
     text-align: left;
     color: #64626a;
+    @include tablet {
+      font-size: 14px;
+      line-height: 21.78px;
+    }
+    @include desktops {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 .banner-img {

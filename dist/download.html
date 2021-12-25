@@ -39,12 +39,16 @@
               <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
                 <img src="image/svg/navigation/Oval.svg" alt="Oval">
               </a>
+              <!-- hamburger menu -->
+              <a class="hamburger-menu icon-burger" href="">
+                <img src="image/svg/header/hamburger.svg" alt="">
+              </a>
               <!-- sidenav-overlay -->
               <div class="sidenav-overlay"></div>
               <!-- navbar links -->
               <div class="navbar-collapse" id="mobile-menu">
                 <div class="navbar-nav ml-lg-auto mr--10">
-                  <ul class="navbar-nav mx-auto">
+                  <ul class="navbar-nav mx-auto" id="mobile-menu">
                     <li class="nav-item ">
                       <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
                     </li>
@@ -65,9 +69,10 @@
                   <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
                     <i class="icon icon-simple-remove"></i>
                   </button>
-                  <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="icon icon-e-remove"></i>
-                  </button>
+                  <!-- <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu"
+                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="icon icon-e-remove"></i>
+              </button> -->
                 </div>
                 <div class="navbar-actions">
                   <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
@@ -83,75 +88,264 @@
       </div>
     </header>
     <!-- end of navigation -->
-    <!-- footer section -->
-    <div class="footer__section">
-      <div class="connect__section">
-        <div class="company__name">
-          <img src="image/png/footer/Oval.png" alt="company__name">
+    <!-- download section -->
+    <div class="header__section">
+      <div class="header-title">
+        <h5>Oval for Desktop</h5>
+      </div>
+      <div class="header-body">
+        <p>Sign in to multiple workspaces, get desktop notifications, and launch right from
+          your dock.</p>
+      </div>
+      <div class="header-button">
+        <button class="btn_light-orange">
+          <img src="image/svg/download/window.svg" alt="window">
+          for windows
+        </button>
+        <button class="btn_light-orange">
+          <img src="image/svg/download/apple.svg" alt="apple">
+          for MacOs
+        </button>
+      </div>
+      <div class="header-img">
+        <img src="image/png/download/download-header.png" alt="download">
+      </div>
+    </div>
+    <!-- feature section -->
+    <div class="feature-list">
+      <ul class="list-item">
+        <li><span class="circle"></span> featured 30-day free trial</li>
+        <li>Connected with all your teams</li>
+        <li>No credit card required</li>
+        <li>Cancel anytime you want</li>
+      </ul>
+    </div>
+    <!-- guiding section -->
+    <div class="guiding-section">
+      <div class="guiding-title">
+        <h4>What Should I do next?</h4>
+      </div>
+      <div class="guiding-items">
+        <div class="item i-1">
+          <div class="icon">
+            <img src="image/svg/download/✌🏻.svg" alt="victory">
+          </div>
+          <div class="item-title">
+            <h6>A Beginner’s Guide</h6>
+          </div>
+          <div class="item-body">
+            <div class="item-text">
+              <p>Need a hand getting started with Oval? Our extensive documentation contains everything you need to know to
+                begin working on your first project.</p>
+            </div>
+            <div class="item-footer-text">
+              Watch Tutorial
+            </div>
+          </div>
         </div>
-        <!-- <div class="social__section">
+        <div class="item i-2">
+          <div class="icon">
+            <img src="image/svg/download/💡.svg" alt="bulb">
+          </div>
+          <div class="item-title">
+            <h6>Do even more Template</h6>
+          </div>
+          <div class="item-body">
+            <div class="item-text">
+              <p>Maybe you are confuse How to start documenting your task and also anything. With Oval template, you can
+                download our free example template for our work needs.</p>
+            </div>
+            <div class="item-footer-text">
+              View Inside Oval
+            </div>
+          </div>
+        </div>
+        <div class="item i-3">
+          <div class="icon">
+            <img src="" alt="">
+          </div>
+          <div class="item-title">
+            <h5>Install an Extension</h5>
+          </div>
+          <div class="item-body">
+            <div class="item-text">
+              <p>For optimize your Oval software, you can download our extension to save resource from Internet. Available
+                for Chrome only</p>
+            </div>
+            <div class="item-footer-text">
+              Install Extension
+            </div>
+          </div>
+        </div>
+        <div class="item i-4">
+          <div class="icon">
+            <img src="image/svg/download/⛅️.svg" alt="cloud">
+          </div>
+          <div class="item-title">
+            <h6>Do even more Template</h6>
+          </div>
+          <div class="item-body">
+            <div class="item-text">
+              <p>Maybe you want use for Free for first. It’s just have limited space. So, we recommend you to connect with
+                your Cloud. Dropbox, G-Drive or iCloud.</p>
+            </div>
+            <div class="item-footer-text">
+              Choose your Cloud
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- alternative download option -->
+    <div class="alternative-download__section">
+      <div class="download__section row text-center">
+        <div class="download-title col-lg-3 col-md-3 col-sm-12">
+          <h3>Don’t want to Download?</h3>
+        </div>
+        <div class="download-body-text col-lg-6 col-md-6 col-sm-12">
+          <p>We give an option for you if you wanna try our product without download it. Try a web app.</p>
+        </div>
+        <div class="download-button col-lg-2 col-md-2 col-sm-12">
+          <input type="email" placeholder="Enter your work email">
+          <button class="btn btn--red">Try Web app</button>
+        </div>
+      </div>
+    </div>
+    <div class="faq__section row text-center">
+      <div class="col-lg-6 col-md-12 col-sm-12 content-section">
+        <div class="content-title">
+          <h2>Frequently Ask Question's</h2>
+        </div>
+        <div class="content-body">
+          <p>Haven't found what you're looking for?
+            Try the <span class="deco"> oval Resourse center </span> or <span class="deco"> Contact us<span></p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 question__section">
+        <div class="question-item">
+          <div class="question-1 question">
+            <button type="button" class="collapsible">How is the free Personal Plan different from the Personal Pro and Team plan?</button>
+            <p class="content">Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question-item">
+          <div class="question-2 question">
+            <button type="button" class="collapsible">What happens when I go over the guest limit on my personal Plan?</button>
+            <p class="content">Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question-item">
+          <div class="question-3 question">
+           <button type="button" class="collapsible">What happens when I go over the guest limit on my personal Plan?</button>
+            <p class="content">Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question-item">
+          <div class="question-4 question">
+           <button type="button" class="collapsible">What happens when I go over the guest limit on my personal Plan?</button>
+            <p class="content">Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+        <div class="question-item">
+          <div class="question-5 question">
+           <button type="button" class="collapsible">What happens when I go over the guest limit on my personal Plan?</button>
+            <p class="content">Upgrade to the personal pro Plan for unlimited guests, or the Team Plan
+              If you collaborate with the same group of people automatically. You can
+              also review remove inactive guests in setting & Members
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>}
+
+
+<!-- footer section -->
+
+<div class="footer__section">
+  <div class="connect__section">
+    <div class="company__name">
+      <img src="image/png/footer/Oval.png" alt="company__name">
+    </div>
+    <!-- <div class="social__section">
       <ul>
         <li><a href=""><i class="fab fa-twitter"></i></a></li>
         <li><a href=""><i class="fab fa-facebook"></i></a></li>
         <li><a href=""><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div>  -->
-        <div class="copyright__section">
-          <p> @ 2019 Oval</p>
-        </div>
-      </div>
-      <div class="page__details-sections">
-        <div class="page__details-items product">
-          <h4>Product</h4>
-          <ul>
-            <li><a href="">Landingpage</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Documentation</a></li>
-            <li><a href="">Referral Program</a></li>
-            <li><a href="">Pricing</a></li>
-          </ul>
-        </div>
-        <div class="page__details-items services">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="">Decumentation</a></li>
-            <li><a href="">Design</a></li>
-            <li><a href="">Themes</a></li>
-            <li><a href="">lllustrations</a></li>
-            <li><a href="">UI kit</a></li>
-          </ul>
-        </div>
-        <div class="page__details-items company">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Careers</a></li>
-          </ul>
-        </div>
-        <div class="page__details-items more">
-          <h4>More</h4>
-          <ul>
-            <li><a href="">Documentation</a></li>
-            <li><a href="">License</a></li>
-            <li><a href="">Changelog</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="copyright__section">
+      <p> @ 2019 Oval</p>
     </div>
+  </div>
+  <div class="page__details-sections">
+    <div class="page__details-items product">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="">Landingpage</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Documentation</a></li>
+        <li><a href="">Referral Program</a></li>
+        <li><a href="">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="page__details-items services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="">Decumentation</a></li>
+        <li><a href="">Design</a></li>
+        <li><a href="">Themes</a></li>
+        <li><a href="">lllustrations</a></li>
+        <li><a href="">UI kit</a></li>
+      </ul>
+    </div>
+    <div class="page__details-items company">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Careers</a></li>
+      </ul>
+    </div>
+    <div class="page__details-items more">
+      <h4>More</h4>
+      <ul>
+        <li><a href="">Documentation</a></li>
+        <li><a href="">License</a></li>
+        <li><a href="">Changelog</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
   </div>
   <!-- Vendor Scripts -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/jquery/jquery-migrate.min.js"></script>
   <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   <!-- fancyApps cdn -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
   <!-- Plugin's Scripts -->
   <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
   <script src="plugins/aos/aos.min.js"></script>
   <script src="plugins/slick/slick.min.js"></script>
+
+  
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
 </body>

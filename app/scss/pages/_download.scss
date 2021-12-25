@@ -1,50 +1,210 @@
-
-.omga-terms-contents{
-  .title-main{
-    color: #19191b;
-    font-weight: 700;
-    letter-spacing: -2.5px;
-    font-size: 34px;
-    line-height: 46px;
-    @include tablet{
-      font-size: 80px;
-    line-height: 84px;
+.header__section {
+  .header-title {
+    width: 280px;
+    height: 92px;
+    margin-top: 22px;
+    h5 {
+      font-family: $theme-base-font;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      text-align: center;
     }
   }
-  .title-block{
-    color: #19191b;
-    font-size: 21px;
-    font-weight: 700;
-    letter-spacing: -0.66px;
-    line-height: 28px;
+  .header-body {
+    width: 280px;
+    height: 69px;
+    margin: auto;
+    margin-top: 16px;
+    p {
+      font-family: $body-base-font;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #64626a;
+    }
   }
-  p{
-    color: #696871;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    line-height: 28px;
+  .header-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 22px;
+    gap: 14px;
+    .btn_light-orange {
+      width: 140px;
+      height: 58px;
+      border: 1px solid #ff6846;
+      background: #fff;
+      border-radius: 10px;
+      color: #ff6846;
+      &:hover {
+        color: #fff;
+        background: #ff6846;
+        border-radius: 10px;
+      }
+    }
   }
-  .term-list{
-    li{
-      color: #696871;
-      font-size: 16px;
-      font-weight: 300;
-      letter-spacing: -0.5px;
-      line-height: 24px;
+  .header-img {
+    width: 280px;
+    margin: auto;
+    margin-top: 36px;
+  }
+}
+
+// feature list
+.feature-list {
+  margin-top: 30.51px;
+  .list-item {
+    li {
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0.17499999701976776px;
+      text-align: left;
+      margin-bottom: 12px;
+      .circle {
+        width: 16px;
+        height: 16px;
+        background: #ffffff;
+        border: 3px solid #ff6846;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+// guiding section
+.guiding-section {
+  margin-top: 56px;
+  .guiding-title {
+    width: 280px;
+    height: 92px;
+    margin: auto;
+    h4 {
+      font-family: Libre Baskerville;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      text-align: center;
+    }
+  }
+  .guiding-items {
+    margin-top: 38px;
+    .item {
+      margin-bottom: 57px;
+      .icon {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+      }
+      .item-title {
+        width: 183px;
+        height: 19px;
+        margin: auto;
+        margin-top: 23px;
+        h6 {
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+      }
+      .item-body {
+        margin-top: 31px;
+        .item-text {
+          width: 280px;
+          height: 110px;
+          margin: auto;
+          margin-top: 9px;
+          p {
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+          }
+        }
+        .item-footer-text {
+          width: 139px;
+          height: 18px;
+          font-family: Inter;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px;
+          letter-spacing: 0px;
+          text-align: center;
+          margin: auto;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+// alternative download option
+.alternative-download__section {
+  width: 280px;
+  background: #f5f6f9;
+  border-radius: 12px;
+  padding: 19px;
+  margin: auto;
+  .download__section {
+    .download-title {
+      width: 269px;
+      height: 24px;
+      h3 {
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+    .download-body-text {
+      width: 240px;
+      height: 66px;
+      p {
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 11px;
+      }
+    }
+    .download-button {
       display: flex;
-      margin-bottom: 25px;
-      &:before{
-        content: "";
-        min-width: 9px;
-        max-width: 9px;
-        min-height: 9px;
-        max-height: 9px;
-        background-color: #19191b;
-        border-radius: 500px;
-        display: inline-block;
-        margin-right: 13px;
-        margin-top: 9px;
+      margin-top: 22px;
+      input {
+        width: 160px;
+        height: 42px;
+        border: 1px solid #8e8c95;
+        border-radius: 8px 0px 0px 8px;
+      }
+      button {
+        width: 92px;
+        height: 42px;
+        background: #ff6846;
+        border-radius: 0px 8px 8px 0px;
       }
     }
   }

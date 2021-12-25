@@ -28,13 +28,23 @@
 .hero__section {
   margin-top: 40px;
   margin-bottom: 48px;
-
   .hero__section-header-title {
+    width: 280px;
+    height: 138px;
+    margin: auto;
+    @include mobile-lg {
+      width: 672px;
+      height: 120px;
+    }
+    @include desktops {
+      width: 836px;
+      height: 148px;
+    }
     h2 {
       font-family: $theme-base-font;
       font-weight: 400;
       letter-spacing: 0.56px;
-      font-size: $h3;
+      font-size: 34px;
       line-height: 46px;
       color: #000;
       @include desktops {
@@ -50,9 +60,11 @@
 }
 
 .hero__section-body-text {
-  margin-top: 18px;
   width: 280px;
+  height: 46px;
   margin: auto;
+  margin-top: 18px;
+  margin-bottom: 26px;
   @include tablet {
     margin-top: 24px;
     width: 507px;
@@ -80,16 +92,64 @@
 }
 
 .hero__section-header-sub-title {
-  margin-top: 71px;
-
+  margin-top: 32.57px;
+  @include mobile-lg {
+    width: 183px;
+    height: 27px;
+    margin: auto;
+    margin-top: 65px;
+  }
+  @include desktops {
+    width: 200px;
+  }
   h5 {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29.05px;
-    letter-spacing: 0.3px;
+    line-height: 22px;
+    letter-spacing: 0.22499999403953552px;
+    text-align: center;
+    @include mobile-lg {
+      font-size: 22px;
+    }
+    @include desktops {
+      font-size: 24px;
+    }
   }
 }
-
+.body-text {
+  width: 280px;
+  height: 66px;
+  color: #64626a;
+  margin: auto;
+  @include mobile-lg {
+    width: 567px;
+    height: 56px;
+    margin-top: 14px;
+  }
+  @include desktops {
+    width: 657px;
+    height: 60px;
+  }
+  p {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.07777778059244156px;
+    text-align: center;
+    @include mobile-lg {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    @include desktops {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
 #light__org {
   background: #ffdea7;
 }
@@ -111,6 +171,7 @@
 }
 
 .build__section-banner {
+  margin-top: 65px;
   display: flex;
 
   @include mobile-xs {
@@ -133,8 +194,8 @@
 
     .build__section-body-list {
       position: relative;
-      top: -300px;
-      left: 85px;
+      top: -276px;
+      left: -311px;
     }
   }
 
@@ -142,7 +203,9 @@
     display: flex;
     order: 2;
     flex-direction: row;
+    justify-content: center;
     text-align: left;
+    margin: auto;
 
     ul {
       list-style: none;
@@ -152,22 +215,27 @@
       @include tablet {
         display: flex;
         flex-direction: row;
+        gap: 37px;
+        margin-top: 49px;
       }
 
       @include desktops {
         display: flex;
         flex-direction: column;
+        gap: 14px;
+        justify-content: flex-start;
       }
 
       .list-item {
         cursor: pointer;
+        margin: auto;
         margin-top: 12px;
+        margin-bottom: 24px;
+        width: 280px;
         height: 80px;
-        width: 500px;
-        border-bottom: 1px solid #d1d0d6;
 
         @include tablet {
-          width: 250px;
+          width: 176px;
           height: 110px;
           margin: 5px;
           border-bottom: none;
@@ -177,21 +245,29 @@
           width: 430px;
           height: 80px;
           border-bottom: 1px solid #d1d0d6;
+          text-align: left;
         }
 
         &:hover {
-          height: 100px;
-          width: 500px;
+          height: 120px;
+          width: 280px;
           border-bottom: 2px solid #fa6402;
 
           @include tablet {
-            width: 250px;
-            height: 110px;
+            width: 176px;
+            height: 150px;
           }
 
           @include desktops {
             width: 430px;
-            height: 80px;
+            height: 100px;
+          }
+          &::before {
+            content: ">";
+            position: relative;
+            font-weight: bolder;
+            left: -20px;
+            top: 20px;
           }
         }
 
@@ -209,6 +285,15 @@
         }
 
         .list-item-body {
+          width: 266px;
+          height: 48px;
+          @include mobile-lg {
+            width: 176px;
+          }
+          @include desktops {
+            width: 372px;
+            height: 50px;
+          }
           p {
             font-family: $body-base-font;
             font-size: $font-size;
@@ -221,6 +306,10 @@
 
             @include tablet {
               font-size: $p;
+            }
+            @include desktops {
+              font-size: 16px;
+              height: 26px;
             }
           }
         }
@@ -244,6 +333,16 @@
   }
 
   .build__section-title {
+    width: 288px;
+    margin: auto;
+    @include mobile-lg {
+      width: 695px;
+      height: 60px;
+    }
+    @include desktops {
+      width: 575px;
+      height: 148px;
+    }
     h2 {
       font-family: $theme-base-font;
       font-size: $h4;
@@ -258,56 +357,76 @@
       }
 
       @include desktops {
-        font-size: $h1;
+        font-size: 60px;
         line-height: 74.4px;
       }
     }
   }
-
-  .build__section-title,
   .build__section-body-text {
-    text-align: center;
-
+    @include mobile-lg {
+      width: 507px;
+      margin-bottom: 40px;
+    }
     @include desktops {
-      text-align: left;
+      width: 461px;
+    }
+    p {
+      @include desktops {
+        text-align: left;
+      }
     }
   }
 }
 
 .role__section-body-list {
   list-style: none;
-  padding-left: 10px;
-  border-left-width: 10px;
-  margin-bottom: 40px;
+  margin: auto;
+  margin-bottom: 32px;
+  margin-top: 32px;
 
   @include tablet {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 28px;
+    margin-bottom: 48px;
   }
 
   .role__section-list-item {
     cursor: pointer;
     margin-top: 12px;
-    height: 80px;
-    width: 450px;
-    border-top: 1px solid #d1d0d6;
-    padding-top: 20px;
-    padding-left: 30px;
+    height: 120px;
+    width: 280px;
+    border-top: 2px solid #d1d0d6;
+    padding-top: 10px;
+    @include mobile-lg {
+      width: 176px;
+    }
 
     @include tablet {
       height: 110px;
       margin: 5px;
       border-top: 1px solid #d1d0d6;
     }
+    @include desktops{
+      width: 360px;
+    }
 
     &:hover {
-      height: 110px;
-      width: 450px;
       border-top: 2px solid #fa6402;
 
       @include tablet {
         height: 110px;
+      }
+      &::before {
+        content: ">";
+        position: relative;
+        font-weight: bolder;
+        left: -150px;
+        top: 20px;
+        @include mobile-lg {
+          left: -100px;
+        }
       }
     }
 
@@ -346,10 +465,43 @@
 .role__section-banner {
   display: flex;
   flex-direction: column;
+  @include mobile-lg {
+    margin-top: 120px;
+  }
+  @include desktops{
+    margin-top: 0px;
+  }
 
-  .role__section-title,
-  .role__section-body-text {
-    text-align: center;
+  .role__section-title {
+    width: 288px;
+    height: 92px;
+    margin: auto;
+    margin-bottom: 12px;
+    @include mobile-lg {
+      width: 672px;
+      height: 60px;
+    }
+    @include desktops{
+      width: 853px;
+      height: 74px;
+    }
+    h2 {
+      font-family: Libre Baskerville;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0.591304361820221px;
+      text-align: center;
+      @include mobile-lg {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
+      @include desktops{
+        font-size: 60px;
+        line-height: 74.4px;
+      }
+    }
   }
 }
 
@@ -361,15 +513,43 @@
   margin-top: 20px;
 
   .testimonial__section-title {
+    .icon {
+      img {
+        margin-bottom: 38px;
+        position: relative;
+        right: 38.6%;
+        @include mobile-lg {
+          width: 96px;
+          height: 64px;
+          right: 41.7%;
+        }
+        @include desktops{
+          width: 96px;
+          right: 61.7%;
+          top: 103px;
+        }
+      }
+    }
+    width: 280px;
+    height: 184px;
+    margin: auto;
     margin-bottom: 100px;
-
+    @include mobile-lg {
+      width: 635px;
+      height: 120px;
+      margin-bottom: 152px;
+    }
+    @include desktops{
+      width: 798px;
+      height: 148px;
+    }
     h2 {
       font-family: $theme-base-font;
       font-size: $h4;
       font-style: normal;
       font-weight: 400;
       line-height: 46px;
-
+      text-align: left;
       @include tablet {
         font-size: $h2;
         text-align: left;
@@ -378,113 +558,103 @@
       }
 
       @include desktops {
-        position: relative;
         font-size: $h1;
         line-height: 74.4px;
-        left: 550px;
-      }
-
-      span {
-        position: relative;
-        top: 80px;
-        left: -140px;
-        width: 30px;
-        color: #fa6402;
-        font-size: 150px;
-
-        @include tablet {
-          left: 5px;
-        }
-
-        @include desktops {
-          left: -80px;
-          top: 154px;
-        }
       }
     }
   }
-
   .testimonial__section-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: auto;
 
     @include tablet {
       flex-direction: row;
     }
 
     @include desktops {
-      gap: 40px;
+      gap: 30px;
     }
-  }
-}
 
-.card {
-  border: none !important;
-  border-right: 1px solid #d1d0d6 !important;
-
-  .card-body {
-    p {
-      font-family: $body-base-font;
-      font-size: $p;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-      letter-spacing: -0.20000000298023224px;
+    .card {
+      width: 280px;
+      height: 320px;
+      margin: auto;
       text-align: left;
-      color: #3b3a40;
-
-      @include tablet {
-        font-size: $h7;
-        line-height: 30px;
+     
+      @include desktops{
+        width: 360px;
       }
-    }
-  }
+      .card-body {
+        width: 280px;
+        height: 140px;
+        margin-bottom: 30px;
+        @include desktops{
+          width: 336px;
+        }
+        p {
+          font-family: $body-base-font;
+          font-size: $p;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: -0.20000000298023224px;
+          color: #3b3a40;
 
-  .card-footer {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    border-style: none;
-    background: transparent;
-
-    @include tablet {
-      .card-cus-intro-img {
-        img {
-          width: 36px;
-          height: 36px;
-
-          @include desktops {
-            width: 60px;
-            height: 60px;
+          @include tablet {
+            font-size: $h7;
+            line-height: 30px;
           }
         }
       }
-    }
 
-    .card-cus-intro-text {
-      align-self: center;
-      padding-left: 30px;
+      .card-footer {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        border-style: none;
+        background: transparent;
 
-      .card-cus-name {
-        font-family: $theme-base-font;
-        font-size: $font-size;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 0px;
-        text-align: left;
-        padding: 10px;
-      }
+        @include tablet {
+          .card-cus-intro-img {
+            img {
+              width: 36px;
+              height: 36px;
 
-      .card-cus-position {
-        font-family: $body-base-font;
-        font-size: $font-size;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 17px;
-        letter-spacing: 0.10000000149011612px;
-        text-align: left;
+              @include desktops {
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
+        }
+
+        .card-cus-intro-text {
+          align-self: center;
+          padding-left: 30px;
+
+          .card-cus-name {
+            font-family: $theme-base-font;
+            font-size: $font-size;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding: 10px;
+          }
+
+          .card-cus-position {
+            font-family: $body-base-font;
+            font-size: $font-size;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0.10000000149011612px;
+            text-align: left;
+          }
+        }
       }
     }
   }

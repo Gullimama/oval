@@ -21669,6 +21669,10 @@
   }
 }
 
+.hero-img {
+  margin: auto;
+}
+
 .hero__section {
   margin-top: 40px;
   margin-bottom: 48px;
@@ -21710,9 +21714,9 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) {
   .hero__section .hero__section-header-title h2 {
-    font-size: 47.78px;
+    font-size: 48px;
     line-height: 59.52px;
   }
 }
@@ -21743,7 +21747,7 @@
   color: #64626a;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) {
   .hero__section-body-text p {
     font-size: 19.2px;
     line-height: 28px;
@@ -21845,11 +21849,11 @@
 }
 
 #light__org {
-  background: #ffdea7;
+  background: linear-gradient(to bottom, #fff 10%, #FFDEA7 90%);
 }
 
 #light__blue {
-  background: #c2eed8;
+  background: linear-gradient(to bottom, #fff 10%, #c2eed8 90%);
 }
 
 .header-img img {
@@ -21859,7 +21863,6 @@
 
 @media (min-width: 992px) {
   .header-img {
-    margin-left: 25px;
     width: 90%;
   }
 }
@@ -21909,6 +21912,7 @@
   list-style: none;
   padding-left: 10px;
   border-left-width: 10px;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
@@ -21935,13 +21939,13 @@
   margin-top: 12px;
   margin-bottom: 24px;
   width: 280px;
-  height: 80px;
+  height: 120px;
 }
 
 @media (min-width: 768px) {
   .build__section-banner .build__section-body-list ul .list-item {
     width: 176px;
-    height: 110px;
+    height: 150px;
     margin: 5px;
     border-bottom: none;
   }
@@ -21950,7 +21954,7 @@
 @media (min-width: 992px) {
   .build__section-banner .build__section-body-list ul .list-item {
     width: 430px;
-    height: 80px;
+    height: 100px;
     border-bottom: 1px solid #d1d0d6;
     text-align: left;
   }
@@ -22082,7 +22086,7 @@
   letter-spacing: 0.591304361820221px;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) {
   .build__section-banner .build__section-title h2 {
     font-size: 47.78px;
     line-height: 59.52px;
@@ -22585,6 +22589,7 @@
   letter-spacing: 0px;
   text-align: center;
   color: #000;
+  background: linear-gradient(to bottom, transparent 70%, #FFDEA7 30%);
 }
 
 @media (min-width: 768px) {
@@ -22947,22 +22952,18 @@
     margin-top: 48px;
     width: 668px;
     height: 96px;
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 992px) {
   .price__footer .enterprise__section {
-    width: 1275px;
+    width: 1140px;
     height: 112px;
-    margin-left: 134px;
-  }
-}
-
-@media (min-width: 768px) {
-  .price__footer .enterprise__section {
-    padding-top: 35px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: auto;
+    margin-top: 48px;
   }
 }
 
@@ -22980,6 +22981,13 @@
   .price__footer .enterprise__section .enterprise-title h3 {
     font-size: 23.04px;
     line-height: 26.22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .price__footer .enterprise__section .enterprise-title h3 {
+    font-size: 24px;
+    line-height: 29.05px;
   }
 }
 
@@ -23005,6 +23013,13 @@
   }
 }
 
+@media (min-width: 992px) {
+  .price__footer .enterprise__section .enterprise-body-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 .price__footer .enterprise__section .enterprise-button .btn--red {
   height: 36px;
   width: 124px;
@@ -23017,6 +23032,8 @@
   line-height: 17px;
   letter-spacing: 0.17499999701976776px;
   text-align: center;
+  background: #ff6846;
+  color: #fff;
 }
 
 .price__footer .compare__price-section {
@@ -23024,6 +23041,20 @@
   margin-top: 32px;
   width: 280px;
   height: 72px;
+}
+
+@media (min-width: 768px) {
+  .price__footer .compare__price-section {
+    width: 377px;
+    height: 52px;
+  }
+}
+
+@media (min-width: 992px) {
+  .price__footer .compare__price-section {
+    width: 752px;
+    height: 28px;
+  }
 }
 
 .price__footer .compare__price-section p {
@@ -23037,6 +23068,20 @@
   color: #64626a;
 }
 
+@media (min-width: 768px) {
+  .price__footer .compare__price-section p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .price__footer .compare__price-section p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 .price__footer .compare__price-section h4 {
   font-family: Inter;
   font-size: 13.33px;
@@ -23047,6 +23092,13 @@
   text-align: center;
   text-decoration: underline;
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .price__footer .compare__price-section h4 {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 }
 
 .hero__section-search-bar {
@@ -23227,6 +23279,12 @@
   flex-direction: row;
   gap: 15px;
   margin-bottom: 42px;
+}
+
+@media (min-width: 992px) {
+  .section-button {
+    gap: 24px;
+  }
 }
 
 .section-button .btn--red {

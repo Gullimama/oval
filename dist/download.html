@@ -28,66 +28,40 @@
 
 <body>
   <div class="site-wrapper overflow-hidden ">
-    <!-- start of navigation -->
-    <div class="adjust-navigation-height"></div>
-    <header class="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light px-0 py-3 py-lg-4">
-              <!-- navbar logo -->
-              <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
-                <img src="image/svg/navigation/Oval.svg" alt="Oval">
-              </a>
-              <!-- hamburger menu -->
-              <a class="hamburger-menu icon-burger" href="">
-                <img src="image/svg/header/hamburger.svg" alt="">
-              </a>
-              <!-- sidenav-overlay -->
-              <div class="sidenav-overlay"></div>
-              <!-- navbar links -->
-              <div class="navbar-collapse" id="mobile-menu">
-                <div class="navbar-nav ml-lg-auto mr--10">
-                  <ul class="navbar-nav mx-auto" id="mobile-menu">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="products.html" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pricing.html" role="button" aria-haspopup="true" aria-expanded="false">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="download.html">Download</a>
-                    </li>
-                  </ul>
-                  <!-- navbar actions -->
-                  <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="icon icon-simple-remove"></i>
-                  </button>
-                  <!-- <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu"
-                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                <i class="icon icon-e-remove"></i>
-              </button> -->
-                </div>
-                <div class="navbar-actions">
-                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
-                  </a>
-                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Try for
-                  free</span>
-                  </a>
-                </div>
-              </div>
-            </nav>
+    <!-- navigation  -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <img src="image/svg/navigation/Oval.svg" alt="">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="download.html" class="nav-link">Download</a>
+          </li>
+          <div class="buttons">
+            <button>Login</button>
+            <button>Try for free</button>
           </div>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </header>
-    <!-- end of navigation -->
     <!-- download section -->
     <div class="header__section">
       <div class="header-title">
@@ -113,12 +87,32 @@
     </div>
     <!-- feature section -->
     <div class="feature-list">
-      <ul class="list-item">
-        <li><span class="circle"></span> featured 30-day free trial</li>
-        <li>Connected with all your teams</li>
-        <li>No credit card required</li>
-        <li>Cancel anytime you want</li>
-      </ul>
+      <div class="list-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+          <label class="form-check-label" for="flexRadioDefault1">
+            featured 30-day free trial
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Connected with all your teams
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+          <label class="form-check-label" for="flexRadioDefault3">
+            No credit card required
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+          <label class="form-check-label" for="flexRadioDefault4">
+            Cancel anytime you want
+          </label>
+        </div>
+      </div>
     </div>
     <!-- guiding section -->
     <div class="guiding-section">
@@ -162,7 +156,7 @@
         </div>
         <div class="item i-3">
           <div class="icon">
-            <img src="" alt="">
+            <img src="image/svg/download/✌🏻.svg" alt="">
           </div>
           <div class="item-title">
             <h5>Install an Extension</h5>
@@ -198,16 +192,18 @@
     </div>
     <!-- alternative download option -->
     <div class="alternative-download__section">
-      <div class="download__section row text-center">
-        <div class="download-title col-lg-3 col-md-3 col-sm-12">
-          <h3>Don’t want to Download?</h3>
+      <div class="download__section">
+        <div class="download__content">
+          <div class="download-title">
+            <h3>Don’t want to Download?</h3>
+          </div>
+          <div class="download-body-text">
+            <p>We give an option for you if you wanna try our product without download it. Try a web app.</p>
+          </div>
         </div>
-        <div class="download-body-text col-lg-6 col-md-6 col-sm-12">
-          <p>We give an option for you if you wanna try our product without download it. Try a web app.</p>
-        </div>
-        <div class="download-button col-lg-2 col-md-2 col-sm-12">
+        <div class="download-button">
           <input type="email" placeholder="Enter your work email">
-          <button class="btn btn--red">Try Web app</button>
+          <button class="btn btn--org">Try Web app</button>
         </div>
       </div>
     </div>

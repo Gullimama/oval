@@ -1,9 +1,4 @@
 'use strict'
-// $( document ).ready(function() {
-//       $(".navbar-toggler").click();
-//       $(".navbar-toggler").click();
-
-//   });
 $(document).ready(function() {
     $('select').niceSelect();
 
@@ -191,4 +186,14 @@ for (i = 0; i < coll.length; i++) {
             content.style.display = "block";
         }
     });
+}
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }

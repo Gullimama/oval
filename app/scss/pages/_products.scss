@@ -24,7 +24,11 @@
     }
   }
 }
-
+.hero__section-card {
+  @include desktops {
+    margin-top: 110px;
+  }
+}
 // work section
 
 .work__section {
@@ -165,13 +169,18 @@
   .plan__section-body {
     margin-top: 36px;
     @include desktops {
+      width: 1410px;
+      margin: auto;
       margin-top: 103px;
     }
     .plan-section-item {
+      @include desktops{
+        width: 457px;
+      }
       .body-icon {
         margin-bottom: 16px;
         @include desktops {
-          margin-left: 70px;
+          margin-left: 98px;
           text-align: left;
         }
         img {
@@ -186,7 +195,7 @@
           width: 302px;
           height: 27px;
           margin: auto;
-          margin-left: 70px;
+          margin-left: 98px;
           margin-bottom: 11px;
         }
         h5 {
@@ -237,7 +246,7 @@
 .informative__section {
   margin-top: 72px;
   .info-item {
-    @include tablet{
+    @include tablet {
       width: 600px;
       height: 40px;
       margin: auto;
@@ -260,6 +269,7 @@
         line-height: 79px;
         letter-spacing: 0px;
         text-align: center;
+        background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
         @include desktops {
           font-size: 100px;
           line-height: 124px;

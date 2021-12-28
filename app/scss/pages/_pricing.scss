@@ -1,11 +1,24 @@
 // leading brands section
 .leading__sections-pricing {
   margin-top: 84px;
+  @include desktops {
+    margin: auto;
+    margin-top: 180px;
+    width: 1250px;
+  }
   .leading-title {
     width: 280px;
     height: 52px;
     margin: auto;
     margin-bottom: 35px;
+    @include tablet {
+      width: 436px;
+      height: 22px;
+    }
+    @include desktops {
+      width: 436px;
+      height: 22px;
+    }
     h3 {
       font-family: $body-base-font;
       font-size: 18px;
@@ -15,6 +28,14 @@
       letter-spacing: 0.18000000715255737px;
       text-align: center;
       color: #3b3a40;
+      @include tablet {
+        font-size: 18px;
+        line-height: 21.78px;
+      }
+      @include desktops {
+        font-size: 18px;
+        line-height: 21.78px;
+      }
     }
   }
 }
@@ -27,6 +48,11 @@
     margin: auto;
     margin-top: 56px;
     margin-bottom: 32px;
+    @include tablet {
+      width: 588px;
+      height: 60px;
+      margin-top: 150px;
+    }
     h4 {
       font-family: $theme-base-font;
       font-size: $h4;
@@ -35,6 +61,10 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
+      @include tablet {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
     }
   }
 }
@@ -44,11 +74,22 @@
   font-weight: bold;
 }
 .table__structure {
+  @include tablet {
+    width: 698px;
+    margin: auto;
+  }
+  @include desktops {
+    width: 1140px;
+    margin-top: 80px;
+  }
   .table {
     margin-bottom: 32px;
+    @include tablet {
+      margin-bottom: 48px;
+    }
     thead {
       background: #f5f6f9;
-      border-top: none !important;
+      box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
       tr {
         th {
           font-family: Inter;
@@ -64,7 +105,8 @@
     }
     tbody {
       tr {
-        th {
+        th,
+        td {
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
@@ -72,7 +114,6 @@
           line-height: 19px;
           letter-spacing: 0px;
           text-align: left;
-          color: #000;
         }
       }
     }

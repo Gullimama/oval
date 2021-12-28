@@ -51,13 +51,13 @@
       font-size: 34px;
       line-height: 46px;
       color: #000;
-      @include desktops {
-        font-size: $h1;
-        line-height: 74.4px;
-      }
       @include mobile-lg {
         font-size: 48px;
         line-height: 59.52px;
+      }
+      @include desktops {
+        font-size: 60px;
+        line-height: 74.4px;
       }
     }
   }
@@ -89,7 +89,7 @@
     }
 
     @include desktops {
-      font-size: $h6;
+      font-size: 20px;
       line-height: 30px;
     }
   }
@@ -155,19 +155,11 @@
   }
 }
 #light__org {
-  background: linear-gradient(
-    to bottom,
-    #fff 10%,
-    #FFDEA7 90%
-  );
+  background: linear-gradient(to bottom, #fff 10%, #ffdea7 90%);
 }
 
 #light__blue {
-  background: linear-gradient(
-    to bottom,
-    #fff 10%,
-    #c2eed8 90%
-  )
+  background: linear-gradient(to bottom, #fff 10%, #c2eed8 90%);
 }
 
 .header-img {
@@ -196,8 +188,10 @@
   }
 
   @include desktops {
+    width: 1450px;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: auto;
 
     .build__section-img {
       align-self: flex-end;
@@ -207,6 +201,13 @@
       position: relative;
       top: -276px;
       left: -311px;
+    }
+  }
+  @include large-desktops-mid {
+    .build__section-body-list {
+      position: relative;
+      top: -320px;
+      left: -405px;
     }
   }
 
@@ -403,6 +404,9 @@
     gap: 28px;
     margin-bottom: 48px;
   }
+  @include desktops {
+    gap: 30px;
+  }
 
   .role__section-list-item {
     cursor: pointer;
@@ -437,7 +441,7 @@
         left: -150px;
         top: 20px;
         @include mobile-lg {
-          left: -100px;
+          left: -200px;
         }
       }
     }
@@ -586,6 +590,8 @@
     }
 
     @include desktops {
+      width: 1200px;
+      margin: auto;
       gap: 30px;
     }
 
@@ -597,6 +603,9 @@
 
       @include desktops {
         width: 360px;
+        border: none;
+        border-radius: 0px;
+        border-right: 1px solid #d1d0d6;
       }
       .card-body {
         width: 280px;
@@ -787,11 +796,7 @@
     letter-spacing: 0px;
     text-align: center;
     color: #000;
-    background: linear-gradient(
-      to bottom,
-      transparent 70%,
-      #FFDEA7 30%
-    );
+    background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
 
     @include tablet {
       font-size: 72px !important;
@@ -1268,5 +1273,11 @@
     @include tablet {
       align-items: flex-start;
     }
+  }
+}
+
+.focus-section {
+  @include desktops {
+    margin-top: 200px;
   }
 }

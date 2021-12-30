@@ -588,12 +588,12 @@
     }
   }
   .testimonial__section-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:inline-flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
 
     @include tablet {
+      display: flex;
       flex-direction: row;
     }
 
@@ -608,12 +608,12 @@
       height: 320px;
       margin: auto;
       text-align: left;
+      border: none;
+      border-radius: 0px;
+      border-right: 1px solid #d1d0d6;
 
       @include desktops {
         width: 360px;
-        border: none;
-        border-radius: 0px;
-        border-right: 1px solid #d1d0d6;
       }
       .card-body {
         width: 280px;

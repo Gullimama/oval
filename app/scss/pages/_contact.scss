@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     margin-top: 87px;
   }
+  @include desktops{
+    gap: 105px;
+  }
   .header__section {
     .sub_header-title {
       h6 {
@@ -24,7 +27,7 @@
           text-align: left;
           margin-left: 35px;
         }
-        @include desktops{
+        @include desktops {
           font-size: 18px;
           line-height: 21.78px;
           margin-left: 150px;
@@ -38,7 +41,7 @@
         width: 250px;
         height: 60px;
       }
-      @include desktops{
+      @include desktops {
         width: 308px;
         margin-left: 150px;
       }
@@ -55,7 +58,7 @@
           font-size: 48px;
           line-height: 59.52px;
         }
-        @include desktops{
+        @include desktops {
           font-size: 60px;
           line-height: 74.4px;
         }
@@ -64,12 +67,12 @@
     .header-body {
       margin-top: 16px;
       margin-bottom: 24px;
-      @include tablet{
+      @include tablet {
         width: 301px;
         height: 96px;
         margin-left: 35px;
       }
-      @include desktops{
+      @include desktops {
         margin-left: 140px;
         margin-top: 20px;
         margin-bottom: 48px;
@@ -88,9 +91,9 @@
           text-align: left;
           font-size: 14px;
         }
-        @include desktops{
+        @include desktops {
           font-size: 20px;
-          line-height: 30px
+          line-height: 30px;
         }
       }
     }
@@ -100,7 +103,7 @@
       justify-content: center;
       margin-top: 22px;
       gap: 14px;
-      @include desktops{
+      @include desktops {
         margin-left: 80px;
         gap: 30px;
       }
@@ -111,7 +114,7 @@
         background: #fff;
         border-radius: 10px;
         color: #ff6846;
-        @include desktops{
+        @include desktops {
           width: 180px;
           height: 74px;
         }
@@ -142,10 +145,10 @@
     margin: auto;
     padding: 16px;
     margin-top: 40px;
-    @include tablet{
+    @include tablet {
       width: 347px;
     }
-    @include desktops{
+    @include desktops {
       width: 487px;
     }
     .form_sec-title {
@@ -155,11 +158,11 @@
         font-size: 18px;
         line-height: 21.78px;
         color: #000;
-        @include tablet{
+        @include tablet {
           font-size: 22px;
           line-height: 26.62px;
         }
-        @include desktops{
+        @include desktops {
           font-size: 28px;
           line-height: 33.89px;
         }
@@ -168,11 +171,11 @@
     .form_sec-body {
       width: 233px;
       height: 60px;
-      @include tablet{
+      @include tablet {
         width: 299px;
         height: 42px;
       }
-      @include desktops{
+      @include desktops {
         width: 400px;
         height: 60px;
       }
@@ -185,7 +188,7 @@
         letter-spacing: 0.20000000298023224px;
         text-align: left;
         color: #64626a;
-        @include desktops{
+        @include desktops {
           font-size: 18px;
           line-height: 30px;
         }
@@ -194,10 +197,10 @@
     form {
       .form-group {
         margin-top: 28px;
-        @include tablet{
+        @include tablet {
           margin-top: 26px;
         }
-        @include desktops{
+        @include desktops {
           margin-top: 40px;
         }
         label {
@@ -209,7 +212,7 @@
           letter-spacing: 0.10000000149011612px;
           text-align: left;
           color: #000;
-          @include desktops{
+          @include desktops {
             font-size: 16px;
             line-height: 19.36px;
           }
@@ -261,7 +264,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      @include tablet{
+      @include tablet {
         position: relative;
         top: -350px;
       }
@@ -287,8 +290,9 @@
       width: 480px;
       height: 60px;
     }
-    @include desktops{
+    @include desktops {
       width: 587px;
+      margin-top: 176px;
     }
     h4 {
       font-family: $theme-base-font;
@@ -302,13 +306,14 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include desktops{
+      @include desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
     }
   }
   .topic-items {
+    margin: auto;
     margin-top: 28px;
     @include tablet {
       display: flex;
@@ -316,8 +321,10 @@
       flex-wrap: wrap;
       margin-top: 40px;
     }
-    @include desktops{
+    @include desktops {
+      margin-top: 64px;
       gap: 45px;
+      width: 1140px;
     }
     .item {
       width: 280px;
@@ -332,10 +339,10 @@
       display: flex;
       gap: 18px;
       justify-content: flex-start;
-      @include tablet{
+      @include tablet {
         width: 320px;
       }
-      @include desktops{
+      @include desktops {
         padding-top: 28px;
         padding-left: 30px;
         width: 350px;
@@ -345,7 +352,7 @@
         img {
           width: 24px;
           height: 24px;
-          @include desktops{
+          @include desktops {
             width: 26px;
             height: 26px;
           }
@@ -360,7 +367,7 @@
           line-height: 19px;
           letter-spacing: 0px;
           text-align: left;
-          @include tablet{
+          @include tablet {
             font-size: 18px;
           }
         }
@@ -383,10 +390,13 @@
 // office address
 .office__section {
   margin-top: 64px;
-  @include desktops{
-    display:  flex;
+  @include desktops {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 1140px;
+    margin: auto;
+    margin-top: 180px;
   }
   .office__section-title {
     width: 280px;
@@ -395,7 +405,7 @@
     @include tablet {
       width: 300px;
     }
-    @include desktops{
+    @include desktops {
       width: 353px;
     }
     h3 {
@@ -410,7 +420,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include desktops{
+      @include desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -424,7 +434,7 @@
     @include tablet {
       width: 500px;
     }
-    @include desktops{
+    @include desktops {
       width: 420px;
     }
     p {
@@ -440,7 +450,7 @@
         font-size: 18px;
         line-height: 28px;
       }
-      @include desktops{
+      @include desktops {
         font-size: 20px;
         line-height: 30px;
         text-align: left;
@@ -449,10 +459,10 @@
   }
   .card-items {
     margin-top: 28px;
-    @include desktops{
+    @include desktops {
       margin: auto;
       margin-top: 80px;
-      display:  flex;
+      display: flex;
       flex-direction: row;
       gap: 60px;
     }
@@ -465,7 +475,7 @@
       @include tablet {
         width: 680px;
       }
-      @include desktops{
+      @include desktops {
         width: 500px;
       }
       .card-body {

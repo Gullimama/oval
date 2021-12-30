@@ -28,66 +28,40 @@
 
 <body>
   <div class="site-wrapper overflow-hidden ">
-    <!-- start of navigation -->
-    <div class="adjust-navigation-height"></div>
-    <header class="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light px-0 py-3 py-lg-4">
-              <!-- navbar logo -->
-              <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
-                <img src="image/svg/navigation/Oval.svg" alt="Oval">
-              </a>
-              <!-- hamburger menu -->
-              <a class="hamburger-menu icon-burger" href="">
-                <img src="image/svg/header/hamburger.svg" alt="">
-              </a>
-              <!-- sidenav-overlay -->
-              <div class="sidenav-overlay"></div>
-              <!-- navbar links -->
-              <div class="navbar-collapse" id="mobile-menu">
-                <div class="navbar-nav ml-lg-auto mr--10">
-                  <ul class="navbar-nav mx-auto" id="mobile-menu">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="products.html" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pricing.html" role="button" aria-haspopup="true" aria-expanded="false">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="download.html">Download</a>
-                    </li>
-                  </ul>
-                  <!-- navbar actions -->
-                  <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="icon icon-simple-remove"></i>
-                  </button>
-                  <!-- <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu"
-                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                <i class="icon icon-e-remove"></i>
-              </button> -->
-                </div>
-                <div class="navbar-actions">
-                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
-                  </a>
-                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Try for
-                  free</span>
-                  </a>
-                </div>
-              </div>
-            </nav>
+    <!-- navigation  -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <img src="image/svg/navigation/Oval.svg" alt="">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="download.html" class="nav-link">Download</a>
+          </li>
+          <div class="nav-buttons">
+            <button class="btn btn-transparent">Login</button>
+            <button class="btn btn-white">Try for free</button>
           </div>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </header>
-    <!-- end of navigation -->
     <!-- header section -->
     <div class="contact-page ">
       <div class="header__section">

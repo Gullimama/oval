@@ -1,11 +1,5 @@
-
 'use strict'
-// $( document ).ready(function() {
-//       $(".navbar-toggler").click();
-//       $(".navbar-toggler").click();
-
-//   });
-$(document).ready(function() {
+$(document).ready(function () {
       $('select').niceSelect();
 
       AOS.init();
@@ -18,12 +12,11 @@ $(document).ready(function() {
                   speed: 500,
                   slidesToShow: 2,
                   slidesToScroll: 2,
-                  responsive: [
-                  {
+                  responsive: [{
                         breakpoint: 768,
                         settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+                              slidesToShow: 1,
+                              slidesToScroll: 1
                         }
                   }]
             });
@@ -35,11 +28,11 @@ $(document).ready(function() {
                   speed: 500,
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  arrows:true,
+                  arrows: true,
                   responsive: [{
                         breakpoint: 575,
                         settings: {
-                        arrows:false,
+                              arrows: false,
                         }
                   }]
             });
@@ -51,98 +44,99 @@ $(document).ready(function() {
                   speed: 500,
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  arrows:true,
+                  arrows: true,
                   responsive: [{
                         breakpoint: 575,
                         settings: {
-                        arrows:false,
+                              arrows: false,
                         }
                   }]
             });
       }
-     $('#l5-pricing-btn .toggle-btn').on("click",function(e){
-           console.log($(e.target).parent().parent().hasClass("monthly-active"))
-           $(e.target).toggleClass("clicked");
-            if($(e.target).parent().parent().hasClass("monthly-active")){
+      $('#l5-pricing-btn .toggle-btn').on("click", function (e) {
+            console.log($(e.target).parent().parent().hasClass("monthly-active"))
+            $(e.target).toggleClass("clicked");
+            if ($(e.target).parent().parent().hasClass("monthly-active")) {
                   $(e.target).parent().parent().removeClass("monthly-active").addClass("yearly-active");
-            }else{
+            } else {
                   $(e.target).parent().parent().removeClass("yearly-active").addClass("monthly-active");
             }
-     })
-      
-      $("#pricing-deck-trigger").on("click",function(e){
+      })
+
+      $("#pricing-deck-trigger").on("click", function (e) {
             var getActive = $(e.target).attr("data-active");
             $(e.target).addClass("active");
             $(e.target).siblings().removeClass("active");
-            if(getActive == "yearly-active" && !$("#pricing-card-deck").hasClass(getActive)){
+            if (getActive == "yearly-active" && !$("#pricing-card-deck").hasClass(getActive)) {
                   $("#pricing-card-deck").addClass(getActive);
                   $("#pricing-card-deck").removeClass("monthly-active");
             }
-            if(getActive == "monthly-active" && !$("#pricing-card-deck").hasClass(getActive)){
+            if (getActive == "monthly-active" && !$("#pricing-card-deck").hasClass(getActive)) {
                   $("#pricing-card-deck").addClass(getActive);
                   $("#pricing-card-deck").removeClass("yearly-active");
             }
       })
-      
 
 
-$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-      if (!$(this).next().hasClass('show')) {
-      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-      }
-      var $subMenu = $(this).next(".dropdown-menu");
-      $subMenu.toggleClass('show');
 
-      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-      $('.dropdown-submenu .show').removeClass("show");
-      });
-
-      return false;
-});
-
-
-$('.count-btn').on('click', function () {
-      var $button = $(this);
-      var oldValue = $button.parent('.count-input-btns').parent().find('input').val();
-      if ($button.hasClass('inc-ammount')) {
-            var newVal = parseFloat(oldValue) + 1;
-      } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 0) {
-                  var newVal = parseFloat(oldValue) - 1;
-            } else {
-                  newVal = 0;
+      $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+            if (!$(this).next().hasClass('show')) {
+                  $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
             }
-      }
-      $button.parent('.count-input-btns').parent().find('input').val(newVal);
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                  $('.dropdown-submenu .show').removeClass("show");
+            });
+
+            return false;
       });
 
 
-      window.onscroll = function() {
-            scrollFunction()
-        };
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                $(".sticky-header").addClass("scrolling");
+      $('.count-btn').on('click', function () {
+            var $button = $(this);
+            var oldValue = $button.parent('.count-input-btns').parent().find('input').val();
+            if ($button.hasClass('inc-ammount')) {
+                  var newVal = parseFloat(oldValue) + 1;
             } else {
-                $(".sticky-header").removeClass("scrolling");
+                  // Don't allow decrementing below zero
+                  if (oldValue > 0) {
+                        var newVal = parseFloat(oldValue) - 1;
+                  } else {
+                        newVal = 0;
+                  }
+            }
+            $button.parent('.count-input-btns').parent().find('input').val(newVal);
+      });
+
+
+      window.onscroll = function () {
+            scrollFunction()
+      };
+
+      function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  $(".sticky-header").addClass("scrolling");
+            } else {
+                  $(".sticky-header").removeClass("scrolling");
             }
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                $(".sticky-header.scrolling").addClass("reveal-header");
+                  $(".sticky-header.scrolling").addClass("reveal-header");
             } else {
-                $(".sticky-header.scrolling").removeClass("reveal-header");
+                  $(".sticky-header.scrolling").removeClass("reveal-header");
             }
-        }
+      }
 })
 
 
 
 
-$(window).load(function() {
-      setTimeout(function() {
+$(window).load(function () {
+      setTimeout(function () {
             $('#loading').fadeOut(500);
       }, 1000);
-      setTimeout(function() {
+      setTimeout(function () {
             $('#loading').remove();
       }, 2000);
 })
@@ -150,26 +144,26 @@ $(window).load(function() {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
       // Add smooth scrolling to all links
-      $(".goto").on('click', function(event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-              // Store hash
-              var hash = this.hash;
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                  scrollTop: $(hash).offset().top
-              }, 2000, function() {
-                  // Add hash (#) to URL when done scrolling (default click behavior)
-                  window.location.hash = hash;
-              });
-          } // End if
+      $(".goto").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+                  // Store hash
+                  var hash = this.hash;
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                  }, 2000, function () {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                  });
+            } // End if
       });
-  });
+});
 
 
 // use fancyApps for carousel
@@ -179,17 +173,27 @@ $(document).ready(function() {
 //     });
 
 
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                  content.style.display = "none";
+            } else {
+                  content.style.display = "block";
+            }
       });
-    }
+}
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+}

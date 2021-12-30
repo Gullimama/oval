@@ -4,6 +4,9 @@
   flex-direction: row;
   gap: 15px;
   margin-bottom: 42px;
+  @include desktops{
+    gap: 24px;
+  }
   .btn--red {
     width: 127px;
     height: 44px;

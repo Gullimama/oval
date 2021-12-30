@@ -1,8 +1,42 @@
+.left-side-graph-img {
+  @include desktops {
+    position: absolute;
+    width: 767px;
+    left: 155px;
+    top: 595px;
+    background: transparent;
+  }
+}
+.right-side-graph-img {
+  img {
+    @include desktops {
+      position: absolute;
+      width: 742px;
+      right: 185px;
+      bottom: -135px;
+    }
+  }
+}
+
+.download_section {
+  @include desktops {
+    background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
+  }
+}
 .header__section {
   .header-title {
     width: 280px;
     height: 92px;
     margin-top: 22px;
+    @include tablet {
+      width: 500px;
+      height: 60px;
+      margin-top: 80px;
+    }
+    @include desktops {
+      width: 580px;
+      height: 74px;
+    }
     h5 {
       font-family: $theme-base-font;
       font-size: 34px;
@@ -11,6 +45,14 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
+      @include tablet {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
+      @include desktops {
+        font-size: 60px;
+        line-height: 74.4px;
+      }
     }
   }
   .header-body {
@@ -18,6 +60,14 @@
     height: 69px;
     margin: auto;
     margin-top: 16px;
+    @include tablet {
+      width: 361px;
+      height: 48px;
+    }
+    @include desktops {
+      width: 627px;
+      height: 60px;
+    }
     p {
       font-family: $body-base-font;
       font-size: 13px;
@@ -27,6 +77,14 @@
       letter-spacing: 0px;
       text-align: center;
       color: #64626a;
+      @include tablet {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      @include desktops {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
   .header-button {
@@ -35,6 +93,14 @@
     justify-content: center;
     margin-top: 22px;
     gap: 14px;
+    @include tablet {
+      margin-top: 38px;
+      gap: 20px;
+    }
+    @include desktops {
+      margin-top: 48px;
+      gap: 36px;
+    }
     .btn_light-orange {
       width: 140px;
       height: 58px;
@@ -42,6 +108,14 @@
       background: #fff;
       border-radius: 10px;
       color: #ff6846;
+      @include tablet {
+        width: 196px;
+        height: 52px;
+      }
+      @include desktops {
+        width: 200px;
+        height: 60px;
+      }
       &:hover {
         color: #fff;
         background: #ff6846;
@@ -53,14 +127,46 @@
     width: 280px;
     margin: auto;
     margin-top: 36px;
+    @include tablet {
+      width: 668px;
+    }
+    @include desktops {
+      position: relative;
+      z-index: 999;
+      width: 1020px;
+    }
   }
 }
 
 // feature list
 .feature-list {
   margin-top: 30.51px;
+  @include desktops {
+    margin-top: 80px;
+  }
   .list-item {
-    li {
+    width: 280px;
+    text-align: center;
+    margin: auto;
+    @include tablet {
+      width: 650px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 26px;
+      margin: auto;
+    }
+    @include desktops {
+      width: 850px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 49px;
+      margin: auto;
+    }
+    label {
       font-family: Inter;
       font-size: 14px;
       font-style: normal;
@@ -69,12 +175,13 @@
       letter-spacing: 0.17499999701976776px;
       text-align: left;
       margin-bottom: 12px;
-      .circle {
-        width: 16px;
-        height: 16px;
-        background: #ffffff;
-        border: 3px solid #ff6846;
-        box-sizing: border-box;
+      @include tablet {
+        font-size: 16px;
+        line-height: 19.36px;
+      }
+      @include desktops {
+        font-size: 20px;
+        line-height: 24.2px;
       }
     }
   }
@@ -87,6 +194,15 @@
     width: 280px;
     height: 92px;
     margin: auto;
+    @include tablet {
+      width: 600px;
+      height: 60px;
+    }
+    @include desktops {
+      margin-top: 180px;
+      width: 590px;
+      height: 60px;
+    }
     h4 {
       font-family: Libre Baskerville;
       font-size: 34px;
@@ -95,10 +211,36 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
+      @include tablet {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
+      @include desktops {
+        font-size: 48px;
+        line-height: 59.52px;
+      }
     }
   }
   .guiding-items {
     margin-top: 38px;
+    @include tablet {
+      width: 800px;
+      margin: auto;
+      display: flex;
+      gap: 66px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 67px;
+    }
+    @include desktops {
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      gap: 98px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 67px;
+    }
     .item {
       margin-bottom: 57px;
       .icon {
@@ -111,6 +253,10 @@
         height: 19px;
         margin: auto;
         margin-top: 23px;
+        @include desktops {
+          width: 251px;
+          height: 27px;
+        }
         h6 {
           font-family: Inter;
           font-size: 16px;
@@ -119,6 +265,14 @@
           line-height: 19px;
           letter-spacing: 0px;
           text-align: center;
+          @include tablet {
+            font-size: 18px;
+            line-height: 21.78px;
+          }
+          @include desktops {
+            font-size: 22px;
+            line-height: 26.62px;
+          }
         }
       }
       .item-body {
@@ -128,6 +282,10 @@
           height: 110px;
           margin: auto;
           margin-top: 9px;
+          @include desktops {
+            width: 457px;
+            height: 78px;
+          }
           p {
             font-family: Inter;
             font-size: 14px;
@@ -136,6 +294,10 @@
             line-height: 22px;
             letter-spacing: 0px;
             text-align: center;
+            @include desktops {
+              font-size: 16px;
+              line-height: 26px;
+            }
           }
         }
         .item-footer-text {
@@ -150,6 +312,11 @@
           text-align: center;
           margin: auto;
           margin-top: 20px;
+          @include desktops {
+            font-size: 18px;
+            line-height: 21.78px;
+            width: 167px;
+          }
         }
       }
     }
@@ -163,48 +330,147 @@
   border-radius: 12px;
   padding: 19px;
   margin: auto;
+  @include tablet {
+    width: 668px;
+    height: 224px;
+  }
+  @include desktops {
+    margin-top: 159px;
+    width: 1140px;
+    height: 238px;
+    padding-left: 68px;
+    padding-top: 60px;
+  }
   .download__section {
-    .download-title {
-      width: 269px;
-      height: 24px;
-      h3 {
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: center;
-      }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .download-body-text {
-      width: 240px;
-      height: 66px;
-      p {
-        font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 0px;
-        text-align: center;
-        margin-top: 11px;
+    @include desktops {
+      flex-direction: row;
+      gap: 75px;
+    }
+    .download__content {
+      .download-title {
+        width: 269px;
+        height: 24px;
+        @include tablet {
+          margin: auto;
+          width: 300px;
+          height: 27px;
+          margin-top: 20px;
+        }
+        @include desktops {
+          width: 382px;
+          height: 42px;
+        }
+        h3 {
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: center;
+          @include tablet {
+            font-size: 22px;
+            line-height: 26.62px;
+          }
+          @include desktops {
+            font-size: 30px;
+            line-height: 42px;
+          }
+        }
+      }
+      .download-body-text {
+        width: 240px;
+        height: 66px;
+        @include desktops {
+          width: 463px;
+          height: 60px;
+        }
+        @include tablet {
+          margin: auto;
+          width: 360px;
+          height: 40px;
+          margin-bottom: 35px;
+        }
+        p {
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0px;
+          text-align: center;
+          margin-top: 11px;
+          @include tablet {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @include desktops {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+          }
+        }
       }
     }
     .download-button {
       display: flex;
       margin-top: 22px;
+      @include tablet {
+        margin: auto;
+        gap: 15px;
+      }
+      @include desktops {
+        flex-direction: row;
+        gap: 24px;
+      }
       input {
         width: 160px;
         height: 42px;
         border: 1px solid #8e8c95;
         border-radius: 8px 0px 0px 8px;
+        @include tablet {
+          width: 272px;
+          height: 48px;
+          border-radius: 8px;
+        }
+        @include desktops {
+          width: 272px;
+          height: 60px;
+          background: #ffffff;
+          mix-blend-mode: normal;
+          opacity: 0.48;
+          border: 1px solid #8e8c95;
+          border-radius: 8px;
+        }
       }
       button {
         width: 92px;
         height: 42px;
         background: #ff6846;
         border-radius: 0px 8px 8px 0px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14.52px;
+        @include tablet {
+          width: 124px;
+          height: 48px;
+          border-radius: 8px;
+          font-size: 14px;
+          line-height: 16.94px;
+        }
+        @include desktops {
+          width: 170px;
+          height: 60px;
+          background: #ff6846;
+          border-radius: 8px;
+          font-size: 16px;
+          line-height: 19.36px;
+        }
       }
     }
   }

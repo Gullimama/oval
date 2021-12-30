@@ -2,29 +2,28 @@
 {% extends "template.njk" %}
 
 {% block main %}
-<div class="about-page">
+  <div class="about-page">
 
-  {% include "_header.njk" %}
+    {% include "_header.njk" %}
 
-  <!-- hero section -->
-  <div class="hero__section text-center">
-    <div class="hero__content row">
-      <div class="hero__title col-lg-6 col-md-12 col-12">
-        <h2>A Tools for <span id="light__blue"> future </span> of work</h2>
-      </div>
-      <div class="hero__body col-lg-6 col-md-12 col-12">
-        <p>Oval is the collaboration hub that brings the right
+    <!-- hero section -->
+    <div class="hero__section text-center">
+      <div class="hero__content">
+        <div class="hero__title">
+          <h2>A Tools for <span id="light__blue"> future </span> of work</h2>
+        </div>
+        <div class="hero__body">
+          <p>Oval is the collaboration hub that brings the right
           people,information, and tools together to get work
           done.Oval connect their teams, unify their systems,
           and drive their business forward.</p>
+        </div>
       </div>
-    </div>
-    <div class="hero__img header-img text-center">
-      <img src="/image/png/about-us/Bitmap.png" alt="hero__img">
-    </div>
-    <div class="carousel">
+      <div class="hero__img header-img text-center">
+        <img src="/image/png/about-us/Bitmap.png" alt="hero__img">
+      </div>
 
-      <div class="hero__quotes text-center carousel__slide">
+      <div class="hero__quotes text-center">
         <div class="hero__quotes-title">
           <h6>Our power is in our people</h6>
         </div>
@@ -35,256 +34,231 @@
             ourselves, each other, and our industry.
           </p>
         </div>
-      </div>
 
-      <div class="hero__quotes text-center carousel__slide">
-        <div class="hero__quotes-title">
-          <h6>Our power is in our people</h6>
-        </div>
-        <div class="hero__quotes-body">
-          <p>
-            success is a journey, and we travel in good company.We seek those
-            who seek adventure,which is how we continuously raise the bar for
-            ourselves, each other, and our industry.
-          </p>
-        </div>
       </div>
+    </div>
 
-      <div class="hero__quotes text-center carousel__slide">
-        <div class="hero__quotes-title">
-          <h6>Our power is in our people</h6>
+    <!-- neighbors section  -->
+    <div class="neighbors__section text-center">
+      <div class="neighbors__section-img-1 header-img ">
+        <img src="/image/png/about-us/nb-1.png" alt="neighbors__section-img-1">
+      </div>
+      <div class="neighbors__section-content">
+        <div class="content-title">
+          <h3>We're good <br> neighbors</h3>
         </div>
-        <div class="hero__quotes-body">
-          <p>
-            success is a journey, and we travel in good company.We seek those
-            who seek adventure,which is how we continuously raise the bar for
-            ourselves, each other, and our industry.
-          </p>
+        <div class="content-body">
+          <p>Amazing cities, totally tricked out offices. Explore the world of Oval.</p>
+        </div>
+        <div class="content-red-title">
+          <h6>Join us, Make a Change</h6>
         </div>
       </div>
+      <div class="neighbors__section-img-2 header-img ">
+        <img src="/image/png/about-us/nb-2.png" alt="neighbors__section-img-2">
+      </div>
+      <div class="neighbors__section-img-3 header-img ">
+        <img src="/image/png/about-us/nb-3.png" alt="neighbors__section-img-3">
+      </div>
+      <div class="graph-img">
+        <img src="/image/png/about-us/about-graph.png" alt="">
+      </div>
+    </div>
+  </div>
 
-    </div>
-  </div>
-
-  <!-- neighbors section  -->
-  <div class="neighbors__section text-center">
-    <div class="neighbors__section-img-1 header-img ">
-      <img src="/image/png/about-us/nb-1.png" alt="neighbors__section-img-1">
-    </div>
-    <div class="neighbors__section-content">
-      <div class="content-title">
-        <h3>We're good <br> neighbors</h3>
-      </div>
-      <div class="content-body">
-        <p>Amazing cities, totally tricked out offices. Explore the world of Oval.</p>
-      </div>
-      <div class="content-red-title">
-        <h6>Join us, Make a Change &#62;</h6>
-      </div>
-    </div>
-    <div class="neighbors__section-img-2 header-img ">
-      <img src="/image/png/about-us/nb-2.png" alt="neighbors__section-img-2">
-    </div>
-    <div class="neighbors__section-img-3 header-img ">
-      <img src="/image/png/about-us/nb-3.png" alt="neighbors__section-img-3">
-    </div>
-  </div>
-</div>
-
-<!-- leading sections -->
-<div class="leading__sections text-center">
-  <div class="content-title">
-    <h3>Landing brands trust oval
-      for Teamwork software</h3>
-  </div>
-  <div class="content-red-title">
-    <h6>Partner Success Stories &#62;</h6>
-  </div>
-  <div class="branding_list">
-    {% include "_brandingMenu.njk"%}
-  </div>
-</div>
-
-<!-- team section -->
-<div class="team__section text-center">
-  <div class="content-title">
-    <h3>Our Management</h3>
-  </div>
-  <div class="content-body">
-    <p>Leadership at Oval comes from all over.Here is the team
-      at the helm of the ship</p>
-  </div>
-  <div class="team__section-members  row">
-    <div class="member-1 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p1.png" alt="Leslee Moss">
-      </div>
-      <div class="mem-name">
-        Leslee Moss
-      </div>
-      <div class="mem-post">
-        Founder and CEO
-      </div>
-    </div>
-    <div class="member-2 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p2.png" alt="edgar thomas">
-      </div>
-      <div class="mem-name">
-        Edgar Thomas
-      </div>
-      <div class="mem-post">
-        EVP of sales
-      </div>
-    </div>
-    <div class="member-3 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p3.png" alt="Ram shriram">
-      </div>
-      <div class="mem-name">
-        Ram shriram
-      </div>
-      <div class="mem-post">
-        SVP of Operations
-      </div>
-    </div>
-    <div class="member-4 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p4.png" alt="Josh Kopelman">
-      </div>
-      <div class="mem-name">
-        Josh Kopelman
-      </div>
-      <div class="mem-post">
-        VP of Finance
-      </div>
-    </div>
-    <div class="member-5 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p5.png" alt="Clifford Lane">
-      </div>
-      <div class="mem-name">
-        Clifford Lane
-      </div>
-      <div class="mem-post">
-        VP of Marketing
-      </div>
-    </div>
-    <div class="member-6 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p6.png" alt="Fakhri Shokoohi">
-      </div>
-      <div class="mem-name">
-        Fakhri Shokoohi
-      </div>
-      <div class="mem-post">
-        Chief Learning Architect
-      </div>
-    </div>
-    <div class="member-7 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p7.png" alt="Gauthier Drewitt">
-      </div>
-      <div class="mem-name">
-        Gauthier Drewitt
-      </div>
-      <div class="mem-post">
-        VP of people
-      </div>
-    </div>
-    <div class="member-8 mem col-lg-3 col-md-3 col-6">
-      <div class="mem-img">
-        <img src="image/png/about-us/p8.png" alt="Jordan Ntolo">
-      </div>
-      <div class="mem-name">
-        Jordan Ntolo
-      </div>
-      <div class="mem-post">
-        VP of product
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- values section -->
-<div class="values__section text-center row">
-  <div class="values__section-left col-lg-5 col-md-5 col-sm-12">
+  <!-- leading sections -->
+  <div class="leading__sections text-center">
     <div class="content-title">
-      <h3>How we thrive</h3>
+      <h3>Leading brands trust oval
+      for Teamwork software</h3>
+    </div>
+    <div class="content-red-title">
+      <h6>Partner Success Stories</h6>
+    </div>
+    <div class="branding_list">
+      {% include "_brandingMenu.njk"%}
+    </div>
+  </div>
+
+  <!-- team section -->
+  <div class="team__section text-center">
+    <div class="content-title">
+      <h3>Our Management</h3>
     </div>
     <div class="content-body">
-      <p>These are the values that drive our daily
+      <p>Leadership at Oval comes from all over.Here is the team
+      at the helm of the ship</p>
+    </div>
+    <div class="team__section-members  row">
+      <div class="member-1 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p1.png" alt="Leslee Moss">
+        </div>
+        <div class="mem-name">
+        Leslee Moss
+      </div>
+        <div class="mem-post">
+        Founder and CEO
+      </div>
+      </div>
+      <div class="member-2 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p2.png" alt="edgar thomas">
+        </div>
+        <div class="mem-name">
+        Edgar Thomas
+      </div>
+        <div class="mem-post">
+        EVP of sales
+      </div>
+      </div>
+      <div class="member-3 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p3.png" alt="Ram shriram">
+        </div>
+        <div class="mem-name">
+        Ram shriram
+      </div>
+        <div class="mem-post">
+        SVP of Operations
+      </div>
+      </div>
+      <div class="member-4 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p4.png" alt="Josh Kopelman">
+        </div>
+        <div class="mem-name">
+        Josh Kopelman
+      </div>
+        <div class="mem-post">
+        VP of Finance
+      </div>
+      </div>
+      <div class="member-5 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p5.png" alt="Clifford Lane">
+        </div>
+        <div class="mem-name">
+        Clifford Lane
+      </div>
+        <div class="mem-post">
+        VP of Marketing
+      </div>
+      </div>
+      <div class="member-6 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p6.png" alt="Fakhri Shokoohi">
+        </div>
+        <div class="mem-name">
+        Fakhri Shokoohi
+      </div>
+        <div class="mem-post">
+        Chief Learning Architect
+      </div>
+      </div>
+      <div class="member-7 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p7.png" alt="Gauthier Drewitt">
+        </div>
+        <div class="mem-name">
+        Gauthier Drewitt
+      </div>
+        <div class="mem-post">
+        VP of people
+      </div>
+      </div>
+      <div class="member-8 mem col-lg-3 col-md-3 col-6">
+        <div class="mem-img">
+          <img src="image/png/about-us/p8.png" alt="Jordan Ntolo">
+        </div>
+        <div class="mem-name">
+        Jordan Ntolo
+      </div>
+        <div class="mem-post">
+        VP of product
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- values section -->
+  <div class="values__section text-center">
+    <div class="values__section-left">
+      <div class="content-title">
+        <h3>How we thrive</h3>
+      </div>
+      <div class="content-body">
+        <p>These are the values that drive our daily
         decisions, develop our relationships, and
         guid our strategy:</p>
+      </div>
     </div>
-  </div>
-  <div class="valuse__section-right col-lg-5 col-md-6 col-sm-12">
-    <div class="sincere value_box">
-      <div class="icon">
-        <img src="image/svg/about-us/victory.svg" alt="">
-        <p>
+    <div class="valuse__section-right">
+      <div class="sincere value_box">
+        <div class="icon">
+          <img src="image/svg/about-us/victory.svg" alt="">
+          <p>
           Be sincere
         </p>
+        </div>
       </div>
-    </div>
-    <div class="strong value_box">
-      <div class="icon">
-        <img src="image/svg/about-us/hand.svg" alt="">
-        <p>
+      <div class="strong value_box">
+        <div class="icon">
+          <img src="image/svg/about-us/hand.svg" alt="">
+          <p>
           Stringer together
         </p>
+        </div>
       </div>
-    </div>
-    <div class="simple value_box">
-      <div class="icon">
-        <img src="image/svg/about-us/mouse.svg" alt="">
-        <p>
+      <div class="simple value_box">
+        <div class="icon">
+          <img src="image/svg/about-us/mouse.svg" alt="">
+          <p>
           keep it simple
+        </p>
+        </div>
+      </div>
+      <div class="intelligent value_box">
+        <div class="icon">
+          <img src="image/svg/about-us/bulb.svg" alt="">
+          <p>
+          Take intelligent risks
+      </div>
         </p>
       </div>
     </div>
-    <div class="intelligent value_box">
-      <div class="icon">
-        <img src="image/svg/about-us/bulb.svg" alt="">
-        <p>
-          Take intelligent risks
+  </div>
+
+  <!-- news sections -->
+  <div class="news__sections text-center">
+    <div class="content-title">
+      <h2>Oval in the News</h2>
+    </div>
+    <div class="content-body">
+      <p>just a few of the stories about Oval in the tech and business press</p>
+    </div>
+    <div class="press__partners row">
+      <div class="1st-part press col-lg-4 col-md-4 col-sm-6 col-5">
+        <img src="image/png/about-us/press.png" alt="1st-part">
       </div>
-      </p>
+      <div class="2nd-part press col-lg-4 col-md-4 col-sm-6 col-5">
+        <img src="image/png/about-us/press-2.png" alt="2nd-part">
+      </div>
+      <div class="3rd-part press col-lg-4 col-md-4 col-sm-6 col-5">
+        <img src="image/png/about-us/press-3.png" alt="3rd-part">
+      </div>
+      <div class="4th-part press col-lg-4 col-md-4 col-sm-6 col-5">
+        <img src="image/png/about-us/press-4.png" alt="4th-part">
+      </div>
+      <div class="5th-part press col-lg-4 col-md-4 col-sm-6 col-5">
+        <img src="image/png/about-us/press-5.png" alt="5th-part">
+      </div>
+      <div class="6th-part press col-lg-4 col-md-4 col-sm-6 col-5">
+        <img src="image/png/about-us/press-6.png" alt="6th-part">
+      </div>
     </div>
   </div>
-</div>
 
-<!-- news sections -->
-<div class="news__sections text-center">
-  <div class="content-title">
-    <h2>Oval in the News</h2>
-  </div>
-  <div class="content-body">
-    <p>just a few of the stories about Oval in the tech and business press</p>
-  </div>
-  <div class="press__partners row">
-    <div class="1st-part press col-lg-4 col-md-4 col-sm-6 col-5">
-      <img src="image/png/about-us/press.png" alt="1st-part">
-    </div>
-    <div class="2nd-part press col-lg-4 col-md-4 col-sm-6 col-5">
-      <img src="image/png/about-us/press-2.png" alt="2nd-part">
-    </div>
-    <div class="3rd-part press col-lg-4 col-md-4 col-sm-6 col-5">
-      <img src="image/png/about-us/press-3.png" alt="3rd-part">
-    </div>
-    <div class="4th-part press col-lg-4 col-md-4 col-sm-6 col-5">
-      <img src="image/png/about-us/press-4.png" alt="4th-part">
-    </div>
-    <div class="5th-part press col-lg-4 col-md-4 col-sm-6 col-5">
-      <img src="image/png/about-us/press-5.png" alt="5th-part">
-    </div>
-    <div class="6th-part press col-lg-4 col-md-4 col-sm-6 col-5">
-      <img src="image/png/about-us/press-6.png" alt="6th-part">
-    </div>
-  </div>
-</div>
-
-
-<!-- Footer section -->
-{% include "_footer.njk" %}
+  <!-- Footer section -->
+  {% include "_footer.njk" %}
 {% endblock %}

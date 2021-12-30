@@ -28,66 +28,40 @@
 
 <body>
   <div class="site-wrapper overflow-hidden ">
-    <!-- start of navigation -->
-    <div class="adjust-navigation-height"></div>
-    <header class="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light px-0 py-3 py-lg-4">
-              <!-- navbar logo -->
-              <a class="navbar-brand font-weight-bold mb-0" href="index.html" title="oval">
-                <img src="image/svg/navigation/Oval.svg" alt="Oval">
-              </a>
-              <!-- hamburger menu -->
-              <a class="hamburger-menu icon-burger" href="">
-                <img src="image/svg/header/hamburger.svg" alt="">
-              </a>
-              <!-- sidenav-overlay -->
-              <div class="sidenav-overlay"></div>
-              <!-- navbar links -->
-              <div class="navbar-collapse" id="mobile-menu">
-                <div class="navbar-nav ml-lg-auto mr--10">
-                  <ul class="navbar-nav mx-auto" id="mobile-menu">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="products.html" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pricing.html" role="button" aria-haspopup="true" aria-expanded="false">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="download.html">Download</a>
-                    </li>
-                  </ul>
-                  <!-- navbar actions -->
-                  <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="icon icon-simple-remove"></i>
-                  </button>
-                  <!-- <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu"
-                aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-                <i class="icon icon-e-remove"></i>
-              </button> -->
-                </div>
-                <div class="navbar-actions">
-                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Login</span>
-                  </a>
-                  <a href="" class="btn btn-light-red" data-text=" Book a call" target="_blank" rel="nofollow" onclick="Calendly.initPopupWidget({url:'https://calendly.com/chaitrarao'});return false;"><span>Try for
-                  free</span>
-                  </a>
-                </div>
-              </div>
-            </nav>
+    <!-- navigation  -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <img src="image/svg/navigation/Oval.svg" alt="">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="download.html" class="nav-link">Download</a>
+          </li>
+          <div class="nav-buttons">
+            <button class="btn btn-transparent">Login</button>
+            <button class="btn btn-white">Try for free</button>
           </div>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </header>
-    <!-- end of navigation -->
     <!-- hero section -->
     <div class="hero__section col-lg-12  col-12 justify-content-md-center text-center">
       <div class="hero__section-header-title">
@@ -107,63 +81,67 @@
           </button>
         </div>
       </div>
-      <div class="hero__section-header-img header-img">
+      <div class="hero__section-header-img header-img hero-img">
         <img src="image/png/product/home-img.png" alt="hero-img">
       </div>
-      <div class="hero__section-card row">
-        <div class="card card-1st col-lg-4">
-          <div class="card-body">
-            <p>“I received great customer service from the specialists who helped me. I would recommend to anyone who wants
-              great dashboard that has great quality”</p>
-          </div>
-          <div class="card-cus-intro row">
-            <div class="card-cus-intro-img col-3">
-              <img src="image/png/home/cus-1.png" alt="Harold Tyler">
-            </div>
-            <div class="card-cus-intro-text col-9">
-              <div class="card-cus-name">
-                Harold Tyler
+      <div class="hero__section-card">
+        <div class="testimonial__section text-center">
+          <div class="testimonial__section-card">
+            <div class="card card-1st">
+              <div class="card-body">
+                <p>“I received great customer service from the specialists who helped me. I would recommend to anyone who wants
+                  great dashboard that has great quality”</p>
               </div>
-              <div class="card-cus-position">
-                Product Designer
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-2nd col-lg-4 ">
-          <div class="card-body">
-            <p>“It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of
-              mutuality, tied into a single garment of destiny”</p>
-          </div>
-          <div class="card-cus-intro row ">
-            <div class="card-cus-intro-img col-3">
-              <img src="image/png/home/cus-2.png" alt=" Julia Armstrong">
-            </div>
-            <div class="card-cus-intro-text col-9">
-              <div class="card-cus-name">
-                Julia Armstrong
-              </div>
-              <div class="card-cus-position">
-                Application & Web Developer
+              <div class="card-cus-intro card-footer">
+                <div class="card-cus-intro-img ">
+                  <img src="image/png/home/cus-1.png" alt="Harold Tyler">
+                </div>
+                <div class="card-cus-intro-text ">
+                  <div class="card-cus-name">
+                    Harold Tyler
+                  </div>
+                  <div class="card-cus-position">
+                    Product Designer
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="card card-3rd col-lg-4">
-          <div class="card-body">
-            <p>“Really excited to see the progress that Fibery team are making on the product. There's a lot of potential
-              with this one!”</p>
-          </div>
-          <div class="card-cus-intro row">
-            <div class="card-cus-intro-img col-3">
-              <img src="image/png/home/cus-3.png" alt=" Rosalie Morgan">
-            </div>
-            <div class="card-cus-intro-text col-9">
-              <div class="card-cus-name">
-                Rosalie Morgan
+            <div class="card card-2nd">
+              <div class="card-body">
+                <p>“It really boils down to this: that all life is interrelated. We are all caught in an inescapable network of
+                  mutuality, tied into a single garment of destiny”</p>
               </div>
-              <div class="card-cus-position">
-                Co-founder of Square Space
+              <div class="card-cus-intro card-footer">
+                <div class="card-cus-intro-img ">
+                  <img src="image/png/home/cus-2.png" alt=" Julia Armstrong">
+                </div>
+                <div class="card-cus-intro-text ">
+                  <div class="card-cus-name">
+                    Julia Armstrong
+                  </div>
+                  <div class="card-cus-position">
+                    Application & Web Developer
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-3rd">
+              <div class="card-body">
+                <p>“Really excited to see the progress that Fibery team are making on the product. There's a lot of potential
+                  with this one!”</p>
+              </div>
+              <div class="card-cus-intro card-footer">
+                <div class="card-cus-intro-img">
+                  <img src="image/png/home/cus-3.png" alt=" Rosalie Morgan">
+                </div>
+                <div class="card-cus-intro-text">
+                  <div class="card-cus-name">
+                    Rosalie Morgan
+                  </div>
+                  <div class="card-cus-position">
+                    Co-founder of Square Space
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -173,7 +151,7 @@
     <!-- work section  -->
     <div class="work__section text-center">
       <div class="work__section-header-title header-title">
-        <h2>Keep your work bundled together.</h2>
+        <h2>Keep your work bundled <span id="light__blue">together</span>.</h2>
       </div>
       <div class="work__section-header-text">
         <p>Each item in your database is its own page.
@@ -211,7 +189,7 @@
     <div class="plan__section text-center">
       <div class="plan__section-header">
         <div class="header-left header-title">
-          <h2>A Plan to succeed at scale</h2>
+          <h2>A Plan to <span id="light__blue">succeed</span> at scale</h2>
         </div>
         <div class="header-right">
           <p>Oval can help your team collaborate easily.
@@ -297,7 +275,7 @@
         <div class=" info-title">
           <h2>98%</h2>
         </div>
-        <div class=" info-body">
+        <div class="info-body">
           <p>of users saved time</p>
         </div>
       </div>

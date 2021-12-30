@@ -60,6 +60,12 @@
         }
       }
     }
+    .faq-graph-img {
+      display: none;
+      @include desktops {
+        display: block;
+      }
+    }
   }
   .question__section {
     margin-top: 20px;
@@ -87,7 +93,7 @@
             font-size: 18px;
             line-height: 28px;
           }
-          @include desktops{
+          @include desktops {
             font-size: 20px;
             line-height: 30px;
           }

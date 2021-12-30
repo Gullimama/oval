@@ -4,7 +4,7 @@
   flex-direction: row;
   gap: 15px;
   margin-bottom: 42px;
-  @include desktops{
+  @include desktops {
     gap: 24px;
   }
   .btn--red {
@@ -13,11 +13,11 @@
     color: #fff;
     background: #ff6846;
     border-radius: 8px;
-    @include mobile-lg{
+    @include mobile-lg {
       width: 180px;
       height: 52px;
     }
-    @include desktops{
+    @include desktops {
       width: 200px;
       height: 60px;
     }
@@ -27,13 +27,17 @@
     height: 44px;
     border: 1px solid #8e8c95;
     border-radius: 8px;
-    @include mobile-lg{
+    @include mobile-lg {
       width: 52px;
       height: 52px;
     }
-    @include desktops{
+    @include desktops {
       width: 60px;
       height: 60px;
     }
   }
+}
+
+.btn {
+  font-weight: 700;
 }

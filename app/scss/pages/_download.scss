@@ -1,26 +1,44 @@
 .left-side-graph-img {
-  @include desktops {
+  img {
     position: absolute;
-    width: 767px;
-    left: 155px;
-    top: 595px;
-    background: transparent;
+    width: 193.7px;
+    left: 15px;
+    top: 450px;
+    @include tablet {
+      width: 493.86px;
+      left: 15px;
+      top: 500px;
+    }
+    @include desktops {
+      width: 767px;
+      left: 155px;
+      top: 595px;
+      background: transparent;
+    }
   }
 }
 .right-side-graph-img {
   img {
+    position: absolute;
+    width: 200.22px;
+    right: 12px;
+    top: 450px;
+    @include tablet {
+      width: 477.76px;
+      right: 10px;
+      top: 500px;
+    }
     @include desktops {
-      position: absolute;
       width: 742px;
       right: 185px;
-      bottom: -135px;
+      top: 550px;
     }
   }
 }
 
 .download_section {
   @include desktops {
-    background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
+    // background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
   }
 }
 .header__section {
@@ -124,15 +142,15 @@
     }
   }
   .header-img {
-    width: 280px;
+    position: relative;
+    z-index: 999;
+    width: 300px;
     margin: auto;
     margin-top: 36px;
     @include tablet {
       width: 668px;
     }
     @include desktops {
-      position: relative;
-      z-index: 999;
       width: 1020px;
     }
   }
@@ -165,6 +183,15 @@
       justify-content: center;
       gap: 49px;
       margin: auto;
+    }
+    input[type="radio"] {
+      @include desktops {
+        box-sizing: border-box;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+        border: 3px solid #ff6846;
+      }
     }
     label {
       font-family: Inter;
@@ -253,6 +280,9 @@
         height: 19px;
         margin: auto;
         margin-top: 23px;
+        @include tablet {
+          width: 210px;
+        }
         @include desktops {
           width: 251px;
           height: 27px;
@@ -312,10 +342,14 @@
           text-align: center;
           margin: auto;
           margin-top: 20px;
+          color: #ff6846;
           @include desktops {
             font-size: 18px;
             line-height: 21.78px;
-            width: 167px;
+            width: 200px;
+          }
+          &:hover::after {
+            content: "\003E";
           }
         }
       }
@@ -362,6 +396,7 @@
           margin-top: 20px;
         }
         @include desktops {
+          margin: 0;
           width: 382px;
           height: 42px;
         }
@@ -380,21 +415,22 @@
           @include desktops {
             font-size: 30px;
             line-height: 42px;
+            text-align: left;
           }
         }
       }
       .download-body-text {
         width: 240px;
         height: 66px;
-        @include desktops {
-          width: 463px;
-          height: 60px;
-        }
         @include tablet {
           margin: auto;
           width: 360px;
           height: 40px;
           margin-bottom: 35px;
+        }
+        @include desktops {
+          width: 463px;
+          height: 60px;
         }
         p {
           font-family: Inter;
@@ -447,6 +483,9 @@
           border: 1px solid #8e8c95;
           border-radius: 8px;
         }
+      }
+      input[type="email" i] {
+        padding: 10px 40px;
       }
       button {
         width: 92px;

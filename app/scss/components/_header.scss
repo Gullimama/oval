@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid #fff;
+  background: transparent;
   padding-top: 32px;
   height: 100px;
   @include tablet {
@@ -52,6 +52,22 @@
 .nav-logo {
   width: 81px;
   height: 24px;
+}
+
+.btn-transparent {
+  width: 105px;
+  height: 38px;
+  border: none;
+  color: #000;
+  background: transparent;
+}
+.btn-white {
+  width: 105px;
+  height: 38px;
+  border: 1px solid #8e8c95;
+  border-radius: 4px;
+  color: #000;
+  background: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {

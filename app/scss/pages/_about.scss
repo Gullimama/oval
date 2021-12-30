@@ -1,11 +1,29 @@
+.graph-img {
+  img {
+    position: absolute;
+    width: 321px;
+    height: 340px;
+    right: 13.12%;
+    top: 250.46%;
+  }
+}
+
 // hero section css
 
 .hero__section {
+  margin: auto;
+  @include desktops {
+    margin-top: 136px;
+  }
   .hero__content {
+    display: flex;
+    margin: auto;
     margin-bottom: 40px;
     @include desktops {
+      flex-direction: row;
+      justify-content: center;
+      gap: 113px;
       margin-bottom: 100px;
-      margin: auto;
     }
     .hero__title {
       h2 {
@@ -27,7 +45,6 @@
           height: 120px;
         }
         @include desktops {
-          margin-left: 30%;
           font-size: $h1;
           line-height: 74.4px;
           width: 442px;
@@ -76,7 +93,6 @@
       margin-top: 56px;
     }
     @include desktops {
-      margin-left: 0;
       width: 100%;
     }
   }
@@ -146,6 +162,7 @@
     flex-wrap: wrap;
   }
   @include desktops {
+    background: linear-gradient(to bottom, #f9f9f9 80%, #fff 20%);
     justify-content: center;
   }
   .neighbors__section-img-1 {
@@ -277,6 +294,7 @@
       height: 423px;
       left: 208px;
       top: -95px;
+      z-index: 120;
     }
   }
 }
@@ -287,6 +305,7 @@
   @include tablet {
     margin-top: 114px;
   }
+
   .content-title {
     width: 280px;
     height: 168px;
@@ -325,6 +344,12 @@
       margin-bottom: 65px;
     }
   }
+  .branding_list {
+    @include desktops {
+      width: 1180px;
+      margin: auto;
+    }
+  }
 }
 
 // common section
@@ -355,6 +380,11 @@
       text-align: left;
       font-size: $p;
       line-height: 19.36px;
+    }
+    &::after {
+      content: "\203A";
+      position: relative;
+      left: 10px;
     }
   }
 }
@@ -502,7 +532,15 @@
 // values section
 
 .values__section {
+  display: flex;
+  margin: auto;
   margin-top: 82px;
+  @include desktops {
+    width: 1250px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 207px;
+  }
   .values__section-left {
     @include tablet {
       margin-left: 28px;
@@ -530,6 +568,7 @@
         @include tablet {
           font-size: 36px;
           line-height: 14.52px;
+          text-align: left;
         }
         @include desktops {
           font-size: 48px;
@@ -538,10 +577,10 @@
       }
     }
     .content-body {
-      margin-top: 12px;
       width: 280px;
       height: 69px;
       margin: auto;
+      margin-top: 12px;
       @include desktops {
         margin-top: 24px;
         width: 390px;
@@ -722,7 +761,11 @@ hr {
     }
   }
   .press__partners {
+    margin: auto;
     margin-top: 27px;
+    @include desktops {
+      width: 1200px;
+    }
     .press {
       margin: auto;
       padding-left: 18px;
@@ -741,6 +784,7 @@ hr {
         @include desktops {
           width: 350px;
           height: 200px;
+          margin-bottom: 30px;
         }
       }
     }

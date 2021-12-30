@@ -1,3 +1,28 @@
+.left-side-graph-img {
+  @include desktops {
+    position: absolute;
+    width: 767px;
+    left: 155px;
+    top: 595px;
+    background: transparent;
+  }
+}
+.right-side-graph-img {
+  img {
+    @include desktops {
+      position: absolute;
+      width: 742px;
+      right: 185px;
+      bottom: -135px;
+    }
+  }
+}
+
+.download_section {
+  @include desktops {
+    background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
+  }
+}
 .header__section {
   .header-title {
     width: 280px;
@@ -106,7 +131,9 @@
       width: 668px;
     }
     @include desktops {
-      width: 928px;
+      position: relative;
+      z-index: 999;
+      width: 1020px;
     }
   }
 }
@@ -118,6 +145,9 @@
     margin-top: 80px;
   }
   .list-item {
+    width: 280px;
+    text-align: center;
+    margin: auto;
     @include tablet {
       width: 650px;
       display: flex;
@@ -423,16 +453,23 @@
         height: 42px;
         background: #ff6846;
         border-radius: 0px 8px 8px 0px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14.52px;
         @include tablet {
           width: 124px;
           height: 48px;
           border-radius: 8px;
+          font-size: 14px;
+          line-height: 16.94px;
         }
         @include desktops {
           width: 170px;
           height: 60px;
           background: #ff6846;
           border-radius: 8px;
+          font-size: 16px;
+          line-height: 19.36px;
         }
       }
     }

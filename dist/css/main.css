@@ -21678,6 +21678,12 @@
   margin-bottom: 48px;
 }
 
+@media (min-width: 992px) {
+  .hero__section {
+    width: 1450px;
+  }
+}
+
 .hero__section .hero__section-header-title {
   width: 280px;
   height: 138px;
@@ -22119,7 +22125,7 @@
 
 @media (min-width: 992px) {
   .build__section-banner .build__section-body-text {
-    width: 461px;
+    width: 507px;
   }
 }
 
@@ -22148,7 +22154,8 @@
 
 @media (min-width: 992px) {
   .role__section-body-list {
-    gap: 30px;
+    width: 1450px;
+    gap: 14px;
   }
 }
 
@@ -22246,6 +22253,8 @@
 
 @media (min-width: 992px) {
   .role__section-banner {
+    margin: auto;
+    width: 1450px;
     margin-top: 0px;
   }
 }
@@ -22777,12 +22786,19 @@
 }
 
 .pricing__section .pricing__section-card {
+  margin: auto;
   margin-top: 30px;
 }
 
 @media (min-width: 768px) {
   .pricing__section .pricing__section-card {
     margin-top: 58px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing__section .pricing__section-card {
+    width: 1450px;
   }
 }
 
@@ -23528,7 +23544,7 @@ ul li a:hover {
 /*~~~~ Headers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header {
-  border-bottom: 1px solid #fff;
+  background: transparent;
   padding-top: 32px;
   height: 100px;
 }
@@ -23588,6 +23604,23 @@ ul li a:hover {
 .nav-logo {
   width: 81px;
   height: 24px;
+}
+
+.btn-transparent {
+  width: 105px;
+  height: 38px;
+  border: none;
+  color: #000;
+  background: transparent;
+}
+
+.btn-white {
+  width: 105px;
+  height: 38px;
+  border: 1px solid #8e8c95;
+  border-radius: 4px;
+  color: #000;
+  background: #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -23853,14 +23886,36 @@ ul li a:hover {
 
 /*>>>>>>>> Footer area styling <<<<<<<<<*/
 /*==== about -------*/
+.graph-img img {
+  position: absolute;
+  width: 321px;
+  height: 340px;
+  right: 13.12%;
+  top: 250.46%;
+}
+
+.hero__section {
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .hero__section {
+    margin-top: 136px;
+  }
+}
+
 .hero__section .hero__content {
+  display: flex;
+  margin: auto;
   margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
   .hero__section .hero__content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 113px;
     margin-bottom: 100px;
-    margin: auto;
   }
 }
 
@@ -23889,7 +23944,6 @@ ul li a:hover {
 
 @media (min-width: 992px) {
   .hero__section .hero__content .hero__title h2 {
-    margin-left: 30%;
     font-size: 57.33px;
     line-height: 74.4px;
     width: 442px;
@@ -23954,7 +24008,6 @@ ul li a:hover {
 
 @media (min-width: 992px) {
   .hero__section .hero__img {
-    margin-left: 0;
     width: 100%;
   }
 }
@@ -24048,6 +24101,7 @@ ul li a:hover {
 
 @media (min-width: 992px) {
   .neighbors__section {
+    background: linear-gradient(to bottom, #f9f9f9 80%, #fff 20%);
     justify-content: center;
   }
 }
@@ -24233,6 +24287,7 @@ ul li a:hover {
     height: 423px;
     left: 208px;
     top: -95px;
+    z-index: 120;
   }
 }
 
@@ -24299,6 +24354,13 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 992px) {
+  .leading__sections .branding_list {
+    width: 1180px;
+    margin: auto;
+  }
+}
+
 .content-red-title {
   width: 185px;
   margin: auto;
@@ -24337,6 +24399,12 @@ ul li a:hover {
     font-size: 16px;
     line-height: 19.36px;
   }
+}
+
+.content-red-title h6::after {
+  content: "\203A";
+  position: relative;
+  left: 10px;
 }
 
 .team__section {
@@ -24533,7 +24601,18 @@ ul li a:hover {
 }
 
 .values__section {
+  display: flex;
+  margin: auto;
   margin-top: 82px;
+}
+
+@media (min-width: 992px) {
+  .values__section {
+    width: 1250px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 207px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -24576,6 +24655,7 @@ ul li a:hover {
   .values__section .values__section-left .content-title h3 {
     font-size: 36px;
     line-height: 14.52px;
+    text-align: left;
   }
 }
 
@@ -24587,10 +24667,10 @@ ul li a:hover {
 }
 
 .values__section .values__section-left .content-body {
-  margin-top: 12px;
   width: 280px;
   height: 69px;
   margin: auto;
+  margin-top: 12px;
 }
 
 @media (min-width: 992px) {
@@ -24847,7 +24927,14 @@ hr {
 }
 
 .news__sections .press__partners {
+  margin: auto;
   margin-top: 27px;
+}
+
+@media (min-width: 992px) {
+  .news__sections .press__partners {
+    width: 1200px;
+  }
 }
 
 .news__sections .press__partners .press {
@@ -24879,6 +24966,7 @@ hr {
   .news__sections .press__partners .press img {
     width: 350px;
     height: 200px;
+    margin-bottom: 30px;
   }
 }
 
@@ -25579,6 +25667,31 @@ hr {
 }
 
 /*==== Contact -------*/
+@media (min-width: 992px) {
+  .left-side-graph-img {
+    position: absolute;
+    width: 767px;
+    left: 155px;
+    top: 595px;
+    background: transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  .right-side-graph-img img {
+    position: absolute;
+    width: 742px;
+    right: 185px;
+    bottom: -135px;
+  }
+}
+
+@media (min-width: 992px) {
+  .download_section {
+    background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
+  }
+}
+
 .header__section .header-title {
   width: 280px;
   height: 92px;
@@ -25735,7 +25848,9 @@ hr {
 
 @media (min-width: 992px) {
   .header__section .header-img {
-    width: 928px;
+    position: relative;
+    z-index: 999;
+    width: 1020px;
   }
 }
 
@@ -25747,6 +25862,12 @@ hr {
   .feature-list {
     margin-top: 80px;
   }
+}
+
+.feature-list .list-item {
+  width: 280px;
+  text-align: center;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -26163,6 +26284,9 @@ hr {
   height: 42px;
   background: #ff6846;
   border-radius: 0px 8px 8px 0px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14.52px;
 }
 
 @media (min-width: 768px) {
@@ -26170,6 +26294,8 @@ hr {
     width: 124px;
     height: 48px;
     border-radius: 8px;
+    font-size: 14px;
+    line-height: 16.94px;
   }
 }
 
@@ -26179,6 +26305,8 @@ hr {
     height: 60px;
     background: #ff6846;
     border-radius: 8px;
+    font-size: 16px;
+    line-height: 19.36px;
   }
 }
 

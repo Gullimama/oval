@@ -17,6 +17,9 @@
     @include tablet {
       display: block;
     }
+    input[type="text" i] {
+      padding: 10px 40px;
+    }
   }
   .hero__section-mb-btn {
     @include tablet {
@@ -71,11 +74,13 @@
     margin-right: 10px;
     margin-top: 16px;
     @include desktops {
+      width: 1250px;
       margin: auto;
     }
   }
 
   .work__section-banner {
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,18 +88,19 @@
       flex-direction: row;
     }
     @include desktops {
+      margin-top : 60px;
+      width: 1250px;
       flex-direction: row;
+      gap: 60px;
     }
     .banner-left {
       @include desktops {
-        width: 540px;
-        margin: auto;
+        width: 690px;
       }
     }
     .banner-right {
       @include desktops {
-        width: 540px;
-        margin: auto;
+        width: 690px;
       }
     }
   }
@@ -174,7 +180,7 @@
       margin-top: 103px;
     }
     .plan-section-item {
-      @include desktops{
+      @include desktops {
         width: 457px;
       }
       .body-icon {

@@ -1,4 +1,5 @@
 .contact-page {
+  margin: auto;
   display: flex;
   flex-direction: column;
   margin-top: 57px;
@@ -8,7 +9,9 @@
     margin-top: 87px;
   }
   @include desktops{
-    gap: 105px;
+    margin-top: 136px;
+    width: 1450px;
+    gap: 10px;
   }
   .header__section {
     .sub_header-title {
@@ -138,6 +141,8 @@
 
   // contact form
   .contact-form_sec {
+    position: relative;
+    z-index: 999;
     width: 280px;
     background-color: #fff;
     box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.04);
@@ -195,13 +200,25 @@
       }
     }
     form {
+      .form-row{
+        display: flex;
+        @include desktops{
+          flex-direction: row;
+          gap: 19px;
+        }
+        .form-group{
+          @include desktops{
+            margin-top:24px ;
+          }
+        }
+      }
       .form-group {
         margin-top: 28px;
         @include tablet {
           margin-top: 26px;
         }
         @include desktops {
-          margin-top: 40px;
+          margin-top: 0px;
         }
         label {
           font-family: $body-base-font;
@@ -233,7 +250,7 @@
           margin-bottom: 22px;
           .current {
             font-family: $body-base-font;
-            font-size: 12px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: 15px;
@@ -253,7 +270,22 @@
           background: #ff6846;
           border: 1px solid #ff6846;
           border-radius: 10px;
+          @include desktops{
+            width: 427px;
+            height: 56px;
+          }
         }
+      }
+    }
+  }
+  .contact-graph-img{
+    img{
+      position: absolute;
+      @include desktops{
+        width: 321px;
+        height: 340px;
+        right: 160px;
+        top: 350px;
       }
     }
   }
@@ -270,6 +302,7 @@
       }
       @include desktops{
         left: 150px;
+        top: -180px;
       }
       .brand {
         img {
@@ -394,7 +427,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1140px;
+    width: 1450px;
     margin: auto;
     margin-top: 180px;
   }
@@ -461,6 +494,7 @@
     margin-top: 28px;
     @include desktops {
       margin: auto;
+      width: 1150px;
       margin-top: 80px;
       display: flex;
       flex-direction: row;

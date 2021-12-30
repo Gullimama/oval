@@ -41,7 +41,7 @@ const path = {
     fonts: './app/fonts/**/*.*',
     js: './app/js/*.*',
     scss: './app/scss/**/*.scss',
-    img: './app/image/**/*.+(png|jpg|gif|ico|svg|webp)',
+    img: './appimage/**/*.+(png|jpg|gif|ico|svg|webp)',
     data:'./app/data/data.json',
     plugins: './app/plugins/**/*.*',
     pluginCss: './app/plugins/**/*.css',

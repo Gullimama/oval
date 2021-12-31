@@ -1,7 +1,7 @@
 .page-banner{
   padding-top: 20px;
   padding-bottom: 30px;
-  @include tablet{
+  @include mobile-lg{
     padding-top: 100px;
     padding-bottom: 80px;
   }
@@ -13,7 +13,7 @@
       font-size: 34px;
       line-height: 46px;
       padding-bottom: 12;
-      @include tablet{
+      @include mobile-lg{
         font-size: 60px;
         line-height: 70px;
         // padding-bottom: 22px;
@@ -34,7 +34,7 @@
 .inner-hero-area{
   padding-top: 100px;
   padding-bottom: 50px;
-  @include tablet{
+  @include mobile-lg{
     padding-top: 120px;
   padding-bottom: 100px;
   }
@@ -50,7 +50,7 @@
       margin-bottom: 15px;
       font-size: $h4;
       line-height: 36px;
-      @include tablet{
+      @include mobile-lg{
         margin-bottom: 32px;
         font-size: $h2;
       }
@@ -68,7 +68,7 @@
 .page-banner{
   padding-top: 20px;
   padding-bottom: 30px;
-  @include tablet{
+  @include mobile-lg{
     padding-top: 100px;
     padding-bottom: $h1;
   }
@@ -80,7 +80,7 @@
       font-size: 34px;
       line-height: 46px;
       padding-bottom: 12;
-      @include tablet{
+      @include mobile-lg{
         font-size: $h1;
         line-height: 84px;
         padding-bottom: 22px;

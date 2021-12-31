@@ -1,7 +1,7 @@
 // leading brands section
 .leading__sections-pricing {
   margin-top: 84px;
-  @include desktops {
+  @include  large-desktops-mid {
     margin: auto;
     margin-top: 180px;
     width: 1250px;
@@ -11,11 +11,11 @@
     height: 52px;
     margin: auto;
     margin-bottom: 35px;
-    @include tablet {
+    @include mobile-lg {
       width: 436px;
       height: 22px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 436px;
       height: 22px;
     }
@@ -28,11 +28,11 @@
       letter-spacing: 0.18000000715255737px;
       text-align: center;
       color: #3b3a40;
-      @include tablet {
+      @include mobile-lg {
         font-size: 18px;
         line-height: 21.78px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 18px;
         line-height: 21.78px;
       }
@@ -48,7 +48,7 @@
     margin: auto;
     margin-top: 56px;
     margin-bottom: 32px;
-    @include tablet {
+    @include mobile-lg {
       width: 588px;
       height: 60px;
       margin-top: 150px;
@@ -61,7 +61,7 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
-      @include tablet {
+      @include mobile-lg {
         font-size: 48px;
         line-height: 59.52px;
       }
@@ -74,17 +74,17 @@
   font-weight: bold;
 }
 .table__structure {
-  @include tablet {
+  @include mobile-lg {
     width: 698px;
     margin: auto;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 1140px;
     margin-top: 80px;
   }
   .table {
     margin-bottom: 32px;
-    @include tablet {
+    @include mobile-lg {
       margin-bottom: 48px;
     }
     thead {

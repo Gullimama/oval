@@ -9,12 +9,12 @@
       opacity: 0.48;
       border: 1px solid #8e8c95;
       border-radius: 8px;
-      @include desktops {
+      @include  large-desktops-mid {
         width: 332px;
         height: 60px;
       }
     }
-    @include tablet {
+    @include mobile-lg {
       display: block;
     }
     input[type="text" i] {
@@ -22,13 +22,13 @@
     }
   }
   .hero__section-mb-btn {
-    @include tablet {
+    @include mobile-lg {
       display: none !important;
     }
   }
 }
 .hero__section-card {
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 110px;
   }
 }
@@ -41,11 +41,11 @@
     height: 44px;
     margin: auto;
     margin-top: 12px;
-    @include tablet {
+    @include mobile-lg {
       width: 507px;
       height: 56px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 450px;
       height: 60px;
       margin-bottom: 56px;
@@ -59,11 +59,11 @@
       letter-spacing: 0.07777778059244156px;
       text-align: center;
       color: #64626a;
-      @include tablet {
+      @include mobile-lg {
         font-size: 18px;
         line-height: 28px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 20px;
         line-height: 30px;
       }
@@ -73,7 +73,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 16px;
-    @include desktops {
+    @include  large-desktops-mid {
       width: 1250px;
       margin: auto;
     }
@@ -84,22 +84,22 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @include tablet {
+    @include mobile-lg {
       flex-direction: row;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       margin-top : 60px;
       width: 1250px;
       flex-direction: row;
       gap: 60px;
     }
     .banner-left {
-      @include desktops {
+      @include  large-desktops-mid {
         width: 690px;
       }
     }
     .banner-right {
-      @include desktops {
+      @include  large-desktops-mid {
         width: 690px;
       }
     }
@@ -109,13 +109,15 @@
 // plan section
 
 .plan__section {
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 180px;
   }
   .plan__section-header {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    @include desktops {
+    @include  large-desktops-mid {
+      width: 1450px;
       flex-direction: row;
     }
     .header-left {
@@ -123,18 +125,18 @@
       height: 92px;
       margin: auto;
       margin-top: 72px;
-      @include tablet {
+      @include mobile-lg {
         width: 672px;
         height: 60px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         width: 550px;
         height: 148px;
         margin: auto;
       }
       h2 {
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           text-align: left;
         }
       }
@@ -143,11 +145,11 @@
       width: 288px;
       margin: auto;
       margin-top: 12px;
-      @include tablet {
+      @include mobile-lg {
         width: 560px;
         height: 84px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         width: 458px;
         height: 90px;
       }
@@ -160,11 +162,11 @@
         letter-spacing: 0.07777778059244156px;
         text-align: center;
         color: #64626a;
-        @include tablet {
+        @include mobile-lg {
           font-size: 18px;
           line-height: 28px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           text-align: left;
           font-size: 20px;
           line-height: 30px;
@@ -173,31 +175,31 @@
     }
   }
   .plan__section-body {
+    margin: auto;
     margin-top: 36px;
-    @include desktops {
-      width: 1410px;
-      margin: auto;
+    @include  large-desktops-mid {
+      width: 1450px;
       margin-top: 103px;
     }
     .plan-section-item {
-      @include desktops {
+      @include  large-desktops-mid {
         width: 457px;
       }
       .body-icon {
         margin-bottom: 16px;
-        @include desktops {
+        @include  large-desktops-mid {
           margin-left: 98px;
           text-align: left;
         }
         img {
-          @include desktops {
+          @include  large-desktops-mid {
             width: 43px;
             height: 43px;
           }
         }
       }
       .body-title {
-        @include desktops {
+        @include  large-desktops-mid {
           width: 302px;
           height: 27px;
           margin: auto;
@@ -212,7 +214,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: center;
-          @include desktops {
+          @include  large-desktops-mid {
             text-align: left;
             font-size: 22px;
             line-height: 26.62px;
@@ -224,7 +226,7 @@
         width: 280px;
         margin: auto;
         margin-bottom: 30px;
-        @include desktops {
+        @include  large-desktops-mid {
           width: 477px;
           height: 52px;
         }
@@ -237,7 +239,7 @@
           letter-spacing: 0px;
           text-align: center;
           color: #64626a;
-          @include desktops {
+          @include  large-desktops-mid {
             text-align: left;
             font-size: 16px;
             line-height: 26px;
@@ -252,18 +254,18 @@
 .informative__section {
   margin-top: 72px;
   .info-item {
-    @include tablet {
+    @include mobile-lg {
       width: 600px;
       height: 40px;
       margin: auto;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 870px;
       height: 50px;
       margin: auto;
     }
     .info-title {
-      @include desktops {
+      @include  large-desktops-mid {
         width: 196px;
         height: 124px;
       }
@@ -276,7 +278,7 @@
         letter-spacing: 0px;
         text-align: center;
         background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 100px;
           line-height: 124px;
         }
@@ -284,7 +286,7 @@
     }
     .info-body {
       width: 122px;
-      @include desktops {
+      @include  large-desktops-mid {
         width: 153px;
         height: 50px;
       }
@@ -297,7 +299,7 @@
         letter-spacing: 0px;
         text-align: center;
         color: #8e8c95;
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 20px;
           line-height: 24.2px;
         }
@@ -311,11 +313,11 @@
   width: 288px;
   height: 138px;
   margin: auto;
-  @include tablet {
+  @include mobile-lg {
     width: 609px;
     height: 120px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 566px;
     height: 148px;
     margin-top: 180px;
@@ -329,11 +331,11 @@
     letter-spacing: 0.591304361820221px;
     text-align: center;
     color: #000;
-    @include tablet {
+    @include mobile-lg {
       font-size: 48px;
       line-height: 59.52px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       font-size: 60px;
       line-height: 74.4px;
     }
@@ -344,10 +346,10 @@
   margin-top: 16.9px;
   width: 181px;
   height: 19px;
-  @include tablet {
+  @include mobile-lg {
     width: 275px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 271px;
   }
   h5 {
@@ -359,11 +361,11 @@
     letter-spacing: 0px;
     text-align: left;
     color: #000;
-    @include tablet {
+    @include mobile-lg {
       font-size: 18px;
       line-height: 21.78px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       font-size: 24px;
       line-height: 29.05px;
     }
@@ -373,10 +375,10 @@
   margin-left: 20px;
   margin-top: 11px;
   width: 280px;
-  @include tablet {
+  @include mobile-lg {
     width: 300px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 497px;
     height: 52px;
     margin-top: 12px;
@@ -390,11 +392,11 @@
     letter-spacing: 0px;
     text-align: left;
     color: #64626a;
-    @include tablet {
+    @include mobile-lg {
       font-size: 14px;
       line-height: 21.78px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       font-size: 16px;
       line-height: 26px;
     }

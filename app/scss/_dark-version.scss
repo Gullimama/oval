@@ -18,7 +18,7 @@
     color: #ffffff!important;
   }
   .main-menu > li > .nav-link{
-    @include desktops{
+    @include  large-desktops-mid{
       color: #ffffff!important;
     }
   }

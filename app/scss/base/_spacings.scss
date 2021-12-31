@@ -24,7 +24,7 @@
       @include mobile-lg {
           margin-top: #{($i * -5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           margin-top: #{($i * -5)}px;
       }
   }
@@ -32,10 +32,10 @@
 
 @for $i from 0 through 40 {
   .space-dt-md-#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           margin-top: #{($i * -5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           margin-top: #{($i * -5)}px;
       }
   }
@@ -43,7 +43,7 @@
 
 @for $i from 0 through 40 {
   .space-dt-lg-#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           margin-top: #{($i * -5)}px !important;
       }
       @include large-desktops {
@@ -70,7 +70,7 @@
       @include mobile-lg {
           margin-bottom: #{($i * -5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           margin-bottom: #{($i * -5)}px;
       }
   }
@@ -78,10 +78,10 @@
 
 @for $i from 0 through 40 {
   .space-db-md-#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           margin-bottom: #{($i * -5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           margin-bottom: #{($i * -5)}px;
       }
   }
@@ -89,7 +89,7 @@
 
 @for $i from 0 through 40 {
   .space-db-lg-#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           margin-bottom: #{($i * -5)}px !important;
       }
       @include large-desktops {
@@ -234,7 +234,7 @@
       @include mobile-lg {
           padding-top: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           padding-top: #{($i * 5)}px;
       }
   }
@@ -242,10 +242,10 @@
 
 @for $i from 0 through 40 {
   .pt-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           padding-top: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           padding-top: #{($i * 5)}px;
       }
   }
@@ -253,7 +253,7 @@
 
 @for $i from 0 through 40 {
   .pt-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           padding-top: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -280,7 +280,7 @@
       @include mobile-lg {
           padding-bottom: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           padding-bottom: #{($i * 5)}px;
       }
   }
@@ -288,10 +288,10 @@
 
 @for $i from 0 through 40 {
   .pb-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           padding-bottom: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           padding-bottom: #{($i * 5)}px;
       }
   }
@@ -299,7 +299,7 @@
 
 @for $i from 0 through 40 {
   .pb-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           padding-bottom: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -326,7 +326,7 @@
       @include mobile-lg {
           padding-left: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           padding-left: #{($i * 5)}px;
       }
   }
@@ -334,10 +334,10 @@
 
 @for $i from 0 through 40 {
   .pl-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           padding-left: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           padding-left: #{($i * 5)}px;
       }
   }
@@ -345,7 +345,7 @@
 
 @for $i from 0 through 40 {
   .pl-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           padding-left: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -372,7 +372,7 @@
       @include mobile-lg {
           padding-right: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           padding-right: #{($i * 5)}px;
       }
   }
@@ -380,10 +380,10 @@
 
 @for $i from 0 through 40 {
   .pr-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           padding-right: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           padding-right: #{($i * 5)}px;
       }
   }
@@ -391,7 +391,7 @@
 
 @for $i from 0 through 40 {
   .pr-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           padding-right: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -413,7 +413,7 @@
       @include mobile-lg {
           margin-top: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           margin-top: #{($i * 5)}px;
       }
   }
@@ -421,10 +421,10 @@
 
 @for $i from 0 through 40 {
   .mt-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           margin-top: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           margin-top: #{($i * 5)}px;
       }
   }
@@ -432,7 +432,7 @@
 
 @for $i from 0 through 40 {
   .mt-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           margin-top: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -459,7 +459,7 @@
       @include mobile-lg {
           margin-bottom: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           margin-bottom: #{($i * 5)}px;
       }
   }
@@ -467,10 +467,10 @@
 
 @for $i from 0 through 40 {
   .mb-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           margin-bottom: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           margin-bottom: #{($i * 5)}px;
       }
   }
@@ -478,7 +478,7 @@
 
 @for $i from 0 through 40 {
   .mb-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           margin-bottom: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -505,7 +505,7 @@
       @include mobile-lg {
           margin-left: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           margin-left: #{($i * 5)}px;
       }
   }
@@ -513,10 +513,10 @@
 
 @for $i from 0 through 40 {
   .ml-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           margin-left: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           margin-left: #{($i * 5)}px;
       }
   }
@@ -524,7 +524,7 @@
 
 @for $i from 0 through 40 {
   .ml-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           margin-left: #{($i * 5)}px !important;
       }
       @include large-desktops {
@@ -551,7 +551,7 @@
       @include mobile-lg {
           margin-right: #{($i * 5)}px !important;
       }
-      @include tablet {
+      @include mobile-lg {
           margin-right: #{($i * 5)}px;
       }
   }
@@ -559,10 +559,10 @@
 
 @for $i from 0 through 40 {
   .mr-md--#{$i * 5} {
-      @include tablet {
+      @include mobile-lg {
           margin-right: #{($i * 5)}px !important;
       }
-      @include desktops {
+      @include  large-desktops-mid {
           margin-right: #{($i * 5)}px;
       }
   }
@@ -570,7 +570,7 @@
 
 @for $i from 0 through 40 {
   .mr-lg--#{$i * 5} {
-      @include desktops {
+      @include  large-desktops-mid {
           margin-right: #{($i * 5)}px !important;
       }
       @include large-desktops {

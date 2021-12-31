@@ -33,7 +33,7 @@
 .hero__section {
   margin-top: 40px;
   margin-bottom: 48px;
-  @include desktops {
+  @include  large-desktops-mid {
     width: 1450px;
   }
   .hero__section-header-title {
@@ -44,7 +44,7 @@
       width: 672px;
       height: 120px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 836px;
       height: 148px;
     }
@@ -59,7 +59,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -73,7 +73,7 @@
   margin: auto;
   margin-top: 18px;
   margin-bottom: 26px;
-  @include tablet {
+  @include mobile-lg {
     margin-top: 24px;
     width: 507px;
     height: 56px;
@@ -92,7 +92,7 @@
       line-height: 28px;
     }
 
-    @include desktops {
+    @include  large-desktops-mid {
       font-size: 20px;
       line-height: 30px;
     }
@@ -107,7 +107,7 @@
     margin: auto;
     margin-top: 65px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 200px;
   }
   h5 {
@@ -121,7 +121,7 @@
     @include mobile-lg {
       font-size: 22px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       font-size: 24px;
     }
   }
@@ -136,7 +136,7 @@
     height: 56px;
     margin-top: 14px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 657px;
     height: 60px;
   }
@@ -152,7 +152,7 @@
       font-size: 18px;
       line-height: 28px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       font-size: 20px;
       line-height: 30px;
     }
@@ -164,7 +164,7 @@
 }
 
 #light__blue {
-  background: linear-gradient(to bottom, #fff 10%, #c2eed8 90%);
+  background: linear-gradient(to bottom, #fff 30%, #c2eed8 70%);
 }
 
 .header-img {
@@ -173,7 +173,7 @@
     height: auto;
   }
 
-  @include desktops {
+  @include  large-desktops-mid {
     width: 90%;
   }
 }
@@ -186,13 +186,13 @@
     flex-direction: column;
   }
 
-  @include tablet {
+  @include mobile-lg {
     .build__section-body-list {
       position: relative;
     }
   }
 
-  @include desktops {
+  @include  desktops {
     width: 1450px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -208,7 +208,7 @@
       left: -311px;
     }
   }
-  @include large-desktops-mid {
+  @include desktops{
     .build__section-body-list {
       position: relative;
       top: -320px;
@@ -230,14 +230,14 @@
       border-left-width: 10px;
       margin-top: 30px;
 
-      @include tablet {
+      @include mobile-lg {
         display: flex;
         flex-direction: row;
         gap: 37px;
         margin-top: 49px;
       }
 
-      @include desktops {
+      @include  desktops{
         display: flex;
         flex-direction: column;
         gap: 14px;
@@ -252,14 +252,14 @@
         width: 280px;
         height: 120px;
 
-        @include tablet {
+        @include mobile-lg {
           width: 176px;
           height: 150px;
           margin: 5px;
           border-bottom: none;
         }
 
-        @include desktops {
+        @include  desktops {
           width: 430px;
           height: 100px;
           border-bottom: 1px solid #d1d0d6;
@@ -271,12 +271,12 @@
           width: 280px;
           border-bottom: 2px solid #fa6402;
 
-          @include tablet {
+          @include mobile-lg {
             width: 176px;
             height: 150px;
           }
 
-          @include desktops {
+          @include  desktops {
             width: 430px;
             height: 100px;
           }
@@ -308,7 +308,7 @@
           @include mobile-lg {
             width: 176px;
           }
-          @include desktops {
+          @include  desktops {
             width: 372px;
             height: 50px;
           }
@@ -322,10 +322,10 @@
             letter-spacing: 0px;
             text-align: left;
 
-            @include tablet {
+            @include mobile-lg {
               font-size: $p;
             }
-            @include desktops {
+            @include  desktops {
               font-size: 16px;
               height: 26px;
             }
@@ -334,13 +334,13 @@
       }
     }
 
-    @include tablet {
+    @include mobile-lg {
       flex-direction: column;
     }
   }
 
   .build__section-head-content {
-    @include desktops {
+    @include desktops{
       text-align: left;
       height: 50px;
       width: 600px;
@@ -357,7 +357,7 @@
       width: 695px;
       height: 60px;
     }
-    @include desktops {
+    @include  desktops {
       width: 575px;
       height: 148px;
     }
@@ -374,7 +374,7 @@
         line-height: 59.52px;
       }
 
-      @include desktops {
+      @include  desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -385,11 +385,11 @@
       width: 507px;
       margin-bottom: 40px;
     }
-    @include desktops {
+    @include  desktops{
       width: 507px;
     }
     p {
-      @include desktops {
+      @include  desktops{
         text-align: left;
       }
     }
@@ -402,14 +402,14 @@
   margin-bottom: 32px;
   margin-top: 32px;
 
-  @include tablet {
+  @include mobile-lg {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 28px;
     margin-bottom: 48px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     width: 1450px;
     gap: 14px;
   }
@@ -425,19 +425,19 @@
       width: 176px;
     }
 
-    @include tablet {
+    @include mobile-lg {
       height: 110px;
       margin: 5px;
       border-top: 1px solid #d1d0d6;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 360px;
     }
 
     &:hover {
       border-top: 2px solid #fa6402;
 
-      @include tablet {
+      @include mobile-lg {
         height: 110px;
       }
       &::before {
@@ -476,7 +476,7 @@
         letter-spacing: 0px;
         text-align: left;
 
-        @include tablet {
+        @include mobile-lg {
           font-size: $p;
         }
       }
@@ -490,7 +490,7 @@
   @include mobile-lg {
     margin-top: 120px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     margin: auto;
     width: 1450px;
     margin-top: 0px;
@@ -505,7 +505,7 @@
       width: 672px;
       height: 60px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 853px;
       height: 74px;
     }
@@ -521,7 +521,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -547,7 +547,7 @@
           height: 64px;
           right: 41.7%;
         }
-        @include desktops {
+        @include  desktops{
           width: 96px;
           right: 61.7%;
           top: 103px;
@@ -563,7 +563,7 @@
       height: 120px;
       margin-bottom: 152px;
     }
-    @include desktops {
+    @include  desktops {
       width: 798px;
       height: 148px;
     }
@@ -574,14 +574,14 @@
       font-weight: 400;
       line-height: 46px;
       text-align: left;
-      @include tablet {
+      @include mobile-lg {
         font-size: $h2;
         text-align: left;
         line-height: 59.52px;
         padding-left: 10px;
       }
 
-      @include desktops {
+      @include  desktops {
         font-size: $h1;
         line-height: 74.4px;
       }
@@ -592,12 +592,12 @@
     flex-wrap: nowrap;
     overflow-x: auto;
 
-    @include tablet {
+    @include mobile-lg {
       display: flex;
       flex-direction: row;
     }
 
-    @include desktops {
+    @include  desktops {
       width: 1200px;
       margin: auto;
       gap: 30px;
@@ -612,14 +612,14 @@
       border-radius: 0px;
       border-right: 1px solid #d1d0d6;
 
-      @include desktops {
+      @include  desktops {
         width: 360px;
       }
       .card-body {
         width: 280px;
         height: 140px;
         margin-bottom: 30px;
-        @include desktops {
+        @include  desktops {
           width: 336px;
         }
         p {
@@ -631,7 +631,7 @@
           letter-spacing: -0.20000000298023224px;
           color: #3b3a40;
 
-          @include tablet {
+          @include mobile-lg {
             font-size: $h7;
             line-height: 30px;
           }
@@ -645,13 +645,13 @@
         border-style: none;
         background: transparent;
 
-        @include tablet {
+        @include mobile-lg {
           .card-cus-intro-img {
             img {
               width: 36px;
               height: 36px;
 
-              @include desktops {
+              @include  desktops {
                 width: 60px;
                 height: 60px;
               }
@@ -693,7 +693,7 @@
   display: flex;
   flex-direction: column;
 
-  @include tablet {
+  @include mobile-lg {
     margin-left: 64px;
     margin-right: 64px;
 
@@ -703,7 +703,7 @@
     }
   }
 
-  @include desktops {
+  @include  desktops {
     margin-left: 249px;
     margin-right: 225px;
 
@@ -720,13 +720,13 @@
       align-self: center;
     }
 
-    @include desktops {
+    @include  desktops {
       text-align: left;
       align-self: flex-end;
     }
   }
 
-  @include tablet {
+  @include mobile-lg {
     .flex-end-lg {
       text-align: left;
       align-self: flex-end;
@@ -738,7 +738,7 @@
     }
   }
 
-  @include desktops {
+  @include  desktops {
     .flex-end-lg {
       text-align: left;
       align-self: flex-end;
@@ -759,14 +759,14 @@
   margin-top: 76px;
   margin-bottom: 24px;
 
-  @include tablet {
+  @include mobile-lg {
     margin-top: 120px;
     margin-bottom: 78px;
     width: 500px;
     height: 64px;
   }
 
-  @include desktops {
+  @include  desktops {
     width: 334px;
     height: 126px;
     margin-left: 0;
@@ -782,13 +782,13 @@
   text-align: center;
   color: #8e8c95;
 
-  @include tablet {
+  @include mobile-lg {
     font-size: $h6;
     line-height: 32px;
     text-align: center;
   }
 
-  @include desktops {
+  @include  desktops {
     font-size: $h6;
     line-height: 42px;
   }
@@ -806,12 +806,12 @@
     color: #000;
     background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
 
-    @include tablet {
+    @include mobile-lg {
       font-size: 72px !important;
       line-height: 89.28px !important;
     }
 
-    @include desktops {
+    @include  desktops {
       font-size: 100px !important;
       line-height: 124px !important;
     }
@@ -822,7 +822,7 @@
 .pricing__section {
   margin-top: 72px;
 
-  @include tablet {
+  @include mobile-lg {
     margin-top: 120px;
   }
 
@@ -830,7 +830,7 @@
     text-align: center;
     height: 92px;
 
-    @include tablet {
+    @include mobile-lg {
       height: 60px;
     }
 
@@ -843,11 +843,11 @@
       letter-spacing: 0.591304361820221px;
       color: #000;
 
-      @include tablet {
+      @include mobile-lg {
         font-size: $h2;
         line-height: 59.52px;
       }
-      @include desktops {
+      @include  desktops {
         font-size: $h1;
         line-height: 74.4px;
       }
@@ -860,12 +860,12 @@
     margin-top: 11px;
     width: 280px;
 
-    @include tablet {
+    @include mobile-lg {
       width: 450px;
       height: 26px;
       margin-top: 20px;
     }
-    @include desktops {
+    @include  desktops {
       width: 505px;
       height: 28px;
     }
@@ -879,11 +879,11 @@
       letter-spacing: 0.20000000298023224px;
       color: #3b3a40;
 
-      @include tablet {
+      @include mobile-lg {
         font-size: $p;
         line-height: 26px;
       }
-      @include desktops {
+      @include  desktops {
         font-size: 18px;
         line-height: 28px;
       }
@@ -952,33 +952,36 @@
     margin: auto;
     margin-top: 30px;
 
-    @include tablet {
+    @include mobile-lg {
       margin-top: 58px;
     }
-    @include desktops {
+    @include large-desktops{
+      width: 1250px;
+    }
+    @include  large-desktops-mid {
       width: 1450px;
     }
 
     .card-1 {
       border-radius: 6px 6px 0px 0px !important;
-      @include tablet {
+      @include mobile-lg {
         border-radius: 12px 0px 0px 0px !important;
         margin-left: 59px !important;
         margin-right: 0 !important;
       }
-      @include desktops {
+      @include  desktops {
         margin-left: 150px !important;
         border-radius: 12px 0px 0px 12px !important;
       }
     }
     .card-3 {
       border-radius: 0 !important;
-      @include tablet {
+      @include mobile-lg {
         border-radius: 0px 0px 0px 12px !important;
         margin-left: 59px !important;
         margin-right: 0 !important;
       }
-      @include desktops {
+      @include  desktops {
         margin-left: 0 !important;
         margin-right: 0 !important;
         border-radius: 0px 0px 0px 0px !important;
@@ -986,12 +989,12 @@
     }
     .card-2 {
       border-radius: 0 !important;
-      @include tablet {
+      @include mobile-lg {
         border-radius: 0px 12px 0px 0px !important;
         margin-right: 59px !important;
         margin-left: 0px !important;
       }
-      @include desktops {
+      @include  desktops {
         margin-left: 0 !important;
         margin-right: 0 !important;
         border-radius: 0px 0px 0px 0px !important;
@@ -999,12 +1002,12 @@
     }
     .card-4 {
       border-radius: 0px 0px 12px 12px !important;
-      @include tablet {
+      @include mobile-lg {
         border-radius: 0px 0px 12px 0px !important;
         margin-left: 0 !important;
         margin-right: 59px !important;
       }
-      @include desktops {
+      @include  desktops {
         margin-left: 0 !important;
         border-radius: 0px 12px 12px 0px !important;
       }
@@ -1015,12 +1018,12 @@
       border-radius: 6px 6px 0px 0px;
       margin: 0 auto;
 
-      @include tablet {
+      @include mobile-lg {
         width: 305px;
         height: 395px;
         border: 1px solid #d1d0d6;
       }
-      @include desktops {
+      @include  desktops {
         max-width: 19.7% !important;
         height: 473px;
       }
@@ -1036,7 +1039,7 @@
             line-height: 24px;
             letter-spacing: 0px;
             text-align: center;
-            @include tablet {
+            @include mobile-lg {
               font-size: $h6;
               line-height: 29.05px;
             }
@@ -1114,7 +1117,7 @@
     border-radius: 12px;
     margin-top: 32px;
     padding: 24px;
-    @include tablet {
+    @include mobile-lg {
       margin-top: 48px;
       width: 668px;
       height: 96px;
@@ -1122,13 +1125,14 @@
       padding-left: 30px;
       padding-right: 30px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 1140px;
       height: 112px;
       margin: auto;
       margin-top: 48px;
     }
-    @include tablet {
+    @include desktops{
+      width: 980px;
     }
     .enterprise-title {
       h3 {
@@ -1139,11 +1143,11 @@
         line-height: $h6;
         letter-spacing: 0px;
         color: #3b3a40;
-        @include tablet {
+        @include mobile-lg {
           font-size: $h6;
           line-height: 26.22px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 24px;
           line-height: 29.05px;
         }
@@ -1163,12 +1167,12 @@
         width: 162px;
         margin: 0 auto;
         margin-bottom: 16px;
-        @include tablet {
+        @include mobile-lg {
           width: 260px;
           padding-top: 5px;
           margin-left: 0;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 14px;
           line-height: 20px;
         }
@@ -1199,11 +1203,11 @@
     margin-top: 32px;
     width: 280px;
     height: 72px;
-    @include tablet {
+    @include mobile-lg {
       width: 377px;
       height: 52px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 752px;
       height: 28px;
     }
@@ -1216,11 +1220,11 @@
       letter-spacing: 0px;
       text-align: center;
       color: #64626a;
-      @include tablet {
+      @include mobile-lg {
         font-size: 16px;
         line-height: 26px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 18px;
         line-height: 28px;
       }
@@ -1236,7 +1240,7 @@
       text-align: center;
       text-decoration: underline;
       margin-top: 20px;
-      @include tablet {
+      @include mobile-lg {
         font-size: 14px;
         line-height: 16.94px;
       }
@@ -1251,7 +1255,7 @@
   justify-content: center;
   gap: 10px;
 
-  @include tablet {
+  @include mobile-lg {
     flex-direction: row;
   }
 }
@@ -1266,7 +1270,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include tablet {
+    @include mobile-lg {
       align-items: flex-end;
     }
   }
@@ -1282,14 +1286,14 @@
     flex-direction: column;
     align-items: center;
 
-    @include tablet {
+    @include mobile-lg {
       align-items: flex-start;
     }
   }
 }
 
 .focus-section {
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 200px;
   }
 }

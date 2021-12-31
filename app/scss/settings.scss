@@ -152,12 +152,12 @@ input[type="number"] {
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @include tablet {
+  @include mobile-lg {
     padding-top: 120px;
     padding-bottom: 60px;
   }
 
-  @include desktops {
+  @include  large-desktops-mid {
     padding-bottom: 40px;
   }
 }
@@ -223,7 +223,7 @@ input[type="number"] {
 }
 
 .d-lg-block {
-  @include desktops {
+  @include  large-desktops-mid {
     display: block !important;
   }
 }
@@ -251,7 +251,7 @@ input[type="number"] {
 }
 
 .d-lg-none {
-  @include desktops {
+  @include  large-desktops-mid {
     display: none !important;
   }
 }
@@ -269,14 +269,14 @@ input[type="number"] {
 }
 
 .flex-lg-right {
-  @include desktops {
+  @include  large-desktops-mid {
     display: flex;
     justify-content: flex-end;
   }
 }
 
 .flex-md-right {
-  @include tablet {
+  @include mobile-lg {
     display: flex;
     justify-content: flex-end;
   }

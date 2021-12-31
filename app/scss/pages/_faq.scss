@@ -4,7 +4,7 @@
 }
 
 .faq__section {
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 180px;
   }
   .content-section {
@@ -13,7 +13,7 @@
       width: 280px;
       height: 92px;
       margin: auto;
-      @include tablet {
+      @include mobile-lg {
         width: 390px;
         height: 136px;
       }
@@ -25,11 +25,11 @@
         line-height: 46px;
         letter-spacing: 0.591304361820221px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           font-size: 48px;
           line-height: 68px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           text-align: left;
         }
       }
@@ -39,21 +39,21 @@
       height: 44px;
       margin: auto;
       margin-top: 12px;
-      @include tablet {
+      @include mobile-lg {
         width: 368px;
         height: 56px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         width: 390px;
         height: 96px;
       }
       p {
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           font-size: 18px;
           line-height: 28px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 20px;
           line-height: 32px;
           text-align: left;
@@ -62,7 +62,7 @@
     }
     .faq-graph-img {
       display: none;
-      @include desktops {
+      @include  large-desktops-mid {
         display: block;
       }
     }
@@ -71,7 +71,7 @@
     margin-top: 20px;
     .question-item {
       .question {
-        @include tablet {
+        @include mobile-lg {
           width: 673px;
         }
         .collapsible {
@@ -88,12 +88,12 @@
           height: 124px;
           border: none;
           color: #3b3a40;
-          @include tablet {
+          @include mobile-lg {
             width: 408px;
             font-size: 18px;
             line-height: 28px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             font-size: 20px;
             line-height: 30px;
           }
@@ -106,7 +106,7 @@
           height: 124px;
           border: none;
           color: #ff6846;
-          @include tablet {
+          @include mobile-lg {
             width: 408px;
           }
         }
@@ -119,7 +119,7 @@
           font-weight: bold;
           float: right;
           margin-left: 5px;
-          @include tablet {
+          @include mobile-lg {
             left: 100px;
           }
         }
@@ -140,7 +140,7 @@
           height: 144px;
           margin: auto;
           text-align: left;
-          @include tablet {
+          @include mobile-lg {
             width: 408px;
           }
         }

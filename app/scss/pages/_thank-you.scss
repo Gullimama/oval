@@ -2,7 +2,7 @@
   .omga-thank-page-main{
     padding-top: 55px;
       padding-bottom: 70px;
-    @include tablet{
+    @include mobile-lg{
       padding-top: 110px;
       padding-bottom: 140px;
     }
@@ -26,7 +26,7 @@
           margin-bottom: 12px;
           font-size: 34px;
           line-height: 46px;
-          @include tablet{
+          @include mobile-lg{
             font-size: 80px;
           line-height: 84px;
           }

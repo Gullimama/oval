@@ -1,10 +1,20 @@
 .graph-img {
   img {
     position: absolute;
-    width: 321px;
-    height: 340px;
-    right: 13.12%;
-    top: 250.46%;
+    width: 207.35px;
+    height: 219.62px;
+    top: 284.46%;
+    right: 21.54%;
+    @include mobile-lg {
+      top: 138.46%;
+      right: 4.54%;
+    }
+    @include  large-desktops-mid {
+      width: 321px;
+      height: 340px;
+      right: 13.12%;
+      top: 250.46%;
+    }
   }
 }
 
@@ -12,14 +22,15 @@
 
 .hero__section {
   margin: auto;
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 136px;
   }
   .hero__content {
     display: flex;
+    flex-direction: column;
     margin: auto;
     margin-bottom: 40px;
-    @include desktops {
+    @include  large-desktops-mid {
       flex-direction: row;
       justify-content: center;
       gap: 113px;
@@ -38,13 +49,13 @@
         height: 92px;
         margin: auto;
         color: #000;
-        @include tablet {
+        @include mobile-lg {
           font-size: $h2;
           line-height: 59.52px;
           width: 361px;
           height: 120px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: $h1;
           line-height: 74.4px;
           width: 442px;
@@ -54,7 +65,7 @@
     }
     .hero__body {
       margin-top: 16px;
-      @include tablet {
+      @include mobile-lg {
         margin-top: 24px;
       }
       p {
@@ -69,13 +80,13 @@
         height: 115px;
         color: #64626a;
         margin: auto;
-        @include tablet {
+        @include mobile-lg {
           width: 519px;
           height: 112px;
           font-size: 18px;
           line-height: 28px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           width: 517px;
           height: 120px;
           font-size: 20px;
@@ -89,10 +100,10 @@
   }
   .hero__img {
     margin-top: 16px;
-    @include tablet {
+    @include mobile-lg {
       margin-top: 56px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 100%;
     }
   }
@@ -100,10 +111,10 @@
     .hero__quotes-title {
       margin-top: 30px;
       color: #000;
-      @include tablet {
+      @include mobile-lg {
         margin-top: 25px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         margin-top: 70px;
       }
       h6 {
@@ -114,7 +125,7 @@
         line-height: 19px;
         letter-spacing: 0.20000000298023224px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           font-size: $h7;
           line-height: 24.2px;
         }
@@ -125,12 +136,12 @@
       height: 110px;
       margin: auto;
       margin-top: 25px;
-      @include tablet {
+      @include mobile-lg {
         width: 657px;
         margin-top: 10px;
         height: 78px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         margin-bottom: 170px;
       }
       p {
@@ -141,7 +152,7 @@
         line-height: 22px;
         letter-spacing: 0.08749999850988388px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           font-size: $p;
           line-height: 26px;
         }
@@ -155,14 +166,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #f9f9f9;
+  background: linear-gradient(to bottom, #f9f9f9 7  0%, #fff 30%);
   margin-top: 76px;
-  @include tablet {
+  @include mobile-lg {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  @include desktops {
     background: linear-gradient(to bottom, #f9f9f9 80%, #fff 20%);
+  }
+  @include  large-desktops-mid {
     justify-content: center;
   }
   .neighbors__section-img-1 {
@@ -170,13 +181,13 @@
     width: 264px;
     margin: auto;
     margin-top: 38px;
-    @include tablet {
+    @include mobile-lg {
       order: 0;
       width: 262px;
       margin-left: 60px;
       margin-top: 66px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 390px;
       margin-top: 140px;
       margin-left: 300px;
@@ -185,14 +196,14 @@
   }
   .neighbors__section-content {
     order: 0;
-    @include tablet {
+    @include mobile-lg {
       order: 1;
       position: relative;
       left: -91px;
       top: -31px;
       align-self: flex-start;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       left: -24px;
       top: 87px;
     }
@@ -202,12 +213,12 @@
       margin: auto;
       margin-top: 36px;
       color: #000;
-      @include tablet {
+      @include mobile-lg {
         margin-top: 56px;
         width: 282px;
         height: 120px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         width: 349px;
         margin-left: 60px;
       }
@@ -219,12 +230,12 @@
         line-height: 46px;
         letter-spacing: 0.591304361820221px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           text-align: left;
           font-size: $h2;
           line-height: 59.52px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: $h1;
           line-height: 74.4px;
         }
@@ -236,11 +247,11 @@
       margin: auto;
       color: #64626a;
       margin-top: 12px;
-      @include tablet {
+      @include mobile-lg {
         width: 312px;
         margin-left: 48px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         margin-top: 40px;
         margin-left: 60px;
       }
@@ -252,7 +263,7 @@
         line-height: 23px;
         letter-spacing: 0px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           text-align: left;
           font-size: $p;
           line-height: 26px;
@@ -265,11 +276,11 @@
     width: 264px;
     margin: auto;
     margin-top: 24px;
-    @include tablet {
+    @include mobile-lg {
       margin-left: 123px;
       width: 199px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       position: relative;
       width: 293px;
       height: 390px;
@@ -278,31 +289,31 @@
     }
   }
   .neighbors__section-img-3 {
+    position: relative;
+    z-index: 120;
     order: 3;
     width: 264px;
     margin: auto;
     margin-top: 24px;
-    @include tablet {
+    @include mobile-lg {
       width: 320px;
-      position: relative;
       left: -58px;
       top: -47px;
       align-self: flex-start;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 496px;
       height: 423px;
       left: 208px;
       top: -95px;
-      z-index: 120;
     }
   }
 }
 
 // leading section
 .leading__sections {
-  margin-top: 80px;
-  @include tablet {
+  margin-top: 200px;
+  @include mobile-lg {
     margin-top: 114px;
   }
 
@@ -310,11 +321,11 @@
     width: 280px;
     height: 168px;
     margin: auto;
-    @include tablet {
+    @include mobile-lg {
       width: 434px;
       height: 108px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 645px;
       height: 140px;
     }
@@ -326,18 +337,18 @@
       line-height: 42px;
       letter-spacing: 0.52173912525177px;
       text-align: center;
-      @include tablet {
+      @include mobile-lg {
         font-size: 32px;
         line-height: 54px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 48px;
         line-height: 70px;
       }
     }
   }
   .content-red-title {
-    @include tablet {
+    @include mobile-lg {
       font-size: $p;
       margin: auto;
       margin-top: 24px;
@@ -345,7 +356,7 @@
     }
   }
   .branding_list {
-    @include desktops {
+    @include  large-desktops-mid {
       width: 1180px;
       margin: auto;
     }
@@ -359,12 +370,12 @@
   margin: auto;
   margin-top: 20px;
   color: #ff6846;
-  @include tablet {
+  @include mobile-lg {
     width: 200px;
     margin-top: 28px;
     margin-left: 48px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 32px;
     margin-left: 60px;
   }
@@ -376,7 +387,7 @@
     line-height: 18px;
     letter-spacing: 0px;
     text-align: center;
-    @include tablet {
+    @include mobile-lg {
       text-align: left;
       font-size: $p;
       line-height: 19.36px;
@@ -393,18 +404,18 @@
 
 .team__section {
   margin-top: 95px;
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 150px;
   }
   .content-title {
     width: 280px;
     height: 92px;
     margin: auto;
-    @include tablet {
+    @include mobile-lg {
       width: 380px;
       height: 54px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 486px;
       height: 64px;
     }
@@ -416,11 +427,11 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
-      @include tablet {
+      @include mobile-lg {
         font-size: $h3;
         line-height: 54px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 52px;
         line-height: 64.48px;
       }
@@ -431,11 +442,11 @@
     height: 46px;
     margin: auto;
     margin-top: 12px;
-    @include tablet {
+    @include mobile-lg {
       width: 432px;
       height: 52px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       margin-top: 24px;
       width: 588px;
       height: 60px;
@@ -449,11 +460,11 @@
       letter-spacing: 0px;
       text-align: center;
       color: #64626a;
-      @include tablet {
+      @include mobile-lg {
         font-size: $p;
         line-height: 26px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 20px;
         line-height: 30px;
       }
@@ -461,10 +472,10 @@
   }
   .team__section-members {
     margin-top: 48px;
-    @include tablet {
+    @include mobile-lg {
       margin-top: 67.26px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       margin-top: 86.61px;
       margin-left: 150px;
       margin-right: 150px;
@@ -474,11 +485,11 @@
         img {
           width: 76.03px;
           height: 76.03px;
-          @include tablet {
+          @include mobile-lg {
             width: 94.22px;
             height: 94.22px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             width: 144px;
             height: 144px;
           }
@@ -493,12 +504,12 @@
         line-height: 17px;
         letter-spacing: 0.26249998807907104px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           margin-top: 25.17px;
           font-size: 14px;
           line-height: 16.94px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           margin-top: 40px;
           font-size: 20px;
           line-height: 24.2px;
@@ -515,11 +526,11 @@
         letter-spacing: 0px;
         text-align: center;
         color: #8e8c95;
-        @include tablet {
+        @include mobile-lg {
           margin-top: 6.56px;
           font-size: 12px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           margin-top: 12px;
           font-size: 18px;
           line-height: 21.78px;
@@ -533,27 +544,32 @@
 
 .values__section {
   display: flex;
+  flex-direction: column;
   margin: auto;
   margin-top: 82px;
-  @include desktops {
+  @include mobile-lg{
+    gap: 36px;
+    flex-direction: row;
+  }
+  @include  large-desktops-mid {
     width: 1250px;
     flex-direction: row;
     justify-content: center;
     gap: 207px;
   }
   .values__section-left {
-    @include tablet {
+    @include mobile-lg {
       margin-left: 28px;
     }
     .content-title {
       width: 280px;
       height: 46px;
       margin: auto;
-      @include tablet {
+      @include mobile-lg {
         width: 278px;
         height: 54px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         width: 390px;
         height: 68px;
       }
@@ -565,12 +581,12 @@
         line-height: 46px;
         letter-spacing: 0.591304361820221px;
         text-align: center;
-        @include tablet {
+        @include mobile-lg {
           font-size: 36px;
           line-height: 14.52px;
           text-align: left;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 48px;
           line-height: 68px;
         }
@@ -581,7 +597,7 @@
       height: 69px;
       margin: auto;
       margin-top: 12px;
-      @include desktops {
+      @include  large-desktops-mid {
         margin-top: 24px;
         width: 390px;
         height: 92px;
@@ -595,12 +611,12 @@
         letter-spacing: 0px;
         text-align: center;
         color: #64626a;
-        @include tablet {
+        @include mobile-lg {
           font-size: $p;
           line-height: 26px;
           text-align: left;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           font-size: 20px;
           line-height: 32px;
         }
@@ -609,13 +625,13 @@
   }
   .valuse__section-right {
     margin-top: 28px;
-    @include tablet {
+    @include mobile-lg {
       margin-top: 0;
       margin-right: 25px;
       display: flex;
       flex-wrap: wrap;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       justify-content: flex-start;
     }
     .value_box {
@@ -625,7 +641,7 @@
       background: #f5f6f9;
       border-radius: 42.5px;
       margin-bottom: 15px;
-      @include tablet {
+      @include mobile-lg {
         width: auto;
       }
       .icon {
@@ -633,22 +649,22 @@
         flex-direction: row;
         justify-content: center;
         padding-top: 10px;
-        @include tablet {
+        @include mobile-lg {
           flex-direction: row;
           flex-wrap: wrap;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           margin-right: 30px;
         }
         img {
           width: 18px;
           height: 18px;
-          @include tablet {
+          @include mobile-lg {
             width: 22px;
             height: 22px;
             margin-left: 10px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             width: 26px;
             height: 26px;
             margin-left: 15px;
@@ -664,12 +680,12 @@
           line-height: 15px;
           letter-spacing: 0px;
           text-align: left;
-          @include tablet {
+          @include mobile-lg {
             font-size: 14px;
             line-height: 16.94px;
             padding-right: 10px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             font-size: 20px;
             line-height: 24.2px;
             margin-right: 20px;
@@ -694,7 +710,7 @@ hr {
   @include mobile-lg {
     margin-top: 80px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 150px;
   }
   .content-title {
@@ -705,7 +721,7 @@ hr {
       width: 329px;
       height: 54px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 465px;
       height: 64px;
     }
@@ -721,7 +737,7 @@ hr {
         font-size: 36px;
         line-height: 54px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 52px;
         line-height: 64.48px;
       }
@@ -737,7 +753,7 @@ hr {
       height: 26px;
       margin-bottom: 42px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 676px;
       height: 30px;
       margin-top: 44px;
@@ -754,7 +770,7 @@ hr {
         font-size: $p;
         line-height: 26px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 20px;
         line-height: 30px;
       }
@@ -763,7 +779,7 @@ hr {
   .press__partners {
     margin: auto;
     margin-top: 27px;
-    @include desktops {
+    @include  large-desktops-mid {
       width: 1200px;
     }
     .press {
@@ -781,7 +797,7 @@ hr {
           width: 212.43px;
           height: 121.39px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           width: 350px;
           height: 200px;
           margin-bottom: 30px;

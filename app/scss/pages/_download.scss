@@ -4,12 +4,12 @@
     width: 193.7px;
     left: 15px;
     top: 450px;
-    @include tablet {
+    @include mobile-lg {
       width: 493.86px;
       left: 15px;
       top: 500px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 767px;
       left: 155px;
       top: 595px;
@@ -23,12 +23,12 @@
     width: 200.22px;
     right: 12px;
     top: 450px;
-    @include tablet {
+    @include mobile-lg {
       width: 477.76px;
       right: 10px;
       top: 500px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 742px;
       right: 185px;
       top: 550px;
@@ -37,7 +37,7 @@
 }
 
 .download_section {
-  @include desktops {
+  @include  large-desktops-mid {
     // background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
   }
 }
@@ -46,12 +46,12 @@
     width: 280px;
     height: 92px;
     margin-top: 22px;
-    @include tablet {
+    @include mobile-lg {
       width: 500px;
       height: 60px;
       margin-top: 80px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 580px;
       height: 74px;
     }
@@ -63,11 +63,11 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
-      @include tablet {
+      @include mobile-lg {
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -78,11 +78,11 @@
     height: 69px;
     margin: auto;
     margin-top: 16px;
-    @include tablet {
+    @include mobile-lg {
       width: 361px;
       height: 48px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 627px;
       height: 60px;
     }
@@ -95,11 +95,11 @@
       letter-spacing: 0px;
       text-align: center;
       color: #64626a;
-      @include tablet {
+      @include mobile-lg {
         font-size: 14px;
         line-height: 24px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 20px;
         line-height: 30px;
       }
@@ -111,11 +111,11 @@
     justify-content: center;
     margin-top: 22px;
     gap: 14px;
-    @include tablet {
+    @include mobile-lg {
       margin-top: 38px;
       gap: 20px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       margin-top: 48px;
       gap: 36px;
     }
@@ -126,11 +126,11 @@
       background: #fff;
       border-radius: 10px;
       color: #ff6846;
-      @include tablet {
+      @include mobile-lg {
         width: 196px;
         height: 52px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         width: 200px;
         height: 60px;
       }
@@ -147,10 +147,10 @@
     width: 300px;
     margin: auto;
     margin-top: 36px;
-    @include tablet {
+    @include mobile-lg {
       width: 668px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 1020px;
     }
   }
@@ -159,14 +159,14 @@
 // feature list
 .feature-list {
   margin-top: 30.51px;
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 80px;
   }
   .list-item {
     width: 280px;
     text-align: center;
     margin: auto;
-    @include tablet {
+    @include mobile-lg {
       width: 650px;
       display: flex;
       flex-direction: row;
@@ -175,7 +175,7 @@
       gap: 26px;
       margin: auto;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 850px;
       display: flex;
       flex-direction: row;
@@ -185,7 +185,7 @@
       margin: auto;
     }
     input[type="radio"] {
-      @include desktops {
+      @include  large-desktops-mid {
         box-sizing: border-box;
         padding: 0;
         width: 16px;
@@ -202,11 +202,11 @@
       letter-spacing: 0.17499999701976776px;
       text-align: left;
       margin-bottom: 12px;
-      @include tablet {
+      @include mobile-lg {
         font-size: 16px;
         line-height: 19.36px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 20px;
         line-height: 24.2px;
       }
@@ -221,11 +221,11 @@
     width: 280px;
     height: 92px;
     margin: auto;
-    @include tablet {
+    @include mobile-lg {
       width: 600px;
       height: 60px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       margin-top: 180px;
       width: 590px;
       height: 60px;
@@ -238,11 +238,11 @@
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
       text-align: center;
-      @include tablet {
+      @include mobile-lg {
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         font-size: 48px;
         line-height: 59.52px;
       }
@@ -250,7 +250,7 @@
   }
   .guiding-items {
     margin-top: 38px;
-    @include tablet {
+    @include mobile-lg {
       width: 800px;
       margin: auto;
       display: flex;
@@ -259,7 +259,7 @@
       flex-wrap: wrap;
       margin-top: 67px;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       width: 1200px;
       margin: auto;
       display: flex;
@@ -280,10 +280,10 @@
         height: 19px;
         margin: auto;
         margin-top: 23px;
-        @include tablet {
+        @include mobile-lg {
           width: 210px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           width: 251px;
           height: 27px;
         }
@@ -295,11 +295,11 @@
           line-height: 19px;
           letter-spacing: 0px;
           text-align: center;
-          @include tablet {
+          @include mobile-lg {
             font-size: 18px;
             line-height: 21.78px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             font-size: 22px;
             line-height: 26.62px;
           }
@@ -312,7 +312,7 @@
           height: 110px;
           margin: auto;
           margin-top: 9px;
-          @include desktops {
+          @include  large-desktops-mid {
             width: 457px;
             height: 78px;
           }
@@ -324,7 +324,7 @@
             line-height: 22px;
             letter-spacing: 0px;
             text-align: center;
-            @include desktops {
+            @include  large-desktops-mid {
               font-size: 16px;
               line-height: 26px;
             }
@@ -343,7 +343,7 @@
           margin: auto;
           margin-top: 20px;
           color: #ff6846;
-          @include desktops {
+          @include  large-desktops-mid {
             font-size: 18px;
             line-height: 21.78px;
             width: 200px;
@@ -364,11 +364,11 @@
   border-radius: 12px;
   padding: 19px;
   margin: auto;
-  @include tablet {
+  @include mobile-lg {
     width: 668px;
     height: 224px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     margin-top: 159px;
     width: 1140px;
     height: 238px;
@@ -376,12 +376,12 @@
     padding-top: 60px;
   }
   .download__section {
-    @include tablet {
+    @include mobile-lg {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    @include desktops {
+    @include  large-desktops-mid {
       flex-direction: row;
       gap: 75px;
     }
@@ -389,13 +389,13 @@
       .download-title {
         width: 269px;
         height: 24px;
-        @include tablet {
+        @include mobile-lg {
           margin: auto;
           width: 300px;
           height: 27px;
           margin-top: 20px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           margin: 0;
           width: 382px;
           height: 42px;
@@ -408,11 +408,11 @@
           line-height: 24px;
           letter-spacing: 0px;
           text-align: center;
-          @include tablet {
+          @include mobile-lg {
             font-size: 22px;
             line-height: 26.62px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             font-size: 30px;
             line-height: 42px;
             text-align: left;
@@ -422,13 +422,13 @@
       .download-body-text {
         width: 240px;
         height: 66px;
-        @include tablet {
+        @include mobile-lg {
           margin: auto;
           width: 360px;
           height: 40px;
           margin-bottom: 35px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           width: 463px;
           height: 60px;
         }
@@ -441,11 +441,11 @@
           letter-spacing: 0px;
           text-align: center;
           margin-top: 11px;
-          @include tablet {
+          @include mobile-lg {
             font-size: 14px;
             line-height: 20px;
           }
-          @include desktops {
+          @include  large-desktops-mid {
             font-size: 18px;
             line-height: 30px;
             text-align: left;
@@ -456,11 +456,11 @@
     .download-button {
       display: flex;
       margin-top: 22px;
-      @include tablet {
+      @include mobile-lg {
         margin: auto;
         gap: 15px;
       }
-      @include desktops {
+      @include  large-desktops-mid {
         flex-direction: row;
         gap: 24px;
       }
@@ -469,12 +469,12 @@
         height: 42px;
         border: 1px solid #8e8c95;
         border-radius: 8px 0px 0px 8px;
-        @include tablet {
+        @include mobile-lg {
           width: 272px;
           height: 48px;
           border-radius: 8px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           width: 272px;
           height: 60px;
           background: #ffffff;
@@ -495,14 +495,14 @@
         color: #fff;
         font-size: 12px;
         line-height: 14.52px;
-        @include tablet {
+        @include mobile-lg {
           width: 124px;
           height: 48px;
           border-radius: 8px;
           font-size: 14px;
           line-height: 16.94px;
         }
-        @include desktops {
+        @include  large-desktops-mid {
           width: 170px;
           height: 60px;
           background: #ff6846;

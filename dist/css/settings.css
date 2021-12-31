@@ -140,14 +140,14 @@ input[type="number"] {
   padding-bottom: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .section-padding {
     padding-top: 120px;
     padding-bottom: 60px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1366px) {
   .section-padding {
     padding-bottom: 40px;
   }
@@ -229,7 +229,7 @@ input[type="number"] {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1366px) {
   .d-lg-block {
     display: block !important;
   }
@@ -259,7 +259,7 @@ input[type="number"] {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1366px) {
   .d-lg-none {
     display: none !important;
   }
@@ -277,14 +277,14 @@ input[type="number"] {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1366px) {
   .flex-lg-right {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .flex-md-right {
     display: flex;
     justify-content: flex-end;

@@ -2,10 +2,10 @@
   background: transparent;
   padding-top: 32px;
   height: 100px;
-  @include tablet {
+  @include mobile-lg {
     padding-left: 84px;
   }
-  @include desktops {
+  @include  large-desktops-mid {
     padding-left: 150px;
   }
 }
@@ -46,6 +46,7 @@
 }
 
 .nav-link:hover {
+  font-weight: 600;
   color: #000;
 }
 
@@ -69,8 +70,13 @@
   color: #000;
   background: #ffffff;
 }
-
-@media only screen and (max-width: 768px) {
+.nav-menu-btn{
+  display: block;
+  @include  large-desktops-mid{
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -87,6 +93,7 @@
   }
 
   .nav-buttons {
+    display: none;
     button {
       width: 140px;
       height: 60px;
@@ -94,7 +101,7 @@
       color: #fff;
       font-weight: 700;
       border-radius: 8px;
-      @include tablet {
+      @include mobile-lg {
         width: 150px;
       }
       &:hover {

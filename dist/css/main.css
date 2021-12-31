@@ -22382,14 +22382,14 @@
 }
 
 .testimonial__section .testimonial__section-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
   overflow-x: auto;
 }
 
 @media (min-width: 768px) {
   .testimonial__section .testimonial__section-card {
+    display: flex;
     flex-direction: row;
   }
 }
@@ -22407,14 +22407,14 @@
   height: 320px;
   margin: auto;
   text-align: left;
+  border: none;
+  border-radius: 0px;
+  border-right: 1px solid #d1d0d6;
 }
 
 @media (min-width: 992px) {
   .testimonial__section .testimonial__section-card .card {
     width: 360px;
-    border: none;
-    border-radius: 0px;
-    border-right: 1px solid #d1d0d6;
   }
 }
 
@@ -23633,7 +23633,7 @@ ul li a:hover {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #ff6846;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
     border-radius: 10px;
@@ -23641,6 +23641,30 @@ ul li a:hover {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 9999;
+  }
+  .nav-buttons button {
+    width: 140px;
+    height: 60px;
+    background-color: #8e8c95;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  .nav-buttons button {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-buttons button:hover {
+    background-color: #ff6846;
+    color: #fff;
+  }
+  .nav-item a {
+    font-size: 25px;
   }
   .navbar {
     justify-content: flex-start;
@@ -23650,7 +23674,7 @@ ul li a:hover {
   }
   .nav-menu {
     justify-content: flex-start;
-    gap: 15px;
+    gap: 70px;
   }
   .hamburger {
     display: block;

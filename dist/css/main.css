@@ -21782,7 +21782,7 @@
 
 @media (min-width: 1366px) {
   .hero__section-header-sub-title {
-    width: 200px;
+    width: 201px;
   }
 }
 
@@ -21855,11 +21855,15 @@
 }
 
 #light__org {
-  background: linear-gradient(to bottom, #fff 10%, #ffdea7 90%);
+  display: inline-block;
+  height: 65px;
+  background: linear-gradient(to bottom, #fff 40%, #ffdea7 0%);
 }
 
 #light__blue {
-  background: linear-gradient(to bottom, #fff 30%, #c2eed8 70%);
+  display: inline-block;
+  height: 65px;
+  background: linear-gradient(to bottom, #fff 30%, #c2eed8 0%);
 }
 
 .header-img img {
@@ -23012,7 +23016,7 @@
 
 @media (min-width: 992px) {
   .price__footer .enterprise__section {
-    width: 980px;
+    width: 1140px;
   }
 }
 
@@ -23205,6 +23209,11 @@
   }
 }
 
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  transform: translateX(1.75rem) !important;
+}
+
 /************************************* 
     01.Oval Components Styles
 *************************************/
@@ -23345,6 +23354,7 @@
 .section-button .btn--red {
   width: 127px;
   height: 44px;
+  font-weight: 700;
   color: #fff;
   background: #ff6846;
   border-radius: 8px;
@@ -23367,6 +23377,7 @@
 .section-button .btn--secondary {
   width: 44px;
   height: 44px;
+  font-weight: 700;
   border: 1px solid #8e8c95;
   border-radius: 8px;
 }

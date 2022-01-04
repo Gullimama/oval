@@ -1,7 +1,7 @@
 // leading brands section
 .leading__sections-pricing {
   margin-top: 84px;
-  @include  large-desktops-mid {
+  @include large-desktops-mid {
     margin: auto;
     margin-top: 180px;
     width: 1250px;
@@ -15,7 +15,7 @@
       width: 436px;
       height: 22px;
     }
-    @include  large-desktops-mid {
+    @include large-desktops-mid {
       width: 436px;
       height: 22px;
     }
@@ -32,7 +32,7 @@
         font-size: 18px;
         line-height: 21.78px;
       }
-      @include  large-desktops-mid {
+      @include large-desktops-mid {
         font-size: 18px;
         line-height: 21.78px;
       }
@@ -78,7 +78,7 @@
     width: 698px;
     margin: auto;
   }
-  @include  large-desktops-mid {
+  @include large-desktops-mid {
     width: 1140px;
     margin-top: 80px;
   }
@@ -119,3 +119,5 @@
     }
   }
 }
+
+

@@ -10,6 +10,7 @@
   .btn--red {
     width: 127px;
     height: 44px;
+    font-weight: 700;
     color: #fff;
     background: #ff6846;
     border-radius: 8px;
@@ -25,6 +26,7 @@
   .btn--secondary {
     width: 44px;
     height: 44px;
+    font-weight: 700;
     border: 1px solid #8e8c95;
     border-radius: 8px;
     @include mobile-lg {

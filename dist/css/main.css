@@ -25172,7 +25172,7 @@ hr {
 
 @media (min-width: 1366px) {
   .contact-page .header__section .header-body {
-    margin-left: 140px;
+    margin-left: 150px;
     margin-top: 20px;
     margin-bottom: 48px;
     width: 480px;
@@ -25214,7 +25214,7 @@ hr {
 
 @media (min-width: 1366px) {
   .contact-page .header__section .header-button {
-    margin-left: 80px;
+    margin-left: 70px;
     gap: 30px;
   }
 }
@@ -25428,6 +25428,13 @@ hr {
   margin-bottom: 22px;
 }
 
+@media (min-width: 1366px) {
+  .contact-page .contact-form_sec form .form-group .nice-select {
+    width: 427px;
+    height: 52px;
+  }
+}
+
 .contact-page .contact-form_sec form .form-group .nice-select .current {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -25442,6 +25449,12 @@ hr {
   border: 1px solid #d1d0d6;
   border-radius: 10px;
   margin-bottom: 24px;
+}
+
+@media (min-width: 1366px) {
+  .contact-page .contact-form_sec form .form-group textarea {
+    width: 427px;
+  }
 }
 
 .contact-page .contact-form_sec form .form-group .btn-sumbit {

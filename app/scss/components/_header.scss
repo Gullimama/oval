@@ -47,7 +47,7 @@
 
 .nav-link:hover {
   font-weight: 600;
-  color: #000;
+  color: $title-color;
 }
 
 .nav-logo {
@@ -59,7 +59,7 @@
   width: 105px;
   height: 38px;
   border: none;
-  color: #000;
+  color: $title-color;
   background: transparent;
 }
 .btn-white {
@@ -67,7 +67,7 @@
   height: 38px;
   border: 1px solid #8e8c95;
   border-radius: 4px;
-  color: #000;
+  color: $title-color;
   background: #ffffff;
 }
 .nav-menu-btn{
@@ -105,7 +105,7 @@
         width: 150px;
       }
       &:hover {
-        background-color: #ff6846;
+        background-color: $theme-color;
         color: #fff;
       }
     }

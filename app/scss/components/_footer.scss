@@ -1,3 +1,4 @@
+
 ul {
   li {
     list-style: none;
@@ -24,7 +25,7 @@ ul {
 .footer__section {
   margin-top: 60%;
   width: 100%;
-  background: #000;
+  background: $title-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +91,7 @@ ul {
         line-height: 15px;
         letter-spacing: 0px;
         text-align: center;
-        color: #64626a;
+        color: $body-text-color;
       }
     }
   }

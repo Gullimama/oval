@@ -38,7 +38,7 @@
 
 .download_section {
   @include  large-desktops-mid {
-    // background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
+    // background: linear-gradient(to bottom, $dwn-bg-color 70%, #fff 30%);
   }
 }
 .header__section {
@@ -94,7 +94,7 @@
       line-height: 23px;
       letter-spacing: 0px;
       text-align: center;
-      color: #64626a;
+      color: $body-text-color;
       @include mobile-lg {
         font-size: 14px;
         line-height: 24px;
@@ -122,10 +122,10 @@
     .btn_light-orange {
       width: 140px;
       height: 58px;
-      border: 1px solid #ff6846;
+      border: 1px solid $theme-color;
       background: #fff;
       border-radius: 10px;
-      color: #ff6846;
+      color: $theme-color;
       @include mobile-lg {
         width: 196px;
         height: 52px;
@@ -136,7 +136,7 @@
       }
       &:hover {
         color: #fff;
-        background: #ff6846;
+        background: $theme-color;
         border-radius: 10px;
       }
     }
@@ -190,7 +190,7 @@
         padding: 0;
         width: 16px;
         height: 16px;
-        border: 3px solid #ff6846;
+        border: 3px solid $theme-color;
       }
     }
     label {
@@ -342,7 +342,7 @@
           text-align: center;
           margin: auto;
           margin-top: 20px;
-          color: #ff6846;
+          color: $theme-color;
           @include  large-desktops-mid {
             font-size: 18px;
             line-height: 21.78px;
@@ -360,7 +360,7 @@
 // alternative download option
 .alternative-download__section {
   width: 280px;
-  background: #f5f6f9;
+  background: $enterprise-color;
   border-radius: 12px;
   padding: 19px;
   margin: auto;
@@ -490,7 +490,7 @@
       button {
         width: 92px;
         height: 42px;
-        background: #ff6846;
+        background: $theme-color;
         border-radius: 0px 8px 8px 0px;
         color: #fff;
         font-size: 12px;
@@ -505,7 +505,7 @@
         @include  large-desktops-mid {
           width: 170px;
           height: 60px;
-          background: #ff6846;
+          background: $theme-color;
           border-radius: 8px;
           font-size: 16px;
           line-height: 19.36px;

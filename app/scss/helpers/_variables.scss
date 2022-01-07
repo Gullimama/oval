@@ -1,21 +1,42 @@
-// Primary-colors
-// $primary-color:  #22b0fc; //color for: Page = 1
-// $primary-color-p3:  #0f53fa; //color for: Page = 3
-// $primary-color-p4:  #5473E8; //color for: Page = 4
-// $primary-color-p5:  #10d396; //color for: Page = 5
 
-// Secondary-colors
-// $secondary-color: #f77321; 
-// $secondary-color-p3: #ffd166; //color for: Page = 3
-// $secondary-color-p4: #36c0cd; //color for: Page = 4
-
-
-// Global variables
 
 $theme-base-font: 'Libre Baskerville',
 serif;
 $body-base-font: 'Inter',
 sans-serif;
+
+// light color theme
+$bg-color: #FFFFFF;
+$title-color:#000;
+$dwn-bg-color:#FFF6F4;
+$contact-bg-color:#F9F9F9;
+$body-text-color:#64626A;
+$light-body-text:#B3B1B7;
+$theme-color: #FF6846;
+$primary-highlighter-color:#FFDEA7;
+$secondary-highlighter-color:#C2EED8;
+$tertiary-highlighter-color:#C0EEF5;
+$enterprise-color:#F5F6F9;
+
+// // dark color theme 
+// $bg-color: #2b2929;
+// $title-color:#fff;
+// $dwn-bg-color:#FFF6F4;
+// $contact-bg-color:#F9F9F9;
+// $body-text-color:#64626A;
+// $light-body-text:#B3B1B7;
+// $theme-color: #FF6846;
+// $btn-text-color:#FFFFFF;
+// $primary-highlighter-color:#FFDEA7;
+// $secondary-highlighter-color:#C2EED8;
+// $tertiary-highlighter-color:#C0EEF5;
+// $enterprise-color:#F5F6F9;
+
+
+
+
+
+
 
 // Landing1 Fonts and colors
 $l1-primary-font: $theme-base-font;
@@ -24,7 +45,6 @@ $l1-primary-text: #696871;
 $l1-primary-color: #f04037;
 $l1-secondary-color: #5454d4;
 $l1-btn-border: #c31a12;
-// $l1-btn-hover: #F9544B;
 $l1-btn-tertiary-color: #C4C4C4;
 
 
@@ -34,7 +54,6 @@ $l2-primary-heading: #19191b;
 $l2-primary-text: #696871;
 $l2-primary-color: #f04037;
 $l2-btn-border: #c31a12;
-// $l2-btn-hover: #F9544B;
 $l2-secondary-color: #413e65;
 
 // Landing3 Fonts and colors

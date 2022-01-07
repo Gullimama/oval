@@ -58,7 +58,7 @@
       line-height: 22px;
       letter-spacing: 0.07777778059244156px;
       text-align: center;
-      color: #64626a;
+      color: $body-text-color;
       @include mobile-lg {
         font-size: 18px;
         line-height: 28px;
@@ -161,7 +161,7 @@
         line-height: 22px;
         letter-spacing: 0.07777778059244156px;
         text-align: center;
-        color: #64626a;
+        color: $body-text-color;
         @include mobile-lg {
           font-size: 18px;
           line-height: 28px;
@@ -238,7 +238,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: center;
-          color: #64626a;
+          color: $body-text-color;
           @include  large-desktops-mid {
             text-align: left;
             font-size: 16px;
@@ -277,7 +277,7 @@
         line-height: 79px;
         letter-spacing: 0px;
         text-align: center;
-        background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
+        background: linear-gradient(to bottom, transparent 70%, $primary-highlighter-color 30%);
         @include  large-desktops-mid {
           font-size: 100px;
           line-height: 124px;
@@ -330,7 +330,7 @@
     line-height: 46px;
     letter-spacing: 0.591304361820221px;
     text-align: center;
-    color: #000;
+    color: $title-color;
     @include mobile-lg {
       font-size: 48px;
       line-height: 59.52px;
@@ -360,7 +360,7 @@
     line-height: 19px;
     letter-spacing: 0px;
     text-align: left;
-    color: #000;
+    color: $title-color;
     @include mobile-lg {
       font-size: 18px;
       line-height: 21.78px;
@@ -391,7 +391,7 @@
     line-height: 22px;
     letter-spacing: 0px;
     text-align: left;
-    color: #64626a;
+    color: $body-text-color;
     @include mobile-lg {
       font-size: 14px;
       line-height: 21.78px;

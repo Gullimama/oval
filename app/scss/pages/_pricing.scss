@@ -70,7 +70,7 @@
 }
 
 .red-tick {
-  color: #ff6846;
+  color: $theme-color;
   font-weight: bold;
 }
 .table__structure {
@@ -88,7 +88,7 @@
       margin-bottom: 48px;
     }
     thead {
-      background: #f5f6f9;
+      background: $enterprise-color;
       box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
       tr {
         th {

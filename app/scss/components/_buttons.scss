@@ -12,7 +12,7 @@
     height: 44px;
     font-weight: 700;
     color: #fff;
-    background: #ff6846;
+    background: $theme-color;
     border-radius: 8px;
     @include mobile-lg {
       width: 180px;

@@ -1,3 +1,6 @@
+html{
+  background-color: rebeccapurple;
+}
 // spacings
 .mb--30 {
   margin-bottom: 30px !important;
@@ -53,7 +56,7 @@
       letter-spacing: 0.56px;
       font-size: 34px;
       line-height: 46px;
-      color: #000;
+      color: $title-color;
       @include mobile-lg {
         font-size: 48px;
         line-height: 59.52px;
@@ -84,7 +87,7 @@
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.10000000149011612px;
-    color: #64626a;
+    color: $body-text-color;
 
     @include mobile-lg {
       font-size: $h7;
@@ -128,7 +131,7 @@
 .body-text {
   width: 280px;
   height: 66px;
-  color: #64626a;
+  color: $body-text-color;
   margin: auto;
   @include mobile-lg {
     width: 567px;
@@ -161,13 +164,13 @@
 #light__org {
   display: inline-block;
   height: 65px;
-  background: linear-gradient(to bottom, #fff 40%, #ffdea7 0%);
+  background: linear-gradient(to bottom, #fff 40%, $primary-highlighter-color 0%);
 }
 
 #light__blue {
   display: inline-block;
   height: 65px;
-  background: linear-gradient(to bottom, #fff 30%, #c2eed8 0%);
+  background: linear-gradient(to bottom, #fff 30%, $secondary-highlighter-color 0%);
 }
 
 .header-img {
@@ -296,7 +299,7 @@
           h6 {
             font-family: $body-base-font;
             font-size: $h7;
-            color: #000;
+            color: $title-color;
             font-style: normal;
             font-weight: 600;
             line-height: 22px;
@@ -318,7 +321,7 @@
           p {
             font-family: $body-base-font;
             font-size: $font-size;
-            color: #64626a;
+            color: $body-text-color;
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
@@ -459,7 +462,7 @@
       h6 {
         font-family: $body-base-font;
         font-size: $h7;
-        color: #000;
+        color: $title-color;
         font-style: normal;
         font-weight: 600;
         line-height: 22px;
@@ -472,7 +475,7 @@
       p {
         font-family: $body-base-font;
         font-size: $font-size;
-        color: #64626a;
+        color: $body-text-color;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -806,8 +809,8 @@
     line-height: 79px !important;
     letter-spacing: 0px;
     text-align: center;
-    color: #000;
-    background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
+    color: $title-color;
+    background: linear-gradient(to bottom, transparent 70%, $primary-highlighter-color 30%);
 
     @include mobile-lg {
       font-size: 72px !important;
@@ -844,7 +847,7 @@
       font-weight: 400;
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
-      color: #000;
+      color: $title-color;
 
       @include mobile-lg {
         font-size: $h2;
@@ -897,15 +900,15 @@
     margin-top: 40px;
 
     .custom-control-input:checked ~ .custom-control-label::before {
-      background: #ff6846;
-      border: 1px solid #ff6846;
+      background: $theme-color;
+      border: 1px solid $theme-color;
       color: #fff;
     }
 
     .custom-control-label::before {
       left: -3.25rem;
-      background: #ff6846;
-      border: 1px solid #ff6846;
+      background: $theme-color;
+      border: 1px solid $theme-color;
       color: #fff;
       width: 58px;
       height: 28px;
@@ -1058,7 +1061,7 @@
             line-height: 20px;
             letter-spacing: 0px;
             text-align: center;
-            color: #64626a;
+            color: $body-text-color;
           }
         }
       }
@@ -1089,7 +1092,7 @@
           letter-spacing: 0px;
           margin-top: 8px;
           margin-bottom: 28px;
-          color: #64626a;
+          color: $body-text-color;
         }
 
         .contact-quote {
@@ -1116,7 +1119,7 @@
     margin: auto;
     width: 280px;
     height: 174px;
-    background: #f5f6f9;
+    background: $enterprise-color;
     border-radius: 12px;
     margin-top: 32px;
     padding: 24px;
@@ -1166,7 +1169,7 @@
         line-height: 20px;
         letter-spacing: 0px;
         text-align: center;
-        color: #64626a;
+        color: $body-text-color;
         width: 162px;
         margin: 0 auto;
         margin-bottom: 16px;
@@ -1195,7 +1198,7 @@
         line-height: 17px;
         letter-spacing: 0.17499999701976776px;
         text-align: center;
-        background: #ff6846;
+        background: $theme-color;
         color: #fff;
       }
     }
@@ -1222,7 +1225,7 @@
       line-height: 24px;
       letter-spacing: 0px;
       text-align: center;
-      color: #64626a;
+      color: $body-text-color;
       @include mobile-lg {
         font-size: 16px;
         line-height: 26px;

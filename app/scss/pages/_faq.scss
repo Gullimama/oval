@@ -1,6 +1,6 @@
 .deco {
   text-decoration: underline;
-  color: #ff6846;
+  color: $theme-color;
 }
 
 .faq__section {
@@ -105,7 +105,7 @@
           width: 280px;
           height: 124px;
           border: none;
-          color: #ff6846;
+          color: $theme-color;
           @include mobile-lg {
             width: 408px;
           }
@@ -126,7 +126,7 @@
 
         .active:after {
           content: "\2212";
-          color: #ff6846;
+          color: $theme-color;
         }
         .content {
           font-family: Inter;
@@ -134,7 +134,7 @@
           font-weight: normal;
           font-size: 14px;
           line-height: 24px;
-          color: #64626a;
+          color: $body-text-color;
           background: #ffffff;
           width: 280px;
           height: 144px;

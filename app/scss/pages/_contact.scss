@@ -24,7 +24,7 @@
         line-height: 15px;
         letter-spacing: 1.3333333730697632px;
         text-align: center;
-        color: #b3b1b7;
+        color: $light-body-text;
         @include mobile-lg {
           font-size: 12px;
           line-height: 14.52px;
@@ -90,7 +90,7 @@
         line-height: 23px;
         letter-spacing: 0px;
         text-align: center;
-        color: #64626a;
+        color: $body-text-color;
         @include mobile-lg {
           text-align: left;
           font-size: 14px;
@@ -114,10 +114,10 @@
       .btn_light-orange {
         width: 140px;
         height: 58px;
-        border: 1px solid #ff6846;
+        border: 1px solid $theme-color;
         background: #fff;
         border-radius: 10px;
-        color: #ff6846;
+        color: $theme-color;
         @include large-desktops-mid {
           width: 180px;
           height: 74px;
@@ -133,7 +133,7 @@
         }
         &:hover {
           color: #fff;
-          background: #ff6846;
+          background: $theme-color;
           border-radius: 10px;
         }
       }
@@ -164,7 +164,7 @@
         font-weight: 600px;
         font-size: 18px;
         line-height: 21.78px;
-        color: #000;
+        color: $title-color;
         @include mobile-lg {
           font-size: 22px;
           line-height: 26.62px;
@@ -195,7 +195,7 @@
         line-height: 20px;
         letter-spacing: 0.20000000298023224px;
         text-align: left;
-        color: #64626a;
+        color: $body-text-color;
         @include large-desktops-mid {
           font-size: 18px;
           line-height: 30px;
@@ -247,7 +247,7 @@
           line-height: 15px;
           letter-spacing: 0.10000000149011612px;
           text-align: left;
-          color: #000;
+          color: $title-color;
           @include large-desktops-mid {
             font-size: 16px;
             line-height: 19.36px;
@@ -294,8 +294,8 @@
           width: 248px;
           height: 41px;
           color: #fff;
-          background: #ff6846;
-          border: 1px solid #ff6846;
+          background: $theme-color;
+          border: 1px solid $theme-color;
           border-radius: 10px;
           @include large-desktops-mid {
             width: 427px;
@@ -435,8 +435,8 @@
         }
       }
       &:hover {
-        color: #ff6846;
-        border: 2px solid #ff6846;
+        color: $theme-color;
+        border: 2px solid $theme-color;
         &::after {
           content: ">";
           position: relative;
@@ -507,7 +507,7 @@
       line-height: 23px;
       letter-spacing: 0px;
       text-align: center;
-      color: #64626a;
+      color: $body-text-color;
       @include mobile-lg {
         font-size: 18px;
         line-height: 28px;
@@ -531,7 +531,7 @@
     }
     .card {
       width: 280px;
-      border: 1px solid #64626a !important;
+      border: 1px solid $body-text-color !important;
       border-radius: 20px;
       margin: auto;
       margin-bottom: 32px;
@@ -564,7 +564,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: left;
-          color: #64626a;
+          color: $body-text-color;
           @include mobile-lg {
             font-size: 18px;
             line-height: 28px;
@@ -578,7 +578,7 @@
           line-height: 17px;
           letter-spacing: 0px;
           text-align: left;
-          color: #ff6846;
+          color: $theme-color;
           &::after {
             content: ">";
             position: relative;

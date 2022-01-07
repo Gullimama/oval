@@ -1,6 +1,3 @@
-html{
-  background-color: rebeccapurple;
-}
 // spacings
 .mb--30 {
   margin-bottom: 30px !important;
@@ -87,7 +84,7 @@ html{
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.10000000149011612px;
-    color: $body-text-color;
+    @include theme("color", $body-text-color);
 
     @include mobile-lg {
       font-size: $h7;
@@ -164,13 +161,21 @@ html{
 #light__org {
   display: inline-block;
   height: 65px;
-  background: linear-gradient(to bottom, #fff 40%, $primary-highlighter-color 0%);
+  background: linear-gradient(
+    to bottom,
+    #fff 40%,
+    $primary-highlighter-color 0%
+  );
 }
 
 #light__blue {
   display: inline-block;
   height: 65px;
-  background: linear-gradient(to bottom, #fff 30%, $secondary-highlighter-color 0%);
+  background: linear-gradient(
+    to bottom,
+    #fff 30%,
+    $secondary-highlighter-color 0%
+  );
 }
 
 .header-img {
@@ -462,7 +467,7 @@ html{
       h6 {
         font-family: $body-base-font;
         font-size: $h7;
-        color: $title-color;
+        @include theme("color", $title-color);
         font-style: normal;
         font-weight: 600;
         line-height: 22px;
@@ -475,7 +480,7 @@ html{
       p {
         font-family: $body-base-font;
         font-size: $font-size;
-        color: $body-text-color;
+        @include theme("color", $body-text-color);
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -635,7 +640,7 @@ html{
           font-weight: 400;
           line-height: 28px;
           letter-spacing: -0.20000000298023224px;
-          color: #3b3a40;
+          @include theme("color", $body-text-color);
 
           @include mobile-lg {
             font-size: $h7;
@@ -786,7 +791,7 @@ html{
   font-weight: 400;
   line-height: 28px;
   text-align: center;
-  color: #8e8c95;
+  @include theme("color", $body-text-color);
 
   @include mobile-lg {
     font-size: $h6;
@@ -809,8 +814,12 @@ html{
     line-height: 79px !important;
     letter-spacing: 0px;
     text-align: center;
-    color: $title-color;
-    background: linear-gradient(to bottom, transparent 70%, $primary-highlighter-color 30%);
+    @include theme("color", $title-color);
+    background: linear-gradient(
+      to bottom,
+      transparent 70%,
+      $primary-highlighter-color 30%
+    );
 
     @include mobile-lg {
       font-size: 72px !important;
@@ -847,7 +856,7 @@ html{
       font-weight: 400;
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
-      color: $title-color;
+      @include theme("color", $title-color);
 
       @include mobile-lg {
         font-size: $h2;
@@ -883,7 +892,7 @@ html{
       font-weight: 400;
       line-height: 22px;
       letter-spacing: 0.20000000298023224px;
-      color: #3b3a40;
+      @include theme("color", $body-text-color);
 
       @include mobile-lg {
         font-size: $p;
@@ -900,23 +909,23 @@ html{
     margin-top: 40px;
 
     .custom-control-input:checked ~ .custom-control-label::before {
-      background: $theme-color;
+      @include theme("background", $theme-color);
       border: 1px solid $theme-color;
-      color: #fff;
+      @include theme("color", $bg-color);
     }
 
     .custom-control-label::before {
       left: -3.25rem;
-      background: $theme-color;
-      border: 1px solid $theme-color;
-      color: #fff;
+      @include theme("background", $bg-color);
+      border: 1px solid $body-text-color;
+      @include theme("color", $bg-color);
       width: 58px;
       height: 28px;
       border-radius: 28.5px;
     }
 
     .custom-control-label::after {
-      background: #fff;
+      @include theme("background", $bg-color);
       width: 20px;
       height: 20px;
       border: 1px solid #fff;
@@ -1061,7 +1070,7 @@ html{
             line-height: 20px;
             letter-spacing: 0px;
             text-align: center;
-            color: $body-text-color;
+            @include theme("color", $body-text-color);
           }
         }
       }
@@ -1077,7 +1086,7 @@ html{
             font-weight: 700;
             line-height: 45px;
             letter-spacing: 0.6000000238418579px;
-            color: #3b3a40;
+            @include theme("color", $body-text-color);
           }
         }
 
@@ -1092,7 +1101,7 @@ html{
           letter-spacing: 0px;
           margin-top: 8px;
           margin-bottom: 28px;
-          color: $body-text-color;
+          @include theme("color", $body-text-color);
         }
 
         .contact-quote {
@@ -1102,7 +1111,7 @@ html{
           font-style: normal;
           font-weight: 400;
           line-height: 17px;
-          color: #3b3a40;
+          @include theme("color", $body-text-color);
         }
       }
 
@@ -1148,7 +1157,7 @@ html{
         font-weight: 600;
         line-height: $h6;
         letter-spacing: 0px;
-        color: #3b3a40;
+        @include theme("color", $body-text-color);
         @include mobile-lg {
           font-size: $h6;
           line-height: 26.22px;
@@ -1169,7 +1178,7 @@ html{
         line-height: 20px;
         letter-spacing: 0px;
         text-align: center;
-        color: $body-text-color;
+        @include theme("color", $body-text-color);
         width: 162px;
         margin: 0 auto;
         margin-bottom: 16px;
@@ -1198,8 +1207,8 @@ html{
         line-height: 17px;
         letter-spacing: 0.17499999701976776px;
         text-align: center;
-        background: $theme-color;
-        color: #fff;
+        @include theme("background", $theme-color);
+        @include theme("color", $bg-color);
       }
     }
   }
@@ -1225,7 +1234,7 @@ html{
       line-height: 24px;
       letter-spacing: 0px;
       text-align: center;
-      color: $body-text-color;
+      @include theme("color", $body-text-color);
       @include mobile-lg {
         font-size: 16px;
         line-height: 26px;
@@ -1305,7 +1314,7 @@ html{
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: #fff;
+  @include theme("background", $bg-color);
   -webkit-transform: translateX(1.75rem) !important;
   transform: translateX(1.75rem) !important;
 }

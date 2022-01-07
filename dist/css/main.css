@@ -21782,7 +21782,7 @@
 
 @media (min-width: 1366px) {
   .hero__section-header-sub-title {
-    width: 200px;
+    width: 201px;
   }
 }
 
@@ -21855,11 +21855,15 @@
 }
 
 #light__org {
-  background: linear-gradient(to bottom, #fff 10%, #ffdea7 90%);
+  display: inline-block;
+  height: 65px;
+  background: linear-gradient(to bottom, #fff 40%, #ffdea7 0%);
 }
 
 #light__blue {
-  background: linear-gradient(to bottom, #fff 30%, #c2eed8 70%);
+  display: inline-block;
+  height: 65px;
+  background: linear-gradient(to bottom, #fff 30%, #c2eed8 0%);
 }
 
 .header-img img {
@@ -23012,7 +23016,7 @@
 
 @media (min-width: 992px) {
   .price__footer .enterprise__section {
-    width: 980px;
+    width: 1140px;
   }
 }
 
@@ -23205,6 +23209,11 @@
   }
 }
 
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  transform: translateX(1.75rem) !important;
+}
+
 /************************************* 
     01.Oval Components Styles
 *************************************/
@@ -23345,6 +23354,7 @@
 .section-button .btn--red {
   width: 127px;
   height: 44px;
+  font-weight: 700;
   color: #fff;
   background: #ff6846;
   border-radius: 8px;
@@ -23367,6 +23377,7 @@
 .section-button .btn--secondary {
   width: 44px;
   height: 44px;
+  font-weight: 700;
   border: 1px solid #8e8c95;
   border-radius: 8px;
 }
@@ -25161,7 +25172,7 @@ hr {
 
 @media (min-width: 1366px) {
   .contact-page .header__section .header-body {
-    margin-left: 140px;
+    margin-left: 150px;
     margin-top: 20px;
     margin-bottom: 48px;
     width: 480px;
@@ -25203,7 +25214,7 @@ hr {
 
 @media (min-width: 1366px) {
   .contact-page .header__section .header-button {
-    margin-left: 80px;
+    margin-left: 70px;
     gap: 30px;
   }
 }
@@ -25417,6 +25428,13 @@ hr {
   margin-bottom: 22px;
 }
 
+@media (min-width: 1366px) {
+  .contact-page .contact-form_sec form .form-group .nice-select {
+    width: 427px;
+    height: 52px;
+  }
+}
+
 .contact-page .contact-form_sec form .form-group .nice-select .current {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -25431,6 +25449,12 @@ hr {
   border: 1px solid #d1d0d6;
   border-radius: 10px;
   margin-bottom: 24px;
+}
+
+@media (min-width: 1366px) {
+  .contact-page .contact-form_sec form .form-group textarea {
+    width: 427px;
+  }
 }
 
 .contact-page .contact-form_sec form .form-group .btn-sumbit {

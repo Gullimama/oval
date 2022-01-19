@@ -8,6 +8,7 @@ $g: 0.25em;
   top: 49px;
   left: 13px;
   width: 70px;
+  transform: scale(.6,.4);
 }
 #time {
   position: absolute;
@@ -39,7 +40,7 @@ $g: 0.25em;
     &:before {
       transform-origin: 20% 20%;
       transform: translate(calc(var(--i) * (100% + #{$g})))
-        scale(calc(1 - var(--i) * 0.7));
+        scale(calc(1 - var(--i) * 1));
       background: hsl(60, 19%, 89%);
       border-radius: 50px;
       // @include star(10, .75)
@@ -48,8 +49,9 @@ $g: 0.25em;
     &:after {
       grid-column: 2;
       border-radius: 50%;
-      transform: translatey(calc(var(--i) * (-100% - #{$p})));
-      background: radial-gradient(circle at 19% 19%, transparent 41%, #fff 43%);
+      transform: translatey(calc(var(--i) * (-100% - 0.5em)));
+      background: radial-gradient(circle at 23% 35%, transparent 52%, #fff 43%);
+
     }
   }
 

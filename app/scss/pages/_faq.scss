@@ -4,7 +4,7 @@
 }
 
 .faq__section {
-  @include  large-desktops-mid {
+  @include  large-desktops {
     margin-top: 180px;
   }
   .content-section {
@@ -29,7 +29,7 @@
           font-size: 48px;
           line-height: 68px;
         }
-        @include  large-desktops-mid {
+        @include  large-desktops {
           text-align: left;
         }
       }
@@ -43,7 +43,7 @@
         width: 368px;
         height: 56px;
       }
-      @include  large-desktops-mid {
+      @include  large-desktops {
         width: 390px;
         height: 96px;
       }
@@ -53,7 +53,7 @@
           font-size: 18px;
           line-height: 28px;
         }
-        @include  large-desktops-mid {
+        @include  large-desktops {
           font-size: 20px;
           line-height: 32px;
           text-align: left;
@@ -62,7 +62,7 @@
     }
     .faq-graph-img {
       display: none;
-      @include  large-desktops-mid {
+      @include  large-desktops {
         display: block;
       }
     }
@@ -93,7 +93,7 @@
             font-size: 18px;
             line-height: 28px;
           }
-          @include  large-desktops-mid {
+          @include  large-desktops {
             font-size: 20px;
             line-height: 30px;
           }

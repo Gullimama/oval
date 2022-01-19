@@ -312,7 +312,7 @@
 .header-title {
   width: 288px;
   height: 138px;
-  margin: auto;
+  margin: 0 auto;
   @include mobile-lg {
     width: 609px;
     height: 120px;
@@ -320,7 +320,6 @@
   @include  large-desktops {
     width: 566px;
     height: 148px;
-    margin-top: 180px;
   }
   h2 {
     font-family: $theme-base-font;

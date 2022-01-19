@@ -3,11 +3,16 @@
   background: transparent;
   padding-top: 32px;
   height: 100px;
-  @include mobile-lg {
-    // padding-left: 84px;
-  }
-  @include  large-desktops {
+  @include large-desktops {
     width: 72.625em;
+  }
+  &-2 {
+    width: 100%;
+    background: #f9f9f9;
+  }
+  &-3{
+    width: 100%;
+    background: #FFF6F4;
   }
 }
 .navbar {
@@ -16,7 +21,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  
+  &-2 {
+    @extend .navbar;
+    @include large-desktops {
+      margin: auto;
+      width: 72.625em;
+    }
+  }
 }
 
 .hamburger {
@@ -40,7 +51,7 @@
   gap: 1.25em;
   justify-content: center;
   align-items: center;
-  @include large-desktops{
+  @include large-desktops {
     position: relative;
     top: 12px;
     left: -10%;
@@ -69,7 +80,7 @@
   border: none;
   color: $title-color;
   background: transparent;
-  &:hover{
+  &:hover {
     width: 125px;
     height: 38px;
     border: 1px solid #8e8c952f;
@@ -77,9 +88,9 @@
     font-weight: 700;
   }
 }
-.nav-menu-btn{
+.nav-menu-btn {
   display: block;
-  @include  large-desktops{
+  @include large-desktops {
     display: none;
   }
 }

@@ -23654,12 +23654,29 @@ ul li a:hover {
   }
 }
 
-.navbar {
+.header-2 {
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.header-3 {
+  width: 100%;
+  background: #FFF6F4;
+}
+
+.navbar, .navbar-2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+}
+
+@media (min-width: 75em) {
+  .navbar-2 {
+    margin: auto;
+    width: 72.625em;
+  }
 }
 
 .hamburger {
@@ -23777,7 +23794,7 @@ ul li a:hover {
   .nav-item a {
     font-size: 25px;
   }
-  .navbar {
+  .navbar, .navbar-2 {
     justify-content: flex-start;
   }
   .nav-menu.active {
@@ -25135,11 +25152,15 @@ hr {
 }
 
 /*==== Contact -------*/
+.contact_page {
+  width: 100%;
+  background: linear-gradient(to bottom, #f9f9f9 26%, #fff 0%);
+}
+
 .contact-page {
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-top: 57px;
   gap: 36px;
 }
 
@@ -25147,13 +25168,13 @@ hr {
   .contact-page {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 87px;
+    padding-top: 87px;
   }
 }
 
 @media (min-width: 75em) {
   .contact-page {
-    margin-top: 136px;
+    padding-top: 136px;
     width: 90.625em;
     height: 39.125em;
     gap: 10px;
@@ -25965,17 +25986,21 @@ hr {
   }
 }
 
+@media (min-width: 75em) {
+  .download_section {
+    background: linear-gradient(to bottom, #fff6f4 70%, #fff 30%);
+  }
+}
+
 .header__section .header-title {
   width: 280px;
   height: 92px;
-  margin-top: 22px;
 }
 
 @media (min-width: 36em) {
   .header__section .header-title {
     width: 500px;
     height: 60px;
-    margin-top: 80px;
   }
 }
 
@@ -27376,7 +27401,7 @@ hr {
 .header-title {
   width: 288px;
   height: 138px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 36em) {
@@ -27390,7 +27415,6 @@ hr {
   .header-title {
     width: 566px;
     height: 148px;
-    margin-top: 180px;
   }
 }
 

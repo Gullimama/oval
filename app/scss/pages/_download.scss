@@ -38,18 +38,18 @@
 
 .download_section {
   @include  large-desktops {
-    // background: linear-gradient(to bottom, $dwn-bg-color 70%, #fff 30%);
+    background: linear-gradient(to bottom, $dwn-bg-color 70%, #fff 30%);
   }
 }
 .header__section {
   .header-title {
     width: 280px;
     height: 92px;
-    margin-top: 22px;
+    // padding-top: 22px;
     @include mobile-lg {
       width: 500px;
       height: 60px;
-      margin-top: 80px;
+      // padding-top: 80px;
     }
     @include  large-desktops {
       width: 580px;

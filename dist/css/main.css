@@ -23642,20 +23642,15 @@ ul li a:hover {
 /*~~~~ Headers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header {
+  margin: auto;
   background: transparent;
   padding-top: 32px;
   height: 100px;
 }
 
-@media (min-width: 36em) {
-  .header {
-    padding-left: 84px;
-  }
-}
-
 @media (min-width: 75em) {
   .header {
-    padding-left: 150px;
+    width: 72.625em;
   }
 }
 
@@ -23681,11 +23676,20 @@ ul li a:hover {
 }
 
 .nav-menu {
+  align-self: center;
   display: flex;
   flex-direction: row;
-  gap: 36px;
+  gap: 1.25em;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 75em) {
+  .nav-menu {
+    position: relative;
+    top: 12px;
+    left: -10%;
+  }
 }
 
 .nav-link {
@@ -23705,7 +23709,7 @@ ul li a:hover {
   height: 24px;
 }
 
-.btn-transparent {
+.btn-trans {
   width: 105px;
   height: 38px;
   border: none;
@@ -23713,13 +23717,12 @@ ul li a:hover {
   background: transparent;
 }
 
-.btn-white {
-  width: 105px;
+.btn-trans:hover {
+  width: 125px;
   height: 38px;
-  border: 1px solid #8e8c95;
+  border: 1px solid #8e8c952f;
   border-radius: 4px;
-  color: #000;
-  background: #ffffff;
+  font-weight: 700;
 }
 
 .nav-menu-btn {

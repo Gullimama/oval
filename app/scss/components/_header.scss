@@ -1,12 +1,13 @@
 .header {
+  margin: auto;
   background: transparent;
   padding-top: 32px;
   height: 100px;
   @include mobile-lg {
-    padding-left: 84px;
+    // padding-left: 84px;
   }
   @include  large-desktops {
-    padding-left: 150px;
+    width: 72.625em;
   }
 }
 .navbar {
@@ -15,6 +16,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  
 }
 
 .hamburger {
@@ -32,11 +34,17 @@
 }
 
 .nav-menu {
+  align-self: center;
   display: flex;
   flex-direction: row;
-  gap: 36px;
+  gap: 1.25em;
   justify-content: center;
   align-items: center;
+  @include large-desktops{
+    position: relative;
+    top: 12px;
+    left: -10%;
+  }
 }
 .nav-link {
   font-size: 14px;
@@ -55,20 +63,19 @@
   height: 24px;
 }
 
-.btn-transparent {
+.btn-trans {
   width: 105px;
   height: 38px;
   border: none;
   color: $title-color;
   background: transparent;
-}
-.btn-white {
-  width: 105px;
-  height: 38px;
-  border: 1px solid #8e8c95;
-  border-radius: 4px;
-  color: $title-color;
-  background: #ffffff;
+  &:hover{
+    width: 125px;
+    height: 38px;
+    border: 1px solid #8e8c952f;
+    border-radius: 4px;
+    font-weight: 700;
+  }
 }
 .nav-menu-btn{
   display: block;

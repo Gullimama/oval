@@ -3,20 +3,28 @@
   background: linear-gradient(to bottom, $contact-bg-color 26%, $bg-color 0%);
 }
 .contact-page {
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 36px;
+  width: 280px;
   @include mobile-lg {
+    width: 680px;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 87px;
   }
+  @include tablet {
+    width: 46.875em;
+  }
   @include large-desktops {
     padding-top: 136px;
-    width: 90.625em;
+    width: 71.25em;
     height: 39.125em;
     gap: 10px;
+  }
+  @include large-desktops-mid {
+    width: 90.625em;
   }
   .header__section {
     .sub_header-title {
@@ -38,6 +46,9 @@
         @include large-desktops {
           font-size: 18px;
           line-height: 21.78px;
+          margin-left: 0px;
+        }
+        @include large-desktops-mid {
           margin-left: 150px;
         }
       }
@@ -51,6 +62,9 @@
       }
       @include large-desktops {
         width: 308px;
+        margin-left: 0px;
+      }
+      @include large-desktops-mid {
         margin-left: 150px;
       }
       h5 {
@@ -81,10 +95,13 @@
         margin-left: 35px;
       }
       @include large-desktops {
-        margin-left: 150px;
+        margin-left: 0px;
         margin-top: 20px;
         margin-bottom: 48px;
         width: 480px;
+      }
+      @include large-desktops-mid {
+        margin-left: 150px;
       }
       p {
         font-family: $body-base-font;
@@ -112,8 +129,11 @@
       margin-top: 22px;
       gap: 14px;
       @include large-desktops {
-        margin-left: 70px;
+        margin-left: 0px;
         gap: 30px;
+      }
+      @include large-desktops-mid {
+        margin-left: 70px;
       }
       .btn_light-orange {
         width: 140px;
@@ -259,7 +279,7 @@
         }
         input {
           background: $bg-color;
-          border: 1px solid  $body-text-color;
+          border: 1px solid $body-text-color;
           border-radius: 10px;
           margin-bottom: 22px;
           width: 248px;
@@ -267,7 +287,7 @@
         }
         .nice-select {
           background: $bg-color;
-          border: 1px solid  $body-text-color;
+          border: 1px solid $body-text-color;
           border-radius: 10px;
           width: 248px;
           height: 55px;
@@ -287,7 +307,7 @@
           }
         }
         textarea {
-          border: 1px solid  $body-text-color;
+          border: 1px solid $body-text-color;
           border-radius: 10px;
           margin-bottom: 24px;
           @include large-desktops {
@@ -297,7 +317,7 @@
         .btn-sumbit {
           width: 248px;
           height: 41px;
-          color:  $bg-color;
+          color: $bg-color;
           background: $theme-color;
           border: 1px solid $theme-color;
           border-radius: 10px;
@@ -347,6 +367,20 @@
 }
 
 .topic__section {
+  margin: 0 auto;
+  width: 280px;
+  @include mobile-lg {
+    width: 680px;
+  }
+  @include tablet {
+    width: 46.875emem;
+  }
+  @include large-desktops {
+    width: 71.25em;
+  }
+  @include large-desktops-mid {
+    width: 90.625em;
+  }
   .topic-title {
     width: 280px;
     height: 92px;
@@ -395,8 +429,8 @@
     .item {
       width: 280px;
       height: 50px;
-      background:  $bg-color;
-      border: 1px solid  $body-text-color;
+      background: $bg-color;
+      border: 1px solid $body-text-color;
       border-radius: 12px;
       margin: auto;
       margin-bottom: 12px;
@@ -455,14 +489,25 @@
 
 // office address
 .office__section {
+  margin: 0 auto;
   margin-top: 64px;
+  width: 280px;
+  @include mobile-lg {
+    width: 680px;
+  }
+  @include tablet {
+    width: 46.875emem;
+  }
   @include large-desktops {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1450px;
+    width: 71.25em;
     margin: auto;
     margin-top: 180px;
+  }
+  @include large-desktops-mid {
+    width: 90.625em;
   }
   .office__section-title {
     width: 280px;
@@ -554,7 +599,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: left;
-          color:  $light-body-text;
+          color: $light-body-text;
           @include mobile-lg {
             font-size: 22px;
             line-height: 26.22px;

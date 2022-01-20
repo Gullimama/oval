@@ -25154,7 +25154,7 @@ hr {
 /*==== Contact -------*/
 .contact_page {
   width: 100%;
-  background: linear-gradient(to bottom, #f9f9f9 26%, #fff 0%);
+  background: linear-gradient(to bottom, #f9f9f9 26%, #ffffff 0%);
 }
 
 .contact-page {
@@ -25319,7 +25319,7 @@ hr {
   width: 140px;
   height: 58px;
   border: 1px solid #ff6846;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   color: #ff6846;
 }
@@ -25342,7 +25342,7 @@ hr {
 }
 
 .contact-page .header__section .header-button .btn_light-orange:hover {
-  color: #fff;
+  color: #ffffff;
   background: #ff6846;
   border-radius: 10px;
 }
@@ -25351,7 +25351,7 @@ hr {
   position: relative;
   z-index: 999;
   width: 280px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
   margin: auto;
@@ -25508,7 +25508,7 @@ hr {
 
 .contact-page .contact-form_sec form .form-group input {
   background: #ffffff;
-  border: 1px solid #d1d0d6;
+  border: 1px solid #64626a;
   border-radius: 10px;
   margin-bottom: 22px;
   width: 248px;
@@ -25517,7 +25517,7 @@ hr {
 
 .contact-page .contact-form_sec form .form-group .nice-select {
   background: #ffffff;
-  border: 1px solid #d1d0d6;
+  border: 1px solid #64626a;
   border-radius: 10px;
   width: 248px;
   height: 55px;
@@ -25542,7 +25542,7 @@ hr {
 }
 
 .contact-page .contact-form_sec form .form-group textarea {
-  border: 1px solid #d1d0d6;
+  border: 1px solid #64626a;
   border-radius: 10px;
   margin-bottom: 24px;
 }
@@ -25556,7 +25556,7 @@ hr {
 .contact-page .contact-form_sec form .form-group .btn-sumbit {
   width: 248px;
   height: 41px;
-  color: #fff;
+  color: #ffffff;
   background: #ff6846;
   border: 1px solid #ff6846;
   border-radius: 10px;
@@ -25679,7 +25679,7 @@ hr {
   width: 280px;
   height: 50px;
   background: #ffffff;
-  border: 1px solid #d1d0d6;
+  border: 1px solid #64626a;
   border-radius: 12px;
   margin: auto;
   margin-bottom: 12px;
@@ -25891,7 +25891,7 @@ hr {
   line-height: 22px;
   letter-spacing: 0px;
   text-align: left;
-  color: #3b3a40;
+  color: #b3b1b7;
 }
 
 @media (min-width: 36em) {

@@ -1,13 +1,20 @@
 .contact_page {
   width: 100%;
-  background: linear-gradient(to bottom, $contact-bg-color 26%, $bg-color 0%);
+  background: linear-gradient(to bottom, $contact-bg-color 27%, $bg-color 0%);
+  @include mobile-lg {
+    background: linear-gradient(to bottom, $contact-bg-color 17%, $bg-color 0%);
+  }
+  @include large-desktops{
+    background: linear-gradient(to bottom, $contact-bg-color 27%, $bg-color 0%);
+  }
 }
 .contact-page {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 36px;
-  width: 280px;
+  width: 320px;
+  padding-top: 62px;
   @include mobile-lg {
     width: 680px;
     flex-direction: row;
@@ -89,6 +96,8 @@
     .header-body {
       margin-top: 16px;
       margin-bottom: 24px;
+      width: 280px;
+      height: 92px;
       @include mobile-lg {
         width: 301px;
         height: 96px;
@@ -172,7 +181,7 @@
     background-color: $bg-color;
     box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
-    margin: auto;
+    margin: 0 auto;
     padding: 16px;
     margin-top: 40px;
     @include mobile-lg {
@@ -292,6 +301,9 @@
           width: 248px;
           height: 55px;
           margin-bottom: 22px;
+          @include mobile-lg {
+            width: 305px;
+          }
           @include large-desktops {
             width: 427px;
             height: 52px;
@@ -310,6 +322,7 @@
           border: 1px solid $body-text-color;
           border-radius: 10px;
           margin-bottom: 24px;
+          width: 305px;
           @include large-desktops {
             width: 427px;
           }
@@ -321,6 +334,10 @@
           background: $theme-color;
           border: 1px solid $theme-color;
           border-radius: 10px;
+          @include mobile-lg {
+            width: 305px;
+            height: 50px;
+          }
           @include large-desktops {
             width: 427px;
             height: 56px;
@@ -351,15 +368,22 @@
       justify-content: center;
       @include mobile-lg {
         position: relative;
-        top: -257px;
+        top: -234px;
+        left: -18px;
       }
       @include large-desktops {
-        left: 150px;
         top: -180px;
+        left: 18px;
+      }
+      @include large-desktops-mid {
+        left: 104px;
       }
       .brand {
         img {
           width: 85px;
+          @include large-desktops-mid {
+            width: 146px;
+          }
         }
       }
     }
@@ -368,7 +392,7 @@
 
 .topic__section {
   margin: 0 auto;
-  width: 280px;
+  width: 320px;
   @include mobile-lg {
     width: 680px;
   }
@@ -491,7 +515,7 @@
 .office__section {
   margin: 0 auto;
   margin-top: 64px;
-  width: 280px;
+  width: 320px;
   @include mobile-lg {
     width: 680px;
   }

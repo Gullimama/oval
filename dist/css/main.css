@@ -21971,7 +21971,9 @@ html[data-theme="dark"] {
 @media (min-width: 75em) {
   .build__section-banner {
     width: 1415px;
+    height: 800px;
     margin-top: 200px;
+    margin-bottom: 200px;
   }
 }
 

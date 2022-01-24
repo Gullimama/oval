@@ -213,7 +213,9 @@
   }
   @include large-desktops {
     width: 1415px;
+    height: 800px;
     margin-top: 200px;
+    margin-bottom: 200px;
   }
   @include mobile-xs {
     flex-direction: column;

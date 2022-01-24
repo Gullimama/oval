@@ -21938,13 +21938,25 @@ html[data-theme="dark"] {
   }
 }
 
-.header-img img {
-  width: 100%;
+.hero-img img {
+  width: 280px;
   height: auto;
 }
 
+@media (min-width: 36em) {
+  .hero-img img {
+    width: 667.04px;
+  }
+}
+
 @media (min-width: 75em) {
-  .header-img {
+  .hero-img img {
+    width: 71.875em;
+  }
+}
+
+@media (min-width: 75em) {
+  .hero-img {
     width: 90%;
   }
 }
@@ -21952,6 +21964,19 @@ html[data-theme="dark"] {
 .build__section-banner {
   margin-top: 65px;
   display: flex;
+  width: 288px;
+}
+
+@media (min-width: 36em) {
+  .build__section-banner {
+    width: 682px;
+  }
+}
+
+@media (min-width: 75em) {
+  .build__section-banner {
+    width: 1140px;
+  }
 }
 
 @media (min-width: 20em) {
@@ -21991,6 +22016,13 @@ html[data-theme="dark"] {
   }
 }
 
+@media (min-width: 85.375em) {
+  .build__section-banner .build__section-body-list {
+    top: -351px;
+    left: -399px;
+  }
+}
+
 .build__section-banner .build__section-body-list {
   display: flex;
   order: 2;
@@ -22022,6 +22054,12 @@ html[data-theme="dark"] {
     flex-direction: column;
     gap: 14px;
     justify-content: flex-start;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .build__section-banner .build__section-body-list ul {
+    margin-top: 0;
   }
 }
 
@@ -22169,6 +22207,13 @@ html[data-theme="dark"] {
   }
 }
 
+@media (min-width: 85.375em) {
+  .build__section-banner .build__section-title {
+    position: relative;
+    top: -21px;
+  }
+}
+
 .build__section-banner .build__section-title h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 33.18px;
@@ -22208,6 +22253,28 @@ html[data-theme="dark"] {
 @media (min-width: 62em) {
   .build__section-banner .build__section-body-text p {
     text-align: left;
+  }
+}
+
+.build__section-banner .build__section-img img {
+  width: 280px;
+}
+
+@media (min-width: 36em) {
+  .build__section-banner .build__section-img img {
+    width: 688px;
+  }
+}
+
+@media (min-width: 75em) {
+  .build__section-banner .build__section-img img {
+    width: 705px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .build__section-banner .build__section-img img {
+    width: 778px;
   }
 }
 

@@ -22640,19 +22640,18 @@ html[data-theme="dark"] {
 
 @media (min-width: 36em) {
   .stats__section-banner {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin: auto;
+    width: 682px;
   }
   .stats__section-banner .brands {
     align-self: center !important;
-    margin-left: 132px;
+    margin-left: 266px;
   }
 }
 
 @media (min-width: 62em) {
   .stats__section-banner {
-    margin-left: 249px;
-    margin-right: 225px;
+    width: 1140px;
   }
   .stats__section-banner .brands {
     align-self: flex-end !important;

@@ -213,7 +213,7 @@
   display: flex;
   width: 288px;
   @include mobile-lg {
-    width: 682px;    
+    width: 682px;
   }
   @include large-desktops {
     width: 1415px;
@@ -758,18 +758,19 @@
   flex-direction: column;
 
   @include mobile-lg {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin: auto;
+    width: 682px;
 
     .brands {
       align-self: center !important;
-      margin-left: 132px;
+      margin-left: 266px;
     }
   }
 
   @include desktops {
-    margin-left: 249px;
-    margin-right: 225px;
+    // margin-left: 249px;
+    // margin-right: 225px;
+    width: 1140px;
 
     .brands {
       align-self: flex-end !important;

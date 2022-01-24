@@ -201,10 +201,6 @@
       width: 71.875em;
     }
   }
-
-  @include large-desktops {
-    width: 90%;
-  }
 }
 
 .build__section-banner {
@@ -472,7 +468,10 @@
     gap: 28px;
     margin-bottom: 48px;
   }
-  @include large-desktops {
+  @include large-desktops{
+    width: 1140px;
+  }
+  @include large-desktops-mid {
     width: 90.625em;
     gap: 14px;
   }
@@ -546,13 +545,16 @@
 }
 
 .role__section-banner {
+  margin: auto;
   display: flex;
   flex-direction: column;
   @include mobile-lg {
     margin-top: 7.5em;
   }
-  @include large-desktops {
-    margin: auto;
+  @include large-desktops{
+    width: 1140px;
+  }
+  @include large-desktops-mid {
     width: 90.625em;
     margin-top: 0px;
   }

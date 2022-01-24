@@ -21955,12 +21955,6 @@ html[data-theme="dark"] {
   }
 }
 
-@media (min-width: 75em) {
-  .hero-img {
-    width: 90%;
-  }
-}
-
 .build__section-banner {
   margin: auto;
   margin-top: 65px;
@@ -22293,6 +22287,12 @@ html[data-theme="dark"] {
 
 @media (min-width: 75em) {
   .role__section-body-list {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .role__section-body-list {
     width: 90.625em;
     gap: 14px;
   }
@@ -22375,6 +22375,7 @@ html[data-theme="dark"] {
 }
 
 .role__section-banner {
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -22387,7 +22388,12 @@ html[data-theme="dark"] {
 
 @media (min-width: 75em) {
   .role__section-banner {
-    margin: auto;
+    width: 1140px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .role__section-banner {
     width: 90.625em;
     margin-top: 0px;
   }

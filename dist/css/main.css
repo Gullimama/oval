@@ -21962,6 +21962,7 @@ html[data-theme="dark"] {
 }
 
 .build__section-banner {
+  margin: auto;
   margin-top: 65px;
   display: flex;
   width: 288px;
@@ -21975,7 +21976,8 @@ html[data-theme="dark"] {
 
 @media (min-width: 75em) {
   .build__section-banner {
-    width: 1140px;
+    width: 1415px;
+    margin-top: 200px;
   }
 }
 
@@ -21992,12 +21994,6 @@ html[data-theme="dark"] {
 }
 
 @media (min-width: 62em) {
-  .build__section-banner {
-    width: 90.625em;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-  }
   .build__section-banner .build__section-img {
     align-self: flex-end;
   }
@@ -22019,7 +22015,7 @@ html[data-theme="dark"] {
 @media (min-width: 85.375em) {
   .build__section-banner .build__section-body-list {
     top: -351px;
-    left: -399px;
+    left: -397px;
   }
 }
 
@@ -22440,6 +22436,10 @@ html[data-theme="dark"] {
     font-size: 60px;
     line-height: 74.4px;
   }
+}
+
+.role__section-banner .role-img {
+  text-align: center;
 }
 
 .testimonial__section-title {

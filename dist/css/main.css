@@ -24116,30 +24116,6 @@ ul li a:hover {
 
 /*>>>>>>>> Footer area styling <<<<<<<<<*/
 /*==== about -------*/
-.graph-img img {
-  position: absolute;
-  width: 207.35px;
-  height: 219.62px;
-  top: 284.46%;
-  right: 21.54%;
-}
-
-@media (min-width: 36em) {
-  .graph-img img {
-    top: 138.46%;
-    right: 4.54%;
-  }
-}
-
-@media (min-width: 75em) {
-  .graph-img img {
-    width: 321px;
-    height: 340px;
-    right: 13.12%;
-    top: 250.46%;
-  }
-}
-
 .hero__section {
   margin: auto;
 }
@@ -24243,19 +24219,29 @@ ul li a:hover {
   }
 }
 
-.hero__section .hero__img {
+.hero__section .about_hero-img {
   margin-top: 16px;
 }
 
+.hero__section .about_hero-img img {
+  width: 320px;
+}
+
 @media (min-width: 36em) {
-  .hero__section .hero__img {
-    margin-top: 56px;
+  .hero__section .about_hero-img img {
+    width: 768px;
   }
 }
 
 @media (min-width: 75em) {
-  .hero__section .hero__img {
+  .hero__section .about_hero-img img {
     width: 100%;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .hero__section .about_hero-img img {
+    width: 1440px;
   }
 }
 
@@ -24332,9 +24318,11 @@ ul li a:hover {
 }
 
 .neighbors__section {
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   background: linear-gradient(to bottom, #f9f9f9 7 0%, #fff 30%);
   margin-top: 76px;
 }
@@ -24343,7 +24331,7 @@ ul li a:hover {
   .neighbors__section {
     flex-direction: row;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, #f9f9f9 80%, #fff 20%);
+    background: linear-gradient(to bottom, #f9f9f9 86%, #fff 14%);
   }
 }
 
@@ -24351,6 +24339,16 @@ ul li a:hover {
   .neighbors__section {
     justify-content: center;
   }
+}
+
+@media (min-width: 85.375em) {
+  .neighbors__section {
+    width: 1582px;
+  }
+}
+
+.neighbors__section .neigh-img img {
+  width: 100%;
 }
 
 .neighbors__section .neighbors__section-img-1 {
@@ -24378,6 +24376,12 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 85.375em) {
+  .neighbors__section .neighbors__section-img-1 {
+    margin-top: 145px;
+  }
+}
+
 .neighbors__section .neighbors__section-content {
   order: 0;
 }
@@ -24396,6 +24400,13 @@ ul li a:hover {
   .neighbors__section .neighbors__section-content {
     left: -24px;
     top: 87px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .neighbors__section .neighbors__section-content {
+    left: -30.8%;
+    top: 80px;
   }
 }
 
@@ -24511,6 +24522,13 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 85.375em) {
+  .neighbors__section .neighbors__section-img-2 {
+    right: -17.4%;
+    top: 30px;
+  }
+}
+
 .neighbors__section .neighbors__section-img-3 {
   position: relative;
   z-index: 120;
@@ -24538,13 +24556,58 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 85.375em) {
+  .neighbors__section .neighbors__section-img-3 {
+    left: -8%;
+  }
+}
+
+.neighbors__section .graph-img img {
+  position: relative;
+  width: 207.35px;
+  height: 219.62px;
+  top: 284.46%;
+  right: 21.54%;
+}
+
+@media (min-width: 36em) {
+  .neighbors__section .graph-img img {
+    top: 138.46%;
+    right: 4.54%;
+  }
+}
+
+@media (min-width: 75em) {
+  .neighbors__section .graph-img img {
+    width: 321px;
+    height: 340px;
+    right: 13.12%;
+    top: 250.46%;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .neighbors__section .graph-img img {
+    right: -50.88%;
+    top: 110.46%;
+  }
+}
+
 .leading__sections {
+  margin: auto;
   margin-top: 200px;
 }
 
 @media (min-width: 36em) {
   .leading__sections {
     margin-top: 114px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .leading__sections {
+    margin-top: 180px;
+    width: 1582px;
   }
 }
 
@@ -24655,12 +24718,20 @@ ul li a:hover {
 }
 
 .team__section {
+  margin: auto;
   margin-top: 95px;
 }
 
 @media (min-width: 75em) {
   .team__section {
     margin-top: 150px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .team__section {
+    margin-top: 180px;
+    width: 1582px;
   }
 }
 

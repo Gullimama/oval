@@ -21726,6 +21726,12 @@ html[data-theme="dark"] {
   margin-bottom: 48px;
 }
 
+@media (min-width: 36em) {
+  .hero__section {
+    margin-top: 80px;
+  }
+}
+
 @media (min-width: 75em) {
   .hero__section {
     width: 90.625em;
@@ -24331,7 +24337,7 @@ ul li a:hover {
   .neighbors__section {
     flex-direction: row;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, #f9f9f9 86%, #fff 14%);
+    background: linear-gradient(to bottom, #f9f9f9 65%, #fff 14%);
   }
 }
 
@@ -24344,6 +24350,7 @@ ul li a:hover {
 @media (min-width: 85.375em) {
   .neighbors__section {
     width: 1582px;
+    background: linear-gradient(to bottom, #f9f9f9 86%, #fff 14%);
   }
 }
 
@@ -24391,7 +24398,7 @@ ul li a:hover {
     order: 1;
     position: relative;
     left: -91px;
-    top: -31px;
+    top: -2px;
     align-self: flex-start;
   }
 }
@@ -24509,6 +24516,7 @@ ul li a:hover {
   .neighbors__section .neighbors__section-img-2 {
     margin-left: 123px;
     width: 199px;
+    margin-top: 50px;
   }
 }
 
@@ -24531,6 +24539,7 @@ ul li a:hover {
 
 .neighbors__section .neighbors__section-img-3 {
   position: relative;
+  order: 3;
   z-index: 120;
   order: 3;
   width: 264px;
@@ -24542,7 +24551,7 @@ ul li a:hover {
   .neighbors__section .neighbors__section-img-3 {
     width: 320px;
     left: -58px;
-    top: -47px;
+    top: -35px;
     align-self: flex-start;
   }
 }
@@ -24562,34 +24571,43 @@ ul li a:hover {
   }
 }
 
-.neighbors__section .graph-img img {
+.neighbors__section .graph-img {
+  order: 4;
   position: relative;
-  width: 207.35px;
-  height: 219.62px;
-  top: 284.46%;
-  right: 21.54%;
+  left: 5px;
+  top: -145px;
 }
 
 @media (min-width: 36em) {
-  .neighbors__section .graph-img img {
-    top: 138.46%;
-    right: 4.54%;
+  .neighbors__section .graph-img {
+    left: 31.54%;
+    top: -227.63px;
   }
 }
 
 @media (min-width: 75em) {
-  .neighbors__section .graph-img img {
-    width: 321px;
-    height: 340px;
+  .neighbors__section .graph-img {
     right: 13.12%;
     top: 250.46%;
   }
 }
 
 @media (min-width: 85.375em) {
-  .neighbors__section .graph-img img {
+  .neighbors__section .graph-img {
     right: -50.88%;
     top: 110.46%;
+  }
+}
+
+.neighbors__section .graph-img img {
+  width: 207.35px;
+  height: 219.62px;
+}
+
+@media (min-width: 75em) {
+  .neighbors__section .graph-img img {
+    width: 321px;
+    height: 340px;
   }
 }
 

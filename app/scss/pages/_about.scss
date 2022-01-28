@@ -159,13 +159,14 @@
   @include mobile-lg {
     flex-direction: row;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, $contact-bg-color 86%, #fff 14%);
+    background: linear-gradient(to bottom, $contact-bg-color 65%, #fff 14%);
   }
   @include large-desktops {
     justify-content: center;
   }
   @include large-desktops-mid {
     width: 1582px;
+    background: linear-gradient(to bottom, $contact-bg-color 86%, #fff 14%);
   }
 
   .neigh-img {
@@ -200,7 +201,7 @@
       order: 1;
       position: relative;
       left: -91px;
-      top: -31px;
+      top: -2px;
       align-self: flex-start;
     }
     @include large-desktops {
@@ -283,6 +284,7 @@
     @include mobile-lg {
       margin-left: 123px;
       width: 199px;
+      margin-top: 50px;
     }
     @include large-desktops {
       position: relative;
@@ -298,6 +300,7 @@
   }
   .neighbors__section-img-3 {
     position: relative;
+    order: 3;
     z-index: 120;
     order: 3;
     width: 264px;
@@ -306,7 +309,7 @@
     @include mobile-lg {
       width: 320px;
       left: -58px;
-      top: -47px;
+      top: -35px;
       align-self: flex-start;
     }
     @include large-desktops {
@@ -320,25 +323,28 @@
     }
   }
   .graph-img {
+    order: 4;
+    position: relative;
+    left: 5px;
+    top: -145px;
+    @include mobile-lg {
+      left: 31.54%;
+      top: -227.63px;
+    }
+    @include large-desktops {
+      right: 13.12%;
+      top: 250.46%;
+    }
+    @include large-desktops-mid {
+      right: -50.88%;
+      top: 110.46%;
+    }
     img {
-      position: relative;
       width: 207.35px;
       height: 219.62px;
-      top: 284.46%;
-      right: 21.54%;
-      @include mobile-lg {
-        top: 138.46%;
-        right: 4.54%;
-      }
       @include large-desktops {
         width: 321px;
         height: 340px;
-        right: 13.12%;
-        top: 250.46%;
-      }
-      @include large-desktops-mid {
-        right: -50.88%;
-        top: 110.46%;
       }
     }
   }
@@ -417,7 +423,7 @@
     margin-top: 32px;
     margin-left: 60px;
   }
-  
+
   h6 {
     font-family: $body-base-font;
     font-size: 15px;

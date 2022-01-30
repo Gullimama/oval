@@ -1,43 +1,89 @@
-.left-side-graph-img {
-  img {
-    position: absolute;
-    width: 193.7px;
-    left: 15px;
-    top: 450px;
-    @include mobile-lg {
-      width: 493.86px;
-      left: 15px;
-      top: 500px;
-    }
-    @include  large-desktops {
-      width: 767px;
-      left: 155px;
-      top: 595px;
-      background: transparent;
+.download-img__section {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 80px;
+  @include large-desktops-mid {
+    margin-top: 100px;
+    width: 71.25em;
+  }
+  .left-side-graph-img {
+    img {
+      position: relative;
+      width: 193.7px;
+      left: 93.3%;
+      top: 22px;
+      @include mobile-lg {
+        width: 493.86px;
+        left: 91%;
+        top: 7%;
+      }
+      @include large-desktops {
+        align-self: center;
+        width: 585px;
+        left: 84%;
+        top: 7%;
+      }
+      @include large-desktops-mid {
+        width: 767px;
+        left: 84%;
+        top: 3%;
+      }
     }
   }
-}
-.right-side-graph-img {
-  img {
-    position: absolute;
-    width: 200.22px;
-    right: 12px;
-    top: 450px;
-    @include mobile-lg {
-      width: 477.76px;
-      right: 10px;
-      top: 500px;
+  .download-img {
+    img {
+      position: relative;
+      z-index: 1;
+      width: 280px;
+      @include mobile-lg {
+        width: 668px;
+      }
+      @include large-desktops {
+        width: 780px;
+      }
+      @include large-desktops-mid {
+        width: 948px;
+      }
     }
-    @include  large-desktops {
-      width: 742px;
-      right: 185px;
-      top: 550px;
+  }
+  .right-side-graph-img {
+    img {
+      position: relative;
+      width: 200.22px;
+      right: 90%;
+      top: 22%;
+      @include mobile-lg {
+        width: 477.76px;
+        right: 92%;
+        top: 27%;
+      }
+
+      @include large-desktops {
+        align-self: center;
+        width: 585px;
+        right: 88%;
+        top: 21%;
+      }
+      @include large-desktops-mid {
+        width: 742px;
+        right: 88%;
+        top: 18%;
+      }
     }
   }
 }
 
 .download_section {
-  @include  large-desktops {
+  background: linear-gradient(to bottom, #fff6f4 85%, #fff 15%);
+  padding-top: 80px;
+  @include large-desktops {
+    background: linear-gradient(to bottom, #fff6f4 77%, #fff 27%);
+    padding-top: 136px;
+  }
+  @include large-desktops-mid {
     background: linear-gradient(to bottom, $dwn-bg-color 70%, #fff 30%);
   }
 }
@@ -51,7 +97,7 @@
       height: 60px;
       // padding-top: 80px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 580px;
       height: 74px;
     }
@@ -67,7 +113,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -82,7 +128,7 @@
       width: 361px;
       height: 48px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 627px;
       height: 60px;
     }
@@ -99,7 +145,7 @@
         font-size: 14px;
         line-height: 24px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         font-size: 20px;
         line-height: 30px;
       }
@@ -115,7 +161,7 @@
       margin-top: 38px;
       gap: 20px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       margin-top: 48px;
       gap: 36px;
     }
@@ -130,7 +176,7 @@
         width: 196px;
         height: 52px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         width: 200px;
         height: 60px;
       }
@@ -150,7 +196,7 @@
     @include mobile-lg {
       width: 668px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 1020px;
     }
   }
@@ -159,7 +205,7 @@
 // feature list
 .feature-list {
   margin-top: 30.51px;
-  @include  large-desktops {
+  @include large-desktops {
     margin-top: 80px;
   }
   .list-item {
@@ -175,7 +221,7 @@
       gap: 26px;
       margin: auto;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 850px;
       display: flex;
       flex-direction: row;
@@ -185,7 +231,7 @@
       margin: auto;
     }
     input[type="radio"] {
-      @include  large-desktops {
+      @include large-desktops {
         box-sizing: border-box;
         padding: 0;
         width: 16px;
@@ -206,7 +252,7 @@
         font-size: 16px;
         line-height: 19.36px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         font-size: 20px;
         line-height: 24.2px;
       }
@@ -225,7 +271,7 @@
       width: 600px;
       height: 60px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       margin-top: 180px;
       width: 590px;
       height: 60px;
@@ -242,7 +288,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         font-size: 48px;
         line-height: 59.52px;
       }
@@ -259,7 +305,7 @@
       flex-wrap: wrap;
       margin-top: 67px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 1200px;
       margin: auto;
       display: flex;
@@ -283,7 +329,7 @@
         @include mobile-lg {
           width: 210px;
         }
-        @include  large-desktops {
+        @include large-desktops {
           width: 251px;
           height: 27px;
         }
@@ -299,7 +345,7 @@
             font-size: 18px;
             line-height: 21.78px;
           }
-          @include  large-desktops {
+          @include large-desktops {
             font-size: 22px;
             line-height: 26.62px;
           }
@@ -312,7 +358,7 @@
           height: 110px;
           margin: auto;
           margin-top: 9px;
-          @include  large-desktops {
+          @include large-desktops {
             width: 457px;
             height: 78px;
           }
@@ -324,7 +370,7 @@
             line-height: 22px;
             letter-spacing: 0px;
             text-align: center;
-            @include  large-desktops {
+            @include large-desktops {
               font-size: 16px;
               line-height: 26px;
             }
@@ -343,7 +389,7 @@
           margin: auto;
           margin-top: 20px;
           color: $theme-color;
-          @include  large-desktops {
+          @include large-desktops {
             font-size: 18px;
             line-height: 21.78px;
             width: 200px;
@@ -368,7 +414,7 @@
     width: 668px;
     height: 224px;
   }
-  @include  large-desktops {
+  @include large-desktops {
     margin-top: 159px;
     width: 1140px;
     height: 238px;
@@ -381,7 +427,7 @@
       flex-direction: column;
       justify-content: center;
     }
-    @include  large-desktops {
+    @include large-desktops {
       flex-direction: row;
       gap: 75px;
     }
@@ -395,7 +441,7 @@
           height: 27px;
           margin-top: 20px;
         }
-        @include  large-desktops {
+        @include large-desktops {
           margin: 0;
           width: 382px;
           height: 42px;
@@ -412,7 +458,7 @@
             font-size: 22px;
             line-height: 26.62px;
           }
-          @include  large-desktops {
+          @include large-desktops {
             font-size: 30px;
             line-height: 42px;
             text-align: left;
@@ -428,7 +474,7 @@
           height: 40px;
           margin-bottom: 35px;
         }
-        @include  large-desktops {
+        @include large-desktops {
           width: 463px;
           height: 60px;
         }
@@ -445,7 +491,7 @@
             font-size: 14px;
             line-height: 20px;
           }
-          @include  large-desktops {
+          @include large-desktops {
             font-size: 18px;
             line-height: 30px;
             text-align: left;
@@ -460,7 +506,7 @@
         margin: auto;
         gap: 15px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         flex-direction: row;
         gap: 24px;
       }
@@ -474,7 +520,7 @@
           height: 48px;
           border-radius: 8px;
         }
-        @include  large-desktops {
+        @include large-desktops {
           width: 272px;
           height: 60px;
           background: #ffffff;
@@ -502,7 +548,7 @@
           font-size: 14px;
           line-height: 16.94px;
         }
-        @include  large-desktops {
+        @include large-desktops {
           width: 170px;
           height: 60px;
           background: $theme-color;

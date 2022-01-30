@@ -4,7 +4,7 @@
   @include mobile-lg {
     background: linear-gradient(to bottom, $contact-bg-color 17%, $bg-color 0%);
   }
-  @include large-desktops{
+  @include large-desktops {
     background: linear-gradient(to bottom, $contact-bg-color 27%, $bg-color 0%);
   }
 }
@@ -322,7 +322,10 @@
           border: 1px solid $body-text-color;
           border-radius: 10px;
           margin-bottom: 24px;
-          width: 305px;
+          width: 248px;
+          @include mobile-lg {
+            width: 305px;
+          }
           @include large-desktops {
             width: 427px;
           }
@@ -354,8 +357,11 @@
         display: block;
         width: 20.0625em;
         height: 21.25em;
-        right: 10%;
+        right: 7%;
         top: 350px;
+      }
+      @include large-desktops-mid {
+        right: 10%;
       }
     }
   }

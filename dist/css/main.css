@@ -25767,7 +25767,13 @@ hr {
   border: 1px solid #64626a;
   border-radius: 10px;
   margin-bottom: 24px;
-  width: 305px;
+  width: 248px;
+}
+
+@media (min-width: 36em) {
+  .contact-page .contact-form_sec form .form-group textarea {
+    width: 305px;
+  }
 }
 
 @media (min-width: 75em) {
@@ -25809,8 +25815,14 @@ hr {
     display: block;
     width: 20.0625em;
     height: 21.25em;
-    right: 10%;
+    right: 7%;
     top: 350px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .contact-page .contact-graph-img img {
+    right: 10%;
   }
 }
 

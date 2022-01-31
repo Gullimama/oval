@@ -353,16 +353,15 @@
 // leading section
 .leading__sections {
   margin: auto;
-  margin-top: 200px;
-  @include mobile-lg {
-    margin-top: 114px;
+  @include large-desktops {
+    margin-top: 100px;
   }
   @include large-desktops-mid {
     margin-top: 180px;
     width: 1582px;
   }
   .content-title {
-    width: 280px;
+    width: 300px;
     height: 168px;
     margin: auto;
     @include mobile-lg {
@@ -400,6 +399,7 @@
     }
   }
   .branding_list {
+    margin-top: 40.67px;
     @include large-desktops {
       width: 1180px;
       margin: auto;
@@ -454,8 +454,8 @@
     margin-top: 150px;
   }
   @include large-desktops-mid {
-    margin-top: 180px;
-    width: 1582px;
+    margin-top: 200px;
+    width: 98.875em;
   }
   .content-title {
     width: 280px;
@@ -602,10 +602,13 @@
     flex-direction: row;
   }
   @include large-desktops {
-    width: 1250px;
+    width: 78.125em;
     flex-direction: row;
     justify-content: center;
     gap: 207px;
+  }
+  @include large-desktops-mid {
+    margin-top: 200px;
   }
   .values__section-left {
     @include mobile-lg {
@@ -750,8 +753,16 @@
   }
 }
 
-hr {
+.seprator {
+  margin: auto;
   border: 1px dashed #e2e2e2;
+  width: 280px;
+  margin-top: 48px;
+  @include large-desktops-mid {
+    width: 78.125em;
+    height: 2px;
+    margin-top: 150px;
+  }
 }
 // news section
 
@@ -831,6 +842,9 @@ hr {
     margin-top: 27px;
     @include large-desktops {
       width: 1200px;
+    }
+    @include large-desktops-mid {
+      width: 78.125em;
     }
     .press {
       margin: auto;

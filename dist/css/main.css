@@ -21742,10 +21742,12 @@ html[data-theme="dark"] {
   width: 280px;
   height: 138px;
   margin: auto;
+  margin-top: 54px;
 }
 
 @media (min-width: 36em) {
   .hero__section .hero__section-header-title {
+    margin-top: 69px;
     width: 42em;
     height: 7.5em;
   }
@@ -22797,14 +22799,40 @@ html[data-theme="dark"] {
   }
 }
 
+.pricing__section .pricing_sub-title {
+  margin-bottom: 35px;
+}
+
+.pricing__section .pricing_sub-title h6 {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #B3B1B7;
+}
+
 .pricing__section .pricing__section-title {
+  margin: auto;
   text-align: center;
   height: 92px;
+  width: 280px;
+  height: 138px;
 }
 
 @media (min-width: 36em) {
   .pricing__section .pricing__section-title {
-    height: 60px;
+    width: 672px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .pricing__section .pricing__section-title {
+    width: 646px;
+    height: 148px;
   }
 }
 
@@ -22836,7 +22864,7 @@ html[data-theme="dark"] {
   margin: 0 auto;
   height: 44px;
   margin-top: 11px;
-  width: 280px;
+  width: 292px;
 }
 
 @media (min-width: 36em) {
@@ -22899,7 +22927,7 @@ html[data-theme="dark"] {
 }
 
 .pricing__section .custom-control .custom-control-label::after {
-  background: var(--bg-color);
+  background: var(--theme-color);
   width: 20px;
   height: 20px;
   border: 1px solid #fff;
@@ -23615,7 +23643,7 @@ ul li a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  gap: 130px;
+  gap: 17px 36%;
 }
 
 @media (min-width: 36em) {
@@ -23633,8 +23661,8 @@ ul li a:hover {
 }
 
 .footer__section .connect__section .company__name {
-  margin-left: 40px;
-  order: 1;
+  margin-left: 43px;
+  order: 0;
 }
 
 @media (min-width: 36em) {
@@ -23657,20 +23685,19 @@ ul li a:hover {
 }
 
 .footer__section .connect__section .social__section {
-  order: 0;
-  display: inline-flex;
+  order: 2;
 }
 
-.footer__section .connect__section .social__section .fab {
-  width: 28px;
-  height: 28px;
-  opacity: 0.24;
-  border-radius: 50px;
-  border: 1px solid #e8e7e8;
+.footer__section .connect__section .social__section .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
 .footer__section .connect__section .copyright__section {
-  order: 2;
+  order: 1;
+  align-self: center;
+  padding-top: 9px;
 }
 
 .footer__section .connect__section .copyright__section P {
@@ -23752,10 +23779,15 @@ ul li a:hover {
   padding: 1rem 1.5rem;
 }
 
+.navbar-2 {
+  gap: 71%;
+}
+
 @media (min-width: 75em) {
   .navbar-2 {
     margin: auto;
     width: 72.625em;
+    gap: 0;
   }
 }
 
@@ -23779,6 +23811,7 @@ ul li a:hover {
   gap: 1.25em;
   justify-content: center;
   align-items: center;
+  padding: 0 !important;
 }
 
 @media (min-width: 75em) {
@@ -24613,12 +24646,11 @@ ul li a:hover {
 
 .leading__sections {
   margin: auto;
-  margin-top: 200px;
 }
 
-@media (min-width: 36em) {
+@media (min-width: 75em) {
   .leading__sections {
-    margin-top: 114px;
+    margin-top: 100px;
   }
 }
 
@@ -24630,7 +24662,7 @@ ul li a:hover {
 }
 
 .leading__sections .content-title {
-  width: 280px;
+  width: 300px;
   height: 168px;
   margin: auto;
 }
@@ -24680,6 +24712,10 @@ ul li a:hover {
     margin-top: 24px;
     margin-bottom: 65px;
   }
+}
+
+.leading__sections .branding_list {
+  margin-top: 40.67px;
 }
 
 @media (min-width: 75em) {
@@ -24748,8 +24784,8 @@ ul li a:hover {
 
 @media (min-width: 85.375em) {
   .team__section {
-    margin-top: 180px;
-    width: 1582px;
+    margin-top: 200px;
+    width: 98.875em;
   }
 }
 
@@ -24952,10 +24988,16 @@ ul li a:hover {
 
 @media (min-width: 75em) {
   .values__section {
-    width: 1250px;
+    width: 78.125em;
     flex-direction: row;
     justify-content: center;
     gap: 207px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .values__section {
+    margin-top: 200px;
   }
 }
 
@@ -25159,8 +25201,19 @@ ul li a:hover {
   font-weight: 700;
 }
 
-hr {
+.seprator {
+  margin: auto;
   border: 1px dashed #e2e2e2;
+  width: 280px;
+  margin-top: 48px;
+}
+
+@media (min-width: 85.375em) {
+  .seprator {
+    width: 78.125em;
+    height: 2px;
+    margin-top: 150px;
+  }
 }
 
 .news__sections {
@@ -25278,6 +25331,12 @@ hr {
 @media (min-width: 75em) {
   .news__sections .press__partners {
     width: 1200px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .news__sections .press__partners {
+    width: 78.125em;
   }
 }
 
@@ -25672,6 +25731,10 @@ hr {
   }
 }
 
+.contact-page .contact-form_sec form .form-row .form-group {
+  margin-bottom: 0px !important;
+}
+
 @media (min-width: 36em) {
   .contact-page .contact-form_sec form .form-row .form-group input {
     width: 144px;
@@ -25729,6 +25792,13 @@ hr {
   margin-bottom: 22px;
   width: 248px;
   height: 39px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #000;
 }
 
 .contact-page .contact-form_sec form .form-group .nice-select {
@@ -27338,6 +27408,7 @@ hr {
 .table__structure .table thead {
   background: #f5f6f9;
   box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
+  border-top: none !important;
 }
 
 .table__structure .table thead tr th {
@@ -27473,6 +27544,23 @@ hr {
   }
 }
 
+.work__section .work__section-header-img img {
+  width: 300px;
+}
+
+@media (min-width: 36em) {
+  .work__section .work__section-header-img img {
+    margin-top: 40px;
+    width: 688px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .work__section .work__section-header-img img {
+    width: 73.75em;
+  }
+}
+
 .work__section .work__section-banner {
   margin: auto;
   display: flex;
@@ -27495,15 +27583,61 @@ hr {
   }
 }
 
+@media (min-width: 85.375em) {
+  .work__section .work__section-banner {
+    width: 1150px;
+  }
+}
+
+.work__section .work__section-banner .banner-left {
+  align-self: center;
+}
+
 @media (min-width: 75em) {
   .work__section .work__section-banner .banner-left {
     width: 690px;
   }
 }
 
+.work__section .work__section-banner .banner-left img {
+  width: 279.18px;
+}
+
+@media (min-width: 36em) {
+  .work__section .work__section-banner .banner-left img {
+    width: 319.06px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .work__section .work__section-banner .banner-left img {
+    width: 540px;
+  }
+}
+
+.work__section .work__section-banner .banner-right {
+  align-self: center;
+}
+
 @media (min-width: 75em) {
   .work__section .work__section-banner .banner-right {
     width: 690px;
+  }
+}
+
+.work__section .work__section-banner .banner-right img {
+  width: 279.18px;
+}
+
+@media (min-width: 36em) {
+  .work__section .work__section-banner .banner-right img {
+    width: 319.06px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .work__section .work__section-banner .banner-right img {
+    width: 540px;
   }
 }
 
@@ -27526,6 +27660,12 @@ hr {
   }
 }
 
+@media (min-width: 85.375em) {
+  .plan__section .plan__section-header {
+    width: 81.0625em;
+  }
+}
+
 .plan__section .plan__section-header .header-left {
   width: 312px;
   height: 92px;
@@ -27545,6 +27685,12 @@ hr {
     width: 550px;
     height: 148px;
     margin: auto;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .plan__section .plan__section-header .header-left {
+    margin-left: 30px;
   }
 }
 
@@ -27682,6 +27828,13 @@ hr {
   }
 }
 
+@media (min-width: 85.375em) {
+  .plan__section .plan__section-body .plan-section-item .body-content-text {
+    margin-left: 98px;
+    margin-bottom: 89px;
+  }
+}
+
 .plan__section .plan__section-body .plan-section-item .body-content-text p {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -27705,6 +27858,12 @@ hr {
   margin-top: 72px;
 }
 
+@media (min-width: 85.375em) {
+  .informative__section {
+    margin-top: 200px;
+  }
+}
+
 @media (min-width: 36em) {
   .informative__section .info-item {
     width: 600px;
@@ -27718,6 +27877,13 @@ hr {
     width: 870px;
     height: 50px;
     margin: auto;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .informative__section .info-item {
+    width: 1140px;
+    height: 20px;
   }
 }
 
@@ -27754,6 +27920,12 @@ hr {
   .informative__section .info-item .info-body {
     width: 153px;
     height: 50px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .informative__section .info-item .info-body {
+    width: 196px;
   }
 }
 

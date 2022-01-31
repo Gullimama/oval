@@ -9,7 +9,7 @@
       opacity: 0.48;
       border: 1px solid #8e8c95;
       border-radius: 8px;
-      @include  large-desktops {
+      @include large-desktops {
         width: 332px;
         height: 60px;
       }
@@ -28,7 +28,7 @@
   }
 }
 .hero__section-card {
-  @include  large-desktops {
+  @include large-desktops {
     margin-top: 110px;
   }
 }
@@ -45,7 +45,7 @@
       width: 507px;
       height: 56px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 450px;
       height: 60px;
       margin-bottom: 56px;
@@ -63,7 +63,7 @@
         font-size: 18px;
         line-height: 28px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         font-size: 20px;
         line-height: 30px;
       }
@@ -73,9 +73,19 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 16px;
-    @include  large-desktops {
+    @include large-desktops {
       width: 1250px;
       margin: auto;
+    }
+    img {
+      width: 300px;
+      @include mobile-lg {
+        margin-top: 40px;
+        width: 688px;
+      }
+      @include large-desktops-mid {
+        width: 73.75em;
+      }
     }
   }
 
@@ -87,20 +97,43 @@
     @include mobile-lg {
       flex-direction: row;
     }
-    @include  large-desktops {
-      margin-top : 60px;
+    @include large-desktops {
+      margin-top: 60px;
       width: 1250px;
       flex-direction: row;
       gap: 60px;
     }
+    @include large-desktops-mid {
+      width: 1150px;
+    }
     .banner-left {
-      @include  large-desktops {
+      align-self: center;
+      @include large-desktops {
         width: 690px;
+      }
+      img {
+        width: 279.18px;
+        @include mobile-lg {
+          width: 319.06px;
+        }
+        @include large-desktops-mid {
+          width: 540px;
+        }
       }
     }
     .banner-right {
-      @include  large-desktops {
+      align-self: center;
+      @include large-desktops {
         width: 690px;
+      }
+      img {
+        width: 279.18px;
+        @include mobile-lg {
+          width: 319.06px;
+        }
+        @include large-desktops-mid {
+          width: 540px;
+        }
       }
     }
   }
@@ -109,16 +142,19 @@
 // plan section
 
 .plan__section {
-  @include  large-desktops {
+  @include large-desktops {
     margin-top: 180px;
   }
   .plan__section-header {
     margin: auto;
     display: flex;
     flex-direction: column;
-    @include  large-desktops {
+    @include large-desktops {
       width: 1450px;
       flex-direction: row;
+    }
+    @include large-desktops-mid{
+      width: 81.0625em;
     }
     .header-left {
       width: 312px;
@@ -129,10 +165,13 @@
         width: 672px;
         height: 60px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         width: 550px;
         height: 148px;
         margin: auto;
+      }
+      @include large-desktops-mid{
+        margin-left: 30px;
       }
       h2 {
         text-align: center;
@@ -149,7 +188,7 @@
         width: 560px;
         height: 84px;
       }
-      @include  large-desktops {
+      @include large-desktops {
         width: 458px;
         height: 90px;
       }
@@ -166,7 +205,7 @@
           font-size: 18px;
           line-height: 28px;
         }
-        @include  large-desktops {
+        @include large-desktops {
           text-align: left;
           font-size: 20px;
           line-height: 30px;
@@ -177,29 +216,29 @@
   .plan__section-body {
     margin: auto;
     margin-top: 36px;
-    @include  large-desktops {
+    @include large-desktops {
       width: 1450px;
       margin-top: 103px;
     }
     .plan-section-item {
-      @include  large-desktops {
+      @include large-desktops {
         width: 457px;
       }
       .body-icon {
         margin-bottom: 16px;
-        @include  large-desktops {
+        @include large-desktops {
           margin-left: 98px;
           text-align: left;
         }
         img {
-          @include  large-desktops {
+          @include large-desktops {
             width: 43px;
             height: 43px;
           }
         }
       }
       .body-title {
-        @include  large-desktops {
+        @include large-desktops {
           width: 302px;
           height: 27px;
           margin: auto;
@@ -214,7 +253,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: center;
-          @include  large-desktops {
+          @include large-desktops {
             text-align: left;
             font-size: 22px;
             line-height: 26.62px;
@@ -226,9 +265,13 @@
         width: 280px;
         margin: auto;
         margin-bottom: 30px;
-        @include  large-desktops {
+        @include large-desktops {
           width: 477px;
           height: 52px;
+        }
+        @include large-desktops-mid{
+          margin-left: 98px;
+          margin-bottom: 89px;
         }
         p {
           font-family: $body-base-font;
@@ -239,7 +282,7 @@
           letter-spacing: 0px;
           text-align: center;
           color: $body-text-color;
-          @include  large-desktops {
+          @include large-desktops {
             text-align: left;
             font-size: 16px;
             line-height: 26px;
@@ -253,19 +296,26 @@
 // informative__section
 .informative__section {
   margin-top: 72px;
+  @include large-desktops-mid {
+    margin-top: 200px;
+  }
   .info-item {
     @include mobile-lg {
       width: 600px;
       height: 40px;
       margin: auto;
     }
-    @include  large-desktops {
+    @include large-desktops {
       width: 870px;
       height: 50px;
       margin: auto;
     }
+    @include large-desktops-mid {
+      width: 1140px;
+      height: 20px;
+    }
     .info-title {
-      @include  large-desktops {
+      @include large-desktops {
         width: 196px;
         height: 124px;
       }
@@ -277,8 +327,12 @@
         line-height: 79px;
         letter-spacing: 0px;
         text-align: center;
-        background: linear-gradient(to bottom, transparent 70%, $primary-highlighter-color 30%);
-        @include  large-desktops {
+        background: linear-gradient(
+          to bottom,
+          transparent 70%,
+          $primary-highlighter-color 30%
+        );
+        @include large-desktops {
           font-size: 100px;
           line-height: 124px;
         }
@@ -286,9 +340,12 @@
     }
     .info-body {
       width: 122px;
-      @include  large-desktops {
+      @include large-desktops {
         width: 153px;
         height: 50px;
+      }
+      @include large-desktops-mid {
+        width: 196px;
       }
       p {
         font-family: Inter;
@@ -299,7 +356,7 @@
         letter-spacing: 0px;
         text-align: center;
         color: #8e8c95;
-        @include  large-desktops{
+        @include large-desktops {
           font-size: 20px;
           line-height: 24.2px;
         }
@@ -317,7 +374,7 @@
     width: 609px;
     height: 120px;
   }
-  @include  large-desktops {
+  @include large-desktops {
     width: 566px;
     height: 148px;
   }
@@ -334,7 +391,7 @@
       font-size: 48px;
       line-height: 59.52px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       font-size: 60px;
       line-height: 74.4px;
     }
@@ -348,7 +405,7 @@
   @include mobile-lg {
     width: 275px;
   }
-  @include  large-desktops {
+  @include large-desktops {
     width: 271px;
   }
   h5 {
@@ -364,7 +421,7 @@
       font-size: 18px;
       line-height: 21.78px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       font-size: 24px;
       line-height: 29.05px;
     }
@@ -377,7 +434,7 @@
   @include mobile-lg {
     width: 300px;
   }
-  @include  large-desktops {
+  @include large-desktops {
     width: 497px;
     height: 52px;
     margin-top: 12px;
@@ -395,7 +452,7 @@
       font-size: 14px;
       line-height: 21.78px;
     }
-    @include  large-desktops {
+    @include large-desktops {
       font-size: 16px;
       line-height: 26px;
     }

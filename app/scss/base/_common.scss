@@ -32,7 +32,7 @@
 .hero__section {
   margin-top: 40px;
   margin-bottom: 48px;
-  @include mobile-lg{
+  @include mobile-lg {
     margin-top: 80px;
   }
   @include large-desktops {
@@ -42,7 +42,9 @@
     width: 280px;
     height: 138px;
     margin: auto;
+    margin-top: 54px;
     @include mobile-lg {
+      margin-top: 69px;
       width: 42em;
       height: 7.5em;
     }
@@ -473,7 +475,7 @@
     gap: 28px;
     margin-bottom: 48px;
   }
-  @include large-desktops{
+  @include large-desktops {
     width: 1140px;
   }
   @include large-desktops-mid {
@@ -556,7 +558,7 @@
   @include mobile-lg {
     margin-top: 7.5em;
   }
-  @include large-desktops{
+  @include large-desktops {
     width: 1140px;
   }
   @include large-desktops-mid {
@@ -901,15 +903,33 @@
   @include mobile-lg {
     margin-top: 7.5em;
   }
-
+  .pricing_sub-title {
+    margin-bottom: 35px;
+    h6 {
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #B3B1B7;
+    }
+  }
   .pricing__section-title {
+    margin: auto;
     text-align: center;
     height: 92px;
-
+    width: 280px;
+    height: 138px;
     @include mobile-lg {
-      height: 60px;
+      width: 672px;
+      height: 120px;
     }
-
+    @include large-desktops-mid {
+      width: 646px;
+      height: 148px;
+    }
     h2 {
       font-family: $theme-base-font;
       font-size: $h4;
@@ -934,7 +954,7 @@
     margin: 0 auto;
     height: 44px;
     margin-top: 11px;
-    width: 280px;
+    width: 292px;
 
     @include mobile-lg {
       width: 450px;
@@ -986,7 +1006,7 @@
     }
 
     .custom-control-label::after {
-      background: var(--bg-color);
+      background: var(--theme-color);
       width: 20px;
       height: 20px;
       border: 1px solid #fff;

@@ -23,9 +23,11 @@
   padding: 1rem 1.5rem;
   &-2 {
     @extend .navbar;
+    gap: 71%;
     @include large-desktops {
       margin: auto;
       width: 72.625em;
+      gap: 0;
     }
   }
 }
@@ -51,6 +53,7 @@
   gap: 1.25em;
   justify-content: center;
   align-items: center;
+  padding: 0 !important;
   @include large-desktops {
     position: relative;
     top: 12px;

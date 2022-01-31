@@ -82,6 +82,7 @@
     width: 1140px;
     margin-top: 80px;
   }
+  
   .table {
     margin-bottom: 32px;
     @include mobile-lg {
@@ -90,6 +91,7 @@
     thead {
       background: $enterprise-color;
       box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
+      border-top: none !important;
       tr {
         th {
           font-family: Inter;

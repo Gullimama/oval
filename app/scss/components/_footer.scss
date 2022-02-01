@@ -40,6 +40,7 @@ ul {
   @include  large-desktops{
     margin-top: 25%;
     gap: 262px;
+     
   }
   .connect__section {
     order: 1;
@@ -51,16 +52,18 @@ ul {
       order: 0;
       flex-direction: column;
       gap: 40px;
-    }
-    @include mobile-lg {
-      gap: 100px;
+      justify-content: center;
     }
     .company__name {
       margin-left: 43px;
       order: 0;
       @include mobile-lg {
         margin-top: 30px;
-        margin-left: 0px;
+        margin-left: 38px;
+        justify-content: center;
+      }
+      @include desktops{
+        margin-left: 41px;
       }
       img {
         width: 49px;
@@ -77,6 +80,9 @@ ul {
         display: flex;
         flex-direction: row;
         gap: 12px;
+      }
+      @include desktops{
+        order: 1;
       }
     }
     .copyright__section {

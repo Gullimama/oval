@@ -22811,7 +22811,7 @@ html[data-theme="dark"] {
   line-height: 22px;
   letter-spacing: 2px;
   text-align: center;
-  color: #B3B1B7;
+  color: #b3b1b7;
 }
 
 .pricing__section .pricing__section-title {
@@ -22826,6 +22826,12 @@ html[data-theme="dark"] {
   .pricing__section .pricing__section-title {
     width: 672px;
     height: 120px;
+  }
+}
+
+@media (min-width: 75em) {
+  .pricing__section .pricing__section-title {
+    height: 150px;
   }
 }
 
@@ -23083,7 +23089,7 @@ html[data-theme="dark"] {
 @media (min-width: 62em) {
   .pricing__section .pricing__section-card .price_card {
     max-width: 19.7% !important;
-    height: 473px;
+    height: 428px;
   }
 }
 
@@ -23180,18 +23186,19 @@ html[data-theme="dark"] {
   }
 }
 
-@media (min-width: 85.375em) {
+@media (min-width: 62em) {
   .price__footer .enterprise__section {
-    width: 1140px;
-    height: 112px;
     margin: auto;
-    margin-top: 48px;
+    width: 62.5625em;
+    margin-left: 12%;
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 85.375em) {
   .price__footer .enterprise__section {
-    width: 1140px;
+    width: 74.5625em;
+    height: 112px;
+    margin-top: 48px;
   }
 }
 
@@ -23391,6 +23398,13 @@ html[data-theme="dark"] {
 
 body {
   background: var(--background-color) !important;
+}
+
+@media (min-width: 75em) {
+  .branding__logo {
+    margin: auto !important;
+    width: 62.5625em;
+  }
 }
 
 /************************************* 
@@ -23651,12 +23665,7 @@ ul li a:hover {
     order: 0;
     flex-direction: column;
     gap: 40px;
-  }
-}
-
-@media (min-width: 36em) {
-  .footer__section .connect__section {
-    gap: 100px;
+    justify-content: center;
   }
 }
 
@@ -23668,7 +23677,14 @@ ul li a:hover {
 @media (min-width: 36em) {
   .footer__section .connect__section .company__name {
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: 38px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 62em) {
+  .footer__section .connect__section .company__name {
+    margin-left: 41px;
   }
 }
 
@@ -23692,6 +23708,12 @@ ul li a:hover {
   display: flex;
   flex-direction: row;
   gap: 12px;
+}
+
+@media (min-width: 62em) {
+  .footer__section .connect__section .social__section {
+    order: 1;
+  }
 }
 
 .footer__section .connect__section .copyright__section {
@@ -23768,7 +23790,7 @@ ul li a:hover {
 
 .header-3 {
   width: 100%;
-  background: #FFF6F4;
+  background: #fff6f4;
 }
 
 .navbar, .navbar-2 {
@@ -23777,6 +23799,19 @@ ul li a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+}
+
+@media (min-width: 36em) {
+  .navbar, .navbar-2 {
+    justify-content: flex-start !important;
+    gap: 36px !important;
+  }
+}
+
+@media (min-width: 62em) {
+  .navbar, .navbar-2 {
+    justify-content: space-between !important;
+  }
 }
 
 .navbar-2 {
@@ -23819,6 +23854,7 @@ ul li a:hover {
     position: relative;
     top: 12px;
     left: -10%;
+    order: 2;
   }
 }
 
@@ -23839,6 +23875,18 @@ ul li a:hover {
   height: 24px;
 }
 
+@media (min-width: 36em) {
+  .nav-logo {
+    order: 2;
+  }
+}
+
+@media (min-width: 75em) {
+  .nav-logo {
+    order: 1;
+  }
+}
+
 .btn-trans {
   width: 105px;
   height: 38px;
@@ -23855,16 +23903,6 @@ ul li a:hover {
   font-weight: 700;
 }
 
-.nav-menu-btn {
-  display: block;
-}
-
-@media (min-width: 75em) {
-  .nav-menu-btn {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   .nav-menu {
     position: fixed;
@@ -23879,30 +23917,6 @@ ul li a:hover {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 9999;
-  }
-  .nav-buttons {
-    display: none;
-  }
-  .nav-buttons button {
-    width: 140px;
-    height: 60px;
-    background-color: #8e8c95;
-    color: #fff;
-    font-weight: 700;
-    border-radius: 8px;
-  }
-}
-
-@media only screen and (max-width: 992px) and (min-width: 36em) {
-  .nav-buttons button {
-    width: 150px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .nav-buttons button:hover {
-    background-color: #ff6846;
-    color: #fff;
   }
   .nav-item a {
     font-size: 25px;
@@ -23929,6 +23943,24 @@ ul li a:hover {
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.nav-buttons {
+  display: none;
+}
+
+@media (min-width: 36em) {
+  .nav-buttons {
+    display: block;
+    order: 3;
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 62em) {
+  .nav-buttons {
+    margin-left: 0;
   }
 }
 
@@ -24157,6 +24189,12 @@ ul li a:hover {
 /*==== about -------*/
 .hero__section {
   margin: auto;
+}
+
+@media (min-width: 36em) {
+  .hero__section {
+    margin-top: 80px;
+  }
 }
 
 @media (min-width: 75em) {
@@ -25208,6 +25246,20 @@ ul li a:hover {
   margin-top: 48px;
 }
 
+@media (min-width: 36em) {
+  .seprator {
+    width: 747px;
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 75em) {
+  .seprator {
+    width: 74.125em;
+    margin-top: 150px;
+  }
+}
+
 @media (min-width: 85.375em) {
   .seprator {
     width: 78.125em;
@@ -25421,6 +25473,7 @@ ul li a:hover {
     width: 71.25em;
     height: 39.125em;
     gap: 10px;
+    margin-left: 90px;
   }
 }
 
@@ -25885,7 +25938,7 @@ ul li a:hover {
     display: block;
     width: 20.0625em;
     height: 21.25em;
-    right: 7%;
+    right: 6%;
     top: 350px;
   }
 }
@@ -27555,6 +27608,12 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 75em) {
+  .work__section .work__section-header-img img {
+    width: 70.6875em;
+  }
+}
+
 @media (min-width: 85.375em) {
   .work__section .work__section-header-img img {
     width: 73.75em;
@@ -27609,6 +27668,12 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 75em) {
+  .work__section .work__section-banner .banner-left img {
+    width: 30.00375em;
+  }
+}
+
 @media (min-width: 85.375em) {
   .work__section .work__section-banner .banner-left img {
     width: 540px;
@@ -27635,6 +27700,12 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 75em) {
+  .work__section .work__section-banner .banner-right img {
+    width: 30.00375em;
+  }
+}
+
 @media (min-width: 85.375em) {
   .work__section .work__section-banner .banner-right img {
     width: 540px;
@@ -27655,14 +27726,14 @@ ul li a:hover {
 
 @media (min-width: 75em) {
   .plan__section .plan__section-header {
-    width: 1450px;
+    width: 75.4375em;
     flex-direction: row;
   }
 }
 
 @media (min-width: 85.375em) {
   .plan__section .plan__section-header {
-    width: 81.0625em;
+    width: 72.0625em;
   }
 }
 
@@ -27685,6 +27756,7 @@ ul li a:hover {
     width: 550px;
     height: 148px;
     margin: auto;
+    margin-left: 96px;
   }
 }
 
@@ -27757,8 +27829,14 @@ ul li a:hover {
 
 @media (min-width: 75em) {
   .plan__section .plan__section-body {
-    width: 1450px;
+    width: 75.4375em;
     margin-top: 103px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .plan__section .plan__section-body {
+    width: 82.4375em;
   }
 }
 
@@ -27825,6 +27903,7 @@ ul li a:hover {
   .plan__section .plan__section-body .plan-section-item .body-content-text {
     width: 477px;
     height: 52px;
+    margin-left: 96px;
   }
 }
 
@@ -28007,6 +28086,7 @@ ul li a:hover {
 
 @media (min-width: 75em) {
   .content-title {
+    margin-left: 56px;
     width: 271px;
   }
 }
@@ -28052,6 +28132,7 @@ ul li a:hover {
   .content-body {
     width: 497px;
     height: 52px;
+    margin-left: 56px;
     margin-top: 12px;
   }
 }

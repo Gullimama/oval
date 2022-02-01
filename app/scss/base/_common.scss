@@ -913,7 +913,7 @@
       line-height: 22px;
       letter-spacing: 2px;
       text-align: center;
-      color: #B3B1B7;
+      color: #b3b1b7;
     }
   }
   .pricing__section-title {
@@ -925,6 +925,9 @@
     @include mobile-lg {
       width: 672px;
       height: 120px;
+    }
+    @include large-desktops {
+      height: 150px;
     }
     @include large-desktops-mid {
       width: 646px;
@@ -1121,7 +1124,7 @@
       }
       @include desktops {
         max-width: 19.7% !important;
-        height: 473px;
+        height: 428px;
       }
 
       .card-heading-content {
@@ -1221,14 +1224,16 @@
       padding-left: 30px;
       padding-right: 30px;
     }
-    @include large-desktops-mid {
-      width: 1140px;
-      height: 112px;
-      margin: auto;
-      margin-top: 48px;
-    }
+  
     @include desktops {
-      width: 1140px;
+      margin: auto;
+      width: 62.5625em;
+      margin-left: 12%;
+    }
+    @include large-desktops-mid {
+      width: 74.5625em;
+      height: 112px;
+      margin-top: 48px;
     }
     .enterprise-title {
       h3 {
@@ -1402,4 +1407,10 @@
 
 body {
   background: var(--background-color) !important;
+}
+.branding__logo {
+  @include large-desktops {
+    margin: auto !important;
+    width: 62.5625em;
+  }
 }

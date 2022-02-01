@@ -83,6 +83,9 @@
         margin-top: 40px;
         width: 688px;
       }
+      @include large-desktops {
+        width: 70.6875em;
+      }
       @include large-desktops-mid {
         width: 73.75em;
       }
@@ -116,6 +119,9 @@
         @include mobile-lg {
           width: 319.06px;
         }
+        @include large-desktops {
+          width: 30.00375em;
+        }
         @include large-desktops-mid {
           width: 540px;
         }
@@ -130,6 +136,9 @@
         width: 279.18px;
         @include mobile-lg {
           width: 319.06px;
+        }
+        @include large-desktops {
+          width: 30.00375em;
         }
         @include large-desktops-mid {
           width: 540px;
@@ -150,11 +159,11 @@
     display: flex;
     flex-direction: column;
     @include large-desktops {
-      width: 1450px;
+      width: 75.4375em;
       flex-direction: row;
     }
-    @include large-desktops-mid{
-      width: 81.0625em;
+    @include large-desktops-mid {
+      width: 72.0625em;
     }
     .header-left {
       width: 312px;
@@ -169,8 +178,9 @@
         width: 550px;
         height: 148px;
         margin: auto;
+        margin-left: 96px;
       }
-      @include large-desktops-mid{
+      @include large-desktops-mid {
         margin-left: 30px;
       }
       h2 {
@@ -217,8 +227,11 @@
     margin: auto;
     margin-top: 36px;
     @include large-desktops {
-      width: 1450px;
+      width: 75.4375em;
       margin-top: 103px;
+    }
+    @include large-desktops-mid{
+      width: 82.4375em;
     }
     .plan-section-item {
       @include large-desktops {
@@ -268,8 +281,9 @@
         @include large-desktops {
           width: 477px;
           height: 52px;
+          margin-left: 96px;
         }
-        @include large-desktops-mid{
+        @include large-desktops-mid {
           margin-left: 98px;
           margin-bottom: 89px;
         }
@@ -406,8 +420,10 @@
     width: 275px;
   }
   @include large-desktops {
+    margin-left: 56px;
     width: 271px;
   }
+
   h5 {
     font-family: $body-base-font;
     font-size: $p;
@@ -437,6 +453,7 @@
   @include large-desktops {
     width: 497px;
     height: 52px;
+    margin-left: 56px;
     margin-top: 12px;
   }
   p {

@@ -10,9 +10,9 @@
     width: 100%;
     background: #f9f9f9;
   }
-  &-3{
+  &-3 {
     width: 100%;
-    background: #FFF6F4;
+    background: #fff6f4;
   }
 }
 .navbar {
@@ -21,6 +21,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  @include mobile-lg {
+    justify-content: flex-start !important;
+    gap: 36px !important;
+  }
+  @include desktops{
+    justify-content: space-between !important;
+  }
   &-2 {
     @extend .navbar;
     gap: 71%;
@@ -58,6 +65,7 @@
     position: relative;
     top: 12px;
     left: -10%;
+    order: 2;
   }
 }
 .nav-link {
@@ -75,6 +83,12 @@
 .nav-logo {
   width: 81px;
   height: 24px;
+  @include mobile-lg {
+    order: 2;
+  }
+  @include large-desktops {
+    order: 1;
+  }
 }
 
 .btn-trans {
@@ -91,12 +105,7 @@
     font-weight: 700;
   }
 }
-.nav-menu-btn {
-  display: block;
-  @include large-desktops {
-    display: none;
-  }
-}
+
 @media only screen and (max-width: 992px) {
   .nav-menu {
     position: fixed;
@@ -113,24 +122,6 @@
     z-index: 9999;
   }
 
-  .nav-buttons {
-    display: none;
-    button {
-      width: 140px;
-      height: 60px;
-      background-color: #8e8c95;
-      color: #fff;
-      font-weight: 700;
-      border-radius: 8px;
-      @include mobile-lg {
-        width: 150px;
-      }
-      &:hover {
-        background-color: $theme-color;
-        color: #fff;
-      }
-    }
-  }
   .nav-item {
     a {
       font-size: 25px;
@@ -162,5 +153,17 @@
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.nav-buttons {
+  display: none;
+  @include mobile-lg {
+    display: block;
+    order: 3;
+    margin-left: 40%;
+  }
+  @include desktops{
+    margin-left: 0;
   }
 }

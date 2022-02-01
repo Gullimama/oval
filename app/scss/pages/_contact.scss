@@ -29,6 +29,7 @@
     width: 71.25em;
     height: 39.125em;
     gap: 10px;
+    margin-left: 90px;
   }
   @include large-desktops-mid {
     width: 90.625em;
@@ -365,7 +366,7 @@
         display: block;
         width: 20.0625em;
         height: 21.25em;
-        right: 7%;
+        right: 6%;
         top: 350px;
       }
       @include large-desktops-mid {

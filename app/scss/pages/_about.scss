@@ -2,6 +2,9 @@
 
 .hero__section {
   margin: auto;
+  @include mobile-lg {
+    margin-top: 80px;
+  }
   @include large-desktops {
     margin-top: 136px;
   }
@@ -758,6 +761,14 @@
   border: 1px dashed #e2e2e2;
   width: 280px;
   margin-top: 48px;
+  @include mobile-lg {
+    width: 747px;
+    margin-top: 120px;
+  }
+  @include large-desktops {
+    width: 74.125em;
+    margin-top: 150px;
+  }
   @include large-desktops-mid {
     width: 78.125em;
     height: 2px;

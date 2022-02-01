@@ -26,10 +26,10 @@
   }
   @include large-desktops {
     padding-top: 136px;
-    width: 71.25em;
+    width: 66.25em;
     height: 39.125em;
     gap: 10px;
-    margin-left: 90px;
+    // margin-left: 28%;
   }
   @include large-desktops-mid {
     width: 90.625em;
@@ -239,6 +239,7 @@
     form {
       .form-row {
         display: flex;
+        margin-left: 0px !important;
         @include mobile-lg {
           flex-direction: column;
         }
@@ -292,7 +293,7 @@
           background: $bg-color;
           border: 1px solid $body-text-color;
           border-radius: 10px;
-          margin-bottom: 22px;
+          margin-bottom: 2px;
           width: 248px;
           height: 39px;
           font-family: "Inter", sans-serif;
@@ -309,7 +310,7 @@
           border-radius: 10px;
           width: 248px;
           height: 55px;
-          margin-bottom: 22px;
+          margin-bottom: 2px;
           @include mobile-lg {
             width: 305px;
           }

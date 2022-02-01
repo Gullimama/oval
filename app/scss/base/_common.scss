@@ -661,15 +661,17 @@
     }
   }
   .testimonial__section-card {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
     overflow-x: auto;
-
+    // white-space: nowrap;
+    width: 890px;
+    
     @include mobile-lg {
+      margin-top: 40px;
       display: flex;
       flex-direction: row;
     }
-
+    
     @include desktops {
       width: 1200px;
       margin: auto;
@@ -1224,16 +1226,17 @@
       padding-left: 30px;
       padding-right: 30px;
     }
-  
+
     @include desktops {
       margin: auto;
+      margin-top: 11%;
       width: 62.5625em;
-      margin-left: 12%;
+      // margin-left: 12%;
     }
     @include large-desktops-mid {
       width: 74.5625em;
       height: 112px;
-      margin-top: 48px;
+      // margin-top: 48px;
     }
     .enterprise-title {
       h3 {
@@ -1294,7 +1297,7 @@
         letter-spacing: 0.17499999701976776px;
         text-align: center;
         background: var(--theme-color);
-        color: var(--bg-color);
+        color: #fff;
       }
     }
   }

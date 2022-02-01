@@ -22536,13 +22536,14 @@ html[data-theme="dark"] {
 }
 
 .testimonial__section .testimonial__section-card {
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
   overflow-x: auto;
+  width: 890px;
 }
 
 @media (min-width: 36em) {
   .testimonial__section .testimonial__section-card {
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
   }
@@ -23189,8 +23190,8 @@ html[data-theme="dark"] {
 @media (min-width: 62em) {
   .price__footer .enterprise__section {
     margin: auto;
+    margin-top: 11%;
     width: 62.5625em;
-    margin-left: 12%;
   }
 }
 
@@ -23198,7 +23199,6 @@ html[data-theme="dark"] {
   .price__footer .enterprise__section {
     width: 74.5625em;
     height: 112px;
-    margin-top: 48px;
   }
 }
 
@@ -23268,7 +23268,7 @@ html[data-theme="dark"] {
   letter-spacing: 0.17499999701976776px;
   text-align: center;
   background: var(--theme-color);
-  color: var(--bg-color);
+  color: #fff;
 }
 
 .price__footer .compare__price-section {
@@ -23647,7 +23647,7 @@ ul li a:hover {
 
 @media (min-width: 75em) {
   .footer__section {
-    margin-top: 25%;
+    margin-top: 15%;
     gap: 262px;
   }
 }
@@ -25470,10 +25470,9 @@ ul li a:hover {
 @media (min-width: 75em) {
   .contact-page {
     padding-top: 136px;
-    width: 71.25em;
+    width: 66.25em;
     height: 39.125em;
     gap: 10px;
-    margin-left: 90px;
   }
 }
 
@@ -25762,6 +25761,7 @@ ul li a:hover {
 
 .contact-page .contact-form_sec form .form-row {
   display: flex;
+  margin-left: 0px !important;
 }
 
 @media (min-width: 36em) {
@@ -25842,7 +25842,7 @@ ul li a:hover {
   background: #ffffff;
   border: 1px solid #64626a;
   border-radius: 10px;
-  margin-bottom: 22px;
+  margin-bottom: 2px;
   width: 248px;
   height: 39px;
   font-family: "Inter", sans-serif;
@@ -25860,7 +25860,7 @@ ul li a:hover {
   border-radius: 10px;
   width: 248px;
   height: 55px;
-  margin-bottom: 22px;
+  margin-bottom: 2px;
 }
 
 @media (min-width: 36em) {
@@ -26694,8 +26694,15 @@ ul li a:hover {
     padding: 0;
     width: 16px;
     height: 16px;
-    border: 3px solid #ff6846;
   }
+}
+
+.feature-list .list-item input[type="radio"]::after {
+  border: 3px solid #ff6846;
+}
+
+.feature-list .list-item input[type="radio"]:checked::after {
+  background: #64626a;
 }
 
 .feature-list .list-item label {

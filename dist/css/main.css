@@ -22093,6 +22093,7 @@ html[data-theme="dark"] {
 .build__section-banner .build__section-body-list ul .list-item:hover {
   height: 7.5em;
   width: 280px;
+  margin-bottom: 24px;
   border-bottom: 2px solid #fa6402;
 }
 
@@ -22106,7 +22107,7 @@ html[data-theme="dark"] {
 @media (min-width: 62em) {
   .build__section-banner .build__section-body-list ul .list-item:hover {
     width: 26.875em;
-    height: 6.25em;
+    height: 7.5em;
   }
 }
 
@@ -22538,7 +22539,7 @@ html[data-theme="dark"] {
 .testimonial__section .testimonial__section-card {
   display: flex;
   overflow-x: auto;
-  width: 890px;
+  flex-wrap: nowrap;
 }
 
 @media (min-width: 36em) {
@@ -22558,6 +22559,7 @@ html[data-theme="dark"] {
 }
 
 .testimonial__section .testimonial__section-card .card {
+  min-width: 280px;
   width: 280px;
   height: 320px;
   margin: auto;
@@ -23190,7 +23192,7 @@ html[data-theme="dark"] {
 @media (min-width: 62em) {
   .price__footer .enterprise__section {
     margin: auto;
-    margin-top: 11%;
+    margin-top: 7%;
     width: 62.5625em;
   }
 }
@@ -28098,6 +28100,12 @@ ul li a:hover {
   }
 }
 
+@media (min-width: 85.375em) {
+  .content-title {
+    margin-left: 20px;
+  }
+}
+
 .content-title h5 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -28141,6 +28149,12 @@ ul li a:hover {
     height: 52px;
     margin-left: 56px;
     margin-top: 12px;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .content-body {
+    margin-left: 20px;
   }
 }
 

@@ -230,7 +230,7 @@
       width: 75.4375em;
       margin-top: 103px;
     }
-    @include large-desktops-mid{
+    @include large-desktops-mid {
       width: 82.4375em;
     }
     .plan-section-item {
@@ -423,6 +423,9 @@
     margin-left: 56px;
     width: 271px;
   }
+  @include large-desktops-mid {
+    margin-left: 20px;
+  }
 
   h5 {
     font-family: $body-base-font;
@@ -455,6 +458,9 @@
     height: 52px;
     margin-left: 56px;
     margin-top: 12px;
+  }
+  @include large-desktops-mid {
+    margin-left: 20px;
   }
   p {
     font-family: Inter;

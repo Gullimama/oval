@@ -317,6 +317,7 @@
         &:hover {
           height: 7.5em;
           width: 280px;
+          margin-bottom: 24px;
           border-bottom: 2px solid #fa6402;
 
           @include mobile-lg {
@@ -326,7 +327,7 @@
 
           @include desktops {
             width: 26.875em;
-            height: 6.25em;
+            height: 7.5em;
           }
           &::before {
             content: ">";
@@ -664,7 +665,7 @@
     display: flex;
     overflow-x: auto;
     // white-space: nowrap;
-    width: 890px;
+    flex-wrap: nowrap;
     
     @include mobile-lg {
       margin-top: 40px;
@@ -679,6 +680,7 @@
     }
 
     .card {
+      min-width: 280px;
       width: 280px;
       height: 320px;
       margin: auto;
@@ -1229,7 +1231,7 @@
 
     @include desktops {
       margin: auto;
-      margin-top: 11%;
+      margin-top: 7%;
       width: 62.5625em;
       // margin-left: 12%;
     }

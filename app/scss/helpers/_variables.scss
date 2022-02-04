@@ -1,144 +1,103 @@
-// Primary-colors
-// $primary-color:  #22b0fc; //color for: Page = 1
-// $primary-color-p3:  #0f53fa; //color for: Page = 3
-// $primary-color-p4:  #5473E8; //color for: Page = 4
-// $primary-color-p5:  #10d396; //color for: Page = 5
+    $bg-color: #ffffff;
+    $title-color: #000;
+    $dwn-bg-color: #fff6f4;
+    $contact-bg-color: #f9f9f9;
+    $body-text-color: #64626a;
+    $light-body-text: #b3b1b7;
+    $theme-color: #ff6846;
+    $primary-highlighter-color: #ffdea7;
+    $secondary-highlighter-color: #c2eed8;
+    $tertiary-highlighter-color: #c0eef5;
+    $enterprise-color: #f5f6f9;
+    $theme-base-font: "Libre Baskerville", serif;
+    $body-base-font: "Inter", sans-serif;
 
-// Secondary-colors
-// $secondary-color: #f77321; 
-// $secondary-color-p3: #ffd166; //color for: Page = 3
-// $secondary-color-p4: #36c0cd; //color for: Page = 4
+    $dark-bg-color: rgba(0, 0, 0, 0.514);
+    $dark-title-color: #fff;
+    $dark-dwn-bg-color: #646160;
+    $dark-contact-bg-color: #f5d6d6;
+    $dark-body-text-color: #e1daf5;
+    $dark-light-body-text: #d5c8ee;
+    $dark-theme-color: #814c40;
+    $dark-primary-highlighter-color: #755620;
+    $dark-secondary-highlighter-color: #2c9460;
+    $dark-tertiary-highlighter-color: #296169;
+    $dark-enterprise-color: #f5f6f9;
+    $dark-theme-base-font: "Robota", serif;
+    $dark-body-base-font: "Robota", sans-serif;
 
+:root {
+  --background-color: #{$bg-color};
+  --title-color: #{$title-color};
+  --dwn-bg-color: #{$dwn-bg-color};
+  --contact-bg-color: #{ $contact-bg-color};
+  --body-text-color: #{$body-text-color};
+  --light-body-text: #{$light-body-text};
+  --theme-color: #{$theme-color};
+  --primary-highlighter-color: #{$primary-highlighter-color};
+  --secondary-highlighter-color: #{$secondary-highlighter-color};
+  --tertiary-highlighter-color: #{$tertiary-highlighter-color};
+  --enterprise-color: #{$enterprise-color};
+  --theme-base-font: #{$theme-base-font};
+  --body-base-font: #{$body-base-font};
+}
 
-// Global variables
+html[data-theme="light"] {
+  --background-color: #fff;
+  --title-color: #000;
+  --dwn-bg-color: #fff6f4;
+  --contact-bg-color: #f9f9f9;
+  --body-text-color: #64626a;
+  --light-body-text: #b3b1b7;
+  --theme-color: #ff6846;
+  --primary-highlighter-color: #ffdea7;
+  --secondary-highlighter-color: #c2eed8;
+  --tertiary-highlighter-color: #c0eef5;
+  --enterprise-color: #f5f6f9;
+  --theme-base-font: "Libre Baskerville", serif;
+  --body-base-font: "Inter", sans-serif;
+}
 
-$theme-base-font: 'Libre Baskerville',
-serif;
-$body-base-font: 'Inter',
-sans-serif;
+html[data-theme="dark"] {
+  --background-color: #{$dark-bg-color};
+  --title-color: #{$dark-title-color};
+  --dwn-bg-color: #{$dark-dwn-bg-color};
+  --contact-bg-color: #{$dark-contact-bg-color};
+  --body-text-color: #{$dark-body-text-color};
+  --light-body-text: #{$dark-light-body-text};
+  --theme-color: #{$dark-theme-color};
+  --primary-highlighter-color: #{$dark-primary-highlighter-color};
+  --secondary-highlighter-color: #{$dark-secondary-highlighter-color};
+  --tertiary-highlighter-color: #{$dark-tertiary-highlighter-color};
+  --enterprise-color: #{$dark-enterprise-color};
+  --theme-base-font: #{$dark-theme-base-font};
+  --body-base-font: #{$dark-body-base-font};
+}
 
-// Landing1 Fonts and colors
-$l1-primary-font: $theme-base-font;
-$l1-primary-heading: #19191b;
-$l1-primary-text: #696871;
-$l1-primary-color: #f04037;
-$l1-secondary-color: #5454d4;
-$l1-btn-border: #c31a12;
-// $l1-btn-hover: #F9544B;
-$l1-btn-tertiary-color: #C4C4C4;
-
-
-// Landing2 Fonts and colors
-$l2-primary-font: $theme-base-font;
-$l2-primary-heading: #19191b;
-$l2-primary-text: #696871;
-$l2-primary-color: #f04037;
-$l2-btn-border: #c31a12;
-// $l2-btn-hover: #F9544B;
-$l2-secondary-color: #413e65;
-
-// Landing3 Fonts and colors
-$l3-primary-font: $theme-base-font;
-$l3-primary-heading: #19191b;
-$l3-primary-text: #696871;
-$l3-primary-color: #f04037;
-$l3-btn-border: #c31a12;
-$l3-btn-hover: #F9544B;
-$l3-secondary-color: #413e65;
-$l3-body-bg: #19191b;
-
-// Landing4 Fonts and colors
-$l4-primary-font: $theme-base-font;
-$l4-primary-heading: #19191b;
-$l4-primary-text: #696871;
-$l4-primary-color: #fedc5a;
-$l4-btn-border: #f0c931;
-$l4-btn-hover: #F9544B;
-$l4-secondary-color: #5454d4;
-
-
-// Landing5 Fonts and colors
-$l5-primary-font: $theme-base-font;
-$l5-primary-heading: #19191b;
-$l5-primary-text: #696871;
-$l5-primary-color: #f04037;
-$l5-btn-border: #c31a12;
-$l5-btn-hover: #F9544B;
-$l5-secondary-color: #5454d4;
-
-
-// Landing6 Fonts and colors
-$l6-primary-font: $theme-base-font;
-$l6-primary-heading: #19191b;
-$l6-primary-text: #696871;
-$l6-primary-color: #f0544c;
-$l6-btn-border: #f04037;
-$l6-secondary-color: #5454d4;
-
-// Landing7 Fonts and colors
-$l7-primary-font: $theme-base-font;
-$l7-primary-heading: #19191b;
-$l7-primary-text: #696871;
-$l7-primary-color: #f04037;
-$l7-btn-border: #c31a12;
-$l7-secondary-color: #5454d4;
-$l7-body-bg: #fcfdfe;
-
-// Landing8 Fonts and colors
-$l8-primary-font: $theme-base-font;
-$l8-primary-heading: #19191b;
-$l8-primary-text: #696871;
-$l8-primary-color: #f04037;
-$l8-secondary-color: #5454d4;
-$l8-body-bg: #19191b;
-// $l1-border: #f04037;
-
-$theme-primary-font: $theme-base-font;
-$theme-primary-heading: #19191b;
-$theme-primary-text: #696871;
-$theme-primary-color: #f04037;
-$theme-secondary-color: #5454d4;
-$theme-tertiary-color: #C4C4C4;
-
-$theme-red-color: #FF6846;
-$theme-red-hover: #F9544B;
-$theme-red-color-2: #c31a12;
-$theme-blue-color: #5454d4;
-$theme-blue-color-2: #6565e9;
-$theme-blue-color-3: #3d3dad;
-$theme-purple-color: #a665fb;
-$theme-green-color: #77bf41;
-$theme-yellow-color: #fedc5a;
-$theme-ash-color: #413e65;
-$theme-ash-color-2: #666666;
-$theme-black-color: #19191b;
-$theme-black-color-2: #1e1e20;
-$theme-black-color-3: #1F1F1F;
 
 
 
 // Screen Width
-$screen-xxs: 320px;
-$screen-xs: 480px;
-$screen-sm: 576px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1200px;
-$screen-xxl: 1366px;
-$screen-xxxl: 1600px;
+$screen-xxs: 20em;
+$screen-xs: 30em;
+$screen-sm: 36em;
+$screen-md: 48em;
+$screen-lg: 62em;
+$screen-xl: 75em;
+$screen-xxl: 85.375em;
+$screen-xxxl: 100em;
 
 // different size of fonts
-$h1:57.33px;
-$h2:47.78px;
-$h3:39.81px;
-$h4:33.18px;
-$h5:27.65px;
-$h6:23.04px;
-$h7:19.20px;
+$h1: 57.33px;
+$h2: 47.78px;
+$h3: 39.81px;
+$h4: 33.18px;
+$h5: 27.65px;
+$h6: 23.04px;
+$h7: 19.2px;
 $p: 16px;
-$font-size:13.33px;
-
+$font-size: 13.33px;
 
 .bg-whisper {
-  background: #F7F7FB;
+  background: #f7f7fb;
 }

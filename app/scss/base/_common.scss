@@ -32,33 +32,38 @@
 .hero__section {
   margin-top: 40px;
   margin-bottom: 48px;
-  @include large-desktops-mid {
-    width: 1450px;
+  @include mobile-lg {
+    margin-top: 80px;
+  }
+  @include large-desktops {
+    width: 90.625em;
   }
   .hero__section-header-title {
     width: 280px;
     height: 138px;
     margin: auto;
+    margin-top: 54px;
     @include mobile-lg {
-      width: 672px;
-      height: 120px;
+      margin-top: 69px;
+      width: 42em;
+      height: 7.5em;
     }
-    @include large-desktops-mid {
-      width: 836px;
-      height: 148px;
+    @include large-desktops {
+      width: 52.25em;
+      height: 9.25em;
     }
     h2 {
-      font-family: $theme-base-font;
+      font-family: var(--theme-base-font);
       font-weight: 400;
       letter-spacing: 0.56px;
       font-size: 34px;
       line-height: 46px;
-      color: #000;
+      color: $title-color;
       @include mobile-lg {
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -74,24 +79,24 @@
   margin-bottom: 26px;
   @include mobile-lg {
     margin-top: 24px;
-    width: 507px;
-    height: 56px;
+    width: 31.6875em;
+    height: 3.5em;
   }
   p {
-    font-family: $body-base-font;
+    font-family: var(--body-base-font);
     font-size: $font-size;
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.10000000149011612px;
-    color: #64626a;
+    color: var(--body-text-color);
 
     @include mobile-lg {
       font-size: $h7;
       line-height: 28px;
     }
 
-    @include large-desktops-mid {
+    @include large-desktops {
       font-size: 20px;
       line-height: 30px;
     }
@@ -101,13 +106,13 @@
 .hero__section-header-sub-title {
   margin-top: 32.57px;
   @include mobile-lg {
-    width: 183px;
+    width: 11.4375em;
     height: 27px;
     margin: auto;
     margin-top: 65px;
   }
-  @include large-desktops-mid {
-    width: 201px;
+  @include large-desktops {
+    width: 12.5625em;
   }
   h5 {
     font-family: Inter;
@@ -120,7 +125,7 @@
     @include mobile-lg {
       font-size: 22px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       font-size: 24px;
     }
   }
@@ -128,16 +133,16 @@
 .body-text {
   width: 280px;
   height: 66px;
-  color: #64626a;
+  color: $body-text-color;
   margin: auto;
   @include mobile-lg {
-    width: 567px;
-    height: 56px;
+    width: 35.4375em;
+    height: 3.5em;
     margin-top: 14px;
   }
-  @include large-desktops-mid {
-    width: 657px;
-    height: 60px;
+  @include large-desktops {
+    width: 41.0625em;
+    height: 3.75em;
   }
   p {
     font-family: Inter;
@@ -151,7 +156,7 @@
       font-size: 18px;
       line-height: 28px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       font-size: 20px;
       line-height: 30px;
     }
@@ -160,31 +165,63 @@
 
 #light__org {
   display: inline-block;
-  height: 65px;
-  background: linear-gradient(to bottom, #fff 40%, #ffdea7 0%);
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    #fff 40%,
+    $primary-highlighter-color 0%
+  );
+  @include mobile-lg {
+    height: 50px;
+  }
+  @include large-desktops {
+    height: 65px;
+  }
 }
 
 #light__blue {
   display: inline-block;
-  height: 65px;
-  background: linear-gradient(to bottom, #fff 30%, #c2eed8 0%);
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    #fff 30%,
+    $secondary-highlighter-color 0%
+  );
+  @include mobile-lg {
+    height: 50px;
+  }
+  @include large-desktops {
+    height: 65px;
+  }
 }
 
-.header-img {
+.hero-img {
   img {
-    width: 100%;
+    width: 280px;
     height: auto;
-  }
-
-  @include large-desktops-mid {
-    width: 90%;
+    @include mobile-lg {
+      width: 667.04px;
+    }
+    @include large-desktops {
+      width: 71.875em;
+    }
   }
 }
 
 .build__section-banner {
+  margin: auto;
   margin-top: 65px;
   display: flex;
-
+  width: 288px;
+  @include mobile-lg {
+    width: 682px;
+  }
+  @include large-desktops {
+    width: 1415px;
+    height: 800px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
   @include mobile-xs {
     flex-direction: column;
   }
@@ -196,10 +233,10 @@
   }
 
   @include desktops {
-    width: 1450px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
+    // width: 90.625em;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // margin: auto;
 
     .build__section-img {
       align-self: flex-end;
@@ -216,6 +253,12 @@
       position: relative;
       top: -320px;
       left: -405px;
+    }
+  }
+  .build__section-body-list {
+    @include large-desktops-mid {
+      top: -351px;
+      left: -397px;
     }
   }
 
@@ -246,42 +289,45 @@
         gap: 14px;
         justify-content: flex-start;
       }
-
+      @include large-desktops-mid {
+        margin-top: 0;
+      }
       .list-item {
         cursor: pointer;
         margin: auto;
         margin-top: 12px;
         margin-bottom: 24px;
         width: 280px;
-        height: 120px;
+        height: 7.5em;
 
         @include mobile-lg {
-          width: 176px;
-          height: 150px;
+          width: 11em;
+          height: 9.375em;
           margin: 5px;
           border-bottom: none;
         }
 
         @include desktops {
-          width: 430px;
-          height: 100px;
+          width: 26.875em;
+          height: 6.25em;
           border-bottom: 1px solid #d1d0d6;
           text-align: left;
         }
 
         &:hover {
-          height: 120px;
+          height: 7.5em;
           width: 280px;
+          margin-bottom: 24px;
           border-bottom: 2px solid #fa6402;
 
           @include mobile-lg {
-            width: 176px;
-            height: 150px;
+            width: 11em;
+            height: 9.375em;
           }
 
           @include desktops {
-            width: 430px;
-            height: 100px;
+            width: 26.875em;
+            height: 7.5em;
           }
           &::before {
             content: ">";
@@ -294,9 +340,9 @@
 
         .list-item-title {
           h6 {
-            font-family: $body-base-font;
+            font-family: var(--body-base-font);
             font-size: $h7;
-            color: #000;
+            color: $title-color;
             font-style: normal;
             font-weight: 600;
             line-height: 22px;
@@ -309,16 +355,16 @@
           width: 266px;
           height: 48px;
           @include mobile-lg {
-            width: 176px;
+            width: 11em;
           }
           @include desktops {
-            width: 372px;
-            height: 50px;
+            width: 23.25em;
+            height: 3.125em;
           }
           p {
-            font-family: $body-base-font;
+            font-family: var(--body-base-font);
             font-size: $font-size;
-            color: #64626a;
+            color: $body-text-color;
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
@@ -345,8 +391,8 @@
   .build__section-head-content {
     @include desktops {
       text-align: left;
-      height: 50px;
-      width: 600px;
+      height: 3.125em;
+      width: 37.5em;
       border-top-width: 50px;
       padding-top: 100px;
       padding-left: 100px;
@@ -357,12 +403,16 @@
     width: 288px;
     margin: auto;
     @include mobile-lg {
-      width: 695px;
-      height: 60px;
+      width: 43.4375em;
+      height: 3.75em;
     }
     @include desktops {
-      width: 575px;
-      height: 148px;
+      width: 35.9375em;
+      height: 9.25em;
+    }
+    @include large-desktops-mid {
+      position: relative;
+      top: -21px;
     }
     h2 {
       font-family: $theme-base-font;
@@ -385,15 +435,29 @@
   }
   .build__section-body-text {
     @include mobile-lg {
-      width: 507px;
+      width: 31.6875em;
       margin-bottom: 40px;
     }
     @include desktops {
-      width: 507px;
+      width: 31.6875em;
     }
     p {
       @include desktops {
         text-align: left;
+      }
+    }
+  }
+  .build__section-img {
+    img {
+      width: 280px;
+      @include mobile-lg {
+        width: 688px;
+      }
+      @include large-desktops {
+        width: 705px;
+      }
+      @include large-desktops-mid {
+        width: 778px;
       }
     }
   }
@@ -412,28 +476,29 @@
     gap: 28px;
     margin-bottom: 48px;
   }
+  @include large-desktops {
+    width: 1140px;
+  }
   @include large-desktops-mid {
-    width: 1450px;
+    width: 90.625em;
     gap: 14px;
   }
 
   .role__section-list-item {
     cursor: pointer;
     margin-top: 12px;
-    height: 120px;
+    height: 7.5em;
     width: 280px;
     border-top: 2px solid #d1d0d6;
     padding-top: 10px;
-    @include mobile-lg {
-      width: 176px;
-    }
 
     @include mobile-lg {
-      height: 110px;
+      width: 11em;
+      height: 6.875em;
       margin: 5px;
       border-top: 1px solid #d1d0d6;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 360px;
     }
 
@@ -457,9 +522,9 @@
 
     .list-item-title {
       h6 {
-        font-family: $body-base-font;
+        font-family: var(--theme-base-font);
         font-size: $h7;
-        color: #000;
+        color: var(--title-color);
         font-style: normal;
         font-weight: 600;
         line-height: 22px;
@@ -470,9 +535,9 @@
 
     .list-item-body {
       p {
-        font-family: $body-base-font;
+        font-family: var(--body-base-font);
         font-size: $font-size;
-        color: #64626a;
+        color: var(--body-text-color);
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -488,14 +553,17 @@
 }
 
 .role__section-banner {
+  margin: auto;
   display: flex;
   flex-direction: column;
   @include mobile-lg {
-    margin-top: 120px;
+    margin-top: 7.5em;
+  }
+  @include large-desktops {
+    width: 1140px;
   }
   @include large-desktops-mid {
-    margin: auto;
-    width: 1450px;
+    width: 90.625em;
     margin-top: 0px;
   }
 
@@ -505,10 +573,10 @@
     margin: auto;
     margin-bottom: 12px;
     @include mobile-lg {
-      width: 672px;
+      width: 42em;
       height: 60px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 853px;
       height: 74px;
     }
@@ -524,11 +592,14 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
     }
+  }
+  .role-img {
+    text-align: center;
   }
 }
 
@@ -563,12 +634,12 @@
     margin-bottom: 100px;
     @include mobile-lg {
       width: 635px;
-      height: 120px;
+      height: 7.5em;
       margin-bottom: 152px;
     }
     @include desktops {
       width: 798px;
-      height: 148px;
+      height: 9.25em;
     }
     h2 {
       font-family: $theme-base-font;
@@ -591,15 +662,17 @@
     }
   }
   .testimonial__section-card {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
     overflow-x: auto;
-
+    // white-space: nowrap;
+    flex-wrap: nowrap;
+    
     @include mobile-lg {
+      margin-top: 40px;
       display: flex;
       flex-direction: row;
     }
-
+    
     @include desktops {
       width: 1200px;
       margin: auto;
@@ -607,6 +680,7 @@
     }
 
     .card {
+      min-width: 280px;
       width: 280px;
       height: 320px;
       margin: auto;
@@ -626,13 +700,13 @@
           width: 336px;
         }
         p {
-          font-family: $body-base-font;
+          font-family: var(--body-base-font);
           font-size: $p;
           font-style: normal;
           font-weight: 400;
           line-height: 28px;
           letter-spacing: -0.20000000298023224px;
-          color: #3b3a40;
+          color: var(--body-text-color);
 
           @include mobile-lg {
             font-size: $h7;
@@ -678,7 +752,7 @@
           }
 
           .card-cus-position {
-            font-family: $body-base-font;
+            font-family: var(--body-base-font);
             font-size: $font-size;
             font-style: normal;
             font-weight: 400;
@@ -697,18 +771,19 @@
   flex-direction: column;
 
   @include mobile-lg {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin: auto;
+    width: 682px;
 
     .brands {
       align-self: center !important;
-      margin-left: 132px;
+      margin-left: 266px;
     }
   }
 
   @include desktops {
-    margin-left: 249px;
-    margin-right: 225px;
+    // margin-left: 249px;
+    // margin-right: 225px;
+    width: 1140px;
 
     .brands {
       align-self: flex-end !important;
@@ -763,7 +838,7 @@
   margin-bottom: 24px;
 
   @include mobile-lg {
-    margin-top: 120px;
+    margin-top: 7.5em;
     margin-bottom: 78px;
     width: 500px;
     height: 64px;
@@ -777,13 +852,13 @@
 }
 
 .title {
-  font-family: $body-base-font;
+  font-family: var(--body-base-font);
   font-size: $h7;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   text-align: center;
-  color: #8e8c95;
+  color: var(--body-text-color);
 
   @include mobile-lg {
     font-size: $h6;
@@ -806,8 +881,12 @@
     line-height: 79px !important;
     letter-spacing: 0px;
     text-align: center;
-    color: #000;
-    background: linear-gradient(to bottom, transparent 70%, #ffdea7 30%);
+    color: var(--title-color);
+    background: linear-gradient(
+      to bottom,
+      transparent 70%,
+      $primary-highlighter-color 30%
+    );
 
     @include mobile-lg {
       font-size: 72px !important;
@@ -826,17 +905,38 @@
   margin-top: 72px;
 
   @include mobile-lg {
-    margin-top: 120px;
+    margin-top: 7.5em;
   }
-
+  .pricing_sub-title {
+    margin-bottom: 35px;
+    h6 {
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #b3b1b7;
+    }
+  }
   .pricing__section-title {
+    margin: auto;
     text-align: center;
     height: 92px;
-
+    width: 280px;
+    height: 138px;
     @include mobile-lg {
-      height: 60px;
+      width: 672px;
+      height: 120px;
     }
-
+    @include large-desktops {
+      height: 150px;
+    }
+    @include large-desktops-mid {
+      width: 646px;
+      height: 148px;
+    }
     h2 {
       font-family: $theme-base-font;
       font-size: $h4;
@@ -844,7 +944,7 @@
       font-weight: 400;
       line-height: 46px;
       letter-spacing: 0.591304361820221px;
-      color: #000;
+      color: var(--title-color);
 
       @include mobile-lg {
         font-size: $h2;
@@ -861,7 +961,7 @@
     margin: 0 auto;
     height: 44px;
     margin-top: 11px;
-    width: 280px;
+    width: 292px;
 
     @include mobile-lg {
       width: 450px;
@@ -874,13 +974,13 @@
     }
 
     p {
-      font-family: $body-base-font;
+      font-family: var(--body-base-font);
       font-size: $font-size;
       font-style: normal;
       font-weight: 400;
       line-height: 22px;
       letter-spacing: 0.20000000298023224px;
-      color: #3b3a40;
+      color: var(--body-text-color);
 
       @include mobile-lg {
         font-size: $p;
@@ -897,23 +997,23 @@
     margin-top: 40px;
 
     .custom-control-input:checked ~ .custom-control-label::before {
-      background: #ff6846;
-      border: 1px solid #ff6846;
-      color: #fff;
+      background: var(--theme-color);
+      border: 1px solid $theme-color;
+      color: var(--bg-color);
     }
 
     .custom-control-label::before {
       left: -3.25rem;
-      background: #ff6846;
-      border: 1px solid #ff6846;
-      color: #fff;
+      background: var(--bg-color);
+      border: 1px solid $body-text-color;
+      color: var(--bg-color);
       width: 58px;
       height: 28px;
       border-radius: 28.5px;
     }
 
     .custom-control-label::after {
-      background: #fff;
+      background: var(--theme-color);
       width: 20px;
       height: 20px;
       border: 1px solid #fff;
@@ -927,7 +1027,7 @@
       position: relative;
       left: -60px;
       top: 5px;
-      font-family: $body-base-font;
+      font-family: var(--body-base-font);
       font-size: $font-size;
       font-style: normal;
       font-weight: bold;
@@ -941,7 +1041,7 @@
       position: relative;
       left: 12px;
       top: 5px;
-      font-family: $body-base-font;
+      font-family: var(--body-base-font);
       font-size: $font-size;
       font-style: normal;
       font-weight: bold;
@@ -959,10 +1059,10 @@
       margin-top: 58px;
     }
     @include large-desktops {
-      width: 1250px;
+      width: 78.125em;
     }
     @include large-desktops-mid {
-      width: 1450px;
+      width: 90.625em;
     }
 
     .card-1 {
@@ -1028,14 +1128,14 @@
       }
       @include desktops {
         max-width: 19.7% !important;
-        height: 473px;
+        height: 428px;
       }
 
       .card-heading-content {
         .card-title {
           h6 {
             margin-top: 30px;
-            font-family: $body-base-font;
+            font-family: var(--body-base-font);
             font-size: $h7;
             font-style: normal;
             font-weight: 600;
@@ -1051,14 +1151,14 @@
 
         .card-sub-text {
           p {
-            font-family: $body-base-font;
+            font-family: var(--body-base-font);
             font-size: $font-size;
             font-style: normal;
             font-weight: 400;
             line-height: 20px;
             letter-spacing: 0px;
             text-align: center;
-            color: #64626a;
+            color: var(--body-text-color);
           }
         }
       }
@@ -1074,14 +1174,14 @@
             font-weight: 700;
             line-height: 45px;
             letter-spacing: 0.6000000238418579px;
-            color: #3b3a40;
+            color: var(--body-text-color);
           }
         }
 
         .amount-per {
           margin: 0 auto;
           width: 154px;
-          font-family: $body-base-font;
+          font-family: var(--body-base-font);
           font-size: $font-size;
           font-style: normal;
           font-weight: 400;
@@ -1089,17 +1189,17 @@
           letter-spacing: 0px;
           margin-top: 8px;
           margin-bottom: 28px;
-          color: #64626a;
+          color: var(--body-text-color);
         }
 
         .contact-quote {
           text-decoration: underline;
-          font-family: $body-base-font;
+          font-family: var(--body-base-font);
           font-size: $font-size;
           font-style: normal;
           font-weight: 400;
           line-height: 17px;
-          color: #3b3a40;
+          color: var(--body-text-color);
         }
       }
 
@@ -1116,7 +1216,7 @@
     margin: auto;
     width: 280px;
     height: 174px;
-    background: #f5f6f9;
+    background: $enterprise-color;
     border-radius: 12px;
     margin-top: 32px;
     padding: 24px;
@@ -1128,29 +1228,32 @@
       padding-left: 30px;
       padding-right: 30px;
     }
-    @include large-desktops-mid {
-      width: 1140px;
-      height: 112px;
-      margin: auto;
-      margin-top: 48px;
-    }
+
     @include desktops {
-      width: 1140px;
+      margin: auto;
+      margin-top: 7%;
+      width: 62.5625em;
+      // margin-left: 12%;
+    }
+    @include large-desktops-mid {
+      width: 74.5625em;
+      height: 112px;
+      // margin-top: 48px;
     }
     .enterprise-title {
       h3 {
-        font-family: $body-base-font;
+        font-family: var(--body-base-font);
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: $h6;
         letter-spacing: 0px;
-        color: #3b3a40;
+        color: var(--body-text-color);
         @include mobile-lg {
           font-size: $h6;
           line-height: 26.22px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           font-size: 24px;
           line-height: 29.05px;
         }
@@ -1159,14 +1262,14 @@
 
     .enterprise-body-text {
       p {
-        font-family: $body-base-font;
+        font-family: var(--body-base-font);
         font-size: $font-size;
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
         letter-spacing: 0px;
         text-align: center;
-        color: #64626a;
+        color: var(--body-text-color);
         width: 162px;
         margin: 0 auto;
         margin-bottom: 16px;
@@ -1175,7 +1278,7 @@
           padding-top: 5px;
           margin-left: 0;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           font-size: 14px;
           line-height: 20px;
         }
@@ -1195,7 +1298,7 @@
         line-height: 17px;
         letter-spacing: 0.17499999701976776px;
         text-align: center;
-        background: #ff6846;
+        background: var(--theme-color);
         color: #fff;
       }
     }
@@ -1210,7 +1313,7 @@
       width: 377px;
       height: 52px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 752px;
       height: 28px;
     }
@@ -1222,12 +1325,12 @@
       line-height: 24px;
       letter-spacing: 0px;
       text-align: center;
-      color: #64626a;
+      color: var(--body-text-color);
       @include mobile-lg {
         font-size: 16px;
         line-height: 26px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 18px;
         line-height: 28px;
       }
@@ -1296,13 +1399,23 @@
 }
 
 .focus-section {
-  @include large-desktops-mid {
+  @include large-desktops {
     margin-top: 200px;
   }
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: #fff;
+  background: var(--bg-color);
   -webkit-transform: translateX(1.75rem) !important;
   transform: translateX(1.75rem) !important;
+}
+
+body {
+  background: var(--background-color) !important;
+}
+.branding__logo {
+  @include large-desktops {
+    margin: auto !important;
+    width: 62.5625em;
+  }
 }

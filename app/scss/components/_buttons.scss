@@ -4,7 +4,7 @@
   flex-direction: row;
   gap: 15px;
   margin-bottom: 42px;
-  @include  large-desktops-mid {
+  @include  large-desktops{
     gap: 24px;
   }
   .btn--red {
@@ -12,13 +12,13 @@
     height: 44px;
     font-weight: 700;
     color: #fff;
-    background: #ff6846;
+    background: $theme-color;
     border-radius: 8px;
     @include mobile-lg {
       width: 180px;
       height: 52px;
     }
-    @include  large-desktops-mid {
+    @include  large-desktops {
       width: 200px;
       height: 60px;
     }
@@ -33,7 +33,7 @@
       width: 52px;
       height: 52px;
     }
-    @include  large-desktops-mid {
+    @include  large-desktops {
       width: 60px;
       height: 60px;
     }

@@ -166,11 +166,6 @@ $(document).ready(function () {
 });
 
 
-// use fancyApps for carousel
-
-// const myCarousel = new Carousel(document.querySelector(".carousel"), {
-//       // Options
-//     });
 
 
 var coll = document.getElementsByClassName("collapsible");
@@ -197,3 +192,25 @@ function mobileMenu() {
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
 }
+
+// switch color theme
+var toggle = document.getElementById("time");
+
+var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+if (storedTheme)
+    document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+toggle.onclick = function() {
+    var currentTheme = document.documentElement.getAttribute("data-theme");
+    var targetTheme = "light";
+      console.log(currentTheme);
+    if (currentTheme === "dark") {
+        targetTheme = "light";
+    }else{
+          targetTheme = "dark";
+    }
+
+    document.documentElement.setAttribute('data-theme', targetTheme)
+    localStorage.setItem('theme', targetTheme);
+};

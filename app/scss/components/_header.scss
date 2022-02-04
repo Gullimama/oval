@@ -1,12 +1,18 @@
 .header {
+  margin: auto;
   background: transparent;
   padding-top: 32px;
   height: 100px;
-  @include mobile-lg {
-    padding-left: 84px;
+  @include large-desktops {
+    width: 72.625em;
   }
-  @include  large-desktops-mid {
-    padding-left: 150px;
+  &-2 {
+    width: 100%;
+    background: #f9f9f9;
+  }
+  &-3 {
+    width: 100%;
+    background: #fff6f4;
   }
 }
 .navbar {
@@ -15,6 +21,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  @include mobile-lg {
+    justify-content: flex-start !important;
+    gap: 36px !important;
+  }
+  @include desktops{
+    justify-content: space-between !important;
+  }
+  &-2 {
+    @extend .navbar;
+    gap: 71%;
+    @include large-desktops {
+      margin: auto;
+      width: 72.625em;
+      gap: 0;
+    }
+  }
 }
 
 .hamburger {
@@ -32,11 +54,19 @@
 }
 
 .nav-menu {
+  align-self: center;
   display: flex;
   flex-direction: row;
-  gap: 36px;
+  gap: 1.25em;
   justify-content: center;
   align-items: center;
+  padding: 0 !important;
+  @include large-desktops {
+    position: relative;
+    top: 12px;
+    left: -10%;
+    order: 2;
+  }
 }
 .nav-link {
   font-size: 14px;
@@ -47,35 +77,35 @@
 
 .nav-link:hover {
   font-weight: 600;
-  color: #000;
+  color: $title-color;
 }
 
 .nav-logo {
   width: 81px;
   height: 24px;
+  @include mobile-lg {
+    order: 2;
+  }
+  @include large-desktops {
+    order: 1;
+  }
 }
 
-.btn-transparent {
+.btn-trans {
   width: 105px;
   height: 38px;
   border: none;
-  color: #000;
+  color: $title-color;
   background: transparent;
-}
-.btn-white {
-  width: 105px;
-  height: 38px;
-  border: 1px solid #8e8c95;
-  border-radius: 4px;
-  color: #000;
-  background: #ffffff;
-}
-.nav-menu-btn{
-  display: block;
-  @include  large-desktops-mid{
-    display: none;
+  &:hover {
+    width: 125px;
+    height: 38px;
+    border: 1px solid #8e8c952f;
+    border-radius: 4px;
+    font-weight: 700;
   }
 }
+
 @media only screen and (max-width: 992px) {
   .nav-menu {
     position: fixed;
@@ -92,24 +122,6 @@
     z-index: 9999;
   }
 
-  .nav-buttons {
-    display: none;
-    button {
-      width: 140px;
-      height: 60px;
-      background-color: #8e8c95;
-      color: #fff;
-      font-weight: 700;
-      border-radius: 8px;
-      @include mobile-lg {
-        width: 150px;
-      }
-      &:hover {
-        background-color: #ff6846;
-        color: #fff;
-      }
-    }
-  }
   .nav-item {
     a {
       font-size: 25px;
@@ -141,5 +153,17 @@
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.nav-buttons {
+  display: none;
+  @include mobile-lg {
+    display: block;
+    order: 3;
+    margin-left: 40%;
+  }
+  @include desktops{
+    margin-left: 0;
   }
 }

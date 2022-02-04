@@ -1,18 +1,38 @@
+.contact_page {
+  width: 100%;
+  background: linear-gradient(to bottom, $contact-bg-color 27%, $bg-color 0%);
+  @include mobile-lg {
+    background: linear-gradient(to bottom, $contact-bg-color 17%, $bg-color 0%);
+  }
+  @include large-desktops {
+    background: linear-gradient(to bottom, $contact-bg-color 27%, $bg-color 0%);
+  }
+}
 .contact-page {
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-top: 57px;
   gap: 36px;
+  width: 320px;
+  padding-top: 62px;
   @include mobile-lg {
+    width: 680px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 87px;
+    padding-top: 87px;
+  }
+  @include tablet {
+    width: 46.875em;
+  }
+  @include large-desktops {
+    padding-top: 136px;
+    width: 66.25em;
+    height: 39.125em;
+    gap: 10px;
+    // margin-left: 28%;
   }
   @include large-desktops-mid {
-    margin-top: 136px;
-    width: 1450px;
-    gap: 10px;
+    width: 90.625em;
   }
   .header__section {
     .sub_header-title {
@@ -24,16 +44,19 @@
         line-height: 15px;
         letter-spacing: 1.3333333730697632px;
         text-align: center;
-        color: #b3b1b7;
+        color: $light-body-text;
         @include mobile-lg {
           font-size: 12px;
           line-height: 14.52px;
           text-align: left;
           margin-left: 35px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           font-size: 18px;
           line-height: 21.78px;
+          margin-left: 0px;
+        }
+        @include large-desktops-mid {
           margin-left: 150px;
         }
       }
@@ -45,8 +68,11 @@
         width: 250px;
         height: 60px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         width: 308px;
+        margin-left: 0px;
+      }
+      @include large-desktops-mid {
         margin-left: 150px;
       }
       h5 {
@@ -62,7 +88,7 @@
           font-size: 48px;
           line-height: 59.52px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           font-size: 60px;
           line-height: 74.4px;
         }
@@ -71,16 +97,21 @@
     .header-body {
       margin-top: 16px;
       margin-bottom: 24px;
+      width: 280px;
+      height: 92px;
       @include mobile-lg {
         width: 301px;
         height: 96px;
         margin-left: 35px;
       }
-      @include large-desktops-mid {
-        margin-left: 150px;
+      @include large-desktops {
+        margin-left: 0px;
         margin-top: 20px;
         margin-bottom: 48px;
         width: 480px;
+      }
+      @include large-desktops-mid {
+        margin-left: 150px;
       }
       p {
         font-family: $body-base-font;
@@ -90,12 +121,12 @@
         line-height: 23px;
         letter-spacing: 0px;
         text-align: center;
-        color: #64626a;
+        color: $body-text-color;
         @include mobile-lg {
           text-align: left;
           font-size: 14px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           font-size: 20px;
           line-height: 30px;
         }
@@ -107,18 +138,21 @@
       justify-content: center;
       margin-top: 22px;
       gap: 14px;
+      @include large-desktops {
+        margin-left: 0px;
+        gap: 30px;
+      }
       @include large-desktops-mid {
         margin-left: 70px;
-        gap: 30px;
       }
       .btn_light-orange {
         width: 140px;
         height: 58px;
-        border: 1px solid #ff6846;
-        background: #fff;
+        border: 1px solid $theme-color;
+        background: $bg-color;
         border-radius: 10px;
-        color: #ff6846;
-        @include large-desktops-mid {
+        color: $theme-color;
+        @include large-desktops {
           width: 180px;
           height: 74px;
         }
@@ -132,8 +166,8 @@
           text-align: left;
         }
         &:hover {
-          color: #fff;
-          background: #ff6846;
+          color: $bg-color;
+          background: $theme-color;
           border-radius: 10px;
         }
       }
@@ -145,17 +179,17 @@
     position: relative;
     z-index: 999;
     width: 280px;
-    background-color: #fff;
+    background-color: $bg-color;
     box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
-    margin: auto;
+    margin: 0 auto;
     padding: 16px;
     margin-top: 40px;
     @include mobile-lg {
       margin-top: 0;
       width: 347px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 487px;
     }
     .form_sec-title {
@@ -164,12 +198,12 @@
         font-weight: 600px;
         font-size: 18px;
         line-height: 21.78px;
-        color: #000;
+        color: $title-color;
         @include mobile-lg {
           font-size: 22px;
           line-height: 26.62px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           font-size: 28px;
           line-height: 33.89px;
         }
@@ -183,7 +217,7 @@
         width: 299px;
         height: 42px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         width: 400px;
         height: 60px;
       }
@@ -195,8 +229,8 @@
         line-height: 20px;
         letter-spacing: 0.20000000298023224px;
         text-align: left;
-        color: #64626a;
-        @include large-desktops-mid {
+        color: $body-text-color;
+        @include large-desktops {
           font-size: 18px;
           line-height: 30px;
         }
@@ -205,6 +239,7 @@
     form {
       .form-row {
         display: flex;
+        margin-left: 0px !important;
         @include mobile-lg {
           flex-direction: column;
         }
@@ -212,22 +247,23 @@
           flex-direction: row;
           gap: 19px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           flex-direction: row;
           gap: 19px;
         }
         .form-group {
+          margin-bottom: 0px !important;
           input {
             @include mobile-lg {
               width: 144px;
               height: 39px;
             }
-            @include large-desktops-mid {
+            @include large-desktops {
               width: 204px;
               height: 52px;
             }
           }
-          @include large-desktops-mid {
+          @include large-desktops {
             margin-top: 24px;
           }
         }
@@ -236,7 +272,7 @@
         @include mobile-lg {
           margin-top: 0px;
         }
-        @include large-desktops-mid {
+        @include large-desktops {
           margin-top: 0px;
         }
         label {
@@ -247,28 +283,38 @@
           line-height: 15px;
           letter-spacing: 0.10000000149011612px;
           text-align: left;
-          color: #000;
-          @include large-desktops-mid {
+          color: $title-color;
+          @include large-desktops {
             font-size: 16px;
             line-height: 19.36px;
           }
         }
         input {
-          background: #ffffff;
-          border: 1px solid #d1d0d6;
+          background: $bg-color;
+          border: 1px solid $body-text-color;
           border-radius: 10px;
-          margin-bottom: 22px;
+          margin-bottom: 2px;
           width: 248px;
           height: 39px;
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 15px;
+          letter-spacing: 0.10000000149011612px;
+          text-align: left;
+          color: #000;
         }
         .nice-select {
-          background: #ffffff;
-          border: 1px solid #d1d0d6;
+          background: $bg-color;
+          border: 1px solid $body-text-color;
           border-radius: 10px;
           width: 248px;
           height: 55px;
-          margin-bottom: 22px;
-          @include large-desktops-mid {
+          margin-bottom: 2px;
+          @include mobile-lg {
+            width: 305px;
+          }
+          @include large-desktops {
             width: 427px;
             height: 52px;
           }
@@ -283,21 +329,29 @@
           }
         }
         textarea {
-          border: 1px solid #d1d0d6;
+          border: 1px solid $body-text-color;
           border-radius: 10px;
           margin-bottom: 24px;
-          @include large-desktops-mid {
+          width: 248px;
+          @include mobile-lg {
+            width: 305px;
+          }
+          @include large-desktops {
             width: 427px;
           }
         }
         .btn-sumbit {
           width: 248px;
           height: 41px;
-          color: #fff;
-          background: #ff6846;
-          border: 1px solid #ff6846;
+          color: $bg-color;
+          background: $theme-color;
+          border: 1px solid $theme-color;
           border-radius: 10px;
-          @include large-desktops-mid {
+          @include mobile-lg {
+            width: 305px;
+            height: 50px;
+          }
+          @include large-desktops {
             width: 427px;
             height: 56px;
           }
@@ -309,12 +363,15 @@
     img {
       position: absolute;
       display: none;
-      @include large-desktops-mid {
+      @include large-desktops {
         display: block;
-        width: 321px;
-        height: 340px;
-        right: 160px;
+        width: 20.0625em;
+        height: 21.25em;
+        right: 6%;
         top: 350px;
+      }
+      @include large-desktops-mid {
+        right: 10%;
       }
     }
   }
@@ -327,15 +384,22 @@
       justify-content: center;
       @include mobile-lg {
         position: relative;
-        top: -257px;
+        top: -234px;
+        left: -18px;
+      }
+      @include large-desktops {
+        top: -180px;
+        left: 18px;
       }
       @include large-desktops-mid {
-        left: 150px;
-        top: -180px;
+        left: 104px;
       }
       .brand {
         img {
           width: 85px;
+          @include large-desktops-mid {
+            width: 146px;
+          }
         }
       }
     }
@@ -343,6 +407,20 @@
 }
 
 .topic__section {
+  margin: 0 auto;
+  width: 320px;
+  @include mobile-lg {
+    width: 680px;
+  }
+  @include tablet {
+    width: 46.875emem;
+  }
+  @include large-desktops {
+    width: 71.25em;
+  }
+  @include large-desktops-mid {
+    width: 90.625em;
+  }
   .topic-title {
     width: 280px;
     height: 92px;
@@ -352,7 +430,7 @@
       width: 480px;
       height: 60px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 587px;
       margin-top: 176px;
     }
@@ -368,7 +446,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -383,7 +461,7 @@
       flex-wrap: wrap;
       margin-top: 40px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       margin-top: 64px;
       gap: 45px;
       width: 1140px;
@@ -391,8 +469,8 @@
     .item {
       width: 280px;
       height: 50px;
-      background: #ffffff;
-      border: 1px solid #d1d0d6;
+      background: $bg-color;
+      border: 1px solid $body-text-color;
       border-radius: 12px;
       margin: auto;
       margin-bottom: 12px;
@@ -404,7 +482,7 @@
       @include mobile-lg {
         width: 320px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         padding-top: 28px;
         padding-left: 30px;
         width: 350px;
@@ -414,7 +492,7 @@
         img {
           width: 24px;
           height: 24px;
-          @include large-desktops-mid {
+          @include large-desktops {
             width: 26px;
             height: 26px;
           }
@@ -435,8 +513,8 @@
         }
       }
       &:hover {
-        color: #ff6846;
-        border: 2px solid #ff6846;
+        color: $theme-color;
+        border: 2px solid $theme-color;
         &::after {
           content: ">";
           position: relative;
@@ -451,14 +529,25 @@
 
 // office address
 .office__section {
+  margin: 0 auto;
   margin-top: 64px;
-  @include large-desktops-mid {
+  width: 320px;
+  @include mobile-lg {
+    width: 680px;
+  }
+  @include tablet {
+    width: 46.875emem;
+  }
+  @include large-desktops {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1450px;
+    width: 71.25em;
     margin: auto;
     margin-top: 180px;
+  }
+  @include large-desktops-mid {
+    width: 90.625em;
   }
   .office__section-title {
     width: 280px;
@@ -467,7 +556,7 @@
     @include mobile-lg {
       width: 300px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 353px;
     }
     h3 {
@@ -482,7 +571,7 @@
         font-size: 48px;
         line-height: 59.52px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 60px;
         line-height: 74.4px;
       }
@@ -496,7 +585,7 @@
     @include mobile-lg {
       width: 500px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 420px;
     }
     p {
@@ -507,12 +596,12 @@
       line-height: 23px;
       letter-spacing: 0px;
       text-align: center;
-      color: #64626a;
+      color: $body-text-color;
       @include mobile-lg {
         font-size: 18px;
         line-height: 28px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 20px;
         line-height: 30px;
         text-align: left;
@@ -521,7 +610,7 @@
   }
   .card-items {
     margin-top: 28px;
-    @include large-desktops-mid {
+    @include large-desktops {
       margin: auto;
       width: 1150px;
       margin-top: 80px;
@@ -531,14 +620,14 @@
     }
     .card {
       width: 280px;
-      border: 1px solid #64626a !important;
+      border: 1px solid $body-text-color !important;
       border-radius: 20px;
       margin: auto;
       margin-bottom: 32px;
       @include mobile-lg {
         width: 680px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         width: 500px;
       }
       .card-body {
@@ -550,7 +639,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: left;
-          color: #3b3a40;
+          color: $light-body-text;
           @include mobile-lg {
             font-size: 22px;
             line-height: 26.22px;
@@ -564,7 +653,7 @@
           line-height: 22px;
           letter-spacing: 0px;
           text-align: left;
-          color: #64626a;
+          color: $body-text-color;
           @include mobile-lg {
             font-size: 18px;
             line-height: 28px;
@@ -578,7 +667,7 @@
           line-height: 17px;
           letter-spacing: 0px;
           text-align: left;
-          color: #ff6846;
+          color: $theme-color;
           &::after {
             content: ">";
             position: relative;

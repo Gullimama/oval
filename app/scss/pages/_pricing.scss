@@ -1,7 +1,7 @@
 // leading brands section
 .leading__sections-pricing {
   margin-top: 84px;
-  @include large-desktops-mid {
+  @include large-desktops {
     margin: auto;
     margin-top: 180px;
     width: 1250px;
@@ -15,7 +15,7 @@
       width: 436px;
       height: 22px;
     }
-    @include large-desktops-mid {
+    @include large-desktops {
       width: 436px;
       height: 22px;
     }
@@ -32,7 +32,7 @@
         font-size: 18px;
         line-height: 21.78px;
       }
-      @include large-desktops-mid {
+      @include large-desktops {
         font-size: 18px;
         line-height: 21.78px;
       }
@@ -70,7 +70,7 @@
 }
 
 .red-tick {
-  color: #ff6846;
+  color: $theme-color;
   font-weight: bold;
 }
 .table__structure {
@@ -78,18 +78,20 @@
     width: 698px;
     margin: auto;
   }
-  @include large-desktops-mid {
+  @include large-desktops {
     width: 1140px;
     margin-top: 80px;
   }
+  
   .table {
     margin-bottom: 32px;
     @include mobile-lg {
       margin-bottom: 48px;
     }
     thead {
-      background: #f5f6f9;
+      background: $enterprise-color;
       box-shadow: inset 0px -1px 0px rgba(219, 219, 219, 0.5);
+      border-top: none !important;
       tr {
         th {
           font-family: Inter;

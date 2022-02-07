@@ -12,19 +12,19 @@
     $theme-base-font: "Libre Baskerville", serif;
     $body-base-font: "Inter", sans-serif;
 
-    $dark-bg-color: rgba(0, 0, 0, 0.514);
-    $dark-title-color: #fff;
-    $dark-dwn-bg-color: #646160;
-    $dark-contact-bg-color: #f5d6d6;
-    $dark-body-text-color: #e1daf5;
-    $dark-light-body-text: #d5c8ee;
-    $dark-theme-color: #814c40;
-    $dark-primary-highlighter-color: #755620;
-    $dark-secondary-highlighter-color: #2c9460;
-    $dark-tertiary-highlighter-color: #296169;
-    $dark-enterprise-color: #f5f6f9;
-    $dark-theme-base-font: "Robota", serif;
-    $dark-body-base-font: "Robota", sans-serif;
+    // $dark-bg-color: rgba(0, 0, 0, 0.514);
+    // $dark-title-color: #fff;
+    // $dark-dwn-bg-color: #646160;
+    // $dark-contact-bg-color: #f5d6d6;
+    // $dark-body-text-color: #e1daf5;
+    // $dark-light-body-text: #d5c8ee;
+    // $dark-theme-color: #814c40;
+    // $dark-primary-highlighter-color: #755620;
+    // $dark-secondary-highlighter-color: #2c9460;
+    // $dark-tertiary-highlighter-color: #296169;
+    // $dark-enterprise-color: #f5f6f9;
+    // $dark-theme-base-font: "Robota", serif;
+    // $dark-body-base-font: "Robota", sans-serif;
 
 :root {
   --background-color: #{$bg-color};
@@ -58,21 +58,21 @@ html[data-theme="light"] {
   --body-base-font: "Inter", sans-serif;
 }
 
-html[data-theme="dark"] {
-  --background-color: #{$dark-bg-color};
-  --title-color: #{$dark-title-color};
-  --dwn-bg-color: #{$dark-dwn-bg-color};
-  --contact-bg-color: #{$dark-contact-bg-color};
-  --body-text-color: #{$dark-body-text-color};
-  --light-body-text: #{$dark-light-body-text};
-  --theme-color: #{$dark-theme-color};
-  --primary-highlighter-color: #{$dark-primary-highlighter-color};
-  --secondary-highlighter-color: #{$dark-secondary-highlighter-color};
-  --tertiary-highlighter-color: #{$dark-tertiary-highlighter-color};
-  --enterprise-color: #{$dark-enterprise-color};
-  --theme-base-font: #{$dark-theme-base-font};
-  --body-base-font: #{$dark-body-base-font};
-}
+// html[data-theme="dark"] {
+//   --background-color: #{$dark-bg-color};
+//   --title-color: #{$dark-title-color};
+//   --dwn-bg-color: #{$dark-dwn-bg-color};
+//   --contact-bg-color: #{$dark-contact-bg-color};
+//   --body-text-color: #{$dark-body-text-color};
+//   --light-body-text: #{$dark-light-body-text};
+//   --theme-color: #{$dark-theme-color};
+//   --primary-highlighter-color: #{$dark-primary-highlighter-color};
+//   --secondary-highlighter-color: #{$dark-secondary-highlighter-color};
+//   --tertiary-highlighter-color: #{$dark-tertiary-highlighter-color};
+//   --enterprise-color: #{$dark-enterprise-color};
+//   --theme-base-font: #{$dark-theme-base-font};
+//   --body-base-font: #{$dark-body-base-font};
+// }
 
 
 
